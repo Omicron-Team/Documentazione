@@ -1,0 +1,67 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Creazione PDF
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+
+      - name: Installazione dipendenze Latex
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install texlive-latex-recommended texlive-latex-extra
+          sudo apt-get install -y latexmk
+          sudo apt-get install -y texlive-lang-italian
+
+      - name: Compilazione Analisi dei Requisiti
+        run: latexmk -pdf -cd DocumentazioneEsterna/AnalisiDeiRequisiti/AnalisiDeiRequisiti.tex
+
+      - name: Compilazione Glossario
+        run: latexmk -pdf -cd DocumentazioneEsterna/Glossario/Glossario.tex
+      
+      - name: Compilazione Piani di Progetto
+        run: latexmk -pdf -cd DocumentazioneEsterna/PianiDiProgetto/PianiDiProgetto.tex
+
+      - name: Compilazione Piani di Qualififca
+        run: latexmk -pdf -cd DocumentazioneEsterna/PianiDiQualifica/PianiDiQualifica.tex
+      
+      - name: Compilazione VerbaleX
+        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VerbaleX/VerbaleX.tex
+
+      - name: Compilazione Norme di Progetto
+        run: latexmk -pdf -cd DocumentazioneInterna/NormeDiProgetto/NormeDiProgetto.tex
+
+      - name: Compilazione Studio di Fattibilità
+        run: latexmk -pdf -cd DocumentazioneInterna/StudioDiFattibilita/StudioDiFattibilita.tex
+     
+      - name: Creazione delle Cartelle
+        run: |
+          mkdir -p Documenti/DocumentazioneInterna/VerbaliInterni
+          mkdir -p Documenti/DocumentazioneEsterna/VerbaliEsterni
+          mkdir -p Documenti/LetterePresentazioni
+          mv AnalisiDeiRequisiti.pdf Documenti/DocumentazioneEsterna
+          mv Glossario.pdf Documenti/DocumentazioneEsterna
+          mv PianiDiProgetto.pdf Documenti/DocumentazioneEsterna
+          mv PianiDiQualifica.pdf Documenti/DocumentazioneEsterna
+          mv VerbaleX.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+          mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
+          mv StudioDiFattibilita.pdf Documenti/DocumentazioneInterna
+      
+      - name: Upload Documenti
+        uses: actions/upload-artifact@v2
+        with:
+          name: Documentazione
+          path: Documenti
+
