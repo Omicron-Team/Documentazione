@@ -1,0 +1,38 @@
+\ProvidesPackage{styleTemplate}	%il nostro pacchetto per swe
+
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+
+\renewcommand{\thesection}{\arabic{section}}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+
+\fancyhead[RE, RO]{\doctitle \versiondoc - \emph{Omicron}}
+
+
+\lhead{\setlength{\unitlength}{1mm}
+	\begin{picture}(0,0)
+		\put(5,0){\includegraphics[scale=0.1]{\relativePathImg LogoNoScritta}}
+\end{picture}}
+\cfoot{\thepage\ di \pageref{LastPage}}
+
+
+%%Separare i vari componenti della tabella
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+
+%%COLORI TABELLE
+%\definecolor{grigio}{RGB}{91,91,91}
+\definecolor{azzurro1}{RGB}{159,182,195}
+\definecolor{azzurro2}{RGB}{206,218,224}
+\definecolor{azzurro3}{RGB}{237,242,244}
