@@ -39,7 +39,7 @@ jobs:
         run: latexmk -pdf -cd DocumentazioneInterna/StudioDiFattibilita/StudioDiFattibilita.tex
 
       - name: Compilazione Verbale interno 2020-11-16
-        run: latexmk -pdf -cd Documenti/DocumentazioneInterna/VerbaliInterni/VI_2020-11-16/VI_2020-11-16.tex
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-16/VI_2020-11-16.tex
      
       - name: Creazione delle cartelle
         if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main' || github.event.pull_request.base.ref == 'develop' || github.event.pull_request.base.ref == 'main'
