@@ -39,7 +39,7 @@ jobs:
         run: latexmk -pdf -cd DocumentazioneInterna/StudioDiFattibilita/StudioDiFattibilita.tex
 
       - name: Compilazione VI_2020-12-02
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-21-02/VI_2020-21-02.tex
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-02/VI_2020-12-02.tex
      
       - name: Creazione delle cartelle
         if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main' || github.event.pull_request.base.ref == 'develop' || github.event.pull_request.base.ref == 'main'
@@ -54,7 +54,7 @@ jobs:
           mv VerbaleX.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
           mv StudioDiFattibilita.pdf Documenti/DocumentazioneInterna
-          mv VI_2020-21-02.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+          mv VI_2020-12-02.pdf Documenti/DocumentazioneInterna/VerbaliInterni
       
       - name: Upload Documenti
         if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main' || github.event.pull_request.base.ref == 'develop' || github.event.pull_request.base.ref == 'main'
