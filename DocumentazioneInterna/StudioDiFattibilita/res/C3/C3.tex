@@ -10,8 +10,6 @@
 
 \subsection{Descrizione}{
 Il capitolato presentato si pone come obiettivo finale la realizzazione di una piattaforma che, attraverso l'elaborazione real-time di una varietà di sorgenti di dati anche molto eterogenee tra loro (quali ad esempio videocamere, flussi di prenotazioni Uber, tabelle degli orari di autobus/treni, etc.), permetta di ottenere indicazioni riguardo a potenziali assembramenti e di poter quindi, in tale ottica, fornire un supporto alle decisioni per l'ottimizzazione del traffico.
-
-% troppo sintetico?
 Gli utenti devono poter interagire con la piattaforma tramite una applicazione web che riesca a rappresentare la situazione globale dei flussi.
 }
 
@@ -22,7 +20,6 @@ Gli utenti devono poter interagire con la piattaforma tramite una applicazione w
 \item Protocolli asincroni per la comunicazione tra diversi componenti del software;
 \item Design pattern \textit{Publisher/Subscriber} e adozione del protocollo \textit{MQTT} per la comunicazione asincrona tra i vari componenti del sistema;
 \item \textit{Apache Kafka} per lo stream processing dei dati in tempo reale;
-% anche se non sono stati prettamente consigliati ho pensato di inserirli in quanto tecnologie principali per la gestione di un DB (da tenere?)
 \item DBMS \textit{MongoDB} o \textit{MySQL}  per la collezione in un Database dei dati risultanti dalla fase di elaborazione;
 \item \textit{Scikit-learn}, \textit{Numpy} o \textit{TensorFlow} per la fase di esplorazione e analisi dei dati utilizzando tecniche di machine learning.
 \end{itemize}
@@ -45,7 +42,7 @@ Gli utenti devono poter interagire con la piattaforma tramite una applicazione w
 
 \subsection{Aspetti critici}{
 \begin{itemize}
-\item La piattaforma richiesta in questo capitolato risulta molto complessa da implementare, specialmente per le tecnologie coinvolte, col rischio di impiegare molto tempo nella fase di auto-apprendimento e di realizzazione
+\item La piattaforma richiesta in questo capitolato risulta molto complessa da implementare, specialmente per le tecnologie coinvolte, col rischio di impiegare molto tempo nella fase di auto-apprendimento e di realizzazione;
 \item Per una buona realizzazione del prodotto risultano necessarie conoscenze importanti riguardanti l'esplorazione e la manipolazione dei dati, i quali sono presenti in forme anche molto eterogenee tra loro.
 \end{itemize}
 }
