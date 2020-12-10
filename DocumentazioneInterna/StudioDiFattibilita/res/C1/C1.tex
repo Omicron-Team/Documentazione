@@ -2,34 +2,34 @@
 
 \subsection{Informazioni generali}{
 \begin{itemize}
-\item \textbf{Nome:} BlockCOVID.
+\item \textbf{\emph{Nome :}} BlockCOVID.
 \item \textbf{\commitProg:} Imola Informatica.
 \item \textbf{\proponProg:} \VT{} e \CR.
 \end{itemize}
 }
 
 \subsection{Descrizione}{
-L'obiettivo del capitolato in questione è quello di creare una piattaforma che consenta il tracciamento immutabile e certificato tramite tag RFID delle presenze in tempo reale alle postazioni di lavoro di un laboratorio informatico. Attraverso un'applicazione dedicata deve essere possibile, in base alla tipologia di utente (dipendente/studente o addetto alla pulizia), visualizzare le postazioni libere, prenotare e/o visualizzare le informazioni relative allo stato di sanificazione di una postazione, segnalare la pulizia di una postazione o dell'intera stanza. Il server, comunicando con l'applicazione, deve offrire ad un amministratore del sistema la gestione e il monitoraggio delle singole stanze e degli utenti che usufruiscono delle postazioni di lavoro attraverso un'interfaccia con procedura di autenticazione.
+L'obiettivo del capitolato in questione è quello di creare una piattaforma che consenta il tracciamento immutabile e certificato tramite tag RFID\ped{G} delle presenze in tempo reale alle postazioni di lavoro di un laboratorio informatico. Attraverso un'applicazione dedicata deve essere possibile, in base alla tipologia di utente (dipendente/studente o addetto alla pulizia), visualizzare le postazioni libere, prenotare e/o visualizzare le informazioni relative allo stato di sanificazione di una postazione, segnalare la pulizia di una postazione o dell'intera stanza. Il server, comunicando con l'applicazione, deve offrire ad un amministratore del sistema la gestione e il monitoraggio delle singole stanze e degli utenti che usufruiscono delle postazioni di lavoro attraverso un'interfaccia con procedura di autenticazione.
 
 }
 
 \subsection{Tecnologie coinvolte}{
 \begin{itemize}
-\item \textit{Java} (versione 8+), \textit{Python} o \textit{Node.js} per lo sviluppo del server back-end;
-\item Protocolli asincroni per le comunicazioni app mobile-server;
-\item \textit{Blockchain}: sistema in cui i dati vengono raggruppati in blocchi concatenati tra loro tramite funzioni matematiche per salvare in modo immutabile i dati relativi alle sanificazioni;
-\item \textit{Kubernetes}, \textit{Openshift} o \textit{Rancher} per il rilascio delle componenti
-del server nonché per la gestione della scalabilità orizzontale;
-\item API \textit{Rest} attraverso le quali sia possibile utilizzare l'applicativo;
-\item \textit{Java} (attraverso il kit di sviluppo software Android) o \textit{Swift} per lo sviluppo dell'applicazione mobile rispettivamente Android o iOS.
+\item \textit{Java}\ped{G} (versione 8+), \textit{Python}\ped{G} o \textit{Node.js}\ped{G} per lo sviluppo del server back-end\ped{G};
+\item Protocolli asincroni\ped{G} per le comunicazioni dell'applicazione mobile-server;
+\item \textit{Blockchain}\ped{G}: sistema per salvare in modo immutabile e certificato i dati relativi alle sanificazioni:
+\item \textit{Kubernetes}\ped{G}, \textit{Openshift}\ped{G} o \textit{Rancher}\ped{G} per il rilascio delle componenti
+del server nonché per la gestione della scalabilità orizzontale\ped{G};
+\item API\ped{G} \textit{REST}\ped{G} attraverso le quali sia possibile utilizzare l'applicativo;
+\item \textit{Java}\ped{G} (attraverso il kit di sviluppo software Android\ped{G}) o \textit{Swift}\ped{G} per lo sviluppo dell'applicazione mobile rispettivamente Android\ped{G} o iOS\ped{G}.
 \end{itemize}
 }
 
 \subsection{Vincoli}{
 \begin{itemize}
-\item Scalabilità orizzontale del server in base alla modifica del numero di utilizzatori;
-\item Creazione di un'applicazione Android/iOS con relativa interfaccia grafica;
-\item Utilizzo dei \textit{tag RFID} per il tracciamento in tempo reale;
+\item Scalabilità orizzontale\ped{G} del server in base alla modifica del numero di utilizzatori;
+\item Creazione di un'applicazione Android\ped{G}/iOS\ped{G} con relativa interfaccia grafica\ped{G};
+\item Utilizzo dei \textit{tag RFID}\ped{G} per il tracciamento in tempo reale;
 \item Implementazione di un'architettura Client-Server;
 \item Report di test effettuati relativamente all'ottimizzazione dell'applicazione rispetto al consumo della
 batteria dei cellulari.
@@ -42,8 +42,8 @@ batteria dei cellulari.
 \item Possibilità di sviluppare un applicativo che possa effettivamente venire utilizzato in ambito aziendale;
 \item Libertà nella scelta del linguaggio di programmazione da utilizzare;
 \item I linguaggi di programmazione consigliati sono molto quotati anche al di fuori dell'ambito universitario;
-\item Spiegazione chiara, da parte dell’azienda, sui compiti che l'applicativo deve svolgere e gli obiettivi che devono essere raggiunti;
-\item Vengono messi a disposizione dall'azienda dei server dedicati per effettuare test sui nostri componenti applicativi sviluppati, con relativa spiegazione sull'uso di \textit{Docker} (attraverso un seminario tecnologico).
+\item Spiegazione chiara, da parte dell'azienda, sui compiti che l'applicativo deve svolgere e gli obiettivi che devono essere raggiunti;
+\item Vengono messi a disposizione dall'azienda dei server dedicati per effettuare test sui nostri componenti applicativi sviluppati, con relativa spiegazione sull'uso di \textit{Docker}\ped{G} (attraverso un seminario tecnologico).
 \end{itemize}
 }
 
@@ -51,7 +51,7 @@ batteria dei cellulari.
 \begin{itemize}
 \item Applicativo dipendente dall'utente, infatti vi è la necessità che gli impiegati abbiano sempre a disposizione il cellulare;
 \item Dubbi sulla gestione dello stato di occupazione della postazione di lavoro nel caso l'impiegato si sposti da quest'ultima;
-\item Possibile difficoltà nell’apprendimento di alcune complesse tecnologie coinvolte per i membri del gruppo che non le hanno mai utilizzate precedentemente.
+\item Possibile difficoltà nell'apprendimento di alcune complesse tecnologie coinvolte per i membri del gruppo che non le hanno mai utilizzate precedentemente.
 \end{itemize}
 }
 

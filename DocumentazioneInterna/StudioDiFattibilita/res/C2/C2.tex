@@ -2,52 +2,52 @@
 
 \subsection{Informazioni generali}{
 \begin{itemize}
-\item \textbf{Nome:} EmporioLambda.
+\item \textbf{\emph{Nome :}} EmporioLambda.
 \item \textbf{\commitProg:} RedBabel.
 \item \textbf{\proponProg:} \VT{} e \CR.
 \end{itemize}
 }
 
 \subsection{Descrizione}{
-Il capitolato presentato si pone come obiettivo finale di realizzare una piattaforma E-commerce generica, che possa potenzialmente vendere qualsiasi tipo di prodotto in modo da essere appetibile sia a privati che ad aziende, usando esclusivamente tecnologie \textit{Serverless}.
+Il capitolato presentato si pone come obiettivo finale di realizzare una piattaforma E-commerce\ped{G} generica, che possa potenzialmente vendere qualsiasi tipo di prodotto in modo da essere appetibile sia a privati che ad aziende, usando esclusivamente tecnologie \textit{serverless}\ped{G}.
 
-L'applicazione deve poter fornire tutti gli strumenti necessari ai clienti per navigare, cercare e acquistare prodotti nel catalogo, il quale deve essere gestito tramite apposite funzionalità disponibili al commerciante. Inoltre l'amministratore della piattaforma deve avere la possibilità di distribuire l'applicativo nel cloud offerto dagli Amazon Web Services e gestire la configurazione delle integrazioni dei servizi esterni (ad esempio il fornitore dei servizi di pagamento).
+L'applicazione Web\ped{G} deve poter fornire tutti gli strumenti necessari ai clienti per navigare, cercare e acquistare prodotti nel catalogo, il quale deve essere gestito tramite apposite funzionalità disponibili al commerciante. Inoltre l'amministratore della piattaforma deve avere la possibilità di distribuire l'applicativo nel cloud\ped{G} offerto dagli Amazon Web Services (AWS)\ped{G} e gestire la configurazione delle integrazioni dei servizi esterni (ad esempio il fornitore dei servizi di pagamento).
 }
 
 \subsection{Tecnologie coinvolte}{
-Il capitolato richiede per gran parte l'utilizzo di tecnologie fornite da \textit{Amazon Web Services} (AWS), in particolare viene consigliato di utilizzare:
+Il capitolato richiede per gran parte l'utilizzo di tecnologie fornite da \textit{Amazon Web Services} (AWS)\ped{G}, in particolare viene consigliato di utilizzare:
 \begin{itemize}
-\item \textit{Amazon API Gateway:} framework per la gestione di eventi HTTP;
-\item \textit{DynamoDB}: database NoSQL scalabile e distribuito;
+\item \textit{Amazon API Gateway}: framework\ped{G} per la gestione di eventi HTTP\ped{G};
+\item \textit{DynamoDB}: database NoSQL\ped{G} scalabile e distribuito;
 \item \textit{AWS Lambda:} piattaforma di computazione;
 \end{itemize}
 Le ulteriori tecnologie suggerite per un corretto completamento del progetto sono le seguenti:
 \begin{itemize}
-\item \textit{Typescript} come linguaggio di programmazione principale;
-\item \textit{Next.js} come framework per l'implementazione del front-end;
-\item \textit{Serverless} come framework per l'implementazione del back-end;
-\item \textit{CloudWatch} o \textit{DataDog} come sistema di monitoraggio della piattaforma.
+\item \textit{Typescript}\ped{G} come linguaggio di programmazione principale;
+\item \textit{Next.js}\ped{G} come framework\ped{G} per l'implementazione del front-end\ped{G};
+\item \textit{Serverless}\ped{G} come framework\ped{G} per l'implementazione del back-end\ped{G};
+\item \textit{CloudWatch}\ped{G} o \textit{DataDog}\ped{G} come sistema di monitoraggio della piattaforma.
 \end{itemize}
 }
 
 \subsection{Vincoli}{
 \begin{itemize}
-\item Architettura Serverless basata su microservizi;
+\item Architettura serverless\ped{G} basata su microservizi\ped{G};
 \item AWS Lambda come unica piattaforma di computazione;
-\item Framework Serverless per l'implementazione dei moduli ad alto livello riguardanti il back-end;
-\item Framework Next.js per l'implementazione del modulo ad alto livello riguardante il front-end;
-\item I servizi devono essere implementati utilizzando una API basata sul protocollo HTTP;
-\item \textit{Stripe} come fornitore di servizi di pagamento;
-\item Utilizzo dell'ultima versione di Typescript, dell'approccio centralizzato sfruttando i meccanismi \textit{Promise/Async-Await} e del gestore per la standardizzazione del codice \textit{ESlint};
-\item \textit{GitHub} per la pubblicazione e il versionamento del codice.
+\item Framework\ped{G} Serverless\ped{G} per l'implementazione dei moduli\ped{G} ad alto livello riguardanti il back-end\ped{G};
+\item Framework\ped{G} Next.js\ped{G} per l'implementazione del modulo\ped{G} ad alto livello riguardante il front-end\ped{G};
+\item I servizi devono essere implementati utilizzando una API\ped{G} basata sul protocollo HTTP\ped{G};
+\item \textit{Stripe}\ped{G} come fornitore di servizi di pagamento;
+\item Utilizzo dell'ultima versione di Typescript\ped{G}, dell'approccio centralizzato sfruttando i meccanismi \textit{Promise/Async-Await} (funzionalità specifiche fornite dal linguaggio stesso) e del gestore per la standardizzazione del codice \textit{ESlint}\ped{G};
+\item \textit{GitHub}\ped{G} per la pubblicazione e il versionamento del codice.
 \end{itemize}
 }
 
 \subsection{Aspetti positivi}{
 \begin{itemize}
-\item L'architettura serverless permette agli sviluppatori di concentrarsi sulle funzionalità che deve eseguire l'applicazione, riducendo il carico di lavoro relativo alla gestione dell'infrastruttura di back-end;
+\item L'architettura serverless\ped{G} permette agli sviluppatori di concentrarsi sulle funzionalità che deve eseguire l'applicazione, riducendo il carico di lavoro relativo alla gestione dell'infrastruttura di back-end\ped{G};
 \item Le tecnologie coinvolte sono molto attuali e risultato molto utilizzate concretamente nell'ambito lavorativo;
-\item L'E-Commerce è un mercato in forte crescita, soprattutto negli ultimi anni, risultando quindi molto appetibile come approfondimento pratico per noi studenti;
+\item L'E-Commerce\ped{G} è un mercato in forte crescita, soprattutto negli ultimi anni, risultando quindi molto appetibile come approfondimento pratico per noi studenti;
 \item Il numero elevato di vincoli ci permette di avere a disposizione una precisa traccia da seguire nell'implementazione della soluzione al capitolato, avendo comunque libertà nel design dei servizi da utilizzare nella piattaforma.
 \end{itemize}
 }
@@ -61,6 +61,6 @@ Le ulteriori tecnologie suggerite per un corretto completamento del progetto son
 }
 
 \subsection{Conclusione}{
-La proposta del capitolato offerto dall'azienda \textit{RedBabel} è stata accolta con grande interesse. Il gruppo è rimasto colpito e stimolato dalla possibilità di poter creare un prodotto con una notevole rilevanza pratica, soprattutto per l'importanza che ha raggiunto l'E-commerce nel mercato in questo periodo storico. Dopo una attenta analisi del capitolato, valutando gli aspetti positivi e negativi precedentemente citati, è emersa una unanime preferenza per il capitolato \textit{EmporioLambda}.
+La proposta del capitolato offerto dall'azienda \textit{RedBabel} è stata accolta con grande interesse. Il gruppo è rimasto colpito e stimolato dalla possibilità di poter creare un prodotto con una notevole rilevanza pratica, soprattutto per l'importanza che ha raggiunto l'E-commerce\ped{G} nel mercato in questo periodo storico. Dopo una attenta analisi del capitolato, valutando gli aspetti positivi e negativi precedentemente citati, è emersa una unanime preferenza per il capitolato \textit{EmporioLambda}.
 }
 
