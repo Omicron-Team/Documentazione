@@ -1,2 +1,91 @@
 \subsubsection{Versionamento}
-\paragraph{Codice di versione del documento}
+\myparagraph{Codice di versione del documento}
+Ogni documento ha una storia la quale è ricostruibile attraverso le sue versioni. Il numero di versione è così formato:
+\begin{center}
+\textbf{X.Y.Z.}
+\end{center}
+dove
+\begin{itemize}
+ \item \textbf{X:} indica una versione stabile del documento
+ 	\begin{itemize}
+ 		\item parte da 0;
+ 		\item viene incrementata da parte del \respProg dopo il completamento della fase di approvazione del documento;
+ 	\end{itemize}
+ \item \textbf{Y:}  indica una versione parzialmente stabile del documento
+ 	\begin{itemize}
+ 		\item parte da 0;
+ 		\item viene incrementata da parte del \verifProg dopo il completamento della fase di verifica del documento;
+ 		\item viene azzerato ogni qual volta avviene un incremento di X.
+ 	\end{itemize}
+ \item \textbf{Z:} indica una versione instabile del documento
+ \begin{itemize}
+ 		\item parte da 0;
+ 		\item viene incrementata da parte del \emph{Redattore} dopo il completamento di una modifica al documento;
+ 		\item viene azzerato ogni qual volta avviene un incremento di Y.
+ 	\end{itemize}
+\end{itemize}
+
+\myparagraph{Tecnologie adottate}
+Per il codice software e la creazione dei documenti che sono soggetti a $versionamento_G$ si è deciso di utilizzare il sistema di $versionamento_G$ distribuito $Git_G$, utilizzando il servizio $GitHub_G$ per ospitare le $reposioty_G$ remote.
+
+
+\myparagraph{Repository}
+I membri del team \Omicron possono interagire con il $VCS_G$ sia attraverso la linea di comando oppure tramite l'utilizzo di $GitHub_G$. Si è deciso di creare due $repository_G$ tenendo ben separata la parte di documentazione da quella di implementazione del software:
+\begin{itemize}
+ \item \textbf{Da decidere} $repository_G$ per il $versionamento_G$ del codice software, reperibile all'indirizzo \url{da decidere};
+ \item \textbf{Documentazione:} $repository_G$ per il $vresionamento_G$ della documentazione, reperibile all'indirizzo \url{https://github.com/Omicron-Team/Documentazione};
+\end{itemize}
+
+\myparagraph{Struttura della repository}
+I $repository_G$ sono formati da due versioni:
+\begin{itemize}
+	\item \textbf{remota:} $repository_G$ presente su $GitHub_G$ che contiene il lavoro svolto condiviso con il team;
+	\item \textbf{locale:} copia della $repository_G$ remota dove ogni componente può lavorare sui file contenuti in essa.
+\end{itemize}
+
+La $repository_G$ contenente la documentazione è strutturata in cartelle descritte di seguito:
+\begin{itemize}
+ \item \textbf{DocumentazioneEsterna:} contiene i documenti da fornire ai committenti e al proponente, insieme ai verbali redatti durante gli incontri con quest'ultimi.
+\item \textbf{DocumentazioneInterna:} contiene i documenti ad uso e consumo per i membri del team \Omicron, nonché i relativi verbali redatti durante gli incontri settimanali del gruppo.
+\item \textbf{LetterePresentazioni:} contiene le lettere da accompagnare alla presentazione dei documenti da fornire ai committenti e al proponente.
+\item \textbf{Utilita:} contiene gli elementi di supporto per la stesura dei documenti:
+\begin{itemize}
+	\item \textbf{img:} cartella contenente le immagini da utilizzare all'interno dei documenti;
+	\item \textbf{latexSetup: } cartella contenente i file di supporto per la compilazione dei documenti \LaTeX, fra cui il file contenente i $package_G$, la prima pagina, il file di stile e il file con i comandi personalizzati del team.
+\end{itemize}
+\end{itemize}
+La suddivisione dei file per scopo aiuta a migliorare la tracciabilità del lavoro svolto e favorisce una classificazione ordinata volta ad aiutare i membri del team durante la creazione dei documenti.
+
+
+\myparagraph{Tipologia di file}
+I file utilizzati per la realizzazione dei documenti sono:
+\begin{itemize}
+	\item file con estensione \textit{.tex} per i documenti \LaTeX;
+	\item file con estensione \textit{.pdf} per i documenti da presentare ai committenti e al proponente (questi file non vanno versionati nella $repository_G$)
+	\item immagini di supporto ai file precedenti
+	\item file \textit{.gitignore} per gestire gli elementi che non devono essere versionati all'interno della $repository_G$ remota;
+	\item file con estensione \textit{.sty} per la caratterizzazione dello stile che definisce ogni file prodotto dal gruppo \Omicron.
+\end{itemize}
+
+\myparagraph{Utilizzo di Git}
+I $repository_G$ configurati su $GitHub_G$ sono composti da vari $branch_G$ creati per incrementare il lavoro collaborativo. Per lavorare sulla stesura di un un documento o su una parte di codice si consiglia di seguire i seguenti passi:
+\begin{enumerate}
+	\item scelta del $branch_G$ su cui si vuole lavorare;
+	\item esecuzione del comando \textit{pull} per aggiornare il $branch_G$ locale con le ultime modifiche aggiunte, se presenti;
+	\item apportare modifiche o aggiungere file secondo il proprio lavoro assegnato;
+	\item eseguire il comando \textit{add} per aggiungere le modifiche apportate nell'area di $staging_G$;
+	\item eseguire il comando \textit{commit} per tracciare la modifica con un messaggio significativo per favorire il tracciamento;
+	\item eseguire il comando \textit{push} per condividere le modifiche apportate con gli altri membri del gruppo nella $repository_G$ remota.
+\end{enumerate}
+
+\myparagraph{Gestione delle modifiche}
+Ogni $branch_G$ è modificabile da ogni componente del gruppo, ad eccezione di \textbf{main} e \textbf{develop} che possono essere modificati dopo l'approvazione di una \textit{pull request} da parte del \respProg. I file modificati all'interno della pull request sono prima soggetti a verifica e, solo dopo il completamento di tale fase, possono essere approvati da parte del \textit{Responsabile di Progetto}.
+Per effettuare modifiche maggiori sulla struttura e sui contenuti dei file si prevede di:
+\begin{enumerate}
+	\item riferire al \respProg del file la modifica che si vuole effettuare;
+	\item in caso di valutazione positiva da parte del \respProg, la modifica verrà approvata.
+\end{enumerate}
+Per modifiche minori, come correzioni grammaticali o sintattiche, è possibile modificare indipendentemente. 
+
+
+
