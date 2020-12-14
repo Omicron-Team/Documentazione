@@ -1,1 +1,20 @@
 \section{Resoconto}
+\subsection{Presentazione dei membri del gruppo al proponente}
+Il gruppo si è presentato al proponente, l'azienda Redbabel, ed ha esposto la volontà di conseguire il progetto \textit{EmporioLambda}.
+\subsection{Richiesta di spiegazioni al proponente su punti non chiari del capitolato da parte dei membri del gruppo}
+Il gruppo ha preparato per l'incontro le seguenti domande (precedentemente riferite attraverso Slack\ped{G}):
+\begin{itemize}
+\item Per l'utilizzo della piattaforma di computazione serverless\ped{G} AWS Lambda\ped{G} è necessario l'apprendimento di un linguaggio di programmazione funzionale?
+\item I "business requirements" (\href{https://www.math.unipd.it/~tullio/IS-1/2020/Progetto/C2.pdf}{Documento descrittivo capitolato C2} , § 1.1) sono vincolanti per una corretta implementazione della soluzione al capitolato?
+\item L'azienda proponente ha una preferenza riguardo all'utilizzo di AWS Cognito Identity\ped{G} oppure Auth0\ped{G} per l'implementazione dello strato di autenticazione della piattaforma?
+\end{itemize}
+Seguono le risposte offerte dal proponente:
+\begin{itemize}
+\item \textbf{Necessità di apprendimento di un linguaggio di programmazione funzionale:} \\
+Non è necessario l'apprendimento del paradigma di programmazione funzionale in quanto questo pone dei vincoli nella sintassi e nelle tecnologie utilizzabili non richiesti. Il requisito di utilizzo della piattaforma di computazione AWS Lambda\ped{G} descrive invece il comportamento che ci si aspetta da parte di un modulo dell'architettura: essendo \textit{EmporioLambda} una piattaforma da sviluppare con tecnologie serverless\ped{G} le componenti necessarie al suo funzionamento devono poter completare il proprio obiettivo sotto forma di funzioni che, assumendo non abbiano uno stato interno, avendo in ingresso un input producono un output.
+\item \textbf{Vincolatività dei "business requirements":} \\
+Questa tipologia di requisiti inseriti nella parte introduttiva del capitolato sono stati forniti per offrire una panoramica di base al contesto dell'E-commerce\ped{G} e alla sua elevata complessità, sono quindi da non considerarsi dei requisiti minimi al completamento della piattaforma.
+\item \textbf{Preferenza riguardo all'utilizzo di AWS Cognito Identity o Auth0 per lo strato di autenticazione della piattaforma:} \\
+L'azienda afferma che non ha preferenze per nessuno dei due servizi e che risulta importante una analisi e comparazione da parte del gruppo per effettuare la scelta migliore. \textit{Redbabel} aggiunge inoltre che mentre Cognito\ped{G} si integra meglio nella piattaforma e nei servizi forniti da Amazon\ped{G}, Auth0\ped{G} fornisce un'ampia documentazione sul sito proprietario, permettendo una migliore esperienza di auto-apprendimento della tecnologia.
+\end{itemize}
+
