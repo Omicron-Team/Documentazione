@@ -12,7 +12,7 @@ L'analisi statica si divide in:
 	\end{itemize}
 	\item \textbf{metodi formali:} attuati da macchine.
 \end{itemize}
-
+\mbox{}\\
 Di seguito le liste di controllo attuate per la verifica del documenti:
 \begin{itemize}
 	\item \textbf{Sintassi:} la frase o il periodo risulta troppo complesso;
@@ -24,4 +24,30 @@ Di seguito le liste di controllo attuate per la verifica del documenti:
 
 
 
-\myparagraph{Analisi dinamica}
+\myparagraph{Analisi dinamica}\label{3.4.4.2}
+L'analisi dinamica consiste nell'eseguire il software per rilevarne problemi o malfunzionamenti.
+
+\mbox{}\\
+\textbf{Test} \mbox{}\\ \mbox{}\\
+l'analisi dinamica viene eseguita tramite dei \textit{test} che vanno ad analizzare singole o molteplici linee di codice. Ogni test è caratterizzato dai seguenti elementi:
+\begin{itemize}
+	\item \textbf{Ambiente: } il sistema hardware e software su cui verrà eseguito il test;
+	\item \textbf{stato iniziale:} definizione dello stato iniziale da cui verrà eseguito il test;
+	\item \textbf{input: } input inserito;
+	\item \textbf{output: } output inserito;
+	\item \textbf{istruzioni aggiuntive: } istruzioni di supporto per specificare meglio come eseguire un test e come interpretare i risultati.
+\end{itemize}
+I test, per essere considerati accettabili, devono definire gli elementi sopra citati ed inoltre devono:
+\begin{itemize}
+	\item essere ripetibili;
+	\item fornire risultati sull'esito dell'esecuzione e segnalare eventuali effetti indesiderati, possibilmente in forma di \textit{file log}\ped{G}. 
+\end{itemize}
+\mbox{}\\
+I test si dividono in:
+\begin{enumerate}
+	\item \textbf{Test di unità:} il test si concentra su singole unità software. Dati determinati input viene individuato un output atteso. Dopo l'esecuzione dell'unità, si controlla se l'output ottenuto è equivalente all'output atteso:
+	\item \textbf{Test di integrazione:} dopo aver superato i test di unità, si procede con l'assemblare le varie unità fra di loro e creare agglomerati più ampi. Superare tali test significa che le relazioni fra le varie unità sono accettabili;
+	\item \textbf{Test di sistema:} una volta integrati tutti i componenti, si effettuano test sull'applicazione nella sua interezza. Questi test si concentrano sulle interazioni fra le parti, sul comportamento generale del sistema e sulla copertura di tutte le funzionalità. In tale fase ci si assicura che l'applicativo rispetti tutte le specifiche definite nell'\AdRv.
+	\item \textbf{Test di regressione:} si attuano di seguito a modifiche del sistema e consiste nella riesecuzione dei test esistenti descritti precedentemente. Garantiscono che le nuove modifiche apportate non intacchino le funzionalità precedenti, evitando appunto una \textit{regressione}.
+	\item \textbf{Test di accettazione o test di collaudo:} simile al test di sistema, ma con la differenza che viene eseguito con la collaborazione dei committenti. In particolare verifica il soddisfacimento del cliente. Il superamento di tale test sancisce la possibilità del rilascio del prodotto. 
+\end{enumerate}

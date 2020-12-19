@@ -1,0 +1,8 @@
+\subsubsection{Strumenti}
+
+\myparagraph{Verifica ortografica}
+La verifica ortografica avviene tramite lo strumento integrato in \TeX maker, il quale sottolinea in rosso parole errate secondo la lingua italiana.
+
+\myparagraph{Analisi Documentazione}
+L'analisi dinamica(§3.4.4.2.) della documentazione avviene tramite l'utilizzo delle \textit{GitHub Actions}\ped{G}. Il codice \LaTeX{} prodotto viene compilato ad ogni \textit{push} o \textit{pull request} verso qualsiasi branch\ped{G} restituendo errori di compilazione se presenti. Inoltre, se la compilazione ha successo, durante una \textit{push} o \textit{pull request} verso il branch\ped{G} \textbf{main} o \textbf{develop} verrà creato un artifacts\ped{G} della durata di 30 giorni contenete i documenti in formato \textit{PDF} creati fino ad ora.\\
+Tale procedura serve per garantire dei documenti indipendenti dall'ambiente da cui è stato prodotto il codice \LaTeX, utilizzando un metodo di compilazione univoco. L'artifacts\ped{G} prodotto invece, semplifica l'analisi statica(§3.4.4.1.) dei documenti.
