@@ -16,8 +16,59 @@
 \textbf{Fonti}\\
 \endhead
 
+%REGISTRAZIONE
 
-R1F1 & Obbligatorio & test & Capitolato \\
+R1F1 & Obbligatorio & Un utente non autenticato può registrarsi & Capitolato \\
+R1F1.1 & Obbligatorio & La registrazione necessita l'inserimento dei seguenti dati personali: nome, cognome e indirizzo di fatturazione & Interno \\
+R1F1.2 & Obbligatorio & La registrazione necessita l'inserimento della email & VE\_2020-12-23 \\
+R2F1.2.1 & Desiderabile & Il sistema deve mostrare un errore se l'email inserita nella registrazione è già stata utilizzata & Interno \\
+R1F1.3 & Obbligatorio & La registrazione necessita l'inserimento di una password & Interno \\
+
+%LOGIN
+
+R1F2 & Obbligatorio & Un utente non autenticato può effettuare il login & Capitolato \\
+R1F2.1 & Obbligatorio & Il login necessita l'inserimento della email & Interno \\
+R1F2.2 & Obbligatorio & Il login necessita l'inserimento della password & Interno \\
+R2F2.3 & Desiderabile & Il sistema deve mostrare un errore se le credenziali del login sono errate & Interno \\
+
+%LOGOUT
+
+R1F3 & Obbligatorio & Un utente autenticato può effettuare il logout & Interno \\
+
+%CARRELLO
+
+R1F4 & Obbligatorio & Un utente può visualizzare tutti i prodotti che ha precedentemente aggiunto al carrello & Capitolato \\
+R1F4.1 & Obbligatorio & Un utente può visualizzare per ogni prodotto del carrello il nome e l’immagine & Interno \\
+R1F4.2 & Obbligatorio & Un utente può rimuovere i singoli prodotti dal carrello & Interno \\
+R1F3.3 & Obbligatorio & Un utente può modificare le quantità di ogni prodotto nel carrello & Interno \\
+R1F4.4 & Obbligatorio & Un utente può visualizzare il costo totale dei prodotti nel carrello & Capitolato \\
+R1F4.4.1 & Obbligatorio & Un utente può visualizzare il costo di ogni voce del carrello & Interno \\
+R1F4.5 & Obbligatorio & Un utente può visualizzare le tasse applicate al costo totale dei prodotti nel carrello & Capitolato \\
+
+%CHECKOUT
+
+R1F5 & Obbligatorio & Un utente registrato può procedere al checkout dei prodotti presenti nel carrello & Capitolato \\
+R1F5.1 & Obbligatorio & Per iniziare il processo di checkout l’utente deve avere almeno un prodotto nel carrello & Interno \\
+R1F5.2 & Obbligatorio & Un utente che ha iniziato il processo di checkout deve inserire i dati del pagamento & Interno \\
+R1F5.3 & Obbligatorio & Un utente, dopo aver inserito i dati del pagamento, può continuare al pagamento effettivo & Capitolato \\
+R1F5.4 & Obbligatorio & A pagamento riuscito l’utente può visualizzare un riepilogo dell’ordine effettuato & Capitolato \\
+R1F5.4.1 & Obbligatorio & A pagamento riuscito l’utente riceverà i prodotti acquistati tramite l’email del suo account & Capitolato \\
+R1F5.4.2 & Obbligatorio & A pagamento fallito l’utente visualizza un messaggio di errore, e potrà riprovare il pagamento verificando i dati inseriti & Capitolato \\
+
+%PROFILO
+
+
+
+%MERCHANT DASHBOARD
+
+%HOMEPAGE
+
+%PLP
+
+%PDP
+
+
+
 
 \end{longtable}
 
