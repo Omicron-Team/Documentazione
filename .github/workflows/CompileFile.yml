@@ -23,11 +23,11 @@ jobs:
       - name: Compilazione Glossario
         run: latexmk -pdf -cd DocumentazioneEsterna/Glossario/Glossario.tex
       
-      - name: Compilazione Piani di Progetto
-        run: latexmk -pdf -cd DocumentazioneEsterna/PianiDiProgetto/PianiDiProgetto.tex
+      - name: Compilazione Piano di Progetto
+        run: latexmk -pdf -cd DocumentazioneEsterna/PianoDiProgetto/PianoDiProgetto.tex
 
-      - name: Compilazione Piani di Qualififca
-        run: latexmk -pdf -cd DocumentazioneEsterna/PianiDiQualifica/PianiDiQualifica.tex
+      - name: Compilazione Piano di Qualififca
+        run: latexmk -pdf -cd DocumentazioneEsterna/PianoDiQualifica/PianoDiQualifica.tex
       
       - name: Compilazione VerbaleX
         run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VerbaleX/VerbaleX.tex
@@ -46,8 +46,8 @@ jobs:
           mkdir -p Documenti/LetterePresentazioni
           mv AnalisiDeiRequisiti.pdf Documenti/DocumentazioneEsterna
           mv Glossario.pdf Documenti/DocumentazioneEsterna
-          mv PianiDiProgetto.pdf Documenti/DocumentazioneEsterna
-          mv PianiDiQualifica.pdf Documenti/DocumentazioneEsterna
+          mv PianoDiProgetto.pdf Documenti/DocumentazioneEsterna
+          mv PianoDiQualifica.pdf Documenti/DocumentazioneEsterna
           mv VerbaleX.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
           mv StudioDiFattibilita.pdf Documenti/DocumentazioneInterna
