@@ -1,0 +1,61 @@
+\section{Capitolato C1}
+
+\subsection{Informazioni generali}{
+\begin{itemize}
+\item \textbf{\emph{Nome :}} BlockCOVID.
+\item \textbf{\commitProg:} Imola Informatica.
+\item \textbf{\proponProg:} \VT{} e \CR.
+\end{itemize}
+}
+
+\subsection{Descrizione}{
+L'obiettivo del capitolato in questione è quello di creare una piattaforma che garantisca il tracciamento immutabile e certificato della presenza, in tempo reale, di personale addetto alle postazioni di lavoro di un laboratorio informatico. Tale tracciamento deve avvenire tramite tag RFID\ped{G}. Attraverso un'applicazione dedicata deve essere possibile, in base alla tipologia di utente (dipendente/studente o addetto alla pulizia), visualizzare le postazioni libere, prenotare e/o visualizzare le informazioni relative allo stato di sanificazione di una postazione, segnalare la pulizia di una postazione o dell'intera stanza. Il server, comunicando con l'applicazione, deve offrire ad un amministratore del sistema la gestione e il monitoraggio delle singole stanze e degli utenti che usufruiscono delle postazioni di lavoro attraverso un'interfaccia con procedura di autenticazione.
+
+}
+
+\subsection{Tecnologie coinvolte}{
+\begin{itemize}
+\item \textbf{Java}\ped{G} (versione 8+), \textbf{Python}\ped{G} o \textbf{Node.js}\ped{G} per lo sviluppo del server back-end\ped{G};
+\item Protocolli asincroni\ped{G} per le comunicazioni dell'applicazione mobile-server;
+\item \textbf{Blockchain}\ped{G}: sistema per salvare in modo immutabile e certificato i dati relativi alle sanificazioni:
+\item \textbf{Kubernetes}\ped{G}, \textbf{Openshift}\ped{G} o \textbf{Rancher}\ped{G} per il rilascio delle componenti
+del server nonché per la gestione della scalabilità orizzontale\ped{G};
+\item API\ped{G} \textbf{REST}\ped{G} attraverso le quali sia possibile utilizzare l'applicativo;
+\item \textbf{Java}\ped{G} (attraverso il kit di sviluppo software Android\ped{G}) o \textbf{Swift}\ped{G} per lo sviluppo dell'applicazione mobile rispettivamente Android\ped{G} o iOS\ped{G}.
+\end{itemize}
+}
+
+\subsection{Vincoli}{
+\begin{itemize}
+\item Scalabilità orizzontale\ped{G} del server in base alla modifica del numero di utilizzatori;
+\item Creazione di un'applicazione Android\ped{G}/iOS\ped{G} con relativa interfaccia grafica\ped{G};
+\item Utilizzo dei \textbf{tag RFID}\ped{G} per il tracciamento in tempo reale;
+\item Implementazione di un'architettura Client-Server;
+\item Report di test effettuati relativamente all'ottimizzazione dell'applicazione rispetto al consumo della
+batteria dei cellulari.
+\end{itemize}
+}
+
+\subsection{Aspetti positivi}{
+\begin{itemize}
+\item L'azienda ha 35 anni di esperienza nel settore informatico;
+\item Possibilità di sviluppare un applicativo che possa effettivamente venire utilizzato in ambito aziendale;
+\item Libertà nella scelta del linguaggio di programmazione da utilizzare;
+\item I linguaggi di programmazione consigliati sono molto quotati anche al di fuori dell'ambito universitario;
+\item Spiegazione chiara, da parte dell'azienda, sui compiti che l'applicativo deve svolgere e gli obiettivi che devono essere raggiunti;
+\item Vengono messi a disposizione dall'azienda dei server dedicati per effettuare test sui nostri componenti applicativi sviluppati, con relativa spiegazione sull'uso di \textbf{Docker}\ped{G} (attraverso un seminario tecnologico).
+\end{itemize}
+}
+
+\subsection{Aspetti critici}{
+\begin{itemize}
+\item Applicativo dipendente dall'utente, infatti vi è la necessità che gli impiegati abbiano sempre a disposizione il cellulare;
+\item Dubbi sulla gestione dello stato di occupazione della postazione di lavoro nel caso l'impiegato si sposti da quest'ultima;
+\item Possibile difficoltà nell'apprendimento di alcune tecnologie coinvolte da parte dei membri del gruppo.
+\end{itemize}
+}
+
+\subsection{Conclusione}{
+Il capitolato proposto da \textit{Imola Informatica} ha suscitato un discreto interesse da parte del gruppo, sia per la disponibilità dimostrata da parte dell'azienda, sia per la libertà nell'approccio alle tecnologie coinvolte e la loro effettiva utilità a livello curricolare. Tuttavia, a causa del molto interesse da parte di un buon numero di altri gruppi, si è deciso di optare per un capitolato differente.
+}
+
