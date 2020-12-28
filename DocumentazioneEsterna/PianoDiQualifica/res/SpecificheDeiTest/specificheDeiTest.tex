@@ -4,9 +4,17 @@ Le tabelle saranno così descritte:
 \begin{enumerate}
 	\item \textbf{Codice:} codice identificativo del test;
 	\item \textbf{Descrizione:} una breve descrizione di ciò che verifica il test;
-	\item \textbf{Stato:} identifica lo stato del del test;
-	\item \textbf{Esito:} identifica l'esito del test (colonna presente solo se lo stato del test è \textit{implementato}).
+	\item \textbf{Stato:} identifica lo stato del del test:
+	\begin{itemize}
+		\item \textbf{I:} identifica un test \textit{implementato};
+		\item \textbf{NI:} identifica un test \textit{non implementato}. 
+	\end{itemize}
+	\item \textbf{Esito:} identifica l'esito del test (colonna presente solo se lo stato del test è \textit{implementato}):
+	\begin{itemize}
+		\item \textbf{S:} identifica un test \textit{superato};
+		\item \textbf{NS:} identifica un test \textit{non superato}. 
+	\end{itemize}
 \end{enumerate}
-La descrizione dei \textit{codici} dei test, dello \textit{stato} e dell'\textit{esito} si possono trovare nel documento \NdPv nel capitolo cicci.
+La descrizione dei \textit{codici} dei test sono documentati nel \NdPv nella sezione \textit{Codifica dei test}.
 
-\input{res/SpecificheDeiTest/res/tipologiaDiTest.tex}
+\input{res/SpecificheDeiTest/res/tabelleDeiTest.tex}
