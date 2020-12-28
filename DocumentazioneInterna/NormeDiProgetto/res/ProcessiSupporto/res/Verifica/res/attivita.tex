@@ -43,11 +43,50 @@ I test, per essere considerati accettabili, devono definire gli elementi sopra c
 	\item fornire risultati sull'esito dell'esecuzione e segnalare eventuali effetti indesiderati, possibilmente in forma di \textit{file log}\ped{G}. 
 \end{itemize}
 \mbox{}\\
+\textbf{Codifica dei Test} \mbox{}\\ \mbox{}\\
 I test si dividono in:
 \begin{enumerate}
-	\item \textbf{Test di unità:} il test si concentra su singole unità software. Dati determinati input viene individuato un output atteso. Dopo l'esecuzione dell'unità, si controlla se l'output ottenuto è equivalente all'output atteso:
-	\item \textbf{Test di integrazione:} dopo aver superato i test di unità, si procede con l'assemblare le varie unità fra di loro e creare agglomerati più ampi. Superare tali test significa che le relazioni fra le varie unità sono accettabili;
-	\item \textbf{Test di sistema:} una volta integrati tutti i componenti, si effettuano test sull'applicazione nella sua interezza. Questi test si concentrano sulle interazioni fra le parti, sul comportamento generale del sistema e sulla copertura di tutte le funzionalità. In tale fase ci si assicura che l'applicativo rispetti tutte le specifiche definite nell'\AdRv.
+	\item \textbf{Test di unità:} il test si concentra su singole unità software. Dati determinati input viene individuato un output atteso. Dopo l'esecuzione dell'unità, si controlla se l'output ottenuto è equivalente all'output atteso.\\
+Tale tipologia di test verrà indicata con:
+\begin{center}
+	\textbf{TU[id]}
+\end{center}
+dove \textit{id} rappresenta un’unità.
+	\item \textbf{Test di integrazione:} dopo aver superato i test di unità, si procede con l'assemblare le varie unità fra di loro e creare agglomerati più ampi. Superare tali test significa che le relazioni fra le varie unità sono accettabili.\\
+Tale tipologia di test verrà indicata con:
+\begin{center}
+	\textbf{TI[id]}
+\end{center}
+dove \textit{id} rappresenta un componente.
+	\item \textbf{Test di sistema:} una volta integrati tutti i componenti, si effettuano test sull'applicazione nella sua interezza. Questi test si concentrano sulle interazioni fra le parti, sul comportamento generale del sistema e sulla copertura di tutte le funzionalità. In tale fase ci si assicura che l'applicativo rispetti tutte le specifiche definite nell'\textit{Analisi dei Requisiti}.\\
+Tale tipologia di test verrà indicata con:
+\begin{center}
+	\textbf{TS\_Tipologia\_Importanza\_Id}
+\end{center}
+dove:
+\begin{itemize}
+	\item \textbf{Tipologia:} indica il tipo di requisito, che si divide in:
+	\begin{itemize}
+		\item \textbf{O:} requisiti obbligatori;
+		\item \textbf{F:} requisiti facoltativi;
+		\item \textbf{D:} requisiti desiderabili.
+	\end{itemize}
+	\item \textbf{Importanza:} indica l'importanza del requisito, che si divide in:
+	\begin{itemize}
+		\item \textbf{F:} requisito funzionale;
+		\item \textbf{V:} requisito di vincolo;
+		\item \textbf{P:} requisito prestazionale;
+		\item \textbf{Q:} requisito di qualità.
+\end{itemize}
+	\item \textbf{Id:} rappresenta l'identificativo di una funzionalità		 
+\end{itemize}
 	\item \textbf{Test di regressione:} si attuano di seguito a modifiche del sistema e consiste nella riesecuzione dei test esistenti descritti precedentemente. Garantiscono che le nuove modifiche apportate non intacchino le funzionalità precedenti, evitando appunto una \textit{regressione}.
-	\item \textbf{Test di accettazione o test di collaudo:} simile al test di sistema, ma con la differenza che viene eseguito con la collaborazione dei committenti. In particolare verifica il soddisfacimento del cliente. Il superamento di tale test sancisce la possibilità del rilascio del prodotto. 
+	\item \textbf{Test di accettazione o test di collaudo:} simile al test di sistema, ma con la differenza che viene eseguito con la collaborazione dei committenti. In particolare verifica il soddisfacimento del cliente. Il superamento di tale test sancisce la possibilità del rilascio del prodotto.\\
+	Tale tipologia di test verrà indicata con:
+\begin{center}
+	\textbf{TA\_Tipologia\_Importanza\_Id}
+\end{center}
+dove \textit{Tipologia, Importanza e Id} sono descritti come nei \textbf{test di accettazione o test di collaudo}.
+
+	
 \end{enumerate}
