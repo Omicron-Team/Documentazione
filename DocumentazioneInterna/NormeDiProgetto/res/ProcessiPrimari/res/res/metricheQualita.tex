@@ -1,37 +1,15 @@
 \subsection{Metriche di qualità}
-\myparagraph{Metriche per l'analisi dei requisiti}
+\subsubsection{Metriche per l'analisi dei requisiti}
+\myparagraph{Percentuale di requisiti soddisfatti}
 Al fine di assicurarsi che il prodotto realizzato o che sta venendo realizzando ricopra i requisiti necessari verrà usata la seguente metrica:
 \begin{center}
-\begin{equation}
-\textit{PRS} = (\frac{Requisiti\ soddisfatti}{Requisiti\ totali})*100
-\end{equation}
+\[PRS = (\frac{Requisiti\ soddisfatti}{Requisiti\ totali})*100\]
 \end{center}
+la quale restituisce la percentuale di requisiti che il prodotto soddisfa rispetto a quelli totali.
 
-la quale restituisce la percentuale di requisiti che il prodotto soddisfa rispetto a quelli totali.\\ 
-In particolare:
-\begin{itemize}
-\item se \textbf{PRS = 100}: il livello di copertura dei requisiti è ottimo;
-\item se \textbf{90<PRS<100}: il livello di copertura dei requisiti è buono;
-\item se \textbf{80<PRS<=90}: il livello di copertura dei requisiti è sufficiente;
-\item se \textbf{PRS<=80}: il livello di copertura dei requisiti è insufficiente.
-\end{itemize}
-
-La metrica può essere facilmente adattata ai requisiti obbligatori, che però devono venir ricoperti al 100\% a prodotto finito:
+\myparagraph{Percentuale di requisiti obbligatori soddisfatti}
+La metrica presentata nel punto precedente può essere facilmente adattata ai requisiti obbligatori:
 \begin{center}
-\begin{equation}
-\textit{PROS} =  (\frac{Requisiti\ obbligatori\ soddisfatti}{Requisiti\ obbligatori\ totali})*100
-\end{equation}
+\[PROS=(\frac{Requisiti\ obbligatori\ soddisfatti}{Requisiti\ obbligatori\ totali})*100\]
 \end{center}
 
-\myparagraph{Metriche per la codifica}
-Per la parte di codifica useremo delle metriche che ci consentiranno di capire quanto comprensibili sono le azioni che vengono svolte nel codice.\\
-Le metriche che useremo sono le seguenti:
-\begin{itemize}
-\item \textbf{rapporto tra linee di commento e linee di codice}:
-\begin{center}
-\begin{equation}
-\textit{RC} =  (\frac{numero\ di\ linee\ di\ commento}{numero\ di\ linee\ di\ codice});
-\end{equation}
-\end{center}
-\item \textbf{livello di annidamento dei metodi}: da ridurre, in quanto un alto livello di annidamento può portare a maggiore difficoltà nel trovare eventuali problemi durante le fasi di manutenzione.
-\end{itemize}
