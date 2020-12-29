@@ -39,7 +39,162 @@ TS\_O\_F\_2 & Un utente registrato può effettuare il login inserendo:
 TS\_D\_F\_2 & Il sistema deve mostrare un errore se le credenziali del login sono errate & NI\\
 TS\_O\_F\_3 & Un utente autenticato deve poter effettuare il
 logout & NI\\
-TS\_O\_F\_4 & Un utente deve accedere alla pagina del carrello dalla Homepage, dalla PLP e dal PDP & NI\\
+TS\_O\_F\_4 & Un utente deve accedere alla pagina del carrello dalla Homepage, dalla PLP\ped{G} e dal PDP\ped{G} & NI\\
+
+
+
+
+TS\_O\_F\_5 & Un utente dal carrello può:
+\begin{itemize}
+	\item visualizzare i prodotti precedentemente aggiunti;
+	\item visualizzare nome e immagine del prodotto;
+	\item rimuovere i singoli prodotti dal carrello;
+	\item modificare la quantità dei prodotti;
+	\item visualizzare il costo delle voci del carrello;
+	\item visualizzare il prezzo totale del carrello;
+	\item visualizzare le tasse applicate al prezzo finale del carrello.
+\end{itemize}
+& NI\\
+
+TS\_O\_F\_6 & Un utente può effettuare il checkout se:
+\begin{itemize}
+	\item ha almeno un prodotto nel carrello;
+	\item si è registrato.
+\end{itemize}
+& NI\\
+
+TS\_O\_F\_7 & Durante la fase di checkout:
+\begin{itemize}
+	\item viene visualizzato il totale da pagare e i prodotti che verranno acquistati;
+	\item l'utente deve inserire i dati di pagamento tramite Stripe\ped{G};
+	\item dopo aver inserito i dati di pagamento, l'utente continua il pagamento effettivo tramite Stripe\ped{G}.
+\end{itemize}
+& NI\\
+
+TS\_O\_F\_8 & A pagamento riuscito:
+\begin{itemize}
+	\item l'utente visualizza un riepilogo dell'ordine effettuato;
+	\item l'utente riceve i prodotti acquistati tramite l'email del suo account.
+\end{itemize}
+& NI\\
+
+TS\_O\_F\_9 & A pagamento fallito:
+\begin{itemize}
+	\item l'utente visualizza un messaggio d'errore;
+	\item l'utente può riprovare il pagamento verificando i dati inseriti.
+\end{itemize}
+& NI\\
+
+
+TS\_O\_F\_10 & Un utente registrato può visualizzare il suo profilo, contenente:
+\begin{itemize}
+	\item nome;
+	\item cognome;
+	\item password;
+	\item indirizzo di fatturazione;
+	\item email;
+	\item lista degli ordini effettuati.
+\end{itemize}
+& NI\\
+
+TS\_O\_F\_11 & Un utente registrato può aggiornare, nel suo profilo, le seguenti informazioni:
+\begin{itemize}
+	\item nome;
+	\item cognome;
+	\item password;
+	\item indirizzo di fatturazione;
+	\item email.
+\end{itemize}
+& NI\\
+
+TS\_O\_F\_12 & Per ogni ordine effettuato vengono visualizzati:
+\begin{itemize}
+	\item prodotti acquistati;
+	\item quantità dei prodotti acquistati;
+	\item costo singolo prodotto;
+	\item costo totale;
+	\item tasse applicate;
+	\item data di acquisto.
+\end{itemize}
+& NI\\
+
+TS\_O\_F\_13 & Un utente registrato può eliminare il suo account. & NI\\
+
+TS\_O\_F\_14 & Il venditore ha a disposizione una dashboard dove può inserire nuovi prodotti. & NI\\
+
+TS\_D\_F\_14 & Il venditore può accedere agli strumenti esterni riservati per gli admin dalla dashboard & NI\\
+
+TS\_O\_F\_15 & Durante l'inserimento di un nuovo prodotto, il venditore, deve assegnare i seguenti dati:
+\begin{itemize}
+	\item nome;
+	\item descrizione;
+	\item immagine.
+\end{itemize} & NI\\
+
+TS\_O\_F\_16 & Il venditore può:
+\begin{itemize}
+	\item visualizzare i prodotti da lui venduti;
+	\item modificare la descrizione dei prodotti da lui venduti;
+	\item eliminare i prodotti da lui venduti.
+	\item visualizzare i dettagli di tutti gli ordini effettuati dai clienti;
+\end{itemize} & NI\\
+
+TS\_D\_F\_16 & Il venditore può modificare il nome e l'immagine dei prodotti da lui venduti. & NI\\
+
+TS\_O\_F\_17 & Il venditore, durante la visualizzazione di un prodotto, visualizza:
+\begin{itemize}
+	\item nome;
+	\item descrizione;
+	\item immagine.
+\end{itemize} & NI\\
+
+TS\_O\_F\_18 & Il venditore, per ogni ordine effettuato, può visualizzare:
+\begin{itemize}
+	\item prodotti acquistati;
+	\item quantità dei prodotti acquistati;
+	\item costo singolo prodotto;
+	\item costo totale;
+	\item tasse applicate;
+	\item data di acquisto.
+\end{itemize}
+& NI\\
+
+
+
+
+
+TS\_O\_F\_19 & L'utente può effettuare una ricerca tra i prodotti in vendita & NI\\
+
+TS\_O\_F\_20 & L'utente può accedere ad una PLP\ped{G} corrispondente ad una categoria di prodotti. Nella PLP\ped{G} viene visualizzata la lista di prodotti corrispondente & NI\\
+
+TS\_O\_F\_21 & Per ogni prodotto listato nella PLP\ped{G} viene visualizzato:
+\begin{itemize}
+	\item nome;
+	\item immagine;
+	\item prezzo.
+\end{itemize} & NI\\
+
+TS\_O\_F\_22 & Nella PLP\ped{G} un utente può:
+\begin{itemize}
+	\item selezionare alcuni prodotti;
+	\item aggiungere i prodotti al carrello.
+\end{itemize} & NI\\
+
+TS\_D\_F\_22 & Nella PLP\ped{G} un utente può:
+\begin{itemize}
+	\item filtrare l'insieme dei prodotti visualizzati in base al prezzo;
+	\item modificare la quantità del prodotto da aggiungere al carrello.
+\end{itemize} & NI\\
+
+TS\_O\_F\_23 & Un utente può accedere alla PDP\ped{G} cliccando su un prodotto nella PLP\ped{G}. & NI\\
+
+TS\_O\_F\_24 & Un utente, nella PDP\ped{G} può:
+\begin{itemize}
+	\item visualizzare nome, immagine, descrizione, prezzo, tasse applicate del prodotto.
+	\item aggiungere il prodotto al carrello.
+\end{itemize} & NI\\
+
+
 
 \end{longtable}
 
