@@ -1,1 +1,85 @@
 \subsection{Processi organizzativi}
+\subsubsection{Pianificazione}
+\myparagraph{Metrica - Budget at Completion}
+\vspace{-1cm}
+\begin{itemize}
+	\item \textbf{Codice}: MPC5;
+	\item \textbf{Descrizione}: Budget totale assegnato per il progetto;
+	\item \textbf{Processo di riferimento}: Gestione;
+	\item \textbf{Sigla}: BAC;
+	\item \textbf{Range di valori che può assumere}: 
+		\begin{itemize}
+			\item \textbf{Ottimale} : $BAC = budget \ preventivato$;
+			\item \textbf{Accettabile} : $preventivo - 5 \% \leq BAC \leq preventivo + 5 \%$.
+		\end{itemize}
+\end{itemize}
+\myparagraph{Metrica - Actual Cost}
+\vspace{-1cm}
+\begin{itemize}
+	\item \textbf{Codice}: MPC6;
+	\item \textbf{Descrizione}: Denaro speso fino al momento del calcolo;
+	\item \textbf{Processo di riferimento}: Gestione;
+	\item \textbf{Sigla}: AC;
+	\item \textbf{Indicatori utili}: 
+		\begin{itemize}
+			\item \textbf{PV - Planned Value}: costo pianificato per realizzare le attività di progetto alla data corrente;
+		\end{itemize}
+	\item \textbf{Range di valori che può assumere}: 
+		\begin{itemize}
+			\item \textbf{Ottimale} : $0 \leq AC \leq PV $;
+			\item \textbf{Accettabile} : $0 \leq AC \leq budget \ totale $.
+		\end{itemize}
+\end{itemize}
+\myparagraph{Metrica - Schedule Variance}
+\vspace{-1cm}
+\begin{itemize}
+	\item \textbf{Codice}: MPC7;
+	\item \textbf{Descrizione}: Indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate nella baseline\ped{G};
+	\item \textbf{Processo di riferimento}: Gestione;
+	\item \textbf{Sigla}: SV;
+	\item \textbf{Indicatori utili}: 
+		\begin{itemize}
+		\item \textbf{EV - Earned Value}: valore delle attività realizzate alla data corrente;
+			\item \textbf{PV - Planned Value}: costo pianificato per realizzare le attività di progetto alla data corrente;
+		\end{itemize}
+	\item \textbf{Formula}: \[ SV = EV - PV \]
+	\item \textbf{Range di valori che può assumere}: 
+		\begin{itemize}
+			\item \textbf{Ottimale} : $SV \geq 0$;
+			\item \textbf{Accettabile} : $SV = 0$.
+		\end{itemize}
+\end{itemize}
+\myparagraph{Metrica - Budget Variance}
+\vspace{-1cm}
+\begin{itemize}
+	\item \textbf{Codice}: MPC8;
+	\item \textbf{Descrizione}: Indica se alla data corrente si è speso di più o di meno rispetto a quanto previsto a budget alla data corrente;
+	\item \textbf{Processo di riferimento}: Gestione;
+	\item \textbf{Sigla}: BV;
+	\item \textbf{Indicatori utili}: 
+		\begin{itemize}
+			\item \textbf{PV - Planned Value}: costo pianificato per realizzare le attività di progetto alla data corrente;
+		\end{itemize}
+	\item \textbf{Formula}: \[ BV = PV - AC\]
+	\item \textbf{Range di valori che può assumere}: 
+		\begin{itemize}
+			\item \textbf{Ottimale} : $BV > 0$;
+			\item \textbf{Accettabile} : $BV \geq 0$.
+		\end{itemize}
+\end{itemize}
+
+\subsubsection{Gestione qualità}
+\myparagraph{Metrica - Percentuale di metriche soddisfatte}
+\vspace{-1cm}
+\begin{itemize}
+	\item \textbf{Codice}: MPC9;
+	\item \textbf{Descrizione}: La percentuale di metriche soddisfatte valuta quante metriche raggiungono soglie accettabili sul numero totale delle metriche calcolate;
+	\item \textbf{Processo di riferimento}: Gestione;
+	\item \textbf{Sigla}: PMS;
+	\item \textbf{Formula}: \[ PMS = \frac{metriche \ soddisfatte}{metriche \ totali} \ast 100\]
+	\item \textbf{Range di valori che può assumere}: 
+		\begin{itemize}
+			\item \textbf{Ottimale} : $PMS \geq 80 \%$;
+			\item \textbf{Accettabile} : $PMS \geq 60 \%$.
+		\end{itemize}
+\end{itemize}
