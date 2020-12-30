@@ -13,7 +13,7 @@ def clean_file():
             letter_file.truncate(13)
 
 def append_to_letter_file(termine,definizione):
-    latex_code="\TermineGlossario{"+termine+"}\n\DefinizioneGlossario{"+definizione+"}\\\\\n\n"
+    latex_code="\TermineGlossario{"+termine+"}\n\DefinizioneGlossario{"+definizione+"}\n\\\\\n"
     with open("res/Alfabeto/"+termine[0].upper()+".tex", "a") as letter_file:
        letter_file.write(latex_code)
 
@@ -23,7 +23,7 @@ def main():
     
     for row in definizioni:
         #print for test
-        print(row['Termine']+'\n'+row['Definizione']+'\n\n')
-        #append_to_letter_file(row['Termine'],row['Definizione'])
+        #print(row['Termine']+'\n'+row['Definizione']+'\n\n')
+        append_to_letter_file(row['Termine'],row['Definizione'])
 
 main()
