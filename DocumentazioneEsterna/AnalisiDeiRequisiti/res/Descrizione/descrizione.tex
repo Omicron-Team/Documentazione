@@ -5,14 +5,14 @@ Il progetto \textit{EmporioLambda} si pone come obiettivo finale lo sviluppo di 
 \begin{itemize}
 \item \textbf{Utenti:} l'applicazione Web\ped{G} deve fornire le seguenti funzionalità agli utenti:
 	\begin{itemize}
-	\item Autenticarsi, registrarsi alla piattaforma;
+	\item Autenticazione e registrazione alla piattaforma;
 	\item Effettuare una ricerca tra i prodotti presenti nel catalogo digitale;
 	\item Visualizzare un insieme di prodotti listati sulla base della loro categoria, con eventualmente la possibilità di filtraggio attraverso opportuni parametri;
 	\item Visualizzare singoli prodotti con la possibilità di valutarne tutte le caratteristiche;
 	\item Aggiungere i prodotti al carrello;
 	\item Accedere al carrello con la possibilità di visualizzare i prodotti precedentemente inseriti e il relativo prezzo, modificarne la quantità, eliminarli o proseguire con il checkout;
-	\item Effettuare il checkout visualizzando inizialmente un sommario dei prodotti da acquistare e il prezzo effettivo da pagare, proseguendo poi con il versamento attraverso i servizi Stripe\ped{G}. In seguito ad un esito positivo della corresponsione l'utente deve visualizzare il riepilogo dell'ordine e ricevere i prodotti tramite l'email personale, altrimenti deve visualizzare un messaggio di errore, avendo inoltre la possibilità di ritentare l'acquisto ricontrollando i dati precedentemente inseriti;
-	\item Accedere, se l'utente è autenticato, al proprio profilo per visualizzare, ed eventualmente modificare, le proprie informazioni personali. Deve essere possibile inoltre visualizzare i dettagli degli ordini effettuati ed eliminare il proprio profilo dalla piattaforma.
+	\item Effettuare il checkout visualizzando inizialmente un sommario dei prodotti da acquistare e il prezzo effettivo da pagare, proseguendo poi con il versamento attraverso i servizi Stripe\ped{G}. In seguito ad un esito positivo della corresponsione l'utente deve poter visualizzare il riepilogo dell'ordine e ricevere i prodotti tramite l'email personale, altrimenti deve poter visualizzare un messaggio di errore, avendo inoltre la possibilità di ritentare l'acquisto ricontrollando i dati precedentemente inseriti;
+	\item Accedere, se l'utente è autenticato, al proprio profilo per visualizzare, ed eventualmente modificare, le informazioni personali. Deve essere possibile inoltre visualizzare i dettagli degli ordini effettuati ed eliminare il proprio profilo dalla piattaforma.
 	\end{itemize}
 \item \textbf{Venditore:} l'applicazione Web\ped{G} deve fornire le seguenti funzionalità al venditore:
 	\begin{itemize}
@@ -36,7 +36,7 @@ Modulo che, oltre ad offrire all'utente le pagine web del sito accessibili attra
 Il backend\ped{G} consiste nel modulo che espone i servizi dell'applicativo ed è responsabile dell'implementazione della logica di business, gestione dei dati della piattaforma e dello stato del carrello, integrazione dei servizi esterni (come il servizio di pagamento).
 \subsubsection{EmporioLambda-integration (EML-I)}
 Modulo che rappresenta l'insieme dei servizi esterni integrati nella piattaforma attraverso il EML-BE.
-\subsubsection{EML-MON}
+\subsubsection{EmporioLambda-monitoring (EML-MON)}
 Modulo che comprende tutti gli strumenti, forniti da Amazon\ped{G} CloudWatch\ped{G} utilizzati dall'amministratore per il monitoraggio, la distribuzione e la configurazione dei servizi esterni della piattaforma.
 \subsection{Vincoli generali}
 Un utente, per usufruire dei servizi offerti dalla piattaforma, deve avere a disposizione un browser web con Javascript\ped{G} abilitato ed una connessione ad Internet. L'amministratore dell'applicativo, inoltre, per poter utilizzare gli strumenti di monitoraggio e distribuzione deve essere in possesso di un account AWS.
