@@ -9,3 +9,4 @@ Staging area,"L'area di stage rappresenta una sorta di entità intermedia tra la
 Log file,"I file di log sono file che contengono messaggi relativi al sistema, compreso il kernel, i servizi e le applicazioni in funzione. I record conservano tutte le informazioni sul normale funzionamento della macchina e, soprattutto, le registrazioni di errori e problemi."
 GitHub Actions,"Github Actions è una feature di Github che permette di creare dei veri e propri workflow di CI/CD (continuous integration e continuos delivery) all'interno di ogni repository."
 Artifacts,"In informatica, e in particolare in ingegneria del software, un artefatto è un sottoprodotto che viene realizzato durante lo sviluppo software."
+User Experience,"Termine utilizzato per definire la relazione tra una persona e un prodotto, un servizio, un sistema."
