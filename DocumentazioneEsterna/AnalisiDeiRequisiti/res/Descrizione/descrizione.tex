@@ -21,14 +21,22 @@ Il progetto \textit{EmporioLambda} si pone come obiettivo finale lo sviluppo di 
 	\item Visualizzare i dettagli di tutti gli ordini effettuati dai clienti;
 	\item Accedere agli strumenti esterni per la gestione della piattaforma riservati agli amministratori.
 	\end{itemize}
-\item \textbf{Amministratore:} l'applicazione Web\ped{G} deve fornire le seguenti funzionalità all'amministratore:
+\item \textbf{Amministratore:} Utilizzando gli strumenti presenti su Amazon\ped{G} CloudWatch\ped{G} l'amministratore ha a disposizione le seguenti funzionalità:
 	\begin{itemize}
-	\item 
+	\item Distribuire l'applicativo nel cloud\ped{G} di Amazon\ped{G};
+	\item Monitorare lo stato dell'applicativo;
+	\item Gestire la configurazione dei servizi esterni.
 	\end{itemize}
 \end{itemize}
 \subsection{Moduli ad alto livello dell'architettura}
-\subsubsection{EML-FE}
-\subsubsection{EML-BE}
-\subsubsection{EML-I}
+L'architettura di \textit{EmporioLambda} è costituita da quattro moduli software ad alto livello.
+\subsubsection{EmporioLambda-frontend (EML-FE)}
+Modulo che, oltre ad offrire all'utente le pagine web del sito accessibili attraverso qualsiasi browser, deve agire anche come Backend for Frontend (BFF), ovvero come strato intermedio tra l'user experience\ped{G} e le risorse chiamate.
+\subsubsection{EmporioLambda-backend (EML-BE)}
+Il backend\ped{G} consiste nel modulo che espone i servizi dell'applicativo ed è responsabile dell'implementazione della logica di business, gestione dei dati della piattaforma e dello stato del carrello, integrazione dei servizi esterni (come il servizio di pagamento).
+\subsubsection{EmporioLambda-integration (EML-I)}
+Modulo che rappresenta l'insieme dei servizi esterni integrati nella piattaforma attraverso il EML-BE.
 \subsubsection{EML-MON}
+Modulo che comprende tutti gli strumenti, forniti da Amazon\ped{G} CloudWatch\ped{G} utilizzati dall'amministratore per il monitoraggio, la distribuzione e la configurazione dei servizi esterni della piattaforma.
 \subsection{Vincoli generali}
+Un utente, per usufruire dei servizi offerti dalla piattaforma, deve avere a disposizione un browser web con Javascript\ped{G} abilitato ed una connessione ad Internet. L'amministratore dell'applicativo, inoltre, per poter utilizzare gli strumenti di monitoraggio e distribuzione deve essere in possesso di un account AWS.
