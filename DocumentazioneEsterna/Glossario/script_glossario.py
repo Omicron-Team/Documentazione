@@ -11,10 +11,11 @@ def append_to_letter_file(termine,definizione):
        letter_file.write(latex_code)
 
 def main():
-    definizioni = csv.DictReader(open('glossario.csv'))
+    definizioni = sorted(csv.DictReader(open('glossario.csv')), key=lambda termine: termine['Termine'])
+    
     for row in definizioni:
         #print for test
         print(row['Termine']+'\n'+row['Definizione']+'\n\n')
-        append_to_letter_file(row['Termine'],row['Definizione'])
+        #append_to_letter_file(row['Termine'],row['Definizione'])
 
 main()
