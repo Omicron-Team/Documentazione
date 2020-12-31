@@ -16,3 +16,54 @@ Figura \\
 \item \textbf{Precondizione}:
 \item \textbf{Postcondizione}:
 \end{itemize}
+
+\subsubsection{UCX - Login}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: utente non autenticato;
+\item \textbf{Descrizione}: l'utente, inserendo le proprie credenziali, viene autenticato alla piattaforma;
+\item \textbf{Scenario Principale}: l'utente non ancora autenticato richiede l'accesso alla piattaforma dopo aver inserito la propria email e password negli appositi campi dedicati al login;
+\item \textbf{Estensioni}:
+\begin{itemize}
+\item \textbf{UCX}: se le credenziali inserite non vengono riconosciute, viene visualizzato un messaggio di errore e l'utente viene indirizzato alle pagine di registrazione e di recupero password;
+\end{itemize}
+\item \textbf{Precondizione}: l'utente prova ad autenticarsi alla piattaforma;
+\item \textbf{Postcondizione}: l'utente viene autenticato ed identificato come cliente o venditore/amministratore.
+\end{itemize}
+
+\subsubsection{UCX - Visualizzazione errore dati login non errati}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: utente non autenticato;
+\item \textbf{Descrizione}: l'utente visualizza un messaggio di errore che lo informa che i dati da lui inseriti durante il login non sono riconosciuti dal sistema, indirizzandolo verso le pagine di registrazione e recupero password;
+\item \textbf{Scenario Principale}: l'utente tenta di effettuare il login usando credenziali non presenti nel sistema;
+\item \textbf{Precondizione}: l'utente prova ad autenticarsi alla piattaforma;
+\item \textbf{Postcondizione}: viene visualizzato un messaggio che informa l'utente dell'errore di riconoscimento delle credenziali, e che lo indirizza alle pagine di registrazione e recupero password.
+\end{itemize}
+
+\subsubsection{UCX - Logout}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: utente autenticato;
+\item \textbf{Descrizione}: l'utente viene sloggato dalla piattaforma;
+\item \textbf{Scenario Principale}: l'utente richiede il logout tramite il bottone dedicato;
+\item \textbf{Precondizione}: l'utente ha precedentemente effettuato il login ed è attualmente autenticato;
+\item \textbf{Postcondizione}: l'utente non è più autenticato.
+\end{itemize}
+
+\subsubsection{UCX - Acquisto prodotti}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Attori secondari}: Stripe;
+\item \textbf{Descrizione}: il cliente può acquistare i prodotti presenti nel suo carrello.
+\item \textbf{Scenario Principale}: 
+\begin{enumerate}
+	\item il cliente inizia il checkout dei prodotti nel carrello [UCX];
+	\item il cliente inserisce l'indirizzo di spedizione e i dati per il pagamento [UCX];
+	\item il cliente procede al pagamento [UCX];
+	\item il cliente visualizza un riepilogo dell'ordine effettuato;
+\end{enumerate}
+\item \textbf{Precondizione}: l'utente è autenticato come cliente e ha precedentemente inserito dei prodotti nel carrello.
+\item \textbf{Postcondizione}: il costo totale dei prodotti acquistati è stato prelevato dal conto specificato dal cliente. È stata inviata un'email al cliente per confermare l'acquisto.
+\end{itemize}
