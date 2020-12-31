@@ -25,7 +25,7 @@ Le varie tipologie di rischi riscontrabili sono state, inoltre, classificate e a
 \subsection{Tabella dei rischi}
 I rischi riscontrati sono riportati nella seguente tabella con i seguenti campi:
 \begin{itemize}
-\item \textbf{Nome e Codice:} indicano il nome del rischio e il suo codice (composto dalla sua etichetta e da un numero incrementale);
+\item \textbf{Codice e Nome:} indicano il codice del rischio(composto dalla sua etichetta e da un numero incrementale) e il suo nome;
 \item \textbf{Descrizione:} fornisce una breve descrizione del rischio con relative conseguenze nel caso si verificasse;
 \item \textbf{Precauzioni:} indica il modo in cui tale rischio possa essere rilevato e prevenuto;
 \item \textbf{Grado di rischio:} indica la possibilità che il rischio avvenga(\textbf{F}) e la sua relativa pericolosità(\textbf{P});
@@ -39,74 +39,75 @@ I rischi riscontrati sono riportati nella seguente tabella con i seguenti campi:
 
 \centering
 \renewcommand{\arraystretch}{1.5}
-\begin{longtable}{C{2.5cm} C{3.25cm} C{3.25cm} C{1.5cm} C{3cm}}
-\rowcolor{azzurro1}
-\textbf{Codice Nome} &
-\textbf{Descrizione}&
-\textbf{Precauzioni}&
-\textbf{Grado di rischio}&
-\textbf{Piano di contingenza}\\
-\endhead
+\begin{longtable}{C{3.5cm} | C{11cm}}
+\rowcolor{azzurro1}\textbf{Codice: Nome} & \textbf{RT1: }{Inesperienza tecnologica}\\
+\textbf{Descrizione} & Le tempistiche scelte potrebbero non venire rispettate a causa della presenza di tecnologie nuove per molti componenti del gruppo.\\ 
+\textbf{Precauzione} & Chi ha problemi su una determinata tecnologia lo comunicherà al \respProg{}.\\
+\textbf{Grado di rischio} & \textbf{F: }  Alta \textbf{P: } Alta\\   
+\textbf{Piano di contingenza} & Chi ha già conoscenze sulla tecnologia cercherà di aiutare i componenti con più difficoltà. Sarà comunque responsabilità di quest'ultimo riuscire a comprendere, anche tramite una formazione personale se necessario, la tecnologia in questione.\\
+\hline
 
-\textbf{RT1}\newline{Inesperienza tecnologica} & 
-Le tempistiche scelte potrebbero non venire rispettate a causa della presenza di tecnologie nuove per molti componenti del gruppo. & 
-Chi ha problemi su una determinata tecnologia lo comunicherà al \respProg. &
-\textbf{F:}\newline{Alta} \newline{\textbf{P:}}\newline{Alta} &
-Chi ha già conoscenze sulla tecnologia cercherà di aiutare i componenti con più difficoltà. Sarà comunque responsabilità di quest'ultimo riuscire a comprendere, anche tramite una formazione personale se necessario, la tecnologia in questione. \\
+\rowcolor{azzurro1}\textbf{Codice: Nome} & \textbf{RT2: }{Problemi hardware}\\
+\textbf{Descrizione} & Alcuni membri del gruppo potrebbero essere soggetti a malfunzionamenti dal punto di vista hardware.\\ 
+\textbf{Precauzione} & I dati del progetto vengono salvati in remoto (su GitHub) al fine di evitarne la perdita completa.\\
+\textbf{Grado di rischio} & \textbf{F: }Bassa \textbf{P: }Media\\ 
+\textbf{Piano di contingenza} & In caso di malfunzionamento il membro si impegna a risolvere il guasto il prima possibile. Tutti i membri inoltre caricheranno eventuali modifiche in remoto appena esse siano concluse per evitarne eventuali perdite.\\
+\hline
 
-\textbf{RT2}\newline{Problemi hardware} & 
-Alcuni membri del gruppo potrebbero essere soggetti a malfunzionamenti dal punto di vista hardware. & 
-I dati del progetto vengono salvati in remoto (su GitHub) al fine di evitarne la perdita completa &
-\textbf{F:}\newline{Bassa} \newline{\textbf{P:}}\newline{Media} &
-In caso di malfunzionamento il membro si impegna a risolvere il guasto il prima possibile. Tutti i membri inoltre caricheranno eventuali modifiche in remoto appena esse siano concluse per evitarne eventuali perdite.\\
+\rowcolor{azzurro1}\textbf{Codice: Nome} & \textbf{RP1: }{Impegni Personali}\\
+\textbf{Descrizione} & Ogni membro del gruppo ha impegni personali per la quale potrebbe risultare poco disponibile in certi periodi, causando ritardi nelle consegne.\\ 
+\textbf{Precauzione} & Eventuali impegni personali imprevisti che possono portare a ritardi del progetto dovranno venire comunicati al \respProg{}.\\
+\textbf{Grado di rischio} & \textbf{F: }Media \textbf{P: }Alta\\ 
+\textbf{Piano di contingenza} & Gli incarichi e le risorse verranno riassegnati rispettando gli impegni personali dei membri.\\
+\hline
+\hline
+\rowcolor{azzurro1}\textbf{Codice: Nome} & \textbf{RP2: }{Impegni accademici}\\ 
+\textbf{Descrizione} & Ogni membro del gruppo ha impegni accademici per la quale potrebbe risultare poco disponibile in certi periodi, causando ritardi nelle consegne.\\ 
+\textbf{Precauzione} & A inizio progetto ognuno ha elencato eventuali corsi mancanti con possibili periodi in cui potrebbero dover sostenerne gli esami.\\
+\textbf{Grado di rischio} & \textbf{F: }Alta \textbf{P: }Media\\
+\textbf{Piano di contingenza} & Gli incarichi verranno assegnati rispettando gli impegni accademici di ciascun membro.\\
+\hline
 
-\textbf{RP1}\newline{Impegni Personali} & 
-Ogni membro del gruppo ha impegni personali per la quale potrebbe risultare poco disponibile in certi periodi, causando ritardi nelle consegne. & 
-Eventuali impegni personali imprevisti che possono portare a ritardi del progetto dovranno venire comunicati al \respProg. &
-\textbf{F:}\newline{Media} \newline{\textbf{P:}}\newline{Alta} &
-Gli incarichi e le risorse verranno riassegnati rispettando gli impegni personali dei membri.\\
+\rowcolor{azzurro1}\textbf{Codice: Nome} & \textbf{RI1: }{Comunicazioni interne}\\
+\textbf{Descrizione} & Potrebbe risultare difficile trovare un giorno dove tutti i membri del gruppo siano disponibili per un incontro, ritardando eventuali attività del progetto.\\ 
+\textbf{Precauzione} & A inizio progetto ognuno ha avvisato gli altri membri riguardo i giorni della settimana in cui probabilmente non potrà essere reperibile. La data di un incontro si decide comunque con largo anticipo(4-5 giorni prima) al fine di assicurarsi la disponibilità di tutti i membri.\\
+\textbf{Grado di rischio} & \textbf{F: }Media \textbf{P: }Bassa\\
+\textbf{Piano di contingenza} & Nel caso la presenza di un membro non fosse necessaria si può comunque procedere all'incontro con una eventuale registrazione di quest'ultimo.\\
+\hline
 
-\textbf{RP2}\newline{Impegni accademici} & 
-Ogni membro del gruppo ha impegni accademici per la quale potrebbe risultare poco disponibile in certi periodi, causando ritardi nelle consegne. & 
-A inizio progetto ognuno ha elencato eventuali corsi mancanti con possibili periodi in cui potrebbero dover sostenerne gli esami. &
-\textbf{F:}\newline{Alta} \newline{\textbf{P:}}\newline{Media} &
-Gli incarichi verranno assegnati rispettando gli impegni accademici di ciascun membro.\\
+\rowcolor{azzurro1}\textbf{Codice: Nome} & \textbf{RI2: }{Comunicazioni esterne}\\ 
+\textbf{Descrizione} & Potrebbero risultare difficoltose le comunicazioni con il proponente esterno, rallentando così il lavoro del gruppo.\\ 
+\textbf{Precauzione} & Eventuali conferenze con il proponente esterno saranno organizzate e comunicate con il dovuto preavviso, assicurandosi la disponibilità dei membri del gruppo.\\
+\textbf{Grado di rischio} & \textbf{F: }Bassa \textbf{P: }Media\\
+\textbf{Piano di contingenza} & Eventuali domande per il proponente vengono registrare in un documento Google condiviso all'interno del gruppo.\\
+\hline
 
-\textbf{RI1}\newline{Comunicazioni interne} & 
-Potrebbe risultare difficile trovare un giorno dove tutti i membri del gruppo siano disponibili per un incontro, ritardando eventuali attività del progetto. & 
-A inizio progetto ognuno ha avvisato gli altri membri riguardo i giorni della settimana in cui probabilmente non potrà essere reperibile. La data di un incontro si decide comunque con largo anticipo(4-5 giorni prima) al fine di assicurarsi la disponibilità di tutti i membri. &
-\textbf{F:}\newline{Media} \newline{\textbf{P:}}\newline{Bassa} &
-Nel caso la presenza di un membro non fosse necessaria si può comunque procedere all'incontro con una eventuale registrazione di quest'ultimo.\\
+\rowcolor{azzurro1}\textbf{Codice: Nome} & \textbf{RI3: }{Contrasti interni}\\ 
+\textbf{Descrizione} & Potrebbero verificarsi, nel corso del progetto, dei disaccordi sulle decisioni prese che possono portare a tensioni fra i membri del gruppo.\\
+\textbf{Precauzione} & Ogni componente del gruppo ha il compito di comunicare eventuali problemi riguardo le decisioni prese.\\
+\textbf{Grado di rischio} & \textbf{F: }Media {\textbf{P: }}Media\\
+\textbf{Piano di contingenza} & Si cercherà di trovare una soluzione che metta d'accordo, per quanto possibile, tutti i membri del gruppo.\\
+\hline
 
-\textbf{RI2}\newline{Comunicazioni esterne} & 
-Potrebbero risultare difficoltose le comunicazioni con il proponente esterno, rallentando così il lavoro del gruppo. & 
-Eventuali conferenze con il proponente esterno saranno organizzate e comunicate con il dovuto preavviso, assicurandosi la disponibilità dei membri del gruppo. &
-\textbf{F:}\newline{Bassa} \newline{\textbf{P:}}\newline{Media} &
-Eventuali domande per il proponente vengono registrare in un documento Google condiviso all'interno del gruppo. \\
+\rowcolor{azzurro1}\textbf{Codice: Nome} & \textbf{RO1: }{Calcolo Tempistiche}\\
+\textbf{Descrizione} & Come indicato sopra l'inesperienza nelle tecnologie e nel lavorare in un gruppo di 7 persone potrebbe portare a errori nel calcolo delle tempistiche effettuato, causando il non rispetto delle scadenze imposte.\\
+\textbf{Precauzione} & Le scadenze dei documenti terranno conto anche di eventuali ritardi.\\
+\textbf{Grado di rischio} & \textbf{F: }Media \textbf{P: }Alta\\
+\textbf{Piano di contingenza} & Il \respProg{} riassegnerà le risorse, mettendone di più per l'attività che rischia di essere completata in ritardo e, nel peggiore dei casi, spostandone la scadenza.\\
+\hline
 
-\textbf{RI3}\newline{Contrasti interni} & 
-Potrebbero verificarsi, nel corso del progetto, dei disaccordi sulle decisioni prese che possono portare a tensioni fra i membri del gruppo & 
-Ogni componente del gruppo ha il compito di comunicare eventuali problemi riguardo le decisioni prese. &
-\textbf{F:}\newline{Media} \newline{\textbf{P:}}\newline{Media} &
-Si cercherà di trovare una soluzione che metta d'accordo, per quanto possibile, tutti i membri del gruppo. \\
+\rowcolor{azzurro1}\textbf{Codice: Nome} & \textbf{RO2: }{Ritardi}\\
+\textbf{Descrizione} & Per problemi di vario tipo(compresi i rischi sopra indicati) si potrebbe incorrere in ritardi e non rispetto delle milestone imposte.\\ 
+\textbf{Precauzione} & Ogni membro del gruppo è tenuto a segnalare eventuali problemi personali che possono portare al non completamento del progetto entro i tempi prestabiliti.\\
+\textbf{Grado di rischio} & \textbf{F: }Alta {\textbf{P: }}Alta\\
+\textbf{Piano di contingenza} & Il \respProg{}ha il compito di riassegnare risorse e attività al fine di assicurare il rispetto dei tempi prestabiliti.\\
+\hline
 
-\textbf{RO1}\newline{Calcolo Tempistiche} & 
-Come indicato sopra l'inesperienza nelle tecnologie e nel lavorare in un gruppo di 7 persone potrebbe portare a errori nel calcolo delle tempistiche effettuato, causando il non rispetto delle scadenze imposte. & 
-Le scadenze dei documenti terranno conto anche di eventuali ritardi. &
-\textbf{F:}\newline{Media} \newline{\textbf{P:}}\newline{Alta} &
-Il \respProg{} riassegnerà le risorse, mettendone di più per l'attività che rischia di essere completata in ritardo e, nel peggiore dei casi, spostandone la scadenza. \\
-
-\textbf{RO2}\newline{Ritardi} & 
-Per problemi di vario tipo(compresi i rischi sopra indicati) si potrebbe incorrere in ritardi e non rispetto delle milestone imposte. & 
-Ogni membro del gruppo è tenuto a segnalare eventuali problemi personali che possono portare al non completamento del progetto entro i tempi prestabiliti. &
-\textbf{F:}\newline{Alta} \newline{\textbf{P:}}\newline{Alta} &
-Il \respProg{}ha il compito di riassegnare risorse e attività al fine di assicurare il rispetto dei tempi prestabiliti. \\
-
-\textbf{RO3}\newline{Calcolo Costi} &
-Alcuni costi stimati potrebbero non venire rispettati(per esempio a causa di eventuali ritardi e, di conseguenza, di ore di lavoro aggiuntive richieste) causandone una sovrastima o una sottostima. &
-Nel caso uno dei membri non riuscirà a rispettare i tempi, e di conseguenza i costi preventivati, dovrà avvisare il \respProg{}. &
-\textbf{F:}\newline{Alta} \newline{\textbf{P:}}\newline{Media} &
-Il \respProg{} ha il compito di assicurarsi che il preventivo sia il più realistico possibile al fine di evitare riassegnamenti di risorse. \\
-
+\rowcolor{azzurro1}\textbf{Codice: Nome} & \textbf{RO3: }{Calcolo Costi}\\
+\textbf{Descrizione} & Alcuni costi stimati potrebbero non venire rispettati(per esempio a causa di eventuali ritardi e, di conseguenza, di ore di lavoro aggiuntive richieste) causandone una sovrastima o una sottostima.\\
+\textbf{Precauzione} & Nel caso uno dei membri non riuscirà a rispettare i tempi, e di conseguenza i costi preventivati, dovrà avvisare il \respProg{}.\\
+\textbf{Grado di rischio} & \textbf{F: }Alta \textbf{P: }Media\\
+\textbf{Piano di contingenza} & Il \respProg{} ha il compito di assicurarsi che il preventivo sia il più realistico possibile al fine di evitare riassegnamenti di risorse.\\
+\hline
 \end{longtable}
 }
