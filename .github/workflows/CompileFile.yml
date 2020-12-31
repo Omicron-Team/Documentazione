@@ -16,12 +16,19 @@ jobs:
           sudo apt-get install texlive-latex-recommended texlive-latex-extra
           sudo apt-get install -y latexmk
           sudo apt-get install -y texlive-lang-italian
+      
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9.1
 
       - name: Compilazione Analisi dei Requisiti
         run: latexmk -pdf -cd DocumentazioneEsterna/AnalisiDeiRequisiti/AnalisiDeiRequisiti.tex
 
       - name: Compilazione Glossario
-        run: latexmk -pdf -cd DocumentazioneEsterna/Glossario/Glossario.tex
+        run: |
+          python DocumentazioneEsterna/Glossario/buildGlossarioForActions.py
+          latexmk -pdf -cd DocumentazioneEsterna/Glossario/Glossario.tex
       
       - name: Compilazione Piano di Progetto
         run: latexmk -pdf -cd DocumentazioneEsterna/PianoDiProgetto/PianoDiProgetto.tex
