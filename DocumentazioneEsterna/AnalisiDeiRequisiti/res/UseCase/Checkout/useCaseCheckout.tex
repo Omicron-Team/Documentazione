@@ -1,0 +1,121 @@
+\subsubsection{UCX - Acquisto prodotti}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Attori secondari}: Stripe;
+\item \textbf{Descrizione}: il cliente può acquistare i prodotti presenti nel suo carrello;
+\item \textbf{Scenario Principale}: 
+\begin{enumerate}
+	\item il cliente inizia il checkout dei prodotti nel carrello \textbf{[UCX.1]};
+	\item il cliente inserisce l'indirizzo di spedizione e i dati per il pagamento \textbf{[UCX.3]};
+	\item il cliente procede al pagamento \textbf{[UCX.4]};
+	\item il cliente visualizza un riepilogo dell'ordine effettuato \textbf{[UCX.6]};
+\end{enumerate}
+\item \textbf{Precondizione}: l'utente è autenticato come cliente, si trova nella pagina del carrello e ha precedentemente inserito dei prodotti nel carrello;
+\item \textbf{Postcondizione}: il costo totale dei prodotti acquistati è stato prelevato dal conto specificato dal cliente. È stata inviata un'email al cliente per confermare l'acquisto.
+\end{itemize}
+
+\subsubsection{UCX.1 - Checkout}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente effettua il checkout per iniziare la procedura di acquisto prodotti;
+\item \textbf{Scenario Principale}: il cliente preme il bottone dedicato al checkout, nella pagina del carrello;
+\item \textbf{Estensioni}:
+\begin{itemize}
+\item se non è presente alcun prodotto nel carrello viene visualizzato un messaggio di errore \textbf{[UCX.2]}:;
+\end{itemize}
+\item \textbf{Precondizione}: l'utente è autenticato come cliente, si trova nella pagina del carrello e ha premuto il bottone dedicato al checkout;
+\item \textbf{Postcondizione}: il cliente viene reindirizzato alla pagina di selezione indirizzo di spedizione e di pagamento, dove può continuare l'acquisto dei prodotti.
+\end{itemize}
+
+\subsubsection{UCX.2 - Visualizzazione errore carrello vuoto}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente visualizza un messaggio di errore che lo informa che per procedere al checkout è necessario avere almeno un prodotto nel carrello;
+\item \textbf{Scenario Principale}: il cliente prova ad effettuare il checkout senza aver precedentemente inserito prodotti nel suo carrello.
+\item \textbf{Precondizione}: il cliente si trova nella pagina del carrello e ha premuto il bottone dedicato al checkout;
+\item \textbf{Postcondizione}: viene visualizzato un messaggio che informa il cliente della necessità di avere almeno un prodotto nel carrello per iniziare il checkout.
+\end{itemize}
+
+\subsubsection{UCX.3 - Inserimento dati necessari all'acquisto}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente compila i campi dati necessari all'acquisto dei prodotti selezionati;
+\item \textbf{Scenario Principale}: il cliente si trova nella pagina di pagamento e, per concludere l'acquisto, inserisce i dati richiesti;
+\item \textbf{Specializzazioni}:
+\begin{itemize}
+	\item TODO il cliente verifica l'indirizzo di spedizione indicato in fase di registrazione o può indicarne uno diverso \textbf{[UCX.3.1]};
+	\item il cliente inserisce i dati relativi al metodo di pagamento, come nome, cognome e numero di carta di credito \textbf{[UCX.3.2]};
+\end{itemize}
+\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Postcondizione}: il cliente può continuare il pagamento e l'acquisto.
+\end{itemize}
+
+\subsubsection{UCX.3.1 - TODO Inserimento indirizzo di spedizione}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente inserisce i dati dell'indirizzo di spedizione;
+\item \textbf{Scenario Principale}: 
+\item \textbf{Estensioni}:
+\item \textbf{Specializzazioni}:
+\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Postcondizione}: il cliente ha compilato i dati relativi all'indirizzo di spedizione.
+\end{itemize}
+
+\subsubsection{UCX.3.2 - Inserimento dati di pagamento}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente inserisce i dati relativi alla sua carta di pagamento;
+\item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento le seguenti informazioni:
+\begin{itemize}
+	\item nome collegato al conto;
+	\item cognome collegato al conto;
+	\item numero di carta;
+	\item mese e anno di scadenza della carta;
+	\item codice di sicurezza;
+\end{itemize}
+\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Postcondizione}: il cliente ha compilato i dati di pagamento.
+\end{itemize}
+
+\subsubsection{UCX.4 - Pagamento}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Attori secondari}: Stripe;
+\item \textbf{Descrizione}: il cliente, dopo aver inserito i dati richiesti, procede all'ordine. Il pagamento viene effettuato tramite Stripe, che riporterà l'esito ed eventuali errori;
+\item \textbf{Scenario Principale}: il cliente conferma l'ordine tramite l'apposito bottone;
+\item \textbf{Estensioni}:
+\begin{itemize}
+	\item il pagamento non va a buon fine. Il cliente visualizza un messaggio di errore contenente le cause del fallimento \textbf{[UCX.5]};
+\end{itemize}
+\item \textbf{Precondizione}: il cliente si trova nella pagina di pagamento e ha compilato i campi dati necessari per procedere all'acquisto;
+\item \textbf{Postcondizione}: il costo totale dei prodotti acquistati è stato prelevato dal conto specificato dal cliente. È stata inviata un'email al cliente per confermare l'acquisto. Al cliente viene mostrato un riepilogo dell'ordine appena effettuato.
+\end{itemize}
+
+\subsubsection{UCX.5 - Visualizzazione errore pagamento}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Attori secondari}: Stripe;
+\item \textbf{Descrizione}: il cliente visualizza un messaggio di errore che lo informa del motivo per il fallimento del pagamento. L'utente può poi controllare i dati inseriti e ritentare il pagamento;
+\item \textbf{Scenario Principale}: il cliente prova ad effettuare il pagamento inserendo dati di una carta che per qualche motivo rifiuta l'addebito.
+\item \textbf{Precondizione}: il cliente si trova nella pagina di pagamento e ha compilato i campi dati necessari per procedere all'acquisto;
+\item \textbf{Postcondizione}: viene visualizzato un messaggio che informa il cliente dell'errore avvenuto nel processo di pagamento, consigliandogli di controllare i dati inseriti e riprovare.
+\end{itemize}
+
+\subsubsection{UCX.6 - Visualizzazione riepilogo ordine}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Attori secondari}:
+\item \textbf{Descrizione}: il cliente visualizza un riepilogo dell'ordine appena effettuato contenente l'elenco di prodotti, ognuno con prezzo e quantità, il costo totale, le tasse, l'indirizzo di spedizione e la data.
+\item \textbf{Scenario Principale}: il cliente ha effettuato un ordine e ne visualizza un riepilogo.
+\item \textbf{Precondizione}: il cliente ha completato un ordine ed il pagamento è andato a buon fine.
+\item \textbf{Postcondizione}: viene visualizzato un riepilogo dell'ordine effettuato.
+\end{itemize}
