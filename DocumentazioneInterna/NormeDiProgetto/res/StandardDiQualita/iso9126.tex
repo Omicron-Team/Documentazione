@@ -27,13 +27,46 @@ Il modello è articolato nel seguente modo:
 	\item \textbf{Utilizzo delle risorse}: capacità di utilizzo di quantità e tipo di risorse in maniera adeguata;
 	\item \textbf{Conformità}: capacità di aderire a standard e specifiche sull'efficienza.
 	\end{itemize}
-\item \textbf{Usabilità}:
-\item \textbf{Manutenibilità}:
-\item \textbf{Portabilità}:
+\item \textbf{Usabilità}: capacità del prodotto software di essere capito, appreso e usato dall'utente sotto condizioni specifiche. Le sottocaratteristiche dell' \textit{usabilità} sono:
+	\begin{itemize}
+	\item \textbf{Comprensibilità}: facilità di comprensione dei concetti del prodotto, per permettere all'utente di comprendere se il software è appropriato;
+	\item \textbf{Apprendibilità}: capacità di ridurre l'impegno richiesto agli utenti di imparare ad usare l'applicazione;
+	\item \textbf{Operabilità}: capacità di mettere in condizione gli utenti di farne uso per i propri scopi e controllarne l'uso;
+	\item \textbf{Attrattiva}: capacità del prodotto di essere piacevole per l'utente che ne fa uso;
+	\item \textbf{Conformità}: capacità di aderire a standard e convenzioni relativi all'usabilità.
+	\end{itemize}
+\item \textbf{Manutenibilità}: capacità del prodotto di essere modificato, includendo correzioni, miglioramenti o adattamenti. Le sottocaratteristiche dell' \textit{manutenibilità} sono:
+	\begin{itemize}
+	\item \textbf{Analizzabilità}: facilità di analizzare il codice per localizzare un errore nello stesso;
+	\item \textbf{Modificabilità}: capacità di permettere l'implementazione di una specifica modifica;
+	\item \textbf{Stabilità}: capacità del prodotto di evitare effetti inaspettati derivanti da modifiche errate;
+	\item \textbf{Testabilità}: capacità di essere facilmente testato per validare le modifiche apportate al software.
+	\end{itemize}
+\item \textbf{Portabilità}: capacità del prodotto di essere trasportato da un ambiente di lavoro ad un altro. Le sottocaratteristiche dell' \textit{portabilità} sono:
+	\begin{itemize}
+	\item \textbf{Adattabilità}: capacità del software di essere adattato per differenti ambienti operativi senza dover richiedere modifiche diverse da quelle fornite per il prodotto considerato;
+	\item \textbf{Installabilità}: capacità del prodotto si essere installato in uno specifico ambiente;
+	\item \textbf{Coesistenza}: capacità del prodotto di coesistere con altre applicazioni indipendenti in ambienti comuni e di condividere le risorse;
+	\item \textbf{Sostituibilità}: capacità di sostituire un altro software specifico indipendente, per lo stesso scopo e nello stesso ambiente;
+	\item \textbf{Aderenza}: capacità di aderire a standard e convenzioni relativi alla portabilità.
+	\end{itemize}
 \end{itemize}
 
 \subsection{Metriche per la qualità esterna}
+Le metriche esterne, specificate nella norma ISO/IEC 9126-2, misurano i comportamenti del prodotto software sulla base di test, dall'operatività e dall'osservazione durante la sua esecuzione, in funzione degli obiettivi stabiliti.
 
 \subsection{Metriche per la qualità interna}
+Le metriche interne, specificate nella norma ISO/IEC 9126-3, si applicano al prodotto non eseguibile durante le fasi di progettazione e codifica. \\
+Le misure effettuate permettono di prevedere il livello di qualità esterna ed in uso del prodotto finale, poiché gli attributi interni influiscono su quelli esterni e quelli in uso. \\
+Le metriche interne permettono di individuare eventuali problemi che potrebbero influire sulla qualità finale del prodotto prima che sia realizzato il software eseguibile.
 
 \subsection{Metriche per la qualità in uso}
+La qualità in uso rappresenta il punto di vista dell'utente sulla qualità. Il livello di qualità in uso è raggiunto quando viene raggiunto sia il livello di qualità esterna sia quello di qualità interno. \\
+Le norme ISO/IEC 9126-4 forniscono esempi di metriche da utilizzare per la misurazione della qualità rispetto ai diversi punti di vista (interno, esterno, in uso). \\
+La qualità in uso, quindi, permette di abilitare specifici utenti ad ottenere specifici obiettivi con efficacia, produttività, sicurezza e soddisfazione.
+\begin{itemize}
+\item \textbf{Efficacia}: capacità del prodotto di permettere all'utente di raggiungere obiettivi specifici con accuratezza e completezza in uno specifico contesto di utilizzo;
+\item \textbf{Produttività}: capacità di permettere all'utente di impegnare un numero definito di risorse, in relazione all'efficienza raggiunta in uno specifico contesto di utilizzo;
+\item \textbf{Sicurezza}: capacità di raggiungere un livello accettabile di rischio per i dati, le persone, le apparecchiature tecniche e l'ambiente d'uso;
+\item \textbf{Soddisfazione}: capacità di soddisfare gli utenti in uno specifico contesto di utilizzo.
+\end{itemize}
