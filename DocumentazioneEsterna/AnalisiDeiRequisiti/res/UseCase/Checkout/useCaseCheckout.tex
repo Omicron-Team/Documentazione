@@ -1,5 +1,10 @@
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/AcquistoProdottiGenerale}
+\caption{Diagramma UML per modulo di acquisto prodotti}
+\end{figure}
+
 \subsubsection{UCX - Acquisto prodotti}
-Figura \\
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Attori secondari}: Stripe;
@@ -14,6 +19,12 @@ Figura \\
 \item \textbf{Precondizione}: l'utente è autenticato come cliente, si trova nella pagina del carrello e ha precedentemente inserito dei prodotti nel carrello;
 \item \textbf{Postcondizione}: il costo totale dei prodotti acquistati è stato prelevato dal conto specificato dal cliente. È stata inviata un'email al cliente per confermare l'acquisto.
 \end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/AcquistoProdotti}
+\caption{Diagramma UML per UCX - Acquisto prodotti}
+\end{figure}
 
 \subsubsection{UCX.1 - Checkout}
 Figura \\
@@ -44,8 +55,7 @@ Figura \\
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente compila i campi dati necessari all'acquisto dei prodotti selezionati;
-\item \textbf{Scenario Principale}: il cliente si trova nella pagina di pagamento e, per concludere l'acquisto, inserisce i dati richiesti;
-\item \textbf{Specializzazioni}:
+\item \textbf{Scenario Principale}: il cliente si trova nella pagina di pagamento e, per concludere l'acquisto, inserisce i seguenti dati:
 \begin{itemize}
 	\item TODO il cliente verifica l'indirizzo di spedizione indicato in fase di registrazione o può indicarne uno diverso \textbf{[UCX.3.1]};
 	\item il cliente inserisce i dati relativi al metodo di pagamento, come nome, cognome e numero di carta di credito \textbf{[UCX.3.2]};
@@ -66,13 +76,18 @@ Figura \\
 %\item \textbf{Postcondizione}: il cliente ha compilato i dati relativi all'indirizzo di spedizione.
 %\end{itemize}
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/InserimentoDatiPagamento}
+\caption{Diagramma UML per UCX - Inserimento dati di pagamento}
+\end{figure}
+
 \subsubsection{UCX.3.2 - Inserimento dati di pagamento}
 Figura \\
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente inserisce i dati relativi alla sua carta di pagamento;
-\item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento le informazioni richieste;
-\item \textbf{Specializzazioni}: il cliente inserisce le seguenti informazioni:
+\item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento le seguenti informazioni:
 \begin{itemize}
 	\item nome collegato al conto \textbf{[UCX.3.2.1]};
 	\item cognome collegato al conto \textbf{[UCX.3.2.2]};
