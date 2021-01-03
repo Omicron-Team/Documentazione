@@ -1,4 +1,4 @@
-\subsubsection{UCX - Visualizzazione dei prodotti in una PLP\ped{G}}
+\subsubsection{UCX - Visualizzazione dei prodotti}
 Figura \\
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
@@ -12,10 +12,10 @@ Figura \\
 \item \textbf{Precondizione}: l'utente ha cliccato sulla PLP\ped{G} dedicata alla categoria di prodotti scelta;
 \item \textbf{Postcondizione}: l'utente visualizza le informazioni relative ai prodotti listati, con le eventuali operazioni disponibili su ognuno di essi.
 \end{itemize}
-\subsubsection{UCX - Selezione di prodotti in una PLP\ped{G}}
+\subsubsection{UCX - Selezione di prodotti}
 Figura \\
 \begin{itemize}
-\item \textbf{Attori primari}: cliente;
+\item \textbf{Attori primari}: utente generico;
 \item \textbf{Descrizione}: l'utente può selezionare più prodotti presenti nella PLP\ped{G} contemporaneamente cliccandone l'apposita casella.
 \item \textbf{Scenario Principale}:
 \begin{enumerate}
@@ -28,16 +28,21 @@ Figura \\
 \subsubsection{UCX - Modifica della quantità selezionata}
 Figura \\
 \begin{itemize}
-\item \textbf{Attori primari}: cliente;
+\item \textbf{Attori primari}: utente generico;
 \item \textbf{Descrizione}: l'utente può modificare la quantità di un prodotto listato attraverso un campo apposito. La quantità di default di un prodotto selezionato corrisponde ad 1.
-\item \textbf{Scenario Principale}: l'utente modifica la quantità di un prodotto utilizzando l'apposito campo;
-\item \textbf{Precondizione}: l'utente sta visualizzando un prodotto ed intende modificarne la quantità selezionata;
+\item \textbf{Scenario Principale}:
+\begin{enumerate}
+\item[a.] l'utente visualizza i prodotti presenti nella corrente PLP\ped{G} [UC specifico];
+\item[b.] l'utente seleziona il prodotto da lui desiderato [UC specifico];
+\item[c.] l'utente modifica la quantità del prodotto utilizzando l'apposito campo;
+\end{enumerate}
+\item \textbf{Precondizione}: l'utente sta visualizzando un prodotto selezionato;
 \item \textbf{Postcondizione}: la quantità del prodotto è stata aggiornata al nuovo valore richiesto dall'utente.
 \end{itemize}
 \subsubsection{UCX - Aggiunta al carrello dei prodotti selezionati}
 Figura \\
 \begin{itemize}
-\item \textbf{Attori primari}: cliente;
+\item \textbf{Attori primari}: utente generico;
 \item \textbf{Descrizione}: l'utente può inserire i prodotti selezionati nel carrello, nella quantità desiderata, cliccando un apposito pulsante;
 \item \textbf{Scenario Principale}:
 \begin{enumerate}
@@ -46,10 +51,10 @@ Figura \\
 \item[c.] l'utente può modificare la quantità dei prodotti selezionati [UC specifico];
 \item[d.] l'utente preme il pulsante per l'inserimento dei prodotti nel carrello.
 \end{enumerate}
-\item \textbf{Precondizione}: l'utente sta visualizzando i prodotti in vendita nella piattaforma attraverso la specifica PLP\ped{G};
+\item \textbf{Precondizione}: l'utente sta visualizzando i prodotti in vendita nella piattaforma che ha precedentemente selezionato;
 \item \textbf{Postcondizione}: l'utente ha inserito nel proprio carrello tutti i prodotti precedentemente selezionati con la quantità desiderata.
 \end{itemize}
-\subsubsection{UCX - Filtraggio dei prodotti nella PLP}
+\subsubsection{UCX - Filtraggio dei prodotti}
 Figura \\
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
@@ -63,7 +68,7 @@ Figura \\
 \item \textbf{Precondizione}: l'utente sta visualizzando i prodotti in vendita listati nella specifica PLP\ped{G};
 \item \textbf{Postcondizione}: l'utente ottiene una nuova pagina in cui può visualizzare solo i prodotti compresi nel range di prezzo specificato.
 \end{itemize}
-\subsubsection{UCX - Visualizzazione di una PDP\ped{G}}
+\subsubsection{UCX - Visualizzazione approfondita di un prodotto}
 Figura \\
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
