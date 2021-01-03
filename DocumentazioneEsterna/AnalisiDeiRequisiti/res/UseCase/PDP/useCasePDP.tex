@@ -1,12 +1,30 @@
-\subsubsection{UCX - Visualizzazione del prodotto in una PDP}
+\subsubsection{UCX - Visualizzazione delle informazioni sul prodotto}
 Figura \\
 \begin{itemize}
-\item \textbf{Attori primari}:
-\item \textbf{Attori secondari}:
-\item \textbf{Descrizione}:
+\item \textbf{Attori primari}: utente generico;
+\item \textbf{Descrizione}: l'utente può visualizzare le seguenti informazioni che caratterizzano il prodotto:
+\begin{itemize}
+\item nome;
+\item immagine;
+\item descrizione;
+\item prezzo;
+\item tasse applicate;
+\end{itemize}
+\item \textbf{Scenario Principale}: l'utente cerca di visualizzare le caratteristiche dell'oggetto descritto nella corrente PDP\ped{G};
+\item \textbf{Precondizione}: l'utente ha cliccato sulla PDP\ped{G} dedicata al prodotto scelto;
+\item \textbf{Postcondizione}: l'utente visualizza le informazioni relative ai prodotto desiderato, con la possibilità di aggiungerlo al carrello.
+\end{itemize}
+\subsubsection{UCX - Aggiunta al carrello del prodotto}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: utente generico;
+\item \textbf{Descrizione}: l'utente può inserire il prodotto nel carrello, nella quantità desiderata, cliccando un apposito pulsante. La quantità di default del prodotto corrisponde ad 1;
 \item \textbf{Scenario Principale}:
-\item \textbf{Estensioni}:
-\item \textbf{Specializzazioni}:
-\item \textbf{Precondizione}:
-\item \textbf{Postcondizione}:
+\begin{enumerate}
+\item[a.] l'utente visualizza le informazioni del prodotto [UC specifico];
+\item[b.] l'utente può modificare la quantità del prodotto da lui desiderata attraverso un apposito campo;
+\item[c.] l'utente preme il pulsante per l'inserimento del prodotto nel carrello.
+\end{enumerate}
+\item \textbf{Precondizione}: l'utente sta visualizzando le caratteristiche del prodotto presente nel catalogo digitale;
+\item \textbf{Postcondizione}: l'utente ha inserito nel carrello il prodotto nella quantità da lui desiderata.
 \end{itemize}

@@ -6,14 +6,18 @@
 
 \subsubsection{UCX - Gestione Carrello}
 \begin{itemize}
-\item \textbf{Attori primari}:
-\item \textbf{Attori secondari}:
-\item \textbf{Descrizione}:
-\item \textbf{Scenario Principale}:
-\item \textbf{Estensioni}:
-\item \textbf{Specializzazioni}:
-\item \textbf{Precondizione}:
-\item \textbf{Postcondizione}:
+\item \textbf{Attori primari}: utente generico;
+\item \textbf{Descrizione}: a tutti gli utenti è disponibile una pagina del carrello in cui è possibile visualizzare e gestire i prodotti inseriti al suo interno. È successivamente possibile acquistare i prodotti presenti nel carrello;
+\item \textbf{Scenario Principale}: un utente generico si trova all'interno della pagina del carrello ed ha a disposizioni queste funzionalità:
+\begin{itemize}
+\item Visualizzazione prodotti nel carrello [\textbf{UCX.1}];
+\item Rimozione prodotto dal carrello [\textbf{UCX.2}];
+\item Modifica quantità di un prodotto nel carrello [\textbf{UCX.3}];
+\item Visualizzazione costo totale del carrello [\textbf{UCX.4}];
+\item Visualizzazione tasse applicate nel carrello [\textbf{UCX.5}].
+\end{itemize}
+\item \textbf{Precondizione}: l'utente generico si trova nel sito ed ha a disposizione la pagina del carrello;
+\item \textbf{Postcondizione}: l'utente ha a disposizione varie funzionalità per gestire il carrello e può procedere all'acquisto dei prodotti al suo interno.
 \end{itemize}
 
 \begin{figure}[H]
@@ -24,62 +28,53 @@
 
 \subsubsection{UCX.1 - Visualizzazione prodotti nel carrello}
 \begin{itemize}
-\item \textbf{Attori primari}:
-\item \textbf{Attori secondari}:
-\item \textbf{Descrizione}:
-\item \textbf{Scenario Principale}:
-\item \textbf{Estensioni}:
-\item \textbf{Specializzazioni}:
-\item \textbf{Precondizione}:
-\item \textbf{Postcondizione}:
+\item \textbf{Attori primari}: utente generico;
+\item \textbf{Descrizione}: l'utente generico visualizza una lista di prodotti precedentemente inseriti nel carrello;
+\item \textbf{Scenario Principale}: l'utente generico si trova nella pagina del carrello e visualizza i seguenti dati per ogni prodotto inserito nel carrello:
+\begin{itemize}
+\item Nome del prodotto;
+\item Immagine del prodotto;
+\item Quantità presente nel carrello;
+\item Costo del prodotto.
+\end{itemize}
+\item \textbf{Precondizione}: l'utente generico si trova nella pagina del carrello;
+\item \textbf{Postcondizione}: viene visualizzata la lista di prodotti presenti nel carrello.
 \end{itemize}
 
 \subsubsection{UCX.2 - Rimozione prodotto nel carrello}
 \begin{itemize}
-\item \textbf{Attori primari}:
-\item \textbf{Attori secondari}:
-\item \textbf{Descrizione}:
-\item \textbf{Scenario Principale}:
-\item \textbf{Estensioni}:
-\item \textbf{Specializzazioni}:
-\item \textbf{Precondizione}:
-\item \textbf{Postcondizione}:
+\item \textbf{Attori primari}: utente generico;
+\item \textbf{Descrizione}: l'utente generico può rimuovere un prodotto precedentemente inserito nel carrello;
+\item \textbf{Scenario Principale}: l'utente generico si trova nella pagina del carrello e clicca un tasto dedicato per rimuovere un prodotto dal carrello;
+\item \textbf{Precondizione}: l'utente generico si trova nella pagina del carrello e ha almeno un prodotto al suo interno;
+\item \textbf{Postcondizione}: il prodotto rimosso non è più presente nel carrello.
 \end{itemize}
 
 \subsubsection{UCX.3 - Modifica quantità di un prodotto nel carrello}
 \begin{itemize}
-\item \textbf{Attori primari}:
-\item \textbf{Attori secondari}:
-\item \textbf{Descrizione}:
-\item \textbf{Scenario Principale}:
-\item \textbf{Estensioni}:
-\item \textbf{Specializzazioni}:
-\item \textbf{Precondizione}:
-\item \textbf{Postcondizione}:
+\item \textbf{Attori primari}: utente generico;
+\item \textbf{Descrizione}: l'utente generico può modificare la quantità di un prodotto precedentemente inserito nel carrello;
+\item \textbf{Scenario Principale}: l'utente generico si trova nella pagina del carrello e clicca dei tasti dedicati per modificare la quantità di un prodotto, incrementandola o decrementandola;
+\item \textbf{Precondizione}: l'utente generico si trova nella pagina del carrello e ha almeno un prodotto al suo interno;
+\item \textbf{Postcondizione}: viene modificata la quantità di un prodotto del carrello in base all'intento dell'utente.
 \end{itemize}
 
 \subsubsection{UCX.4 - Visualizzazione costo totale del carrello}
 \begin{itemize}
-\item \textbf{Attori primari}:
-\item \textbf{Attori secondari}:
-\item \textbf{Descrizione}:
-\item \textbf{Scenario Principale}:
-\item \textbf{Estensioni}:
-\item \textbf{Specializzazioni}:
-\item \textbf{Precondizione}:
-\item \textbf{Postcondizione}:
+\item \textbf{Attori primari}: utente generico;
+\item \textbf{Descrizione}: l'utente generico visualizza il costo totale dei prodotti nel suo carrello;
+\item \textbf{Scenario Principale}: l'utente generico si trova nella pagina del carrello e, se ha prodotti al suo interno, visualizza il costo totale di essi;
+\item \textbf{Precondizione}: l'utente generico si trova nella pagina del carrello e ha almeno un prodotto al suo interno;
+\item \textbf{Postcondizione}: viene visualizzato il costo totale dei prodotti del carrello.
 \end{itemize}
 
 \subsubsection{UCX.5 - Visualizzazione tasse applicate nel carrello}
 \begin{itemize}
-\item \textbf{Attori primari}:
-\item \textbf{Attori secondari}:
-\item \textbf{Descrizione}:
-\item \textbf{Scenario Principale}:
-\item \textbf{Estensioni}:
-\item \textbf{Specializzazioni}:
-\item \textbf{Precondizione}:
-\item \textbf{Postcondizione}:
+\item \textbf{Attori primari}: utente generico;
+\item \textbf{Descrizione}: l'utente generico visualizza le tasse applicate ai prodotti nel suo carrello;
+\item \textbf{Scenario Principale}: l'utente generico si trova nella pagina del carrello e, se ha prodotti al suo interno, visualizza le tasse applicate ad essi;
+\item \textbf{Precondizione}: l'utente generico si trova nella pagina del carrello e ha almeno un prodotto al suo interno;
+\item \textbf{Postcondizione}: vengono visualizzate le tasse applicate ai prodotti del carrello.
 \end{itemize}
 
 
