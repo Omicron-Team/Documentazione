@@ -1,12 +1,190 @@
-\subsubsection{UC - Caso d'uso generico}
+\subsubsection{UCX - Merchant dashboard}
 Figura \\
 \begin{itemize}
-\item \textbf{Attori primari}:
-\item \textbf{Attori secondari}:
-\item \textbf{Descrizione}:
-\item \textbf{Scenario Principale}:
-\item \textbf{Estensioni}:
-\item \textbf{Specializzazioni}:
-\item \textbf{Precondizione}:
-\item \textbf{Postcondizione}:
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: la merchant dashboard permette di gestire e monitorare i dati dei prodotti e le vendite effettuate;
+\item \textbf{Scenario Principale}: il venditore accede alla dashboard tramite l'apposito pulsante e può effettuare le seguenti operazioni:
+\begin{itemize}
+	\item Inserire un nuovo prodotto;
+	\item Visualizzare i prodotti attualmente in vendita;
+	\item Modificare i dati di un prodotto in vendita;
+	\item Eliminare un prodotto in vendita;
+	\item Visualizzare gli ordini ricevuti;
 \end{itemize}
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Postcondizione}: al merchant è permesso effettuare operazioni   per gestire i propri prodotti e i propri ordini.
+\end{itemize}
+
+\subsubsection{UCX.1 - Inserimento prodotto}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore può inserire nel sistema nuovi prodotti da vendere.
+\item \textbf{Scenario Principale}: il venditore accede alla pagina di inserimento prodotti tramite l'apposito pulsante ed inserisce le seguenti informazioni:
+\begin{itemize}
+	\item nome \textbf{[UCX.1.1]};
+	\item descrizione \textbf{[UCX.1.2]};
+	\item prezzo \textbf{[UCX.1.3]};
+	\item immagine \textbf{[UCX.1.4]};
+\end{itemize}
+per poi premere il pulsante di conferma \textbf{[UCX.1.5]}.
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Postcondizione}: il venditore ha inserito un nuovo prodotto nel sistema.
+\end{itemize}
+
+\subsubsection{UCX.1.1 - Inserimento nome}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: al venditore è richiesto l'inserimento del nome del nuovo prodotto da inserire;
+\item \textbf{Scenario Principale}: il venditore inserisce nel form dedicato il nome del nuovo prodotto;
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata all'inserimento di un nuovo prodotto;
+\item \textbf{Postcondizione}: il venditore ha compilato il campo dedicato al nome del prodotto;
+\end{itemize}
+
+\subsubsection{UCX.1.2 - Inserimento descrizione}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: al venditore è richiesto l'inserimento della descrizione del nuovo prodotto da inserire;
+\item \textbf{Scenario Principale}: il venditore inserisce nel form dedicato la descrizione del nuovo prodotto;
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata all'inserimento di un nuovo prodotto;
+\item \textbf{Postcondizione}: il venditore ha compilato il campo dedicato alla descrizione del prodotto;
+\end{itemize}
+
+\subsubsection{UCX.1.3 - Inserimento prezzo}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: al venditore è richiesto l'inserimento del prezzo del nuovo prodotto da inserire;
+\item \textbf{Scenario Principale}: il venditore inserisce nel form dedicato il prezzo del nuovo prodotto;
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata all'inserimento di un nuovo prodotto;
+\item \textbf{Postcondizione}: il venditore ha compilato il campo dedicato al prezzo del prodotto;
+\end{itemize}
+
+\subsubsection{UCX.1.4 - Inserimento immagine}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: al venditore è richiesto l'inserimento dell'immagine del nuovo prodotto da inserire;
+\item \textbf{Scenario Principale}: il venditore carica tramite tramite l'apposito bottone di upload l'immagine del nuovo prodotto;
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata all'inserimento di un nuovo prodotto;
+\item \textbf{Postcondizione}: il venditore ha caricato l'immagine del nuovo prodotto;
+\end{itemize}
+
+\subsubsection{UCX.1.5 - Conferma inserimento}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore conferma i dati presenti nel form e inserisce il nuovo prodotto;
+\item \textbf{Scenario Principale}: il venditore preme il pulsante di conferma e inserisce il nuovo prodotto con i dati precedentemente inseriti.
+\item \textbf{Estensioni}: 
+\begin{itemize}
+	\item se non tutti i dati richiesti sono stati compilati viene visualizzato un messaggio di errore \textbf{[UCX.1.6]};
+\end{itemize} 
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata all'inserimento di un nuovo prodotto e ha premuto il bottone di conferma;
+\item \textbf{Postcondizione}: il venditore ha inserito un nuovo prodotto nel sistema.
+\end{itemize}
+
+\subsubsection{UCX.1.6 - Visualizzazione errore campi mancanti inserimento}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore visualizza un messaggio di errore che lo informa che per procedere all'inserimento è necessario aver inserito tutti i dati richiesti;
+\item \textbf{Scenario Principale}: il venditore prova ad inserire un nuovo prodotto senza aver compilato tutti i campi dati;
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata all'inserimento di un nuovo prodotto e ha premuto il bottone di conferma;
+\item \textbf{Postcondizione}: viene visualizzato un messaggio che informa il venditore della necessità di compilare tutti i campi dati per completare l'inserimento di un prodotto.
+\end{itemize}
+
+\subsubsection{UCX.2 - Visualizzazione prodotti}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore visualizza nella merchant dashboard la lista dei prodotti presenti nel sistema;
+\item \textbf{Scenario Principale}: il venditore accede alla merchant dashboard e, nell'apposita sezione, visualizza nome, descrizione e immagine dei prodotti nel sistema;
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Postcondizione}: il venditore visualizza la lista dei prodotti presenti nel sistema, ognuno con nome, immagine e descrizione.
+\end{itemize}
+
+\subsubsection{UCX.3 - Modifica prodotto}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore può modificare i prodotti presenti nel sistema;
+\item \textbf{Scenario Principale}: il venditore accede alla pagina di modifica tramite l'apposito pulsante collegato al prodotto da modificare, visualizzato nella lista dei prodotti \textbf{[UCX.2]}. Da li può modificare le seguenti informazioni:
+\begin{itemize}
+	\item nome \textbf{[UCX.3.1]};
+	\item descrizione \textbf{[UCX.3.2]};
+	\item prezzo \textbf{[UCX.3.3]};
+	\item immagine \textbf{[UCX.3.4]};
+\end{itemize}
+per poi premere il pulsante di conferma \textbf{[UCX.3.5]};
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Postcondizione}: il venditore ha modificato il prodotto selezionato.
+\end{itemize}
+
+\subsubsection{UCX.3.1 - Modifica nome}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore modifica il nome del prodotto selezionato.
+\item \textbf{Scenario Principale}: il venditore visualizza nel campo relativo al nome del prodotto il dato attualmente presente, che andrà a sovrascrivere con il nuovo nome aggiornato;
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata alla modifica di un prodotto;
+\item \textbf{Postcondizione}: il venditore ha compilato il campo dedicato al nome del prodotto, sovrascrivendo il precedente;
+\end{itemize}
+
+\subsubsection{UCX.3.2 - Modifica descrizione}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore modifica la descrizione del prodotto selezionato.
+\item \textbf{Scenario Principale}: il venditore visualizza nel campo relativo alla descrizione del prodotto il dato attualmente presente, che andrà a sovrascrivere con la nuova descrizione aggiornata;
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata alla modifica di un prodotto;
+\item \textbf{Postcondizione}: il venditore ha compilato il campo dedicato alla descrizione del prodotto, sovrascrivendo la precedente;
+\end{itemize}
+
+\subsubsection{UCX.3.3 - Modifica prezzo}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore modifica il prezzo del prodotto selezionato.
+\item \textbf{Scenario Principale}: il venditore visualizza nel campo relativo al prezzo del prodotto il dato attualmente presente, che andrà a sovrascrivere con il nuovo prezzo aggiornato;
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata alla modifica di un prodotto;
+\item \textbf{Postcondizione}: il venditore ha compilato il campo dedicato al prezzo del prodotto, sovrascrivendo il precedente;
+\end{itemize}
+
+\subsubsection{UCX.3.4 - Modifica immagine}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore modifica l'immagine del prodotto selezionato.
+\item \textbf{Scenario Principale}: il venditore visualizza nel campo relativo all'immagine del prodotto quella attualmente presente, che andrà a sovrascrivere caricando la nuova immagine aggiornata;
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata alla modifica di un prodotto;
+\item \textbf{Postcondizione}: il venditore ha caricato l'immagine del prodotto, sovrascrivendo la precedente;
+\end{itemize}
+
+\subsubsection{UCX.3.5 - Conferma modifica}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore conferma i dati presenti nel form e modifica il prodotto;
+\item \textbf{Scenario Principale}: il venditore preme il pulsante di conferma e modifica il prodotto selezionato con i dati precedentemente inseriti.
+\item \textbf{Estensioni}: 
+\begin{itemize}
+	\item se non viene sovrascritto nessun dato viene visualizzato un messaggio di errore \textbf{[UCX.1.6]};
+\end{itemize} 
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata alla modifica di un prodotto e ha premuto il bottone di conferma;
+\item \textbf{Postcondizione}: il venditore ha modificato il prodotto selezionato.
+\end{itemize}
+
+\subsubsection{UCX.3.6 - Visualizzazione errore nessuna modifica}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore visualizza un messaggio di errore che lo informa che per procedere alla modifica è necessario aver sovrascritto almeno un campo dati;
+\item \textbf{Scenario Principale}: il venditore prova a modificare un nuovo prodotto senza aver sovrascritto almeno un campo dati;
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata alla modifica di un prodotto e ha premuto il bottone di conferma;
+\item \textbf{Postcondizione}: viene visualizzato un messaggio che informa il venditore della necessità di compilare tutti i campi dati per completare l'inserimento di un prodotto.
+\end{itemize}
+
+
