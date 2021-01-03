@@ -1,1 +1,66 @@
 \section{Qualità di prodotto}
+È necessario poter valutare la qualità del prodotto, per questo motivo il gruppo \Omicron{} ha deciso di far riferimento allo standard ISO/IEC 9126 che determina le caratteristiche di un prodotto di qualità. Si è scelto di far riferimento alle seguenti caratteristiche:
+\begin {itemize}
+	\item{Funzionalità;}
+	\item{Affidabilità;}
+	\item{Efficienza;}
+	\item{Usabilità;}
+	\item{Manutenibilità;}
+	\item{Portabilità;}
+\end{itemize}
+
+\subsection{Funzionalità}
+La \textit{Funzionalità} è la capacità del prodotto di soddisfare i requisiti.
+\subsubsection{Obiettivi}
+gli obiettivi preposti sono:
+\begin {itemize}
+	\item \textbf{Adeguatezza:} capacità del prodotto di mettere a disposizione le funzioni necessarie per soddisfare gli obiettivi stabili;
+	\item \textbf{Accuratezza:} capacità di fornire i risultati attesi con la precisione richiesta;
+	\item \textbf{Conformità:} il prodotto deve essere conforme e rispettare determinati standard.
+\end{itemize}
+\subsubsection{Metriche}
+\paragraph{MPD1 - Completezza implementazione} tramite una percentuale viene determinata quanto il prodotto è completo
+\begin{itemize}
+	\item \textbf{Misurazione:} \begin{math}C=\left(1-\frac{N_{FNI}}{N_{FI}}\right)*100\end{math}\\
+	dove:
+	\begin {itemize}
+		\item \begin{math}N_{FNI}\end{math}: numero di funzioni NON implementate;
+		\item \begin{math}N_{FI}\end{math}: numero di funzioni implementate.
+	\end{itemize}
+	\item \textbf{valore ideale:} 100\%;
+	\item \textbf{valore accettabile:} 100\%.
+\end{itemize}
+
+\subsection{Affidabilità}
+L'\textit{affidabilità} è la capacità del prodotto di funzionare anche in situazioni prolungate o di gestire una grande quantità di informazioni.
+\subsubsection{Obiettivi}
+gli obiettivi preposti sono:
+\begin {itemize}
+	\item \textbf{maturità:} non si devono verificare errori o malfunzionamenti durante l'esecuzione;
+	\item \textbf{tolleranza degli errori:} il prodotto deve mantenere alte prestazioni anche in caso di un uso scorretto o malfunzionamenti.
+\end{itemize}
+\subsubsection{Metriche}
+\paragraph{MPD2 - Densita degli errori} La capacità di resistenza agli errori viene espressa tramite l'utilizzo di una percentuale.
+\begin{itemize}
+	\item \textbf{Misurazione:} \begin{math}M=\frac{N_{ER}}{N_{TE}}*100\end{math}\\
+	dove:
+	\begin {itemize}
+		\item \begin{math}N_{ER}\end{math}: numero di errori rilevati durante il testing;
+		\item \begin{math}N_{TE}\end{math}: numero test effetuati.
+	\end{itemize}
+	\item \textbf{valore ideale:} 0\%;
+	\item \textbf{valore accettabile:}  \begin{math}\leq15\%\end{math}.
+\end{itemize}
+
+\subsection{Efficienza} Per efficienza si intende la capacità del prodotto di soddisfare le richieste sfruttando in modo ottimale le risorse messe a disposizione impiegando il minor tempo possibile.
+\subsubsection{Obiettivi}
+\begin{itemize}
+	\item \textbf{uso delle risorse:} capacità di sfruttare solo le risorse necessarie per risolvere una data problematica;
+	\item \textbf{Tempistiche di risposta:} capacità del prodotto di fornire risposta al problema in tempi accettabili.
+\end{itemize}
+\subsubsection{Metriche}
+
+
+\subsection{Usabilità}
+\subsection{Manutenibilità}
+\subsection{Portabilità}
