@@ -10,6 +10,7 @@ Figura \\
 	\item Modificare i dati di un prodotto in vendita;
 	\item Eliminare un prodotto in vendita;
 	\item Visualizzare gli ordini ricevuti;
+	\item Visualizzare i collegamenti agli strumenti per la gestione del sito.
 \end{itemize}
 \item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
 \item \textbf{Postcondizione}: al merchant è permesso effettuare operazioni   per gestire i propri prodotti e i propri ordini.
@@ -96,7 +97,7 @@ Figura \\
 \item \textbf{Postcondizione}: viene visualizzato un messaggio che informa il venditore della necessità di compilare tutti i campi dati per completare l'inserimento di un prodotto.
 \end{itemize}
 
-\subsubsection{UCX.2 - Visualizzazione prodotti}
+\subsubsection{UCX.2 - Visualizzazione lista prodotti}
 Figura \\
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
@@ -187,4 +188,52 @@ Figura \\
 \item \textbf{Postcondizione}: viene visualizzato un messaggio che informa il venditore della necessità di compilare tutti i campi dati per completare l'inserimento di un prodotto.
 \end{itemize}
 
+\subsubsection{UCX.4 - Rimozione prodotto}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore può rimuovere i prodotti presenti nel sistema;
+\item \textbf{Scenario Principale}: il venditore elimina il prodotto scelto tramite l'apposito pulsante collegato al prodotto da eliminare, visualizzato nella lista dei prodotti \textbf{[UCX.2]}.
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Postcondizione}: il venditore ha eliminato il prodotto selezionato.
+\end{itemize}
+
+\subsubsection{UCX.5 - Visualizzazione lista ordini ricevuti}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore visualizza nella merchant dashboard la lista degli ordini ricevuti;
+\item \textbf{Scenario Principale}: il venditore accede alla merchant dashboard e, nell'apposita sezione, visualizza una lista degli ordini ricevuti. Per ogni ordine viene visualizzato il numero dell'ordine, il costo totale e la data. Il venditore può accedere ad altre informazioni premendo il bottone 'Dettagli' collegato all'ordine interessato \textbf{[UCX.5.1]}.
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Postcondizione}: il venditore visualizza la lista degli ordini presenti nel sistema.
+\end{itemize}
+
+\subsubsection{UCX.5.1 - Visualizzazione informazioni ordine}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore visualizza le informazioni dell'ordine selezionato;
+\item \textbf{Scenario Principale}: il venditore accede alla pagina di visualizzazione informazioni ordine tramite il pulsante 'Dettagli' collegato all'ordine selezionato nella lista degli ordini ricevuti \textbf{[UCX.5]}. In particolare vengono visualizzati i seguenti dati:
+\begin{itemize}
+	\item numero ordine;
+	\item prodotti acquistati;
+	\item quantità prodotti acquistati;
+	\item costo per singola voce;
+	\item costo totale;
+	\item tasse applicate;
+	\item data acquisto;
+\end{itemize}
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Postcondizione}: il venditore visualizza le informazioni relative all'ordine selezionato.
+\end{itemize}
+
+\subsubsection{UCX.6 - Collegamenti a sistemi di gestione}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore visualizza nella merchant dashboard i collegamenti agli strumenti di gestione esterni;
+\item \textbf{Scenario Principale}: il venditore accede alla merchant dashboard e, nell'apposita sezione, visualizza una lista di collegamenti agli strumenti esterni riservati agli admin.
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Postcondizione}: il venditore visualizza la lista dei collegamenti ai sistemi di gestione del sito.
+\end{itemize}
 

@@ -54,33 +54,84 @@ Figura \\
 \item \textbf{Postcondizione}: il cliente può continuare il pagamento e l'acquisto.
 \end{itemize}
 
-\subsubsection{UCX.3.1 - TODO Inserimento indirizzo di spedizione}
-Figura \\
-\begin{itemize}
-\item \textbf{Attori primari}: cliente;
-\item \textbf{Descrizione}: il cliente inserisce i dati dell'indirizzo di spedizione;
-\item \textbf{Scenario Principale}: 
-\item \textbf{Estensioni}:
-\item \textbf{Specializzazioni}:
-\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
-\item \textbf{Postcondizione}: il cliente ha compilato i dati relativi all'indirizzo di spedizione.
-\end{itemize}
+%\subsubsection{UCX.3.1 - TODO Inserimento indirizzo di spedizione}
+%Figura \\
+%\begin{itemize}
+%\item \textbf{Attori primari}: cliente;
+%\item \textbf{Descrizione}: il cliente inserisce i dati dell'indirizzo di spedizione;
+%\item \textbf{Scenario Principale}: 
+%\item \textbf{Estensioni}:
+
+%\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+%\item \textbf{Postcondizione}: il cliente ha compilato i dati relativi all'indirizzo di spedizione.
+%\end{itemize}
 
 \subsubsection{UCX.3.2 - Inserimento dati di pagamento}
 Figura \\
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente inserisce i dati relativi alla sua carta di pagamento;
-\item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento le seguenti informazioni:
+\item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento le informazioni richieste;
+\item \textbf{Specializzazioni}: il cliente inserisce le seguenti informazioni:
 \begin{itemize}
-	\item nome collegato al conto;
-	\item cognome collegato al conto;
-	\item numero di carta;
-	\item mese e anno di scadenza della carta;
-	\item codice di sicurezza;
+	\item nome collegato al conto \textbf{[UCX.3.2.1]};
+	\item cognome collegato al conto \textbf{[UCX.3.2.2]};
+	\item numero di carta \textbf{[UCX.3.2.3]};
+	\item mese e anno di scadenza della carta \textbf{[UCX.3.2.4]};
+	\item codice di sicurezza \textbf{[UCX.3.2.5]};
 \end{itemize}
 \item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
 \item \textbf{Postcondizione}: il cliente ha compilato i dati di pagamento.
+\end{itemize}
+
+\subsubsection{UCX.3.2.1 - Inserimento nome}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il nome;
+\item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento il nome collegato al conto;
+\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al nome;
+\end{itemize}
+
+\subsubsection{UCX.3.2.2 - Inserimento cognome}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il cognome;
+\item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento il cognome collegato al conto;
+\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al cognome;
+\end{itemize}
+
+\subsubsection{UCX.3.2.3 - Inserimento numero di carta di credito}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il numero di carta;
+\item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento il numero di carta di credito;
+\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al numero di carta di pagamento;
+\end{itemize}
+
+\subsubsection{UCX.3.2.4 - Inserimento data di scadenza}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il mese e l'anno di scadenza della carta di credito;
+\item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento mese e l'anno di scadenza della carta;
+\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato alla data di scadenza;
+\end{itemize}
+
+\subsubsection{UCX.3.2.5 - Inserimento codice di sicurezza}
+Figura \\
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il codice di sicurezza;
+\item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento il codice di sicurezza collegato alla carta di credito;
+\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al codice di sicurezza;
 \end{itemize}
 
 \subsubsection{UCX.4 - Pagamento}
