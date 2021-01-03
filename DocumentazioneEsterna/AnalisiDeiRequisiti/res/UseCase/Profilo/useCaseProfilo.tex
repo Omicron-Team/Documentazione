@@ -7,7 +7,7 @@
 \subsubsection{UCX - Gestione profilo}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
-\item \textbf{Descrizione}: per gli utenti autenticati come clienti è disponibile una pagina del profilo in cui è possibile gestire i dati personali e visualizzare gli ordini effettuati.
+\item \textbf{Descrizione}: per gli utenti autenticati come clienti è disponibile una pagina del profilo in cui è possibile gestire i dati personali e visualizzare gli ordini effettuati;
 \item \textbf{Scenario Principale}: il cliente accede alla pagina del profilo personale ed ha a disposizione le seguenti funzionalità:
 \begin{itemize}
 \item Visualizzazione dati del profilo (\textbf{UCX.1});
@@ -52,14 +52,11 @@
 
 \subsubsection{UCX.3 - Visualizzazione ordini effettuati dall'utente}
 \begin{itemize}
-\item \textbf{Attori primari}:
-\item \textbf{Attori secondari}:
-\item \textbf{Descrizione}:
-\item \textbf{Scenario Principale}:
-\item \textbf{Estensioni}:
-\item \textbf{Specializzazioni}:
-\item \textbf{Precondizione}:
-\item \textbf{Postcondizione}:
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente può visualizzare una lista di ordini effettuati;
+\item \textbf{Scenario Principale}: il cliente si trova nella pagina del profilo e visualizza una lista di ordini effettuati. Per ogni ordine vengono visualizzati una serie di dati [\textbf{UCX.3.1}];
+\item \textbf{Precondizione}: il cliente si trova nella pagina del profilo e ha effettuato almeno un ordine nel sito.
+\item \textbf{Postcondizione}: viene visualizzata una lista di tutti gli ordini che il cliente ha effettuato.
 \end{itemize}
 
 \begin{figure}[H]
@@ -70,24 +67,28 @@
 
 \subsubsection{UCX.3.1 - Visualizzazione dati singolo ordine}
 \begin{itemize}
-\item \textbf{Attori primari}:
-\item \textbf{Attori secondari}:
-\item \textbf{Descrizione}:
-\item \textbf{Scenario Principale}:
-\item \textbf{Estensioni}:
-\item \textbf{Specializzazioni}:
-\item \textbf{Precondizione}:
-\item \textbf{Postcondizione}:
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: per ogni ordine nella lista degli ordini effettuati, vengono visualizzati una serie di dati;
+\item \textbf{Scenario Principale}: Il cliente si trova nella pagina del profilo e, cliccando un ordine effettuato, visualizza  una pagina di riepilogo con i seguenti dati:
+\begin{itemize}
+\item id ordine
+\item prodotti acquistati
+\item quantità prodotti acquistati
+\item costo per prodotto
+\item costo totale
+\item tasse applicate
+\item data d'acquisto
+\end{itemize}
+\item \textbf{Precondizione}: il cliente, cliccando su un ordine nella sua pagina di profilo, si trova nella pagina di riepilogo di un ordine;
+\item \textbf{Postcondizione}: vengono visualizzati i dati dell'ordine scelto.
 \end{itemize}
 
-\subsubsection{UCX.4 - Eliminazione profilo}
+\subsubsection{UCX.4 - Eliminazione account}
 \begin{itemize}
-\item \textbf{Attori primari}:
-\item \textbf{Attori secondari}:
-\item \textbf{Descrizione}:
-\item \textbf{Scenario Principale}:
-\item \textbf{Estensioni}:
-\item \textbf{Specializzazioni}:
-\item \textbf{Precondizione}:
-\item \textbf{Postcondizione}:
+\item \textbf{Attori primari}: Cliente;
+\item \textbf{Attori secondari}: Identity Manager;
+\item \textbf{Descrizione}: il cliente può eliminare il suo account dal sistema;
+\item \textbf{Scenario Principale}: il cliente si trova nella pagina del profilo e clicca il tasto dedicato per mandare la richiesta di eliminazione dell'account all'Identity Manager;
+\item \textbf{Precondizione}: il cliente si trova nella pagina del profilo;
+\item \textbf{Postcondizione}: l'account è stato eliminato dal sistema e il cliente diventa un utente non autenticato.
 \end{itemize}
