@@ -9,10 +9,10 @@
 \item \textbf{Attori primari}: utente non autenticato;
 \item \textbf{Attori secondari}: Identity Manager;
 \item \textbf{Descrizione}: viene effettuata la registrazione nel sistema, inserendo i propri dati personali nella pagina dedicata;
-\item \textbf{Scenario Principale}: l'utente non autenticato accede alla pagina di registrazione, il sistema rende disponibili i campi da compilare, l'utente compila i campi [UCX.1] e l'Identity Manager si occupa della registrazione nel sistema;
+\item \textbf{Scenario Principale}: l'utente non autenticato accede alla pagina di registrazione, il sistema rende disponibili i campi da compilare, l'utente compila i campi [\textbf{UCX.1}], conferma la registrazione [\textbf{UCX.2}] e l'Identity Manager si occupa della registrazione nel sistema;
 \item \textbf{Estensioni}:
 \begin{itemize}
-\item \textbf{UCX}: se i campi non sono validi, viene mostrato un errore di registrazione all'utente non autenticato e l'utente potrà provare nuovamente ad eseguire la registrazione.
+\item \textbf{UCX}: se i campi non sono validi o l'email è già stata utilizzata nel sistema, viene mostrato un errore di registrazione all'utente non autenticato e l'utente potrà provare nuovamente ad eseguire la registrazione.
 \end{itemize}
 \item \textbf{Precondizione}: l'utente non autenticato intende registrarsi nel sistema come cliente;
 \item \textbf{Postcondizione}: l'utente risulta registrato nel sistema come cliente.
@@ -38,6 +38,15 @@
 \end{itemize}
 \item \textbf{Precondizione}: l'utente non autenticato è all'interno della pagina di registrazione;
 \item \textbf{Postcondizione}: l'utente ha compilato tutti campi e può procedere alla registrazione.
+\end{itemize}
+
+\subsubsection{UCX.2 - Conferma registrazione}
+\begin{itemize}
+\item \textbf{Attori primari}: utente non autenticato;
+\item \textbf{Descrizione}: l'utente conferma i dati presenti nel form e si registra nel sistema;
+\item \textbf{Scenario Principale}: l'utente preme il tasto di conferma di registrazione e manda la richiesta al sistema per la registrazione di un account con i dati presenti nel form;
+\item \textbf{Precondizione}: l'utente non autenticato si trova all'interno della pagina di registrazione;
+\item \textbf{Postcondizione}: la richiesta di registrazione è stata mandata al sistema.
 \end{itemize}
 
 \begin{figure}[H]
@@ -95,13 +104,12 @@
 \subsubsection{UCX - Visualizzazione errori di registrazione}
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
-\item \textbf{Attori secondari}: Identity Manager;
 \item \textbf{Descrizione}: l'utente non autenticato visualizza un errore riguardante i campi di registrazione che ha inserito. Questi errori possono essere:
 \begin{itemize}
-\item \textbf{Campo non valido}: un campo presenta caratteri non validi;
-\item \textbf{Email già utilizzata}: l'Identity Manager riconosce che l'email è già stata utilizzata da un altro cliente.
+\item \textbf{Campo non valido}: un campo risulta vuoto o con caratteri non validi;
+\item \textbf{Email già utilizzata}: l'email è già stata utilizzata da un altro cliente.
 \end{itemize}
-\item \textbf{Scenario Principale}: il sistema riconosce un errore nei campi inseriti dall'utente e vengono visualizzati nella pagina di registrazione;
+\item \textbf{Scenario Principale}: il sistema riconosce uno o più errori nei campi inseriti dall'utente e vengono visualizzati nella pagina di registrazione;
 \item \textbf{Precondizione}: l'utente non autenticato ha inserito i campi ed ha provato ad effettuare la registrazione;
 \item \textbf{Postcondizione}: viene visualizzato un messaggio di errore nella pagina di registrazione e l'utente non risulta autenticato nel sistema.
 \end{itemize}
