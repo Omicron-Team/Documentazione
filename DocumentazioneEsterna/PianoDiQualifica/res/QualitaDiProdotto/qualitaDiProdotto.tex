@@ -3,23 +3,21 @@
 \begin {itemize}
 	\item{Funzionalità;}
 	\item{Affidabilità;}
-	\item{Efficienza;}
 	\item{Usabilità;}
 	\item{Manutenibilità;}
-	\item{Portabilità;}
 \end{itemize}
 
 \subsection{Funzionalità}
 La \textit{Funzionalità} è la capacità del prodotto di soddisfare i requisiti.
 \subsubsection{Obiettivi}
-gli obiettivi preposti sono:
+Gli obiettivi preposti sono:
 \begin {itemize}
 	\item \textbf{Adeguatezza:} capacità del prodotto di mettere a disposizione le funzioni necessarie per soddisfare gli obiettivi stabili;
 	\item \textbf{Accuratezza:} capacità di fornire i risultati attesi con la precisione richiesta;
 	\item \textbf{Conformità:} il prodotto deve essere conforme e rispettare determinati standard.
 \end{itemize}
 \subsubsection{Metriche}
-\paragraph{MPD1 - Completezza implementazione} tramite una percentuale viene determinata quanto il prodotto è completo
+\paragraph{MPD1 - Completezza implementazione} è possibile determinare il grado di completezza del prodotto tramite una percentuale.
 \begin{itemize}
 	\item \textbf{Misurazione:} \begin{math}C=\left(1-\frac{N_{FNI}}{N_{FI}}\right)*100\end{math}\\
 	dove:
@@ -32,9 +30,9 @@ gli obiettivi preposti sono:
 \end{itemize}
 
 \subsection{Affidabilità}
-L'\textit{affidabilità} è la capacità del prodotto di funzionare anche in situazioni prolungate o di gestire una grande quantità di informazioni.
+L'\textit{affidabilità} è la capacità del prodotto di funzionare anche in situazioni prolungate, di gestire una grande quantità di informazioni o di utenti.
 \subsubsection{Obiettivi}
-gli obiettivi preposti sono:
+Gli obiettivi preposti sono:
 \begin {itemize}
 	\item \textbf{maturità:} non si devono verificare errori o malfunzionamenti durante l'esecuzione;
 	\item \textbf{tolleranza degli errori:} il prodotto deve mantenere alte prestazioni anche in caso di un uso scorretto o malfunzionamenti.
@@ -52,15 +50,61 @@ gli obiettivi preposti sono:
 	\item \textbf{valore accettabile:}  \begin{math}\leq15\%\end{math}.
 \end{itemize}
 
-\subsection{Efficienza} Per efficienza si intende la capacità del prodotto di soddisfare le richieste sfruttando in modo ottimale le risorse messe a disposizione impiegando il minor tempo possibile.
+\subsection{Usabilità}
+Con \textit{usabilità} si intende la capacità del prodotto di essere di facile utilizzo e comprensione da parte dell'utente, quello che frequentemente viene definito \textit{user-friendly}.
 \subsubsection{Obiettivi}
-\begin{itemize}
-	\item \textbf{uso delle risorse:} capacità di sfruttare solo le risorse necessarie per risolvere una data problematica;
-	\item \textbf{Tempistiche di risposta:} capacità del prodotto di fornire risposta al problema in tempi accettabili.
+\begin {itemize}
+	\item \textbf{Comprensibile:} l'utente deve comprendere il prodotto e poter trovare le informazioni facilmente;
+	\item \textbf{Apprendibile:} deve essere facile per l'utente imparare ad utilizzarlo;
+	\item \textbf{Attrattivo:} deve essere interessante e catturare l'attenzione dell'utente.
 \end{itemize}
 \subsubsection{Metriche}
-
-
-\subsection{Usabilità}
+\paragraph{MPD3 - Facilità di utilizzo} Questa metrica viene espressa come il numero di click necessari per raggiungere un'informazione.
+\begin{itemize}
+	\item \textbf{misurazione:} click necessari per raggiungere il checkout;
+	\item \textbf{valore preferibile:} \begin{math}\leq10\end{math};
+	\item \textbf{valore accettabile:} \begin{math}\leq15\end{math}.
+\end{itemize}
+\paragraph{MPD4 - Facilità di apprendimento} Questa metrica viene espressa come il numero di minuti necessari per raggiungere l'informazione (in media).
+\begin{itemize}
+	\item \textbf{misurazione:} numero di minuti necessari per raggiungere il checkout;
+	\item \textbf{valore preferibile:} \begin{math}\leq6\end{math};
+	\item \textbf{valore accettabile:} \begin{math}\leq8\end{math}.
+\end{itemize}
+\paragraph{MPD5 - Dimensione gerarchia} Un sito per ritenersi di facile comprensione non deve essere troppo profondo.
+\begin{itemize}
+	\item \textbf{misurazione:} livello di profondità;
+	\item \textbf{valore preferibile:} \begin{math}\leq5\end{math};
+	\item \textbf{valore accettabile:} \begin{math}\leq8\end{math}.
+\end{itemize}
 \subsection{Manutenibilità}
-\subsection{Portabilità}
+Capacità del prodotto di essere modificato, mediante miglioramenti o correzioni.
+\subsubsection{Obiettivi}
+\begin{itemize}
+	\item \textbf{analizzabile:} capacità del prodotto di essere analizzato per localizzare gli errori;
+	\item \textbf{modificabile:} capacità del prodotto di permettere l'aggiunta di una o più modifiche.
+\end{itemize}
+\subsubsection{Metriche}
+\paragraph{MPD6 - Facilità di comprensione}  È possibile comprendere la facilità del codice tramite una percentuale mettendo in rapporto le linee di commenti con le linee di codice, in particolare:
+\begin{itemize}
+	\item \textbf{Misurazione:} \begin{math}R=\frac{N_{LCOM}}{N_{LCOD}}*100\end{math}\\
+	dove:
+	\begin {itemize}
+		\item \begin{math}N_{LCOM}\end{math}: indica il numero delle linee di commenti;
+		\item \begin{math}N_{LCOD}\end{math}: indica il numero delle linee di codice.
+	\end{itemize}
+	\item \textbf{valore ideale:} \begin{math}\geq20\%\end{math};
+	\item \textbf{valore accettabile:} \begin{math}\geq10\%\end{math}.
+\end{itemize}
+\paragraph{MPD7 - Semplicità classi} una classe potrebbe considerarsi semplice quando ha pochi metodi, quindi:
+\begin{itemize}
+	\item \textbf{Misurazione:} numero metodi per classe;
+	\item \textbf{valore ideale:} \begin{math}\leq10\end{math};
+	\item \textbf{valore accettabile:} \begin{math}\leq15\end{math}.
+\end{itemize}
+\paragraph{MPD8 - Semplicità funzioni} una funzione potrebbe considerarsi semplice quando ha pochi parametri.
+\begin{itemize}
+	\item \textbf{Misurazione:} numero di parametri in un metodo;
+	\item \textbf{valore ideale:} \begin{math}\leq3\end{math};
+	\item \textbf{valore accettabile:} \begin{math}\leq6\end{math}.
+\end{itemize}
