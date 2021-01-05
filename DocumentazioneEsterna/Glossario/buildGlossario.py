@@ -3,8 +3,7 @@
 # glossario.csv contiene due parametri (Termine,Definizione) divisi dalla virgola 
 # (se nella definizione o nel termine è presenta una virgola, scrivere la frase fra "")
 
-import csv
-import string
+import csv, string
 
 def clean_file():
     for i in string.ascii_uppercase:
@@ -14,7 +13,7 @@ def clean_file():
 
 def append_to_letter_file(termine,definizione):
     latex_code="\TermineGlossario{"+termine+"}\n\DefinizioneGlossario{"+definizione+"}\n\\\\\n"
-    with open("res/Alfabeto/"+termine[0].upper()+".tex", "a") as letter_file:
+    with open("res/Alfabeto/"+termine.split("\\")[-1][0].upper()+".tex", "a") as letter_file:
        letter_file.write(latex_code)
 
 def main():
