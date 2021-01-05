@@ -12,7 +12,7 @@
 \item \textbf{Scenario Principale}: 
 \begin{enumerate}
 	\item il cliente inizia il checkout dei prodotti nel carrello \textbf{[UCX.1]};
-	\item il cliente inserisce l'indirizzo di spedizione e i dati per il pagamento \textbf{[UCX.3]};
+	\item il cliente verifica l'indirizzo email e inserisce i dati per il pagamento \textbf{[UCX.3]};
 	\item il cliente procede al pagamento \textbf{[UCX.4]};
 	\item il cliente visualizza un riepilogo dell'ordine effettuato \textbf{[UCX.6]};
 \end{enumerate}
@@ -36,7 +36,7 @@
 \item se non è presente alcun prodotto nel carrello viene visualizzato un messaggio di errore \textbf{[UCX.2]}:;
 \end{itemize}
 \item \textbf{Precondizione}: l'utente è autenticato come cliente, si trova nella pagina del carrello e ha premuto il bottone dedicato al checkout;
-\item \textbf{Postcondizione}: il cliente viene reindirizzato alla pagina di selezione indirizzo di spedizione e di pagamento, dove può continuare l'acquisto dei prodotti.
+\item \textbf{Postcondizione}: il cliente viene reindirizzato alla pagina di verifica email e di pagamento, dove può continuare l'acquisto dei prodotti.
 \end{itemize}
 
 \subsubsection{UCX.2 - Visualizzazione errore carrello vuoto}
@@ -54,23 +54,36 @@
 \item \textbf{Descrizione}: il cliente compila i campi dati necessari all'acquisto dei prodotti selezionati;
 \item \textbf{Scenario Principale}: il cliente si trova nella pagina di pagamento e, per concludere l'acquisto, inserisce i seguenti dati:
 \begin{itemize}
-	\item TODO il cliente verifica l'indirizzo di spedizione indicato in fase di registrazione o può indicarne uno diverso \textbf{[UCX.3.1]};
+	\item il cliente verifica l'indirizzo email indicato in fase di registrazione o può indicarne uno diverso per l'invio dell'email di conferma acquisto \textbf{[UCX.3.1]};
 	\item il cliente inserisce i dati relativi al metodo di pagamento, come nome, cognome e numero di carta di credito \textbf{[UCX.3.2]};
 \end{itemize}
 \item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
 \item \textbf{Postcondizione}: il cliente può continuare il pagamento e l'acquisto.
 \end{itemize}
 
-%\subsubsection{UCX.3.1 - TODO Inserimento indirizzo di spedizione}
-%\begin{itemize}
-%\item \textbf{Attori primari}: cliente;
-%\item \textbf{Descrizione}: il cliente inserisce i dati dell'indirizzo di spedizione;
-%\item \textbf{Scenario Principale}: 
-%\item \textbf{Estensioni}:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/InserimentoDatiAcquisto}
+\caption{Diagramma UML per UCX - Inserimento dati necessari all'acquisto}
+\end{figure}
 
-%\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
-%\item \textbf{Postcondizione}: il cliente ha compilato i dati relativi all'indirizzo di spedizione.
-%\end{itemize}
+\subsubsection{UCX.3.1 - Verifica indirizzo email di spedizione}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente verifica l'indirizzo email inserito durante la fase di registrazione;
+\item \textbf{Scenario Principale}: il cliente visualizza l'indirizzo email precedentemente inserito, che verrà utilizzato per l'invio dell'email di conferma acquisto;
+\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Postcondizione}: il cliente visualizza e verifica il suo indirizzo email.
+\end{itemize}
+
+\subsubsection{UCX.3.2 - Modifica indirizzo email di spedizione}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente modifica l'indirizzo email inserito durante la fase di registrazione;
+\item \textbf{Scenario Principale}: il cliente può modificare l'email per la conferma dell'acquisto, sovrascrivendo l'indirizzo visualizzato \textbf{[UCX.3.1]};
+\item \textbf{Precondizione}: il cliente ha superato il checkout, si trova nella pagina di pagamento e visualizza il campo dati dedicato alla verifica dell'indirizzo email \textbf{[UCX.3.1]};
+\item \textbf{Postcondizione}: il cliente modifica il suo indirizzo email, sovrascrivendo quello visualizzato.
+\end{itemize}
 
 \begin{figure}[H]
 \centering
@@ -78,7 +91,7 @@
 \caption{Diagramma UML per UCX - Inserimento dati di pagamento}
 \end{figure}
 
-\subsubsection{UCX.3.2 - Inserimento dati di pagamento}
+\subsubsection{UCX.3.3 - Inserimento dati di pagamento}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente inserisce i dati relativi alla sua carta di pagamento;
@@ -94,7 +107,7 @@
 \item \textbf{Postcondizione}: il cliente ha compilato i dati di pagamento.
 \end{itemize}
 
-\subsubsection{UCX.3.2.1 - Inserimento nome}
+\subsubsection{UCX.3.3.1 - Inserimento nome}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il nome;
@@ -103,7 +116,7 @@
 \item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al nome;
 \end{itemize}
 
-\subsubsection{UCX.3.2.2 - Inserimento cognome}
+\subsubsection{UCX.3.3.2 - Inserimento cognome}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il cognome;
@@ -112,7 +125,7 @@
 \item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al cognome;
 \end{itemize}
 
-\subsubsection{UCX.3.2.3 - Inserimento numero di carta di credito}
+\subsubsection{UCX.3.3.3 - Inserimento numero di carta di credito}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il numero di carta;
@@ -121,7 +134,7 @@
 \item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al numero di carta di pagamento;
 \end{itemize}
 
-\subsubsection{UCX.3.2.4 - Inserimento data di scadenza}
+\subsubsection{UCX.3.3.4 - Inserimento data di scadenza}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il mese e l'anno di scadenza della carta di credito;
@@ -130,7 +143,7 @@
 \item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato alla data di scadenza;
 \end{itemize}
 
-\subsubsection{UCX.3.2.5 - Inserimento codice di sicurezza}
+\subsubsection{UCX.3.3.5 - Inserimento codice di sicurezza}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il codice di sicurezza;
@@ -143,17 +156,27 @@
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Attori secondari}: Stripe;
-\item \textbf{Descrizione}: il cliente, dopo aver inserito i dati richiesti, procede all'ordine. Il pagamento viene effettuato tramite Stripe, che riporterà l'esito ed eventuali errori;
+\item \textbf{Descrizione}: il cliente procede all'ordine. Il pagamento viene effettuato tramite Stripe, che riporterà l'esito ed eventuali errori;
 \item \textbf{Scenario Principale}: il cliente conferma l'ordine tramite l'apposito bottone;
 \item \textbf{Estensioni}:
 \begin{itemize}
-	\item il pagamento non va a buon fine. Il cliente visualizza un messaggio di errore contenente le cause del fallimento \textbf{[UCX.5]};
+	\item il pagamento non va a buon fine. Il cliente visualizza un messaggio di errore contenente le cause del fallimento \textbf{[UCX.6]};
+	\item l'utente non ha compilato tutti i campi necessari al pagamento. Il cliente visualizza un messaggio di errore che lo informa della necessità di inserire tutti i dati per procedere al pagamento \textbf{[UCX.7]}
 \end{itemize}
-\item \textbf{Precondizione}: il cliente si trova nella pagina di pagamento e ha compilato i campi dati necessari per procedere all'acquisto;
+\item \textbf{Precondizione}: il cliente si trova nella pagina di pagamento;
 \item \textbf{Postcondizione}: il costo totale dei prodotti acquistati è stato prelevato dal conto specificato dal cliente. È stata inviata un'email al cliente per confermare l'acquisto. Al cliente viene mostrato un riepilogo dell'ordine appena effettuato.
 \end{itemize}
 
-\subsubsection{UCX.5 - Visualizzazione errore pagamento}
+\subsubsection{UCX.5 - Visualizzazione errore dati non compilati}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente visualizza un messaggio di errore che lo informa della necessità di compilare tutti i campi dati per procedere al pagamento.
+\item \textbf{Scenario Principale}: il cliente preme il bottone dedicato al pagamento senza prima aver compilato tutti i campi richiesti;
+\item \textbf{Precondizione}: il cliente si trova nella pagina di pagamento e non ha compilato tutti i campi dati necessari per procedere all'acquisto;
+\item \textbf{Postcondizione}: viene visualizzato un messaggio che informa il cliente dell'errore e che consiglia all'utente di controllare i dati inseriti e riprovare.
+\end{itemize}
+
+\subsubsection{UCX.6 - Visualizzazione errore pagamento}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Attori secondari}: Stripe;
@@ -163,7 +186,8 @@
 \item \textbf{Postcondizione}: viene visualizzato un messaggio che informa il cliente dell'errore avvenuto nel processo di pagamento, consigliandogli di controllare i dati inseriti e riprovare.
 \end{itemize}
 
-\subsubsection{UCX.6 - Visualizzazione riepilogo ordine}
+
+\subsubsection{UCX.7 - Visualizzazione riepilogo ordine}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Attori secondari}:
