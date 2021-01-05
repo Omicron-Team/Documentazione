@@ -10,20 +10,39 @@
 \item \textbf{Descrizione}: la merchant dashboard permette di gestire e monitorare i dati dei prodotti e le vendite effettuate;
 \item \textbf{Scenario Principale}: il venditore accede alla dashboard tramite l'apposito pulsante e può effettuare le seguenti operazioni:
 \begin{itemize}
-	\item Inserire un nuovo prodotto;
-	\item Visualizzare i prodotti attualmente in vendita;
-	\item Modificare i dati di un prodotto in vendita;
-	\item Eliminare un prodotto in vendita;
+	\item Gestire i prodotti;
+	\item Gestire le categorie di prodotti;
 	\item Visualizzare gli ordini ricevuti;
 	\item Visualizzare i collegamenti agli strumenti per la gestione del sito.
 \end{itemize}
 \item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
-\item \textbf{Postcondizione}: al merchant è permesso effettuare operazioni   per gestire i propri prodotti e i propri ordini.
+\item \textbf{Postcondizione}: al merchant è permesso effettuare operazioni per gestire i propri prodotti, le categorie di prodotti e gli ordini. Sono anche presenti dei collegamenti agli strumenti di gestione del sito.
 \end{itemize}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/MerchantDashboard}
+\caption{Diagramma UML per UCX - Merchant dashboard}
+\end{figure}
+
+\subsubsection{UCX.1 - Gestione prodotti}
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore può gestire i prodotti dalla dashboard;
+\item \textbf{Scenario Principale}: il venditore può effettuare le seguenti operazioni sui prodotti:
+\begin{itemize}
+	\item Visualizzazione \textbf{[UCX]};
+	\item Inserimento \textbf{[UCX]};
+	\item Modifica \textbf{[UCX]};
+	\item Rimozione \textbf{[UCX]};
+\end{itemize}
+\item \textbf{Precondizione}: il venditore si trova nella merchant dashboard;
+\item \textbf{Postcondizione}: al venditore è permesso effettuare operazioni per gestire i propri prodotti;
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/GestioneProdotti}
 \caption{Diagramma UML per UCX - Merchant dashboard}
 \end{figure}
 
@@ -37,8 +56,9 @@
 	\item descrizione \textbf{[UCX.1.2]};
 	\item prezzo \textbf{[UCX.1.3]};
 	\item immagine \textbf{[UCX.1.4]};
+	\item categoria \textbf{[UCX.1.5]};
 \end{itemize}
-per poi premere il pulsante di conferma \textbf{[UCX.1.5]}.
+per poi premere il pulsante di conferma \textbf{[UCX.1.6]}.
 \item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
 \item \textbf{Postcondizione}: il venditore ha inserito un nuovo prodotto nel sistema.
 \end{itemize}
@@ -85,20 +105,29 @@ per poi premere il pulsante di conferma \textbf{[UCX.1.5]}.
 \item \textbf{Postcondizione}: il venditore ha caricato l'immagine del nuovo prodotto;
 \end{itemize}
 
-\subsubsection{UCX.1.5 - Conferma inserimento}
+\subsubsection{UCX.1.5 - Inserimento categoria}
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: al venditore è richiesto l'inserimento della categoria del nuovo prodotto da inserire;
+\item \textbf{Scenario Principale}: il venditore inserisce nel form dedicato la categoria del nuovo prodotto;
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata all'inserimento di un nuovo prodotto;
+\item \textbf{Postcondizione}: il venditore ha compilato il campo dedicato alla categoria del prodotto;
+\end{itemize}
+
+\subsubsection{UCX.1.6 - Conferma inserimento}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
 \item \textbf{Descrizione}: il venditore conferma i dati presenti nel form e inserisce il nuovo prodotto;
 \item \textbf{Scenario Principale}: il venditore preme il pulsante di conferma e inserisce il nuovo prodotto con i dati precedentemente inseriti.
 \item \textbf{Estensioni}: 
 \begin{itemize}
-	\item se non tutti i dati richiesti sono stati compilati viene visualizzato un messaggio di errore \textbf{[UCX.1.6]};
+	\item se non tutti i dati richiesti sono stati compilati viene visualizzato un messaggio di errore \textbf{[UCX.1.7]};
 \end{itemize} 
 \item \textbf{Precondizione}: il venditore si trova nella pagina dedicata all'inserimento di un nuovo prodotto e ha premuto il bottone di conferma;
 \item \textbf{Postcondizione}: il venditore ha inserito un nuovo prodotto nel sistema.
 \end{itemize}
 
-\subsubsection{UCX.1.6 - Visualizzazione errore campi mancanti inserimento}
+\subsubsection{UCX.1.7 - Visualizzazione errore campi mancanti inserimento}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
 \item \textbf{Descrizione}: il venditore visualizza un messaggio di errore che lo informa che per procedere all'inserimento è necessario aver inserito tutti i dati richiesti;
@@ -174,6 +203,15 @@ per poi premere il pulsante di conferma \textbf{[UCX.3.5]};
 \item \textbf{Postcondizione}: il venditore ha caricato l'immagine del prodotto, sovrascrivendo la precedente;
 \end{itemize}
 
+\subsubsection{UCX.3.2 - Modifica categoria}
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore modifica la categoria del prodotto selezionato.
+\item \textbf{Scenario Principale}: il venditore visualizza nel campo relativo alla categoria del prodotto il dato attualmente presente, che andrà a sovrascrivere con la nuova descrizione aggiornata;
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata alla modifica di un prodotto;
+\item \textbf{Postcondizione}: il venditore ha compilato il campo dedicato alla categoria del prodotto, sovrascrivendo la precedente;
+\end{itemize}
+
 \subsubsection{UCX.3.5 - Conferma modifica}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
@@ -205,7 +243,92 @@ per poi premere il pulsante di conferma \textbf{[UCX.3.5]};
 \item \textbf{Postcondizione}: il venditore ha eliminato il prodotto selezionato.
 \end{itemize}
 
-\subsubsection{UCX.5 - Visualizzazione lista ordini ricevuti}
+\subsubsection{UCX.5 - Gestione categorie di prodotti}
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore può gestire le categorie di prodotti dalla dashboard;
+\item \textbf{Scenario Principale}: il venditore può effettuare le seguenti operazioni sulle categorie di prodotti:
+\begin{itemize}
+	\item Visualizzazione \textbf{[UCX]};
+	\item Inserimento \textbf{[UCX]};
+	\item Rimozione \textbf{[UCX]};
+\end{itemize}
+\item \textbf{Precondizione}: il venditore si trova nella merchant dashboard;
+\item \textbf{Postcondizione}: al venditore è permesso effettuare operazioni per gestire le categorie di prodotti;
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/GestioneCategorie}
+\caption{Diagramma UML per UCX - Merchant dashboard}
+\end{figure}
+
+\subsubsection{UCX - Inserimento categoria}
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore può inserire nel sistema nuove categorie di prodotti.
+\item \textbf{Scenario Principale}: il venditore accede alla pagina di inserimento categorie tramite l'apposito pulsante ed inserisce il nome della categoria per poi premere il pulsante di conferma \textbf{[UCX.1.6]}.
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Postcondizione}: il venditore ha inserito una nuova categoria nel sistema.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/InserimentoCategoria}
+\caption{Diagramma UML per UCX - Inserimento prodotto}
+\end{figure}
+
+\subsubsection{UCX.1 - Inserimento nome}
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: al venditore è richiesto l'inserimento del nome della nuova categoria da inserire;
+\item \textbf{Scenario Principale}: il venditore inserisce nel form dedicato il nome della nuova categoria;
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata all'inserimento di una nuova categoria;
+\item \textbf{Postcondizione}: il venditore ha compilato il campo dedicato al nome della categoria;
+\end{itemize}
+
+\subsubsection{UCX.2 - Conferma inserimento}
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore conferma i dati presenti nel form e inserisce la nuova categoria;
+\item \textbf{Scenario Principale}: il venditore preme il pulsante di conferma e inserisce la nuova categoria con il nome precedentemente inserito
+\item \textbf{Estensioni}: 
+\begin{itemize}
+	\item se il nome della categoria non è stato inserito viene visualizzato un messaggio di errore \textbf{[UCX]};
+\end{itemize} 
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata all'inserimento di una nuova categoria e ha premuto il bottone di conferma;
+\item \textbf{Postcondizione}: il venditore ha inserito una nuova categoria nel sistema.
+\end{itemize}
+
+\subsubsection{UCX - Visualizzazione errore campi mancanti inserimento}
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore visualizza un messaggio di errore che lo informa che per procedere all'inserimento è necessario aver inserito il nome della categoria;
+\item \textbf{Scenario Principale}: il venditore prova ad inserire una nuova categoria senza aver compilato il campo dati del nome;
+\item \textbf{Precondizione}: il venditore si trova nella pagina dedicata all'inserimento di una nuova categoria e ha premuto il bottone di conferma;
+\item \textbf{Postcondizione}: viene visualizzato un messaggio che informa il venditore della necessità di compilare il campo del nome per inserire una nuova categoria.
+\end{itemize}
+
+\subsubsection{UCX - Visualizzazione lista categorie}
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore visualizza nella merchant dashboard la lista delle categorie presenti nel sistema;
+\item \textbf{Scenario Principale}: il venditore accede alla merchant dashboard e, nell'apposita sezione, visualizza una lista dei nomi delle categorie presenti;
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Postcondizione}: il venditore visualizza la lista dei nomi delle categorie presenti nel sistema.
+\end{itemize}
+
+\subsubsection{UCX - Rimozione categoria}
+\begin{itemize}
+\item \textbf{Attori primari}: venditore;
+\item \textbf{Descrizione}: il venditore può rimuovere le categorie;
+\item \textbf{Scenario Principale}: il venditore elimina la categoria scelta tramite l'apposito pulsante collegato alla categoria da eliminare, visualizzato nella lista delle categorie \textbf{[UCX]}.
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Postcondizione}: il venditore ha eliminato la categoria selezionata.
+\end{itemize}
+
+
+\subsubsection{UCX.6 - Visualizzazione lista ordini ricevuti}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
 \item \textbf{Descrizione}: il venditore visualizza nella merchant dashboard la lista degli ordini ricevuti;
@@ -214,7 +337,7 @@ per poi premere il pulsante di conferma \textbf{[UCX.3.5]};
 \item \textbf{Postcondizione}: il venditore visualizza la lista degli ordini presenti nel sistema.
 \end{itemize}
 
-\subsubsection{UCX.5.1 - Visualizzazione informazioni ordine}
+\subsubsection{UCX.6.1 - Visualizzazione informazioni ordine}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
 \item \textbf{Descrizione}: il venditore visualizza le informazioni dell'ordine selezionato;
@@ -232,7 +355,7 @@ per poi premere il pulsante di conferma \textbf{[UCX.3.5]};
 \item \textbf{Postcondizione}: il venditore visualizza le informazioni relative all'ordine selezionato.
 \end{itemize}
 
-\subsubsection{UCX.6 - Collegamenti a sistemi di gestione}
+\subsubsection{UCX.7 - Collegamenti a sistemi di gestione}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
 \item \textbf{Descrizione}: il venditore visualizza nella merchant dashboard i collegamenti agli strumenti di gestione esterni;
