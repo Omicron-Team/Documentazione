@@ -18,7 +18,7 @@ def append_to_letter_file(termine,definizione):
 
 def main():
     clean_file()
-    definizioni = sorted(csv.DictReader(open('glossario.csv')), key=lambda termine: termine['Termine'])
+    definizioni = sorted(csv.DictReader(open('glossario.csv')), key=lambda termine: termine['Termine'].split("\\")[-1])
     
     for row in definizioni:
         #print for test
