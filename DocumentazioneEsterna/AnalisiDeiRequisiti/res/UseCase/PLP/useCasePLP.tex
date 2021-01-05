@@ -8,33 +8,22 @@ Figura \\
 \item[a.] nome;
 \item[b.] immagine;
 \item[c.] prezzo;
-\item[d.] quantità di prodotto selezionata (la quantità di default corrisponde ad 1).
 \end{enumerate}
 \item \textbf{Precondizione}: l'utente ha cliccato sulla PLP\ped{G} dedicata alla categoria di prodotti scelta;
 \item \textbf{Postcondizione}: l'utente visualizza le informazioni relative ai prodotti listati, con le eventuali operazioni disponibili su ognuno di essi.
 \end{itemize}
-\subsubsection{UCX - Modifica della quantità selezionata}
+\subsubsection{UCX - Inserimento nel carrello di un prodotto listato}
 Figura \\
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
-\item \textbf{Descrizione}: l'utente può modificare la quantità desiderata di un prodotto listato, che di default è 1, attraverso un campo apposito.
-\item \textbf{Scenario Principale}: l'utente modifica la quantità del prodotto utilizzando l'apposito campo;
-\item \textbf{Precondizione}: l'utente sta visualizzando la lista di prodotti contenuti nella PLP\ped{G};
-\item \textbf{Postcondizione}: l'utente ha selezionato un prodotto da lui desiderato e la relativa quantità è stata aggiornata al nuovo valore richiesto.
-\end{itemize}
-\subsubsection{UCX - Aggiunta al carrello di un prodotto}
-Figura \\
-\begin{itemize}
-\item \textbf{Attori primari}: utente generico;
-\item \textbf{Descrizione}: l'utente può inserire il prodotto selezionato nel carrello, nella quantità desiderata, cliccando un apposito pulsante;
+\item \textbf{Descrizione}: l'utente può inserire un prodotto presente sulla PLP\ped{G} nel carrello, con una quantità selezionata pari ad 1. Per effettuare l'azione è sufficiente cliccare sull'apposito pulsante;
 \item \textbf{Scenario Principale}:
 \begin{enumerate}
-\item[a.] l'utente visualizza i prodotti presenti nella PLP\ped{G} [UC specifico];
-\item[b.] l'utente può modificare la quantità del prodotto selezionato [UC specifico];
-\item[d.] l'utente preme il pulsante per l'inserimento dei prodotti nel carrello.
+\item[a.] l'utente visualizza i prodotti presenti nella lista corrispondente ad una categoria [UC specifico];
+\item[b.] l'utente preme il pulsante per l'inserimento del prodotto desiderato nel carrello.
 \end{enumerate}
-\item \textbf{Precondizione}: l'utente sta visualizzando il prodotto listato in vendita nella piattaforma;
-\item \textbf{Postcondizione}: l'utente ha inserito nel proprio carrello il prodotto con la relativa quantità desiderata.
+\item \textbf{Precondizione}: l'utente sta visualizzando la PLP\ped{G} contenente il prodotto desiderato;
+\item \textbf{Postcondizione}: l'utente ha inserito nel proprio carrello il prodotto con quantità selezionata pari ad 1.
 \end{itemize}
 \subsubsection{UCX - Filtraggio dei prodotti}
 Figura \\
@@ -48,13 +37,13 @@ Figura \\
 \item[c.] l'utente applica il filtro cliccando l'apposito bottone.
 \end{enumerate}
 \item \textbf{Precondizione}: l'utente sta visualizzando i prodotti in vendita listati nella specifica PLP\ped{G};
-\item \textbf{Postcondizione}: l'utente ottiene una nuova pagina in cui può visualizzare solo i prodotti compresi nel range di prezzo specificato.
+\item \textbf{Postcondizione}: l'utente ottiene una nuova pagina in cui può visualizzare solo i prodotti presenti nella PLP\ped{G} corrente e compresi nel range di prezzo specificato.
 \end{itemize}
-\subsubsection{UCX - Visualizzazione approfondita di un prodotto}
+\subsubsection{UCX - Accesso alla pagina di un prodotto}
 Figura \\
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
-\item \textbf{Descrizione}: l'utente può accedere ad una pagina per visualizzare tutte le caratteristiche di un prodotto listato ed eventualmente aggiungerlo al carrello.
+\item \textbf{Descrizione}: l'utente può accedere ad una pagina per visualizzare tutte le caratteristiche di un prodotto listato. In questa pagina, chiamata anche PDP/ped{G}, è possibile eventualmente aggiungere il prodotto al carrello.
 \item \textbf{Scenario Principale}: l'utente clicca sul prodotto da lui desiderato;
 \item \textbf{Precondizione}: l'utente si trova in una PLP\ped{G} contenente una lista di prodotti;
 \item \textbf{Postcondizione}: l'utente accede alla PDP\ped{G} corrispondente al prodotto desiderato.
