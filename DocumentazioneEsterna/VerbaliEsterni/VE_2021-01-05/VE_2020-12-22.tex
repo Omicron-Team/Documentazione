@@ -1,0 +1,23 @@
+\documentclass[12pt]{article}
+
+\input{../../../Utilita/latexSetup/package}
+\usepackage{../../../Utilita/latexSetup/styleTemplate}
+\input{res/command}
+\input{../../../Utilita/latexSetup/generalCommand}
+
+% \setcounter{secnumdepth}{0}
+
+\begin{document}
+	
+	\input{../../../Utilita/latexSetup/PrimaPagina}
+	\input{res/DiarioModifiche}
+	\newpage
+	\tableofcontents
+	\newpage
+	\input{res/InfoGenerali.tex}
+	\input{res/OrdineDelGiorno/ordineDelGiorno.tex}
+	\input{res/Resoconto/resoconto.tex}
+	\newpage
+	\input{res/RiepilogoDecisioni.tex}
+	
+\end{document}
