@@ -4,31 +4,21 @@
 \caption{Diagramma UML per modulo di login}
 \end{figure}
 
-\subsubsection{UCX - Login}
+\subsubsection{UC3 - Login}
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
 \item \textbf{Attori secondari}: identity manager;
 \item \textbf{Descrizione}: l'utente, inserendo le proprie credenziali, viene autenticato alla piattaforma;
-\item \textbf{Scenario Principale}: l'utente non ancora autenticato seleziona il tipo di utente \textbf{[UCX]}, inserisce le proprie credenziali negli appositi campi dati \textbf{[UCX]} e richiede il login \textbf{[UCX]};
+\item \textbf{Scenario Principale}: l'utente non ancora autenticato seleziona il tipo di utente \textbf{[UC3.1]}, inserisce le proprie credenziali negli appositi campi dati \textbf{[UC3.2]} e richiede il login \textbf{[UC3.3]};
 \item \textbf{Estensioni}:
 \begin{itemize}
-	\item \textbf{UCX}: se le credenziali inserite non vengono riconosciute dall'identity manager, viene visualizzato un messaggio che informa l'utente dell'errore;
+	\item \textbf{UC4}: se le credenziali inserite non vengono riconosciute dall'identity manager, viene visualizzato un messaggio che informa l'utente dell'errore;
 \end{itemize}
 \item \textbf{Precondizione}: l'utente prova ad autenticarsi alla piattaforma;
-\item \textbf{Postcondizione}: l'utente viene autenticato come il tipo di utente selezionato in \textbf{[UCX]}.
+\item \textbf{Postcondizione}: l'utente viene autenticato come il tipo di utente selezionato in \textbf{[UC3.1]}.
 \end{itemize}
 
-\subsubsection{UCX - Visualizzazione errore dati login errati}
-\begin{itemize}
-\item \textbf{Attori primari}: utente non autenticato;
-\item \textbf{Attori secondari}: identity manager;
-\item \textbf{Descrizione}: l'utente visualizza un messaggio di errore che lo informa che i dati da lui inseriti durante il login non sono riconosciuti dall'identity manager;
-\item \textbf{Scenario Principale}: l'utente tenta di effettuare il login usando credenziali non presenti nel sistema;
-\item \textbf{Precondizione}: l'utente prova ad autenticarsi alla piattaforma;
-\item \textbf{Postcondizione}: viene visualizzato un messaggio che informa l'utente dell'errore di riconoscimento delle credenziali.
-\end{itemize}
-
-\subsubsection{UCX - Selezione tipo utente}
+\subsubsection{UC3.1 - Selezione tipo utente}
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
 \item \textbf{Descrizione}: l'utente seleziona il tipo di utente per effettuare il login;
@@ -37,21 +27,21 @@
 \item \textbf{Postcondizione}: è stato selezionato il tipo di utente per il login.
 \end{itemize}
 
-\subsubsection{UCX - Inserimento dati login}
+\subsubsection{UC3.2 - Inserimento dati login}
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
 \item \textbf{Descrizione}: l'utente compila il form per il login;
 \item \textbf{Scenario Principale}: l'utente inserisce nel form apposito i dati necessari al login;
-\item \textbf{Specializzazioni}: A seconda del tipo di utente selezionato in \textbf{[UCX]}
+\item \textbf{Specializzazioni}: A seconda del tipo di utente selezionato in \textbf{[UC3.1]}
 \begin{itemize}
-	\item Inserimento dati login cliente \textbf{[UCX.3]}
-	\item Inserimento dati login venditore \textbf{[UCX.4]}
+	\item Inserimento dati login cliente \textbf{[UC3.2.3]}
+	\item Inserimento dati login venditore \textbf{[UC3.2.4]}
 \end{itemize}
 \item \textbf{Precondizione}: il form di inserimento dati per il login è disponibile;
 \item \textbf{Postcondizione}: i dati necessari al login sono stati compilati.
 \end{itemize}
 
-\subsubsection{UCX.1 - Inserimento email}
+\subsubsection{UC3.2.1 - Inserimento email}
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
 \item \textbf{Descrizione}: l'utente deve compilare il campo "Password" per procedere al login;
@@ -60,7 +50,7 @@
 \item \textbf{Postcondizione}: il campo "Password" è stato compilato.
 \end{itemize}
 
-\subsubsection{UCX.2 - Inserimento email}
+\subsubsection{UC3.2.2 - Inserimento email}
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
 \item \textbf{Descrizione}: l'utente deve compilare il campo "Email" per procedere al login;
@@ -69,25 +59,25 @@
 \item \textbf{Postcondizione}: il campo "Email" è stato compilato.
 \end{itemize}
 
-\subsubsection{UCX.3 - Inserimento dati login cliente}
+\subsubsection{UC3.2.3 - Inserimento dati login cliente}
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
 \item \textbf{Descrizione}: l'utente compila il form per il login;
-\item \textbf{Scenario Principale}: l'utente che ha selezionato il tipo utente 'cliente' \textbf{[UCX]} inserisce nel form apposito la propria email \textbf{[UCX.2]} e la propria password \textbf{[UCX.1]};
+\item \textbf{Scenario Principale}: l'utente che ha selezionato il tipo utente 'cliente' \textbf{[UC3.1]} inserisce nel form apposito la propria email \textbf{[UC3.2.2]} e la propria password \textbf{[UC3.2.1]};
 \item \textbf{Precondizione}: il form di inserimento dati per il login è disponibile;
 \item \textbf{Postcondizione}: i dati necessari al login sono stati compilati.
 \end{itemize}
 
-\subsubsection{UCX.4 - Inserimento dati login venditore}
+\subsubsection{UC3.2.4 - Inserimento dati login venditore}
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
 \item \textbf{Descrizione}: l'utente compila il form per il login;
-\item \textbf{Scenario Principale}: l'utente che ha selezionato il tipo utente 'venditore' \textbf{[UCX]} inserisce nel form apposito la propria password \textbf{[UCX.1]};
+\item \textbf{Scenario Principale}: l'utente che ha selezionato il tipo utente 'venditore' \textbf{[UC3.1]} inserisce nel form apposito la propria password \textbf{[UC3.1]};
 \item \textbf{Precondizione}: il form di inserimento dati per il login è disponibile;
 \item \textbf{Postcondizione}: i dati necessari al login sono stati compilati.
 \end{itemize}
 
-\subsubsection{UCX - Richiesta di login}
+\subsubsection{UC3.3 - Richiesta di login}
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
 \item \textbf{Descrizione}: l'utente richiede l'autenticazione con i dati inseriti;
@@ -96,3 +86,12 @@
 \item \textbf{Postcondizione}: la richiesta di login è stata mandata al sistema;
 \end{itemize} 
 
+\subsubsection{UC4 - Visualizzazione errore dati login errati}
+\begin{itemize}
+\item \textbf{Attori primari}: utente non autenticato;
+\item \textbf{Attori secondari}: identity manager;
+\item \textbf{Descrizione}: l'utente visualizza un messaggio di errore che lo informa che i dati da lui inseriti durante il login non sono riconosciuti dall'identity manager;
+\item \textbf{Scenario Principale}: l'utente tenta di effettuare il login usando credenziali non presenti nel sistema;
+\item \textbf{Precondizione}: l'utente prova ad autenticarsi alla piattaforma;
+\item \textbf{Postcondizione}: viene visualizzato un messaggio che informa l'utente dell'errore di riconoscimento delle credenziali.
+\end{itemize}

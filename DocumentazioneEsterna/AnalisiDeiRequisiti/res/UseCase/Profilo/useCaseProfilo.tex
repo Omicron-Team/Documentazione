@@ -4,16 +4,16 @@
 \caption{Diagramma UML per modulo del profilo}
 \end{figure}
 
-\subsubsection{UCX - Gestione profilo}
+\subsubsection{UC8 - Gestione profilo}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: per gli utenti autenticati come clienti è disponibile una pagina del profilo in cui è possibile gestire i dati personali e visualizzare gli ordini effettuati;
 \item \textbf{Scenario Principale}: il cliente accede alla pagina del profilo personale ed ha a disposizione le seguenti funzionalità:
 \begin{itemize}
-\item Visualizzazione dati del profilo (\textbf{UCX.1});
-\item Modifica dati del profilo (\textbf{UCX.2});
-\item Visualizzazione ordini effettuati dall'utente (\textbf{UCX.3});
-\item Eliminazione profilo (\textbf{UCX.4}).
+\item Visualizzazione dati del profilo (\textbf{UC8.1});
+\item Modifica dati del profilo (\textbf{UC8.2});
+\item Visualizzazione ordini effettuati dall'utente (\textbf{UC8.3});
+\item Eliminazione profilo (\textbf{UC8.4}).
 \end{itemize}
 \item \textbf{Precondizione}: l'utente è autenticato come cliente nel sito e ha a disposizione la pagina del profilo;
 \item \textbf{Postcondizione}: l'utente visualizza la pagina del profilo ed ha accesso a varie funzionalità.
@@ -22,10 +22,10 @@
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/GestioneProfilo}
-\caption{Diagramma UML per UCX - Gestione profilo}
+\caption{Diagramma UML per UC8 - Gestione profilo}
 \end{figure}
 
-\subsubsection{UCX.1 - Visualizzazione dati del profilo}
+\subsubsection{UC8.1 - Visualizzazione dati del profilo}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente visualizza i suoi dati personali presenti nel sistema;
@@ -40,20 +40,20 @@
 \item \textbf{Postcondizione}: vengono visualizzati i dati personali del cliente.
 \end{itemize}
 
-\subsubsection{UCX.2 - Modifica dati del profilo}
+\subsubsection{UC8.2 - Modifica dati del profilo}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Attori secondari}: Identity Manager;
 \item \textbf{Descrizione}: il cliente può modificare i dati personali presenti nella sua pagina del profilo;
 \item \textbf{Scenario Principale}: il cliente si trova nella pagina del profilo e clicca un tasto dedicato per andare nella pagina di modifica. Da li può modificare le seguenti informazioni:
 \begin{itemize}
-\item nome [\textbf{UCX.2.1}];
-\item cognome [\textbf{UCX.2.2}];
-\item indirizzo di fatturazione [\textbf{UCX.2.3}];
-\item email [\textbf{UCX.2.4}];
-\item password [\textbf{UCX.2.5}].
+\item nome [\textbf{UC8.2.1}];
+\item cognome [\textbf{UC8.2.2}];
+\item indirizzo di fatturazione [\textbf{UC8.2.3}];
+\item email [\textbf{UC8.2.4}];
+\item password [\textbf{UC8.2.5}].
 \end{itemize}
-Una volta che i campi hanno al suo interno i valori previsti dal cliente, il cliente può premere il pulsante per confermare la modifica dei dati [\textbf{UCX.2.6}];
+Una volta che i campi hanno al suo interno i valori previsti dal cliente, il cliente può premere il pulsante per confermare la modifica dei dati [\textbf{UC8.2.6}];
 \item \textbf{Precondizione}: il cliente si trova nella pagina del profilo;
 \item \textbf{Postcondizione}: vengono modificati i dati personali del cliente presenti nel profilo in base alle sue intenzioni.
 \end{itemize}
@@ -61,10 +61,10 @@ Una volta che i campi hanno al suo interno i valori previsti dal cliente, il cli
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/ModificaProfilo}
-\caption{Diagramma UML per UCX.1 - Modifica dati del profilo}
+\caption{Diagramma UML per UC8.2 - Modifica dati del profilo}
 \end{figure}
 
-\subsubsection{UCX.2.1 - Modifica nome}
+\subsubsection{UC8.2.1 - Modifica nome}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente può modificare il nome;
@@ -73,7 +73,7 @@ Una volta che i campi hanno al suo interno i valori previsti dal cliente, il cli
 \item \textbf{Postcondizione}: il cliente ha compilato il campo dedicato al nome, sovrascrivendo il precedente.
 \end{itemize}
 
-\subsubsection{UCX.2.2 - Modifica cognome}
+\subsubsection{UC8.2.2 - Modifica cognome}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente può modificare il cognome;
@@ -82,7 +82,7 @@ Una volta che i campi hanno al suo interno i valori previsti dal cliente, il cli
 \item \textbf{Postcondizione}: il cliente ha compilato il campo dedicato al cognome, sovrascrivendo il precedente.
 \end{itemize}
 
-\subsubsection{UCX.2.3 - Modifica indirizzo di fatturazione}
+\subsubsection{UC8.2.3 - Modifica indirizzo di fatturazione}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente può modificare l'indirizzo di fatturazione;
@@ -91,7 +91,7 @@ Una volta che i campi hanno al suo interno i valori previsti dal cliente, il cli
 \item \textbf{Postcondizione}: il cliente ha compilato il campo dedicato all'indirizzo di fatturazione, sovrascrivendo il precedente.
 \end{itemize}
 
-\subsubsection{UCX.2.4 - Modifica email}
+\subsubsection{UC8.2.4 - Modifica email}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente può modificare l'email;
@@ -100,7 +100,7 @@ Una volta che i campi hanno al suo interno i valori previsti dal cliente, il cli
 \item \textbf{Postcondizione}: il cliente ha compilato il campo dedicato all'email, sovrascrivendo la precedente.
 \end{itemize}
 
-\subsubsection{UCX.2.5 - Modifica password}
+\subsubsection{UC8.2.5 - Modifica password}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente può modificare la password;
@@ -109,20 +109,20 @@ Una volta che i campi hanno al suo interno i valori previsti dal cliente, il cli
 \item \textbf{Postcondizione}: il cliente ha compilato il campo dedicato alla password, sovrascrivendo la precedente.
 \end{itemize}
 
-\subsubsection{UCX.2.6 - Conferma modifica profilo}
+\subsubsection{UC8.2.6 - Conferma modifica profilo}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente conferma i dati presenti nel form e il profilo viene modificato;
 \item \textbf{Scenario Principale}: il cliente preme il pulsante di conferma, la richiesta viene gestita dall'Identity Manager ed il profilo viene modificato con i valori precedentemente inseriti;
 \item \textbf{Estensioni}: 
 \begin{itemize}
-\item se i campi risultano non validi oppure l'email è già stata utilizzata nel sistema, viene mostrato un messaggio di errore [\textbf{UCX.2.7}].
+\item se i campi risultano non validi oppure l'email è già stata utilizzata nel sistema, viene mostrato un messaggio di errore [\textbf{UC8.2.7}].
 \end{itemize}
 \item \textbf{Precondizione}: il cliente si trova nella pagina dedicata alla modifica del profilo;
 \item \textbf{Postcondizione}: il cliente ha modificato il profilo con i dati inseriti.
 \end{itemize}
 
-\subsubsection{UCX.2.7 - Visualizzazione errori di modifica del profilo}
+\subsubsection{UC8.2.7 - Visualizzazione errori di modifica del profilo}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente visualizza un errore riguardante i campi di modifica profilo che ha inserito. Questi errori possono essere:
@@ -135,11 +135,11 @@ Una volta che i campi hanno al suo interno i valori previsti dal cliente, il cli
 \item \textbf{Postcondizione}: viene visualizzato un messaggio di errore nella pagina di modifica del profilo e i dati non sono stati modificati.
 \end{itemize}
 
-\subsubsection{UCX.3 - Visualizzazione ordini effettuati dall'utente}
+\subsubsection{UC8.3 - Visualizzazione ordini effettuati dall'utente}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente può visualizzare una lista di ordini effettuati;
-\item \textbf{Scenario Principale}: il cliente si trova nella pagina del profilo e visualizza una lista di ordini effettuati. Per ogni ordine vengono visualizzati una serie di dati [\textbf{UCX.3.1}];
+\item \textbf{Scenario Principale}: il cliente si trova nella pagina del profilo e visualizza una lista di ordini effettuati. Per ogni ordine vengono visualizzati una serie di dati [\textbf{UC8.3.1}];
 \item \textbf{Precondizione}: il cliente si trova nella pagina del profilo e ha effettuato almeno un ordine nel sito.
 \item \textbf{Postcondizione}: viene visualizzata una lista di tutti gli ordini che il cliente ha effettuato.
 \end{itemize}
@@ -147,10 +147,10 @@ Una volta che i campi hanno al suo interno i valori previsti dal cliente, il cli
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/VisualizzazioneOrdini}
-\caption{Diagramma UML per UCX.3 - Visualizzazione ordini effettuati dall'utente}
+\caption{Diagramma UML per UC8.3 - Visualizzazione ordini effettuati dall'utente}
 \end{figure}
 
-\subsubsection{UCX.3.1 - Visualizzazione dati singolo ordine}
+\subsubsection{UC8.3.1 - Visualizzazione dati singolo ordine}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: per ogni ordine nella lista degli ordini effettuati, vengono visualizzati una serie di dati;
@@ -168,7 +168,7 @@ Una volta che i campi hanno al suo interno i valori previsti dal cliente, il cli
 \item \textbf{Postcondizione}: vengono visualizzati i dati dell'ordine scelto.
 \end{itemize}
 
-\subsubsection{UCX.4 - Eliminazione account}
+\subsubsection{UC8.4 - Eliminazione account}
 \begin{itemize}
 \item \textbf{Attori primari}: Cliente;
 \item \textbf{Attori secondari}: Identity Manager;
