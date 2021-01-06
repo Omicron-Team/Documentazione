@@ -15,6 +15,8 @@
 \textbf{Descrizione}&
 \textbf{Fonti}\\
 \endfirsthead
+\rowcolor{white}
+\caption*{Tabella dei Requisiti funzionali (continuazione)}\\
 \rowcolor{azzurro1}
 \textbf{Codice} &
 \textbf{Classificazione}&
@@ -27,13 +29,13 @@
 R1F1 & Obbligatorio & Un utente non autenticato può registrarsi & Capitolato\newline UC1, UC1.2 \\
 R1F1.1 & Obbligatorio & La registrazione necessita l'inserimento dei seguenti dati personali: nome, cognome e indirizzo di fatturazione & Interno\newline UC1.1, UC1.1.1, UC1.1.2, UC1.1.3 \\
 R1F1.2 & Obbligatorio & La registrazione necessita l'inserimento della email & VE\_2020-12-22 \newline UC1.1.4 \\
-R2F1.2.1 & Desiderabile & Il sistema deve mostrare un errore se i campi inseriti nella registrazione non sono validi & Interno \newline UC2 \\
 R1F1.3 & Obbligatorio & La registrazione necessita l'inserimento di una password & Interno\newline UC1.1.5 \\
+R2F1.4 & Desiderabile & Il sistema deve mostrare un errore se i campi inseriti nella registrazione non sono validi & Interno \newline UC2 \\
 
 %LOGIN
 
 R1F2 & Obbligatorio & Un utente non autenticato può effettuare il login & Capitolato\newline UC3, UC3.3 \\
-R1F2.1 & Obbligatorio & Il login per il cliente e per il venditore sono distinti & VE\_2020-01-05 \newline UC3.1 \\
+R1F2.1 & Obbligatorio & Il login per il cliente e per il venditore sono distinti & VE\_2021-01-05 \newline UC3.1 \\
 R1F2.2 & Obbligatorio & Il login cliente necessita l'inserimento della email & Interno \newline UC3.2, UC3.2.2, UC3.2.3 \\
 R1F2.3 & Obbligatorio & Il login cliente e il login venditore necessita l'inserimento della password & Interno \newline UC3.2, UC3.2.1, UC3.2.3, UC3.2.4  \\
 R2F2.4 & Desiderabile & Il sistema deve mostrare un errore se le credenziali del login sono errate & Interno \newline UC4 \\
@@ -57,8 +59,8 @@ R1F4.5 & Obbligatorio & Un utente generico può visualizzare le tasse applicate 
 
 R1F5 & Obbligatorio & Un cliente registrato può procedere al checkout dei prodotti presenti nel carrello & Capitolato \newline UC7, UC7.1\\
 R1F5.1 & Obbligatorio & Per iniziare il processo di checkout il cliente deve avere almeno un prodotto nel carrello & Interno \newline UC7.2\\
-R1F5.2 & Obbligatorio & Nel processo di checkout il cliente deve poter visualizzare l'email a cui verranno mandati i prodotti & VE\_2020-01-05 \newline UC7.3.1 \\
-R2F5.2.1 & Desiderabile & Nel processo di checkout il cliente deve poter modificare l'email a cui verranno mandati i prodotti & VE\_2020-01-05 \newline UC7.3, UC7.3.2 \\
+R1F5.2 & Obbligatorio & Nel processo di checkout il cliente deve poter visualizzare l'email a cui verranno mandati i prodotti & VE\_2021-01-05 \newline UC7.3.1 \\
+R2F5.2.1 & Desiderabile & Nel processo di checkout il cliente deve poter modificare l'email a cui verranno mandati i prodotti & VE\_2021-01-05 \newline UC7.3, UC7.3.2 \\
 R1F5.3 & Obbligatorio & Un cliente che ha iniziato il processo di checkout deve inserire i dati del pagamento tramite Stripe\ped{G} & Capitolato \newline UC7.3, UC7.3.3, UC7.3.3.1, UC7.3.3.2, UC7.3.3.3, UC7.3.3.4, UC7.3.3.5\\
 R1F5.4 & Obbligatorio & Un cliente, dopo aver inserito i dati del pagamento, può continuare al pagamento effettivo tramite Stripe\ped{G} & Capitolato \newline UC7.4\\
 R1F5.5 & Obbligatorio & A pagamento riuscito il cliente può visualizzare un riepilogo dell'ordine effettuato & Capitolato \newline UC7.7\\
@@ -78,22 +80,22 @@ R1F6.4 & Obbligatorio & Un cliente può eliminare il suo account & Capitolato \n
 %MERCHANT DASHBOARD
 
 R1F7 & Obbligatorio & Il venditore può accedere ad una dashboard\ped{G} per gestire il proprio catalogo digitale & Capitolato \newline UC12\\
-R1F7.1 & Obbligatorio & Il venditore può inserire nuovi prodotti nella dashboard\ped{G} & Capitolato \newline UC12.1, UC12.1.1, UC12.1.1.6\\
+R1F7.1 & Obbligatorio & Il venditore può inserire nuovi prodotti nella dashboard\ped{G} & Capitolato \newline UC12.1, UC12.1.1, UC12.1.1.6, UC12.1.1.7\\
 R1F7.1.1 & Obbligatorio & Il venditore, nell'inserimento di nuovi prodotti, deve assegnare al prodotto i seguenti dati: nome, descrizione e immagine & Capitolato \newline UC12.1.1.1, UC12.1.1.2, UC12.1.1.4\\
 R1F7.1.2 & Obbligatorio & Il venditore, nell'inserimento di nuovi prodotti, deve assegnare al prodotto un prezzo & Interno \newline UC12.1.1.3\\ 
-R1F7.1.3 & Obbligatorio & Il venditore, nell'inserimento di nuovi prodotti, deve assegnare al prodotto una categoria & VE\_2020-01-05 \newline UC12.1.1.6\\ 
+R1F7.1.3 & Obbligatorio & Il venditore, nell'inserimento di nuovi prodotti, deve assegnare al prodotto una categoria & VE\_2021-01-05 \newline UC12.1.1.5\\ 
 R1F7.2 & Obbligatorio & Il venditore può vedere tutti i prodotti da lui venduti & Capitolato \newline UC12.1.2 \\
-R1F7.2.1 & Obbligatorio & Il venditore può vedere nome, immagine, descrizione e categoria di tutti i prodotti da lui venduti & Interno \newline UC12.1.2\\
+R1F7.2.1 & Obbligatorio & Il venditore può vedere nome, immagine, descrizione, prezzo e categoria di tutti i prodotti da lui venduti & Interno \newline UC12.1.2\\
 R1F7.3 & Obbligatorio & Il venditore può modificare alcuni dati di tutti i prodotti da lui venduti & Capitolato \newline UC12.1.3, UC12.1.3.6, UC12.1.3.7 \\
 R1F7.3.1 & Obbligatorio & Il venditore può modificare la descrizione di tutti i prodotti da lui venduti & Capitolato \newline UC12.1.3.2\\
 R2F7.3.2 & Desiderabile & Il venditore può modificare il prezzo, il nome, l'immagine e la categoria di tutti i prodotti da lui venduti & Interno \newline UC12.1.3.1, UC12.1.3.3, UC12.1.3.4, UC12.1.3.5\\
 R1F7.4 & Obbligatorio & Il venditore può eliminare i prodotti da lui venduti & Capitolato \newline UC12.1.4 \\
 R1F7.5 & Obbligatorio & Il venditore può visualizzare i dettagli di tutti gli ordini effettuati dai clienti & Capitolato \newline UC12.3\\
 R1F7.5.1 & Obbligatorio & Il venditore può visualizzare per ogni ordine effettuato i seguenti dati: numero ordine, prodotti acquistati, quantità prodotti acquistati, costo per singola voce, costo totale, tasse applicate, data acquisto & Interno \newline UC12.3\\
-R2F7.6 & Desiderabile & Il venditore dalla dashboard\ped{G} può accedere agli strumenti esterni riservati per gli admin & VE\_2020-12-22 \newline UC12.5\\
-R1F7.7 & Obbligatorio & Il venditore può gestire le categorie dei prodotti & VE\_2020-01-05 \newline UC12.2\\
-R1F7.7.1 & Obbligatorio & Il venditore può visualizzare una lista di categorie di prodotti & VE\_2020-01-05 \newline UC12.2.1\\
-R1F7.7.2 & Obbligatorio & Il venditore può inserire nuove categorie di prodotti & VE\_2020-01-05 \newline UC12.2.2, UC12.2.2.1, UC12.2.2.2, UC12.2.2.3\\
+R2F7.6 & Desiderabile & Il venditore dalla dashboard\ped{G} può accedere agli strumenti esterni riservati per gli admin & VE\_2020-12-22 \newline UC12.4\\
+R1F7.7 & Obbligatorio & Il venditore può gestire le categorie dei prodotti & VE\_2021-01-05 \newline UC12.2\\
+R1F7.7.1 & Obbligatorio & Il venditore può visualizzare una lista di categorie di prodotti & VE\_2021-01-05 \newline UC12.2.1\\
+R1F7.7.2 & Obbligatorio & Il venditore può inserire nuove categorie di prodotti & VE\_2021-01-05 \newline UC12.2.2, UC12.2.2.1, UC12.2.2.2, UC12.2.2.3\\
 R1F7.7.3 & Obbligatorio & Il venditore può eliminare categorie esistenti di prodotti & Interno \newline UC12.2.3\\
 
 %RESTO
