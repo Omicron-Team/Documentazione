@@ -61,17 +61,17 @@ dove \textit{id} rappresenta un componente.
 	\item \textbf{Test di sistema:} una volta integrati tutti i componenti, si effettuano test sull'applicazione nella sua interezza. Questi test si concentrano sulle interazioni fra le parti, sul comportamento generale del sistema e sulla copertura di tutte le funzionalità. In tale fase ci si assicura che l'applicativo rispetti tutte le specifiche definite nell'\textit{Analisi dei Requisiti}.\\
 Tale tipologia di test verrà indicata con:
 \begin{center}
-	\textbf{TS\_Tipologia\_Importanza\_Id}
+	\textbf{TS[Importanza][Tipologia][Id]}
 \end{center}
 dove:
 \begin{itemize}
-	\item \textbf{Tipologia:} indica il tipo di requisito, che si divide in:
-	\begin{itemize}
-		\item \textbf{O:} requisiti obbligatori;
-		\item \textbf{F:} requisiti facoltativi;
-		\item \textbf{D:} requisiti desiderabili.
-	\end{itemize}
 	\item \textbf{Importanza:} indica l'importanza del requisito, che si divide in:
+	\begin{itemize}
+		\item \textbf{1:} requisiti obbligatori;
+		\item \textbf{2:} requisiti desiderabili.
+		\item \textbf{3:} requisiti facoltativi;
+	\end{itemize}
+	\item \textbf{Tipologia:} indica il tipo di requisito:
 	\begin{itemize}
 		\item \textbf{F:} requisito funzionale;
 		\item \textbf{V:} requisito di vincolo;
@@ -84,9 +84,9 @@ dove:
 	\item \textbf{Test di accettazione o test di collaudo:} simile al test di sistema, ma con la differenza che viene eseguito con la collaborazione dei committenti. In particolare verifica il soddisfacimento del cliente. Il superamento di tale test sancisce la possibilità del rilascio del prodotto.\\
 	Tale tipologia di test verrà indicata con:
 \begin{center}
-	\textbf{TA\_Tipologia\_Importanza\_Id}
+	\textbf{TA[Importanza][Tipologia][Id]}
 \end{center}
-dove \textit{Tipologia, Importanza e Id} sono descritti come nei \textbf{test di accettazione o test di collaudo}.
+dove \textit{Importanza, Tipologia ed Id} sono descritti come nei \textbf{test di sistema}.
 
 	
 \end{enumerate}
