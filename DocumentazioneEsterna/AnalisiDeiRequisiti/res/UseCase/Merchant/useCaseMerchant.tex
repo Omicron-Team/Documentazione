@@ -1,19 +1,19 @@
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/MerchantDashboardGenerale}
-\caption{Diagramma UML per modulo di merchant dashboard}
+\caption{Diagramma UML per modulo di gestione merchant dashboard}
 \end{figure}
 
-\subsubsection{UC12 - Merchant dashboard}
+\subsubsection{UC12 - Gestione merchant dashboard}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
 \item \textbf{Descrizione}: la merchant dashboard permette di gestire e monitorare i dati dei prodotti e le vendite effettuate;
 \item \textbf{Scenario Principale}: il venditore accede alla dashboard tramite l'apposito pulsante e può effettuare le seguenti operazioni:
 \begin{itemize}
-	\item Gestire i prodotti;
-	\item Gestire le categorie di prodotti;
-	\item Visualizzare gli ordini ricevuti;
-	\item Visualizzare i collegamenti agli strumenti per la gestione del sito.
+	\item Gestire i prodotti \textbf{[UC12.1]};
+	\item Gestire le categorie di prodotti \textbf{[UC12.2]};
+	\item Visualizzare gli ordini ricevuti \textbf{[UC12.3]};
+	\item Visualizzare i collegamenti agli strumenti per la gestione del sito \textbf{[UC12.4]}.
 \end{itemize}
 \item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
 \item \textbf{Postcondizione}: al merchant è permesso effettuare operazioni per gestire i propri prodotti, le categorie di prodotti e gli ordini. Sono anche presenti dei collegamenti agli strumenti di gestione del sito.
@@ -22,7 +22,7 @@
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/MerchantDashboard}
-\caption{Diagramma UML per UC12 - Merchant dashboard}
+\caption{Diagramma UML per UC12 - Gestione merchant dashboard}
 \end{figure}
 
 \subsubsection{UC12.1 - Gestione prodotti}
@@ -31,10 +31,10 @@
 \item \textbf{Descrizione}: il venditore può gestire i prodotti dalla dashboard;
 \item \textbf{Scenario Principale}: il venditore può effettuare le seguenti operazioni sui prodotti:
 \begin{itemize}
-	\item Inserimento \textbf{[UC12.1]};
-	\item Visualizzazione \textbf{[UC12.2]};
-	\item Modifica \textbf{[UC12.3]};
-	\item Rimozione \textbf{[UC12.4]};
+	\item Inserimento \textbf{[UC12.1.1]};
+	\item Visualizzazione \textbf{[UC12.1.2]};
+	\item Modifica \textbf{[UC12.1.3]};
+	\item Rimozione \textbf{[UC12.1.4]};
 \end{itemize}
 \item \textbf{Precondizione}: il venditore si trova nella merchant dashboard;
 \item \textbf{Postcondizione}: al venditore è permesso effettuare operazioni per gestire i propri prodotti;
@@ -220,7 +220,7 @@ per poi premere il pulsante di conferma \textbf{[UC12.1.3.6]};
 \item \textbf{Scenario Principale}: il venditore preme il pulsante di conferma e modifica il prodotto selezionato con i dati precedentemente inseriti.
 \item \textbf{Estensioni}: 
 \begin{itemize}
-	\item se non viene sovrascritto nessun dato viene visualizzato un messaggio di errore \textbf{[UC12.3.7]};
+	\item se non viene sovrascritto nessun dato viene visualizzato un messaggio di errore \textbf{[UC12.1.3.7]};
 \end{itemize} 
 \item \textbf{Precondizione}: il venditore si trova nella pagina dedicata alla modifica di un prodotto e ha premuto il bottone di conferma;
 \item \textbf{Postcondizione}: il venditore ha modificato il prodotto selezionato.
@@ -333,12 +333,18 @@ per poi premere il pulsante di conferma \textbf{[UC12.1.3.6]};
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
 \item \textbf{Descrizione}: il venditore visualizza nella merchant dashboard la lista degli ordini ricevuti;
-\item \textbf{Scenario Principale}: il venditore accede alla merchant dashboard e, nell'apposita sezione, visualizza una lista degli ordini ricevuti. Per ogni ordine viene visualizzato il numero dell'ordine, il costo totale e la data. Il venditore può accedere ad altre informazioni premendo il bottone 'Dettagli' collegato all'ordine interessato \textbf{[UC12.4]}.
+\item \textbf{Scenario Principale}: il venditore accede alla merchant dashboard e, nell'apposita sezione, visualizza una lista degli ordini ricevuti. Per ogni ordine viene visualizzato il numero dell'ordine, il costo totale e la data. Il venditore può accedere ad altre informazioni premendo il bottone 'Dettagli' collegato all'ordine interessato \textbf{[UC12.3.1]}.
 \item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
 \item \textbf{Postcondizione}: il venditore visualizza la lista degli ordini presenti nel sistema.
 \end{itemize}
 
-\subsubsection{UC12.4 - Visualizzazione informazioni ordine}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/VisualizzazioneOrdiniMerchant}
+\caption{Diagramma UML per UC12.3 - Visualizzazione lista ordini ricevuti}
+\end{figure}
+
+\subsubsection{UC12.3.1 - Visualizzazione informazioni ordine}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
 \item \textbf{Descrizione}: il venditore visualizza le informazioni dell'ordine selezionato;
@@ -356,7 +362,7 @@ per poi premere il pulsante di conferma \textbf{[UC12.1.3.6]};
 \item \textbf{Postcondizione}: il venditore visualizza le informazioni relative all'ordine selezionato.
 \end{itemize}
 
-\subsubsection{UC12.5 - Collegamenti a sistemi di gestione}
+\subsubsection{UC12.4 - Visualizzazione collegamenti a sistemi di gestione}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
 \item \textbf{Descrizione}: il venditore visualizza nella merchant dashboard i collegamenti agli strumenti di gestione esterni;
