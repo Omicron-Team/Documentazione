@@ -1,5 +1,4 @@
 \subsubsection{UCX.1 - Visualizzazione dei prodotti}
-Figura \\
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
 \item \textbf{Descrizione}: l'utente può visualizzare un insieme di prodotti raggruppati per categoria accedendo alla relativa PLP;
@@ -13,7 +12,6 @@ Figura \\
 \item \textbf{Postcondizione}: l'utente visualizza le informazioni relative ai prodotti listati, con le eventuali operazioni disponibili su ognuno di essi.
 \end{itemize}
 \subsubsection{UCX.2 - Inserimento nel carrello di un prodotto listato}
-Figura \\
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
 \item \textbf{Descrizione}: l'utente può inserire un prodotto presente sulla PLP\ped{G} nel carrello, con una quantità selezionata pari ad 1. Per effettuare l'azione è sufficiente cliccare sull'apposito pulsante;
@@ -26,7 +24,6 @@ Figura \\
 \item \textbf{Postcondizione}: l'utente ha inserito nel proprio carrello il prodotto con quantità selezionata pari ad 1.
 \end{itemize}
 \subsubsection{UCX.3 - Filtraggio dei prodotti}
-Figura \\
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
 \item \textbf{Descrizione}: l'utente può raffinare la propria ricerca andando a filtrare i prodotti presenti nella PLP\ped{G}. Il parametro utilizzabile per eseguire questa operazione è il prezzo;
@@ -40,7 +37,6 @@ Figura \\
 \item \textbf{Postcondizione}: l'utente ottiene una nuova pagina in cui può visualizzare solo i prodotti presenti nella PLP\ped{G} corrente e compresi nel range di prezzo specificato.
 \end{itemize}
 \subsubsection{UCX.3.1 - Visualizzazione errore nessun risultato filtraggio}
-Figura \\
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
 \item \textbf{Descrizione}: l'utente visualizza un messaggio di errore che lo informa che il filtraggio dei prodotti effettuato utilizzando i parametri da lui inseriti non ha prodotto nessun risultato.
@@ -48,8 +44,12 @@ Figura \\
 \item \textbf{Precondizione}: l'utente ha effettuato l'operazione di filtraggio nella corrente PLP\ped{G};
 \item \textbf{Postcondizione}: viene visualizzato un messaggio che informa l'utente di non aver trovato prodotti compatibili con quanto stabilito attraverso il range di prezzo.
 \end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/PaginaDelProdotto}
+\caption{Diagramma UML per UCX.4 - Pagina del prodotto}
+\end{figure}
 \subsubsection{UCX.4 - Pagina del prodotto}
-Figura \\
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
 \item \textbf{Descrizione}: l'utente può accedere ad una pagina per visualizzare tutte le caratteristiche di un prodotto listato. In questa pagina, chiamata anche PDP/ped{G}, è possibile eventualmente aggiungere il prodotto al carrello.
