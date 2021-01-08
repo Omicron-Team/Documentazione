@@ -12,21 +12,24 @@ La \textit{Funzionalità} è la capacità del prodotto di soddisfare i requisiti
 \subsubsection{Obiettivi}
 Gli obiettivi preposti sono:
 \begin {itemize}
-	\item \textbf{Adeguatezza:} capacità del prodotto di mettere a disposizione le funzioni necessarie per soddisfare gli obiettivi stabili;
+	\item \textbf{Adeguatezza:} capacità del prodotto di mettere a disposizione le funzioni necessarie per soddisfare gli obiettivi stabiliti;
 	\item \textbf{Accuratezza:} capacità di fornire i risultati attesi con la precisione richiesta;
 	\item \textbf{Conformità:} il prodotto deve essere conforme e rispettare determinati standard.
 \end{itemize}
 \subsubsection{Metriche}
-\paragraph{MPD1 - Completezza implementazione} è possibile determinare il grado di completezza del prodotto tramite una percentuale.
+\myparagraph{Completezza informazioni}
+\vspace{-1cm}
 \begin{itemize}
-	\item \textbf{Misurazione:} \begin{math}C=\left(1-\frac{N_{FNI}}{N_{FI}}\right)*100\end{math}\\
-	dove:
-	\begin {itemize}
-		\item \begin{math}N_{FNI}\end{math}: numero di funzioni NON implementate;
-		\item \begin{math}N_{FI}\end{math}: numero di funzioni implementate.
-	\end{itemize}
-	\item \textbf{valore ideale:} 100\%;
-	\item \textbf{valore accettabile:} 100\%.
+	\item \textbf{Codice}: MPD1;
+	\item \textbf{Descrizione}: il grado di completezza del prodotto viene determinato tramite una percentuale;
+	\item \textbf{Processo di riferimento}: Sviluppo;
+	\item \textbf{Sigla}: CI;
+	\item \textbf{Formula}: \begin{math}CI=\left(1-\frac{funzioni \ non \ implementate}{funzioni \ implementate}\right)*100\end{math};
+	\item \textbf{Range di valori che può assumere}: 
+		\begin{itemize}
+			\item \textbf{Ottimale} : $CI \geq 100 \%$;
+			\item \textbf{Accettabile} : $CI \geq 100 \%$.
+		\end{itemize}
 \end{itemize}
 
 \subsection{Affidabilità}
@@ -34,20 +37,23 @@ L'\textit{affidabilità} è la capacità del prodotto di funzionare anche in sit
 \subsubsection{Obiettivi}
 Gli obiettivi preposti sono:
 \begin {itemize}
-	\item \textbf{maturità:} non si devono verificare errori o malfunzionamenti durante l'esecuzione;
-	\item \textbf{tolleranza degli errori:} il prodotto deve mantenere alte prestazioni anche in caso di un uso scorretto o malfunzionamenti.
+	\item \textbf{Maturità:} non si devono verificare errori o malfunzionamenti durante l'esecuzione;
+	\item \textbf{Tolleranza degli errori:} il prodotto deve mantenere alte prestazioni anche in caso di un uso scorretto o malfunzionamenti.
 \end{itemize}
 \subsubsection{Metriche}
-\paragraph{MPD2 - Densita degli errori} La capacità di resistenza agli errori viene espressa tramite l'utilizzo di una percentuale.
+\myparagraph{Densità degli errori}
+\vspace{-1cm}
 \begin{itemize}
-	\item \textbf{Misurazione:} \begin{math}M=\frac{N_{ER}}{N_{TE}}*100\end{math}\\
-	dove:
-	\begin {itemize}
-		\item \begin{math}N_{ER}\end{math}: numero di errori rilevati durante il testing;
-		\item \begin{math}N_{TE}\end{math}: numero test effetuati.
-	\end{itemize}
-	\item \textbf{valore ideale:} 0\%;
-	\item \textbf{valore accettabile:}  \begin{math}\leq15\%\end{math}.
+	\item \textbf{Codice}: MPD2;
+	\item \textbf{Descrizione}: la capacità di resistenza agli errori viene espressa tramite l'utilizzo di una percentuale;
+	\item \textbf{Processo di riferimento}: Verifica;
+	\item \textbf{Sigla}: DE;
+	\item \textbf{Formula}: \begin{math}DE=\frac{numero \ errori}{numero \ test \ effettuati}*100\end{math};
+	\item \textbf{Range di valori che può assumere}: 
+		\begin{itemize}
+			\item \textbf{Ottimale} : $DE = 0 \%$;
+			\item \textbf{Accettabile} : $DE \leq 15 \%$.
+		\end{itemize}
 \end{itemize}
 
 \subsection{Usabilità}
@@ -59,52 +65,90 @@ Con \textit{usabilità} si intende la capacità del prodotto di essere di facile
 	\item \textbf{Attrattivo:} deve essere interessante e catturare l'attenzione dell'utente.
 \end{itemize}
 \subsubsection{Metriche}
-\paragraph{MPD3 - Facilità di utilizzo} Questa metrica viene espressa come il numero di click necessari per raggiungere un'informazione.
+\myparagraph{Facilità di utilizzo}
+\vspace{-1cm}
 \begin{itemize}
-	\item \textbf{misurazione:} click necessari per raggiungere il checkout;
-	\item \textbf{valore preferibile:} \begin{math}\leq10\end{math};
-	\item \textbf{valore accettabile:} \begin{math}\leq15\end{math}.
+	\item \textbf{Codice}: MPD3;
+	\item \textbf{Descrizione}: Questa metrica viene espressa con il numero di click necessari per raggiungere un'informazione;
+		\item \textbf{Processo di riferimento}: Sviluppo;
+	\item \textbf{Misurazione:} click necessari per raggiungere il checkout;
+	\item \textbf{Range di valori che può assumere}: 
+		\begin{itemize}
+			\item \textbf{Ottimale} : $Click \leq10$;
+			\item \textbf{Accettabile} : $Click \leq15$.
+		\end{itemize}
 \end{itemize}
-\paragraph{MPD4 - Facilità di apprendimento} Questa metrica viene espressa come il numero di minuti necessari per raggiungere l'informazione (in media).
+\myparagraph{Facilità di apprendimento}
+\vspace{-1cm}
 \begin{itemize}
-	\item \textbf{misurazione:} numero di minuti necessari per raggiungere il checkout;
-	\item \textbf{valore preferibile:} \begin{math}\leq6\end{math};
-	\item \textbf{valore accettabile:} \begin{math}\leq8\end{math}.
+	\item \textbf{Codice}: MPD4;
+	\item \textbf{Descrizione}: Questa metrica viene espressa come il numero di minuti necessari per raggiungere l'informazione (in media);
+	\item \textbf{Processo di riferimento}: Sviluppo;
+	\item \textbf{Misurazione:} numero di minuti necessari per raggiungere il checkout;
+	\item \textbf{Range di valori che può assumere}: 
+		\begin{itemize}
+			\item \textbf{Ottimale} : $Minuti \leq6$;
+			\item \textbf{Accettabile} : $Minuti \leq8$.
+		\end{itemize}
 \end{itemize}
-\paragraph{MPD5 - Dimensione gerarchia} Un sito per ritenersi di facile comprensione non deve essere troppo profondo.
+\myparagraph{Dimensione gerarchia}
+\vspace{-1cm}
 \begin{itemize}
-	\item \textbf{misurazione:} livello di profondità;
-	\item \textbf{valore preferibile:} \begin{math}\leq5\end{math};
-	\item \textbf{valore accettabile:} \begin{math}\leq8\end{math}.
+	\item \textbf{Codice}: MPD5;
+	\item \textbf{Descrizione}: La mappa di un sito per ritenersi di facile comprensione non deve essere troppo profonda;
+	\item \textbf{Processo di riferimento}: Sviluppo;
+	\item \textbf{Misurazione:} livello di profondità mappa del sito;
+	\item \textbf{Range di valori che può assumere}: 
+		\begin{itemize}
+			\item \textbf{Ottimale} : $Dimensione \leq5$;
+			\item \textbf{Accettabile} : $Dimensione \leq8$.
+		\end{itemize}
 \end{itemize}
 \subsection{Manutenibilità}
 Capacità del prodotto di essere modificato, mediante miglioramenti o correzioni.
 \subsubsection{Obiettivi}
 \begin{itemize}
-	\item \textbf{analizzabile:} capacità del prodotto di essere analizzato per localizzare gli errori;
-	\item \textbf{modificabile:} capacità del prodotto di permettere l'aggiunta di una o più modifiche.
+	\item \textbf{Analizzabile:} capacità del prodotto di essere analizzato per localizzare gli errori;
+	\item \textbf{Modificabile:} capacità del prodotto di permettere l'aggiunta di una o più modifiche.
 \end{itemize}
 \subsubsection{Metriche}
-\paragraph{MPD6 - Facilità di comprensione}  È possibile comprendere la facilità del codice tramite una percentuale mettendo in rapporto le linee di commenti con le linee di codice, in particolare:
+\myparagraph{Facilità di comprensione}
+\vspace{-1cm}
 \begin{itemize}
-	\item \textbf{Misurazione:} \begin{math}R=\frac{N_{LCOM}}{N_{LCOD}}*100\end{math}\\
-	dove:
-	\begin {itemize}
-		\item \begin{math}N_{LCOM}\end{math}: indica il numero delle linee di commenti;
-		\item \begin{math}N_{LCOD}\end{math}: indica il numero delle linee di codice.
-	\end{itemize}
-	\item \textbf{valore ideale:} \begin{math}\geq20\%\end{math};
-	\item \textbf{valore accettabile:} \begin{math}\geq10\%\end{math}.
+	\item \textbf{Codice}: MPD6;
+	\item \textbf{Descrizione}: si ottiene una percentuale mettendo in rapporto le linee di commenti con le linee di codice;
+	\item \textbf{Processo di riferimento}: Sviluppo;
+	\item \textbf{Sigla}: FC;
+	\item \textbf{Formula}: \begin{math}FC=\frac{linee \ di \ commenti}{linee \ di \ codice}*100\end{math};
+	\item \textbf{Range di valori che può assumere}: 
+		\begin{itemize}
+			\item \textbf{Ottimale} : $FC \geq 20 \%$;
+			\item \textbf{Accettabile} : $FC \geq 10 \%$.
+		\end{itemize}
 \end{itemize}
-\paragraph{MPD7 - Semplicità classi} una classe potrebbe considerarsi semplice quando ha pochi metodi, quindi:
+\myparagraph{Semplicità classi}
+\vspace{-1cm}
 \begin{itemize}
+	\item \textbf{Codice}: MPD7;
+	\item \textbf{Descrizione}: una classe potrebbe considerarsi semplice quando ha pochi metodi;
+	\item \textbf{Processo di riferimento}: Sviluppo;
 	\item \textbf{Misurazione:} numero metodi per classe;
-	\item \textbf{valore ideale:} \begin{math}\leq10\end{math};
-	\item \textbf{valore accettabile:} \begin{math}\leq15\end{math}.
+	\item \textbf{Range di valori che può assumere}: 
+		\begin{itemize}
+			\item \textbf{Ottimale} : $Metodi \leq 10$;
+			\item \textbf{Accettabile} : $Metodi \leq 15$.
+		\end{itemize}
 \end{itemize}
-\paragraph{MPD8 - Semplicità funzioni} una funzione potrebbe considerarsi semplice quando ha pochi parametri.
+\myparagraph{Semplicità funzioni}
+\vspace{-1cm}
 \begin{itemize}
+	\item \textbf{Codice}: MPD8;
+	\item \textbf{Descrizione}: una funzione potrebbe considerarsi semplice quando ha pochi parametri;
+	\item \textbf{Processo di riferimento}: Sviluppo;
 	\item \textbf{Misurazione:} numero di parametri in un metodo;
-	\item \textbf{valore ideale:} \begin{math}\leq3\end{math};
-	\item \textbf{valore accettabile:} \begin{math}\leq6\end{math}.
+	\item \textbf{Range di valori che può assumere}: 
+		\begin{itemize}
+			\item \textbf{Ottimale} : $Parametri \leq 3$;
+			\item \textbf{Accettabile} : $Parametri \leq 6$.
+		\end{itemize}
 \end{itemize}
