@@ -7,7 +7,7 @@
 \subsubsection{UC7 - Acquisto prodotti}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
-\item \textbf{Attori secondari}: Stripe;
+\item \textbf{Attori secondari}: Stripe\ped{G};
 \item \textbf{Descrizione}: il cliente può acquistare i prodotti presenti nel suo carrello;
 \item \textbf{Scenario Principale}: 
 \begin{enumerate}
@@ -155,8 +155,8 @@
 \subsubsection{UC7.4 - Pagamento}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
-\item \textbf{Attori secondari}: Stripe;
-\item \textbf{Descrizione}: il cliente procede all'ordine. Il pagamento viene effettuato tramite Stripe, che riporterà l'esito ed eventuali errori;
+\item \textbf{Attori secondari}: Stripe\ped{G};
+\item \textbf{Descrizione}: il cliente procede all'ordine. Il pagamento viene effettuato tramite Stripe\ped{G}, che riporterà l'esito ed eventuali errori;
 \item \textbf{Scenario Principale}: il cliente conferma l'ordine tramite l'apposito bottone;
 \item \textbf{Estensioni}:
 \begin{itemize}
@@ -179,7 +179,7 @@
 \subsubsection{UC7.6 - Visualizzazione errore pagamento}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
-\item \textbf{Attori secondari}: Stripe;
+\item \textbf{Attori secondari}: Stripe\ped{G};
 \item \textbf{Descrizione}: il cliente visualizza un messaggio di errore che lo informa del motivo per il fallimento del pagamento. L'utente può poi controllare i dati inseriti e ritentare il pagamento;
 \item \textbf{Scenario Principale}: il cliente prova ad effettuare il pagamento inserendo dati di una carta che per qualche motivo rifiuta l'addebito.
 \item \textbf{Precondizione}: il cliente si trova nella pagina di pagamento e ha compilato i campi dati necessari per procedere all'acquisto;
