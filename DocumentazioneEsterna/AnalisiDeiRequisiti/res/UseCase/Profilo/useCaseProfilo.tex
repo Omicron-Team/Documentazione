@@ -10,10 +10,10 @@
 \item \textbf{Descrizione}: per gli utenti autenticati come clienti è disponibile una pagina del profilo in cui è possibile gestire i dati personali e visualizzare gli ordini effettuati;
 \item \textbf{Scenario Principale}: il cliente accede alla pagina del profilo personale ed ha a disposizione le seguenti funzionalità:
 \begin{itemize}
-\item Visualizzazione dati del profilo (\textbf{UC8.1});
-\item Modifica dati del profilo (\textbf{UC8.2});
-\item Visualizzazione ordini effettuati dall'utente (\textbf{UC8.3});
-\item Eliminazione profilo (\textbf{UC8.4}).
+\item visualizzazione dati del profilo (\textbf{UC8.1});
+\item modifica dati del profilo (\textbf{UC8.2});
+\item visualizzazione ordini effettuati dall'utente (\textbf{UC8.3});
+\item eliminazione profilo (\textbf{UC8.4}).
 \end{itemize}
 \item \textbf{Precondizione}: l'utente è autenticato come cliente nel sito e ha a disposizione la pagina del profilo;
 \item \textbf{Postcondizione}: l'utente visualizza la pagina del profilo ed ha accesso a varie funzionalità.
@@ -31,10 +31,10 @@
 \item \textbf{Descrizione}: il cliente visualizza i suoi dati personali presenti nel sistema;
 \item \textbf{Scenario Principale}: il cliente si trova nella pagina del profilo e visualizza i seguenti dati personali:
 \begin{itemize}
-\item Nome;
-\item Cognome;
-\item Indirizzo di fatturazione;
-\item Email.
+\item nome;
+\item cognome;
+\item indirizzo di fatturazione;
+\item email.
 \end{itemize}
 \item \textbf{Precondizione}: il cliente si trova nella pagina del profilo;
 \item \textbf{Postcondizione}: vengono visualizzati i dati personali del cliente.
@@ -156,13 +156,13 @@ Una volta che i campi hanno al suo interno i valori previsti dal cliente, il cli
 \item \textbf{Descrizione}: per ogni ordine nella lista degli ordini effettuati, vengono visualizzati una serie di dati;
 \item \textbf{Scenario Principale}: Il cliente si trova nella pagina del profilo e, cliccando un ordine effettuato, visualizza  una pagina di riepilogo con i seguenti dati:
 \begin{itemize}
-\item id ordine
-\item prodotti acquistati
-\item quantità prodotti acquistati
-\item costo per prodotto
-\item costo totale
-\item tasse applicate
-\item data d'acquisto
+\item id ordine;
+\item prodotti acquistati;
+\item quantità prodotti acquistati;
+\item costo per prodotto;
+\item costo totale;
+\item tasse applicate;
+\item data d'acquisto.
 \end{itemize}
 \item \textbf{Precondizione}: il cliente, cliccando su un ordine nella sua pagina di profilo, si trova nella pagina di riepilogo di un ordine;
 \item \textbf{Postcondizione}: vengono visualizzati i dati dell'ordine scelto.
@@ -170,7 +170,7 @@ Una volta che i campi hanno al suo interno i valori previsti dal cliente, il cli
 
 \subsubsection{UC8.4 - Eliminazione account}
 \begin{itemize}
-\item \textbf{Attori primari}: Cliente;
+\item \textbf{Attori primari}: cliente;
 \item \textbf{Attori secondari}: Identity Manager;
 \item \textbf{Descrizione}: il cliente può eliminare il suo account dal sistema;
 \item \textbf{Scenario Principale}: il cliente si trova nella pagina del profilo e clicca il tasto dedicato per mandare la richiesta di eliminazione dell'account all'Identity Manager;

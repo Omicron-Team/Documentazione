@@ -33,7 +33,7 @@
 \item \textbf{Scenario Principale}: il cliente preme il bottone dedicato al checkout, nella pagina del carrello;
 \item \textbf{Estensioni}:
 \begin{itemize}
-\item se non è presente alcun prodotto nel carrello viene visualizzato un messaggio di errore \textbf{[UC7.2]}:;
+\item se non è presente alcun prodotto nel carrello viene visualizzato un messaggio di errore \textbf{[UC7.2]};
 \end{itemize}
 \item \textbf{Precondizione}: l'utente è autenticato come cliente, si trova nella pagina del carrello e ha premuto il bottone dedicato al checkout;
 \item \textbf{Postcondizione}: il cliente viene reindirizzato alla pagina di verifica email e di pagamento, dove può continuare l'acquisto dei prodotti.
@@ -43,7 +43,7 @@
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente visualizza un messaggio di errore che lo informa che per procedere al checkout è necessario avere almeno un prodotto nel carrello;
-\item \textbf{Scenario Principale}: il cliente prova ad effettuare il checkout senza aver precedentemente inserito prodotti nel suo carrello.
+\item \textbf{Scenario Principale}: il cliente prova ad effettuare il checkout senza aver precedentemente inserito prodotti nel suo carrello;
 \item \textbf{Precondizione}: il cliente si trova nella pagina del carrello e ha premuto il bottone dedicato al checkout;
 \item \textbf{Postcondizione}: viene visualizzato un messaggio che informa il cliente della necessità di avere almeno un prodotto nel carrello per iniziare il checkout.
 \end{itemize}
@@ -113,7 +113,7 @@
 \item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il nome;
 \item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento il nome collegato al conto;
 \item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
-\item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al nome;
+\item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al nome.
 \end{itemize}
 
 \subsubsection{UC7.3.3.2 - Inserimento cognome}
@@ -122,7 +122,7 @@
 \item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il cognome;
 \item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento il cognome collegato al conto;
 \item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
-\item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al cognome;
+\item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al cognome.
 \end{itemize}
 
 \subsubsection{UC7.3.3.3 - Inserimento numero di carta di credito}
@@ -131,7 +131,7 @@
 \item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il numero di carta;
 \item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento il numero di carta di credito;
 \item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
-\item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al numero di carta di pagamento;
+\item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al numero di carta di pagamento.
 \end{itemize}
 
 \subsubsection{UC7.3.3.4 - Inserimento data di scadenza}
@@ -140,7 +140,7 @@
 \item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il mese e l'anno di scadenza della carta di credito;
 \item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento mese e l'anno di scadenza della carta;
 \item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
-\item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato alla data di scadenza;
+\item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato alla data di scadenza.
 \end{itemize}
 
 \subsubsection{UC7.3.3.5 - Inserimento codice di sicurezza}
@@ -149,7 +149,7 @@
 \item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il codice di sicurezza;
 \item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento il codice di sicurezza collegato alla carta di credito;
 \item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
-\item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al codice di sicurezza;
+\item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al codice di sicurezza.
 \end{itemize}
 
 \subsubsection{UC7.4 - Pagamento}
@@ -160,8 +160,8 @@
 \item \textbf{Scenario Principale}: il cliente conferma l'ordine tramite l'apposito bottone;
 \item \textbf{Estensioni}:
 \begin{itemize}
-	\item l'utente non ha compilato tutti i campi necessari al pagamento. Il cliente visualizza un messaggio di errore che lo informa della necessità di inserire tutti i dati per procedere al pagamento \textbf{[UC7.5]}
-	\item il pagamento non va a buon fine. Il cliente visualizza un messaggio di errore contenente le cause del fallimento \textbf{[UC7.6]};
+	\item l'utente non ha compilato tutti i campi necessari al pagamento. Il cliente visualizza un messaggio di errore che lo informa della necessità di inserire tutti i dati per procedere al pagamento \textbf{[UC7.5]};
+	\item il pagamento non va a buon fine. Il cliente visualizza un messaggio di errore contenente le cause del fallimento \textbf{[UC7.6]}.
 \end{itemize}
 \item \textbf{Precondizione}: il cliente si trova nella pagina di pagamento;
 \item \textbf{Postcondizione}: il costo totale dei prodotti acquistati è stato prelevato dal conto specificato dal cliente. È stata inviata un'email al cliente per confermare l'acquisto. Al cliente viene mostrato un riepilogo dell'ordine appena effettuato.
