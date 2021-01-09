@@ -9,18 +9,18 @@ dove
  \item \textbf{X:} indica una versione stabile del documento
  	\begin{itemize}
  		\item parte da 0;
- 		\item viene incrementata da parte del \respProg\ped{G} dopo il completamento della fase di approvazione del documento;
+ 		\item viene incrementata da parte del \respProg{} dopo il completamento della fase di approvazione del documento;
  	\end{itemize}
  \item \textbf{Y:}  indica una versione parzialmente stabile del documento
  	\begin{itemize}
  		\item parte da 0;
- 		\item viene incrementata da parte del \verifProg\ped{G} dopo il completamento della fase di verifica del documento;
+ 		\item viene incrementata da parte del \verifProg{} dopo il completamento della fase di verifica del documento;
  		\item viene azzerato ogni qual volta avviene un incremento di X.
  	\end{itemize}
  \item \textbf{Z:} indica una versione instabile del documento
  \begin{itemize}
  		\item parte da 0;
- 		\item viene incrementata da parte del \emph{Redattore}\ped{G} dopo il completamento di una modifica al documento;
+ 		\item viene incrementata da parte del \emph{Redattore} dopo il completamento di una modifica al documento;
  		\item viene azzerato ogni qual volta avviene un incremento di Y.
  	\end{itemize}
 \end{itemize}
@@ -78,11 +78,11 @@ I repository\ped{G} configurati su GitHub\ped{G} sono composti da vari branch\pe
 \end{enumerate}
 
 \myparagraph{Gestione delle modifiche}
-Ogni branch\ped{G} è modificabile da ogni componente del gruppo, ad eccezione di \textbf{main} e \textbf{develop} che possono essere modificati dopo l'approvazione di una pull request\ped{G} da parte del \respProg\ped{G}. I file modificati all'interno della pull request\ped{G} sono prima soggetti a verifica e, solo dopo il completamento di tale fase, possono essere approvati da parte del \respProg\ped{G}.
+Ogni branch\ped{G} è modificabile da ogni componente del gruppo, ad eccezione di \textbf{main} e \textbf{develop} che possono essere modificati dopo l'approvazione di una pull request\ped{G} da parte del \respProg. I file modificati all'interno della pull request\ped{G} sono prima soggetti a verifica e, solo dopo il completamento di tale fase, possono essere approvati da parte del \respProg.
 Per effettuare modifiche maggiori sulla struttura e sui contenuti dei file si prevede di:
 \begin{enumerate}
-	\item riferire al \respProg\ped{G} del file la modifica che si vuole effettuare;
-	\item in caso di valutazione positiva da parte del \respProg\ped{G}, la modifica verrà approvata.
+	\item riferire al \respProg{} del file la modifica che si vuole effettuare;
+	\item in caso di valutazione positiva da parte del \respProg, la modifica verrà approvata.
 \end{enumerate}
 Per modifiche minori, come correzioni grammaticali o sintattiche, è possibile modificare indipendentemente. 
 
