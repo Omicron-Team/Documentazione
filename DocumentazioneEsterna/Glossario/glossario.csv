@@ -121,3 +121,4 @@ licenza MIT,"Licenza di software libero creata dal Massachusetts Institute of Te
 Server-side rendering,"Processo di rendering di pagine html e CSS a partire dal server, e non dal client. Il server renderizza la pagina ad ogni richiesta di un client."
 Static generation,"Processo di rendering di pagine html e CSS a partire dal server, e non dal client. Il server renderizza le pagine prima delle richieste, per esempio nel momento in cui viene eseguita la build. Le pagine HTML già renderizzate vengono salvate in cache e sono pronte per essere spedite al momento delle richieste."
 AWS Lambda,"Piattaforma serverless di cloud computing, orientata agli eventi. Il codice viene eseguito solo in risposta ad eventi, diminuendo il prezzo computazionale."
+Pull request,"La ``Pull Request'' è una richiesta, fatta all’autore originale di un software o di un documento, di includere le nostre personali modifiche al suo progetto."
