@@ -10,10 +10,10 @@
 \item \textbf{Descrizione}: la merchant dashboard permette di gestire e monitorare i dati dei prodotti e le vendite effettuate;
 \item \textbf{Scenario Principale}: il venditore accede alla dashboard tramite l'apposito pulsante e può effettuare le seguenti operazioni:
 \begin{itemize}
-	\item Gestire i prodotti \textbf{[UC12.1]};
-	\item Gestire le categorie di prodotti \textbf{[UC12.2]};
-	\item Visualizzare gli ordini ricevuti \textbf{[UC12.3]};
-	\item Visualizzare i collegamenti agli strumenti per la gestione del sito \textbf{[UC12.4]}.
+	\item gestire i prodotti \textbf{[UC12.1]};
+	\item gestire le categorie di prodotti \textbf{[UC12.2]};
+	\item visualizzare gli ordini ricevuti \textbf{[UC12.3]};
+	\item visualizzare i collegamenti agli strumenti per la gestione del sito \textbf{[UC12.4]}.
 \end{itemize}
 \item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
 \item \textbf{Postcondizione}: al merchant è permesso effettuare operazioni per gestire i propri prodotti, le categorie di prodotti e gli ordini. Sono anche presenti dei collegamenti agli strumenti di gestione del sito.
@@ -31,10 +31,10 @@
 \item \textbf{Descrizione}: il venditore può gestire i prodotti dalla dashboard;
 \item \textbf{Scenario Principale}: il venditore può effettuare le seguenti operazioni sui prodotti:
 \begin{itemize}
-	\item Inserimento \textbf{[UC12.1.1]};
-	\item Visualizzazione \textbf{[UC12.1.2]};
-	\item Modifica \textbf{[UC12.1.3]};
-	\item Rimozione \textbf{[UC12.1.4]}.
+	\item inserimento \textbf{[UC12.1.1]};
+	\item visualizzazione \textbf{[UC12.1.2]};
+	\item modifica \textbf{[UC12.1.3]};
+	\item rimozione \textbf{[UC12.1.4]}.
 \end{itemize}
 \item \textbf{Precondizione}: il venditore si trova nella merchant dashboard;
 \item \textbf{Postcondizione}: al venditore è permesso effettuare operazioni per gestire i propri prodotti;
@@ -52,13 +52,13 @@
 \item \textbf{Descrizione}: il venditore può inserire nel sistema nuovi prodotti da vendere.
 \item \textbf{Scenario Principale}: il venditore accede alla pagina di inserimento prodotti tramite l'apposito pulsante ed inserisce le seguenti informazioni:
 \begin{itemize}
-	\item nome \textbf{[UC12.1.1]};
-	\item descrizione \textbf{[UC12.1.2]};
-	\item prezzo \textbf{[UC12.1.3]};
-	\item immagine \textbf{[UC12.1.4]};
-	\item categoria \textbf{[UC12.1.5]}.
+	\item nome \textbf{[UC12.1.1.1]};
+	\item descrizione \textbf{[UC12.1.1.2]};
+	\item prezzo \textbf{[UC12.1.1.3]};
+	\item immagine \textbf{[UC12.1.1.4]};
+	\item categoria \textbf{[UC12.1.1.5]}.
 \end{itemize}
-In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.6]}.
+In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.1.6]}.
 \item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
 \item \textbf{Postcondizione}: il venditore ha inserito un nuovo prodotto nel sistema.
 \end{itemize}
@@ -118,7 +118,7 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.6]}.
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
 \item \textbf{Descrizione}: il venditore conferma i dati presenti nel form e inserisce il nuovo prodotto;
-\item \textbf{Scenario Principale}: il venditore preme il pulsante di conferma e inserisce il nuovo prodotto con i dati precedentemente inseriti.
+\item \textbf{Scenario Principale}: il venditore preme il pulsante di conferma e inserisce il nuovo prodotto con i dati precedentemente inseriti;
 \item \textbf{Estensioni}: 
 \begin{itemize}
 \item nel caso qualche campo non sia compilato viene visualizzato un messaggio di errore \textbf{[UC12.1.1.7]};
@@ -149,7 +149,7 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.6]}.
 \item immagine.
 \end{itemize}
 \item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
-\item \textbf{Postcondizione}: il venditore visualizza la lista dei prodotti presenti nel sistema, ognuno le seguenti informazioni:
+\item \textbf{Postcondizione}: il venditore visualizza la lista dei prodotti presenti nel sistema, ognuno dei quali con le seguenti informazioni:
 \begin{itemize}
 \item nome;
 \item descrizione;
@@ -185,7 +185,7 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.3.6]};
 \subsubsection{UC12.1.3.1 - Modifica nome}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: il venditore modifica il nome del prodotto selezionato.
+\item \textbf{Descrizione}: il venditore modifica il nome del prodotto selezionato;
 \item \textbf{Scenario Principale}: il venditore visualizza nel campo relativo al nome del prodotto il dato attualmente presente, che andrà a sovrascrivere con il nuovo nome aggiornato;
 \item \textbf{Precondizione}: il venditore si trova nella pagina dedicata alla modifica di un prodotto;
 \item \textbf{Postcondizione}: il venditore ha compilato il campo dedicato al nome del prodotto, sovrascrivendo il precedente.
@@ -194,7 +194,7 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.3.6]};
 \subsubsection{UC12.1.3.2 - Modifica descrizione}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: il venditore modifica la descrizione del prodotto selezionato.
+\item \textbf{Descrizione}: il venditore modifica la descrizione del prodotto selezionato;
 \item \textbf{Scenario Principale}: il venditore visualizza nel campo relativo alla descrizione del prodotto il dato attualmente presente, che andrà a sovrascrivere con la nuova descrizione aggiornata;
 \item \textbf{Precondizione}: il venditore si trova nella pagina dedicata alla modifica di un prodotto;
 \item \textbf{Postcondizione}: il venditore ha compilato il campo dedicato alla descrizione del prodotto, sovrascrivendo la precedente.
@@ -203,7 +203,7 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.3.6]};
 \subsubsection{UC12.1.3.3 - Modifica prezzo}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: il venditore modifica il prezzo del prodotto selezionato.
+\item \textbf{Descrizione}: il venditore modifica il prezzo del prodotto selezionato;
 \item \textbf{Scenario Principale}: il venditore visualizza nel campo relativo al prezzo del prodotto il dato attualmente presente, che andrà a sovrascrivere con il nuovo prezzo aggiornato;
 \item \textbf{Precondizione}: il venditore si trova nella pagina dedicata alla modifica di un prodotto;
 \item \textbf{Postcondizione}: il venditore ha compilato il campo dedicato al prezzo del prodotto, sovrascrivendo il precedente.
@@ -212,7 +212,7 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.3.6]};
 \subsubsection{UC12.1.3.4 - Modifica immagine}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: il venditore modifica l'immagine del prodotto selezionato.
+\item \textbf{Descrizione}: il venditore modifica l'immagine del prodotto selezionato;
 \item \textbf{Scenario Principale}: il venditore visualizza nel campo relativo all'immagine del prodotto quella attualmente presente, che andrà a sovrascrivere caricando la nuova immagine aggiornata;
 \item \textbf{Precondizione}: il venditore si trova nella pagina dedicata alla modifica di un prodotto;
 \item \textbf{Postcondizione}: il venditore ha caricato l'immagine del prodotto, sovrascrivendo la precedente.
@@ -221,7 +221,7 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.3.6]};
 \subsubsection{UC12.1.3.5 - Modifica categoria}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: il venditore modifica la categoria del prodotto selezionato.
+\item \textbf{Descrizione}: il venditore modifica la categoria del prodotto selezionato;
 \item \textbf{Scenario Principale}: il venditore visualizza nel campo relativo alla categoria del prodotto il dato attualmente presente, che andrà a sovrascrivere con la nuova categoria aggiornata;
 \item \textbf{Precondizione}: il venditore si trova nella pagina dedicata alla modifica di un prodotto;
 \item \textbf{Postcondizione}: il venditore ha compilato il campo dedicato alla categoria del prodotto, sovrascrivendo la precedente.
@@ -264,9 +264,9 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.3.6]};
 \item \textbf{Descrizione}: il venditore può gestire le categorie di prodotti dalla dashboard;
 \item \textbf{Scenario Principale}: il venditore può effettuare le seguenti operazioni sulle categorie di prodotti:
 \begin{itemize}
-	\item Visualizzazione \textbf{[UC12.2.1]};
-	\item Inserimento \textbf{[UC12.2.2]};
-	\item Rimozione \textbf{[UC12.2.3]}.
+	\item visualizzazione \textbf{[UC12.2.1]};
+	\item inserimento \textbf{[UC12.2.2]};
+	\item rimozione \textbf{[UC12.2.3]}.
 \end{itemize}
 \item \textbf{Precondizione}: il venditore si trova nella merchant dashboard;
 \item \textbf{Postcondizione}: al venditore è permesso effettuare operazioni per gestire le categorie di prodotti;
@@ -290,8 +290,8 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.3.6]};
 \subsubsection{UC12.2.2 - Inserimento categoria}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: il venditore può inserire nel sistema nuove categorie di prodotti.
-\item \textbf{Scenario Principale}: il venditore accede alla pagina di inserimento categorie tramite l'apposito pulsante ed inserisce il nome della categoria \textbf{[UC12.2.2.1]} per poi premere il pulsante di conferma \textbf{[UC12.2.2.2]}.
+\item \textbf{Descrizione}: il venditore può inserire nel sistema nuove categorie di prodotti;
+\item \textbf{Scenario Principale}: il venditore accede alla pagina di inserimento categorie tramite l'apposito pulsante ed inserisce il nome della categoria \textbf{[UC12.2.2.1]} per poi premere il pulsante di conferma \textbf{[UC12.2.2.2]};
 \item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
 \item \textbf{Postcondizione}: il venditore ha inserito una nuova categoria nel sistema.
 \end{itemize}
@@ -315,7 +315,7 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.3.6]};
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
 \item \textbf{Descrizione}: il venditore conferma i dati presenti nel form e inserisce la nuova categoria;
-\item \textbf{Scenario Principale}: il venditore preme il pulsante di conferma e inserisce la nuova categoria con il nome precedentemente inserito
+\item \textbf{Scenario Principale}: il venditore preme il pulsante di conferma e inserisce la nuova categoria con il nome precedentemente inserito;
 \item \textbf{Estensioni}: 
 \begin{itemize}
 	\item se il nome della categoria non è stato inserito viene visualizzato un messaggio di errore \textbf{[UC12.2.2.3]};
