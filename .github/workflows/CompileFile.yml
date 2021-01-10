@@ -27,7 +27,7 @@ jobs:
 
       - name: Compilazione Glossario
         run: |
-          python DocumentazioneEsterna/Glossario/buildGlossarioForActions.py
+# python DocumentazioneEsterna/Glossario/buildGlossarioForActions.py
           latexmk -pdf -cd DocumentazioneEsterna/Glossario/Glossario.tex
       
       - name: Compilazione Piano di Progetto
