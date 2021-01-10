@@ -45,6 +45,9 @@ jobs:
       - name: Compilazione Studio di Fattibilità
         run: latexmk -pdf -cd DocumentazioneInterna/StudioDiFattibilita/StudioDiFattibilita.tex
 
+      - name: Compilazione Verbale Interno 2020-12-16
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-16/VI_2020-12-16.tex
+
       - name: Compilazione Verbale Esterno 2021-01-05
         run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-01-05/VE_2021-01-05.tex
 
@@ -70,6 +73,7 @@ jobs:
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-16/VI_2020-11-16.tex
 
 
+
      
       - name: Creazione delle cartelle
         if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main' || github.event.pull_request.base.ref == 'develop' || github.event.pull_request.base.ref == 'main'
@@ -84,6 +88,7 @@ jobs:
           mv VerbaleX.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
           mv StudioDiFattibilita.pdf Documenti/DocumentazioneInterna
+          mv VI_2020-12-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VE_2021-01-05.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv VE_2020-12-22.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv VI_2020-12-23.pdf Documenti/DocumentazioneInterna/VerbaliInterni
