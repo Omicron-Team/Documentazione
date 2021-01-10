@@ -8,8 +8,8 @@ import csv, string
 def clean_file():
     for i in string.ascii_uppercase:
         with open("DocumentazioneEsterna/Glossario/res/Alfabeto/"+i+".tex", "r+") as letter_file:
-            #13 è il numero di caratteri di "\section{A}\n"
-            letter_file.truncate(13)
+            letter_file.truncate(0)
+            letter_file.write("\section{"+i+"}\n")
 
 def append_to_letter_file(termine,definizione):
     latex_code="\TermineGlossario{"+termine+"}\n\DefinizioneGlossario{"+definizione+"}\n\\\\\n"
