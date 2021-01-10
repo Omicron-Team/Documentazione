@@ -1,0 +1,55 @@
+\section{Capitolato C5}
+
+\subsection{Informazioni generali}
+\begin{itemize}
+\item \textbf{\emph{Nome:}} PORTACS - Piattaforma di controllo mobilità autonoma;
+\item \textbf{\commitProg:} Sanmarco Informatica;
+\item \textbf{\proponProg:} \VT{} e \CR.
+\end{itemize}
+
+\subsection{Descrizione}
+Questo capitolato pone come obbiettivo la creazione di un sistema per gestire i movimenti di unità all'interno di una mappa. Queste unità possono rappresentare dei robot, dei muletti o delle automobili, ognuno con una lista di punti di interesse da attraversare. I movimenti generati dovranno dirigere ogni unità verso la sua destinazione, tenendo conto di tutte le altre unità per evitare collisioni.
+Un altro obbiettivo a noi richiesto è la creazione di un sistema di visualizzazione real-time\ped{G} della mappa e delle posizioni delle singole unità.
+
+\subsection{Tecnologie coinvolte}
+\begin{itemize}
+\item \textbf{Docker\ped{G}:} software open-source\ped{G} che automatizza il deployment\ped{G} di applicazioni al committente;
+\item \textbf{Real-time Monitoring\ped{G}}, per il visualizzare in diretta le posizioni delle unità;
+\item \textbf{Pathfinding\ped{G}} e \textbf{Motion planning\ped{G}}, necessari per la gestione dei movimenti delle unità in base alla mappa.
+\end{itemize}
+
+\subsection{Vincoli}
+\begin{itemize}
+\item Accettare in input una 'Scacchiera' con:
+\begin{itemize}
+	\item Definizione percorrenze con sensi unici e numero massimo di unità contemporanee;
+	\item Definizione di point of interest come aree di carico, scarico e sosta.
+\end{itemize}
+\item Possibilità di definire N unità, ognuna con:
+\begin{itemize}
+	\item Identificativo di sistema;
+	\item Velocità massima;
+	\item Posizione iniziale;
+	\item Lista ordinata dei point of interest da attraversare.
+\end{itemize}
+\item Sistema per visualizzare in real-time\ped{G} la mappa e la relativa posizione delle singole unità;
+\item Algoritmo di motion planning\ped{G} per indicare ad ogni unità il prossimo movimento da effettuare per arrivare al point of interest successivo, evitando le collisioni e rispettando i vincoli dimensionali;
+\item Creazione di un interfaccia grafica\ped{G} per le singole unità, che dovrà mostrare la direzione da prendere, l'indicatore di velocità attuale e un pulsante per l'accensione e lo spegnimento del mezzo.
+\end{itemize}
+
+\subsection{Aspetti positivi}
+\begin{itemize}
+\item Non è stato specificato alcun vincolo riguardo il linguaggio di programmazione da utilizzare. Possiamo quindi scegliere un linguaggio a noi conosciuto, senza spendere tempo ad impararne di nuovi;
+\item Gli studenti degli anni precedenti lodano la disponibilità dell'azienda a fornire chiarimenti e a fornire il proprio know-how\ped{G};
+\item I requisiti sono chiari e facilmente verificabili;
+\item Le conoscenze acquisite potranno essere utili in aziende che seguono l'area di logistica e trasporti, o in team di real-time monitoring\ped{G} analysis and productivity per ottimizzare le performance nei magazzini e nel monitoraggio delle consegne.
+\end{itemize}
+
+\subsection{Aspetti critici}
+\begin{itemize}
+\item É necessario molto lavoro di ricerca per la creazione dell'algoritmo di motion planning\ped{G};
+\item L'idea e le richieste di questo capitolato non sono risultate interessanti alla maggior parte dei componenti del gruppo.
+\end{itemize}
+
+\subsection{Conclusione}
+Pur lasciandoci grande libertà riguardo l'effettiva implementazione dell'algoritmo e del sistema di visualizzazione richiesto, la grande quantità di ricerca necessaria e il poco interesse da parte del gruppo hanno portato alla decisione di scartare questo capitolato.

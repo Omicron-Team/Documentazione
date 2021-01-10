@@ -16,12 +16,19 @@ jobs:
           sudo apt-get install texlive-latex-recommended texlive-latex-extra
           sudo apt-get install -y latexmk
           sudo apt-get install -y texlive-lang-italian
+      
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9.1
 
       - name: Compilazione Analisi dei Requisiti
         run: latexmk -pdf -cd DocumentazioneEsterna/AnalisiDeiRequisiti/AnalisiDeiRequisiti.tex
 
       - name: Compilazione Glossario
-        run: latexmk -pdf -cd DocumentazioneEsterna/Glossario/Glossario.tex
+        run: |
+          python DocumentazioneEsterna/Glossario/buildGlossarioForActions.py
+          latexmk -pdf -cd DocumentazioneEsterna/Glossario/Glossario.tex
       
       - name: Compilazione Piano di Progetto
         run: latexmk -pdf -cd DocumentazioneEsterna/PianoDiProgetto/PianoDiProgetto.tex
@@ -40,6 +47,26 @@ jobs:
 
       - name: Compilazione VE_2020-12-22
         run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2020-12-22/VE_2020-12-22.tex
+      
+      - name: Compilazione VI_2020-12-23
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-23/VI_2020-12-23.tex  
+
+      - name: Compilazione VE_2020-12-11
+        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2020-12-11/VE_2020-12-11.tex
+
+      - name: Compilazione VI_2020-12-09
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-09/VI_2020-12-09.tex  
+
+      - name: Compilazione VI_2020-11-23
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-23/VI_2020-11-23.tex
+
+      - name: Compilazione VI_2020-12-02
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-02/VI_2020-12-02.tex
+
+      - name: Compilazione Verbale interno 2020-11-16
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-16/VI_2020-11-16.tex
+
+
      
       - name: Creazione delle cartelle
         if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main' || github.event.pull_request.base.ref == 'develop' || github.event.pull_request.base.ref == 'main'
@@ -55,6 +82,15 @@ jobs:
           mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
           mv StudioDiFattibilita.pdf Documenti/DocumentazioneInterna
           mv VE_2020-12-22.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+          mv VI_2020-12-23.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+          mv VE_2020-12-11.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+          mv VI_2020-12-09.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+          mv VI_2020-11-23.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+          mv VI_2020-12-02.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+          mv VI_2020-11-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+
+
+
       
       - name: Upload Documenti
         if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main' || github.event.pull_request.base.ref == 'develop' || github.event.pull_request.base.ref == 'main'
