@@ -45,6 +45,9 @@ jobs:
       - name: Compilazione Studio di Fattibilità
         run: latexmk -pdf -cd DocumentazioneInterna/StudioDiFattibilita/StudioDiFattibilita.tex
 
+      - name: Compilazione Verbale Esterno 2021-01-05
+        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-01-05/VE_2021-01-05.tex
+
       - name: Compilazione VE_2020-12-22
         run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2020-12-22/VE_2020-12-22.tex
       
@@ -81,6 +84,7 @@ jobs:
           mv VerbaleX.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
           mv StudioDiFattibilita.pdf Documenti/DocumentazioneInterna
+          mv VE_2021-01-05.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv VE_2020-12-22.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv VI_2020-12-23.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VE_2020-12-11.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
