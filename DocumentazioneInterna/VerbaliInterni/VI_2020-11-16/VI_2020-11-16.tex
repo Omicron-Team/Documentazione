@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+
+\input{../../../Utilita/latexSetup/package}
+\usepackage{../../../Utilita/latexSetup/styleTemplate}
+\input{res/command}
+\input{../../../Utilita/latexSetup/generalCommand}
+
+
+
+\begin{document}
+	
+	\input{../../../Utilita/latexSetup/PrimaPagina}
+	
+	\input{res/DiarioModifiche}
+	\newpage
+	\tableofcontents
+	\newpage
+	
+	\section{Informazioni generali}
+	\begin{itemize}
+		\item \textbf{Luogo:} Video chiamata tramite Zoom\ped{G};
+		\item \textbf{Data:} 2020-11-16;
+		\item \textbf{Ora Inizio:} 16:30;
+		\item \textbf{Ora fine:} 18:00;
+		\item \textbf{Segretario:} \MB;
+		\item \textbf{Partecipanti:}
+		\begin{itemize}
+			\item \MB;
+			\item \VAS;
+			\item \FD;
+			\item \NM;
+			\item \SB;
+			\item \GB;
+			\item \MDI.
+		\end{itemize}
+		
+	\end{itemize}
+	
+	\section{Ordine del giorno}	
+	\input{res/OrdineDelGiorno/ordineDelGiorno.tex}	
+	
+	\newpage
+	
+	\input{res/Resoconto/resoconto.tex}
+
+\section{Riepilogo delle decisioni}
+\setcounter{table}{-1}
+{
+
+\rowcolors{2}{azzurro2}{azzurro3}
+\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{longtable}{>{\centering}p{0.20\textwidth} >{}p{0.75\textwidth}}
+\rowcolor{azzurro1}
+\textbf{Codice} &
+\centerline{\textbf{Decisione}}\\
+\endhead
+
+VI\_2020-11-16.1 & Scelto il nome del gruppo: \textit{Omicron}.\\
+VI\_2020-11-16.2 & Le preferenze dei capitolati sono (in ordine):
+\begin{itemize}
+\item C1 - \textit{BlockCOVID};
+\item C2 - \textit{EmporioLambda};
+\item C7 - \textit{SSD}.
+\end{itemize}
+La scelta definitiva verrà eseguita nel prossimo incontro.\\
+VI\_2020-11-16.3 & Il logo del gruppo verrà ipotizzato da \NM{} in settimana. \\
+VI\_2020-11-16.4 & Scelta la mail del gruppo:\textit{omicronswe@gmail.com}, creata da \MDI{}, impostando nello stesso momento la cartella Google Drive.\\
+VI\_2020-11-16.5 & Scelto il principale canale di comunicazione: Discord\ped{G}.\\
+
+\end{longtable}
+}
+\end{document}
