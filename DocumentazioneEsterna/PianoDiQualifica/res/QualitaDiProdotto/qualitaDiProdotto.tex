@@ -24,11 +24,11 @@ Gli obiettivi preposti sono:
 	\item \textbf{Descrizione}: il grado di completezza del prodotto viene determinato tramite una percentuale;
 	\item \textbf{Processo di riferimento}: Sviluppo;
 	\item \textbf{Sigla}: CI;
-	\item \textbf{Formula}: \begin{math}CI=\left(1-\frac{funzioni \ non \ implementate}{funzioni \ implementate}\right)*100\end{math};
+	\item \textbf{Formula}: \[CI=\left(1-\frac{funzioni \ non \ implementate}{funzioni \ implementate}\right)\ast100\];
 	\item \textbf{Range di valori che può assumere}: 
 		\begin{itemize}
-			\item \textbf{Ottimale} : $CI \geq 100 \%$;
-			\item \textbf{Accettabile} : $CI \geq 100 \%$.
+			\item \textbf{Ottimale} : $CI = 100 \%$;
+			\item \textbf{Accettabile} : $CI = 100 \%$.
 		\end{itemize}
 \end{itemize}
 
@@ -48,7 +48,7 @@ Gli obiettivi preposti sono:
 	\item \textbf{Descrizione}: la capacità di resistenza agli errori viene espressa tramite l'utilizzo di una percentuale;
 	\item \textbf{Processo di riferimento}: Verifica;
 	\item \textbf{Sigla}: DE;
-	\item \textbf{Formula}: \begin{math}DE=\frac{numero \ errori}{numero \ test \ effettuati}*100\end{math};
+	\item \textbf{Formula}: \[DE=\frac{numero \ errori}{numero \ test \ effettuati}\ast100;\]
 	\item \textbf{Range di valori che può assumere}: 
 		\begin{itemize}
 			\item \textbf{Ottimale} : $DE = 0 \%$;
@@ -57,12 +57,15 @@ Gli obiettivi preposti sono:
 \end{itemize}
 
 \subsection{Usabilità}
-Con \textit{usabilità} si intende la capacità del prodotto di essere di facile utilizzo e comprensione da parte dell'utente, quello che frequentemente viene definito un prodotto \textit{User friendly}\ped{G}.
+%Con \textit{usabilità} si intende la capacità del prodotto di essere di facile utilizzo e comprensione da parte dell'utente, quello che frequentemente viene definito un prodotto \textit{User friendly}\ped{G}.
+Con \textit{usabilità} si intende un prodotto \textit{user friendly}\ped{G}, in particolare quindi si fa riferimento alla capacità del prodotto di essere comprensibile e di facile utilizzo da parte del cliente finale.
+
+
 \subsubsection{Obiettivi}
 \begin {itemize}
-	\item \textbf{Comprensibile:} l'utente deve comprendere il prodotto e poter trovare le informazioni facilmente;
-	\item \textbf{Apprendibile:} deve essere facile per l'utente imparare ad utilizzarlo;
-	\item \textbf{Attrattivo:} deve essere interessante e catturare l'attenzione dell'utente.
+	\item \textbf{Comprensibilità:} l'utente deve comprendere il prodotto e poter trovare le informazioni facilmente;
+	\item \textbf{Apprendibilità:} deve essere facile per l'utente imparare ad utilizzarlo;
+	\item \textbf{Attrattività:} deve essere interessante e catturare l'attenzione dell'utente.
 \end{itemize}
 \subsubsection{Metriche}
 \myparagraph{Facilità di utilizzo}
@@ -108,8 +111,8 @@ Con \textit{usabilità} si intende la capacità del prodotto di essere di facile
 Capacità del prodotto di essere modificato, mediante miglioramenti o correzioni.
 \subsubsection{Obiettivi}
 \begin{itemize}
-	\item \textbf{Analizzabile:} capacità del prodotto di essere analizzato per localizzare gli errori;
-	\item \textbf{Modificabile:} capacità del prodotto di permettere l'aggiunta di una o più modifiche.
+	\item \textbf{Analizzabilità:} capacità del prodotto di essere analizzato per localizzare gli errori;
+	\item \textbf{Modificabilità:} capacità del prodotto di permettere l'aggiunta di una o più modifiche.
 \end{itemize}
 \subsubsection{Metriche}
 \myparagraph{Facilità di comprensione}
@@ -119,7 +122,7 @@ Capacità del prodotto di essere modificato, mediante miglioramenti o correzioni
 	\item \textbf{Descrizione}: si ottiene una percentuale mettendo in rapporto le linee di commenti con le linee di codice;
 	\item \textbf{Processo di riferimento}: Sviluppo;
 	\item \textbf{Sigla}: FC;
-	\item \textbf{Formula}: \begin{math}FC=\frac{linee \ di \ commenti}{linee \ di \ codice}*100\end{math};
+	\item \textbf{Formula}: \[FC=\frac{linee \ di \ commenti}{linee \ di \ codice}\ast100;\]
 	\item \textbf{Range di valori che può assumere}: 
 		\begin{itemize}
 			\item \textbf{Ottimale} : $FC \geq 20 \%$;
@@ -130,7 +133,7 @@ Capacità del prodotto di essere modificato, mediante miglioramenti o correzioni
 \vspace{-1cm}
 \begin{itemize}
 	\item \textbf{Codice}: MPD7;
-	\item \textbf{Descrizione}: una classe potrebbe considerarsi semplice quando ha pochi metodi;
+	\item \textbf{Descrizione}: una classe viene considerata semplice quando ha pochi metodi;
 	\item \textbf{Processo di riferimento}: Sviluppo;
 	\item \textbf{Misurazione:} numero metodi per classe;
 	\item \textbf{Range di valori che può assumere}: 
@@ -143,7 +146,7 @@ Capacità del prodotto di essere modificato, mediante miglioramenti o correzioni
 \vspace{-1cm}
 \begin{itemize}
 	\item \textbf{Codice}: MPD8;
-	\item \textbf{Descrizione}: una funzione potrebbe considerarsi semplice quando ha pochi parametri;
+	\item \textbf{Descrizione}: una funzione viene considerata semplice quando ha pochi parametri;
 	\item \textbf{Processo di riferimento}: Sviluppo;
 	\item \textbf{Misurazione:} numero di parametri in un metodo;
 	\item \textbf{Range di valori che può assumere}: 
