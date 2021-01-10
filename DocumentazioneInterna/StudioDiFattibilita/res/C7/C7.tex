@@ -1,0 +1,45 @@
+\section{Capitolato C7}
+
+\subsection{Informazioni generali}
+\begin{itemize}
+\item \textbf{\emph{Nome:}} SSD - Soluzioni di sincronizzazione desktop;
+\item \textbf{\commitProg:} Zextras;
+\item \textbf{\proponProg:} \VT{} e \CR.
+\end{itemize}
+
+\subsection{Descrizione}
+Questo capitolato pone come obbiettivo la creazione di un algoritmo solido ed efficiente in grado di garantire il salvataggio in cloud del lavoro e contemporaneamente la sincronizzazione su disco dei cambiamenti presenti nel cloud. Questo algoritmo dovrà poi interfacciarsi con il servizio Zextras Drive. É anche richiesto lo sviluppo di un interfaccia multipiattaforma per utilizzare l'algoritmo in tutti i principali sistemi operativi.
+
+\subsection{Tecnologie coinvolte}
+\begin{itemize}
+\item \textbf{Qt:} framework\ped{G} consigliato da Zextras per lo sviluppo di programmi con interfaccia grafica;
+\item \textbf{Python\ped{G}:} linguaggio di programmazione, consigliato da Zextras per lo sviluppo della business logic;
+\item \textbf{Zextras Drive:} prodotto per la condivisione e l'archiviazione di file nel cloud;
+\item \textbf{GraphQL:} linguaggio utilizzato per effettuare query\ped{G} alle API\ped{G} di Zextras Drive.
+\end{itemize}
+
+\subsection{Vincoli}
+\begin{itemize}
+\item L'algoritmo e l'interfaccia utente devono essere utilizzabili nei tre sistemi operativi principali (Windows, Mac, Linux), senza richiedere all'utente l'installazione di ulteriori prodotti;
+\item É richiesta una forte distinzione tra interfaccia utente e business logic;
+\item É richiesto l'uso del pattern MVC\ped{G} che permetta un cambiamento rapido della business logic o dell'interfaccia utente senza un eccessivo sviluppo aggiuntivo.
+\end{itemize}
+
+\subsection{Aspetti positivi}
+\begin{itemize}
+\item L'ambito trattato è di facile comprensione, dato che tutti i componenti del gruppo hanno già utilizzato servizi simili, come ad esempio Google Drive o Dropbox;
+\item Il pattern MVC\ped{G} e il framework\ped{G} Qt sono stati già trattati e utilizzati nel corso di programmazione ad oggetti.
+\end{itemize}
+
+\subsection{Aspetti critici}
+\begin{itemize}
+\item É necessario imparare come gestire la sincronizzazione locale dei dati su 3 sistemi operativi diversi;
+\item Il linguaggio di programmazione Python\ped{G} consigliato da Zextras non è ben conosciuto all'interno del gruppo;
+\item Sarà necessario familiarizzarsi con il software Zimbra e il linguaggio GraphQL richiesto per le chiamate alle API\ped{G};
+\item É necessario molto lavoro di ricerca per la creazione dell'algoritmo di sincronizzazione;
+\item Le idee e le richieste di questo capitolato non sono risultate interessanti alla maggior parte dei componenti del gruppo;
+\item L'apprendimento del funzionamento della suite Zimbra probabilmente non risulterà spendibile in un futuro contesto lavorativo.
+\end{itemize}
+
+\subsection{Conclusione}
+La grande quantità di ricerca necessaria ad imparare a gestire la sincronizzazione locale in 3 sistemi operativi diversi, la poca spendibilità delle conoscenze acquisite in un eventuale contesto lavorativo futuro e lo scarso interesse da parte del gruppo hanno portato alla decisione di scartare questo progetto.

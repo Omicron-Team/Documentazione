@@ -274,3 +274,6 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# DS_Store è un file nascosto con un formato proprietario creato da macOS per la personalizzazione di cartelle
+*.DS_Store
