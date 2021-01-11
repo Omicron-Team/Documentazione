@@ -1,7 +1,7 @@
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/AcquistoProdottiGenerale}
-\caption{Diagramma UML per modulo di acquisto prodotti}
+\caption{Diagramma UML\ped{G} per modulo di acquisto prodotti}
 \end{figure}
 
 \subsubsection{UC7 - Acquisto prodotti}
@@ -23,7 +23,7 @@
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/AcquistoProdotti}
-\caption{Diagramma UML per UC7 - Acquisto prodotti}
+\caption{Diagramma UML\ped{G} per UC7 - Acquisto prodotti}
 \end{figure}
 
 \subsubsection{UC7.1 - Checkout}
@@ -64,7 +64,7 @@
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/InserimentoDatiAcquisto}
-\caption{Diagramma UML per UC7.3 - Inserimento dati necessari all'acquisto}
+\caption{Diagramma UML\ped{G} per UC7.3 - Inserimento dati necessari all'acquisto}
 \end{figure}
 
 \subsubsection{UC7.3.1 - Verifica indirizzo email di spedizione}
@@ -88,7 +88,7 @@
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/InserimentoDatiPagamento}
-\caption{Diagramma UML per UC7.3.3 - Inserimento dati di pagamento}
+\caption{Diagramma UML\ped{G} per UC7.3.3 - Inserimento dati di pagamento}
 \end{figure}
 
 \subsubsection{UC7.3.3 - Inserimento dati di pagamento}
@@ -170,7 +170,7 @@
 \subsubsection{UC7.5 - Visualizzazione errore dati non compilati}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
-\item \textbf{Descrizione}: il cliente visualizza un messaggio di errore che lo informa della necessità di compilare tutti i campi dati per procedere al pagamento.
+\item \textbf{Descrizione}: il cliente visualizza un messaggio di errore che lo informa della necessità di compilare tutti i campi dati per procedere al pagamento;
 \item \textbf{Scenario Principale}: il cliente preme il bottone dedicato al pagamento senza prima aver compilato tutti i campi richiesti;
 \item \textbf{Precondizione}: il cliente si trova nella pagina di pagamento e non ha compilato tutti i campi dati necessari per procedere all'acquisto;
 \item \textbf{Postcondizione}: viene visualizzato un messaggio che informa il cliente dell'errore e che consiglia all'utente di controllare i dati inseriti e riprovare.
@@ -181,7 +181,7 @@
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Attori secondari}: Stripe\ped{G};
 \item \textbf{Descrizione}: il cliente visualizza un messaggio di errore che lo informa del motivo per il fallimento del pagamento. L'utente può poi controllare i dati inseriti e ritentare il pagamento;
-\item \textbf{Scenario Principale}: il cliente prova ad effettuare il pagamento inserendo dati di una carta che per qualche motivo rifiuta l'addebito.
+\item \textbf{Scenario Principale}: il cliente prova ad effettuare il pagamento inserendo dati di una carta che per qualche motivo rifiuta l'addebito;
 \item \textbf{Precondizione}: il cliente si trova nella pagina di pagamento e ha compilato i campi dati necessari per procedere all'acquisto;
 \item \textbf{Postcondizione}: viene visualizzato un messaggio che informa il cliente dell'errore avvenuto nel processo di pagamento, consigliandogli di controllare i dati inseriti e riprovare.
 \end{itemize}
@@ -190,8 +190,8 @@
 \subsubsection{UC7.7 - Visualizzazione riepilogo ordine}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
-\item \textbf{Descrizione}: il cliente visualizza un riepilogo dell'ordine appena effettuato contenente l'elenco di prodotti, ognuno con prezzo e quantità, il costo totale, le tasse, l'indirizzo di spedizione e la data.
-\item \textbf{Scenario Principale}: il cliente ha effettuato un ordine e ne visualizza un riepilogo.
-\item \textbf{Precondizione}: il cliente ha completato un ordine ed il pagamento è andato a buon fine.
+\item \textbf{Descrizione}: il cliente visualizza un riepilogo dell'ordine appena effettuato contenente l'elenco di prodotti, ognuno con prezzo e quantità, il costo totale, le tasse, l'indirizzo di spedizione e la data;
+\item \textbf{Scenario Principale}: il cliente ha effettuato un ordine e ne visualizza un riepilogo;
+\item \textbf{Precondizione}: il cliente ha completato un ordine ed il pagamento è andato a buon fine;
 \item \textbf{Postcondizione}: viene visualizzato un riepilogo dell'ordine effettuato.
 \end{itemize}

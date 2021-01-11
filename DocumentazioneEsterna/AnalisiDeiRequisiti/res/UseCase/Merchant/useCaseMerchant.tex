@@ -1,34 +1,34 @@
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/MerchantDashboardGenerale}
-\caption{Diagramma UML per modulo di gestione merchant dashboard}
+\caption{Diagramma UML\ped{G} per modulo di gestione merchant dashboard\ped{G}}
 \end{figure}
 
-\subsubsection{UC12 - Gestione merchant dashboard}
+\subsubsection{UC12 - Gestione merchant dashboard\ped{G}}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: la merchant dashboard permette di gestire e monitorare i dati dei prodotti e le vendite effettuate;
-\item \textbf{Scenario Principale}: il venditore accede alla dashboard tramite l'apposito pulsante e può effettuare le seguenti operazioni:
+\item \textbf{Descrizione}: la merchant dashboard\ped{G} permette di gestire e monitorare i dati dei prodotti e le vendite effettuate;
+\item \textbf{Scenario Principale}: il venditore accede alla dashboard\ped{G} tramite l'apposito pulsante e può effettuare le seguenti operazioni:
 \begin{itemize}
 	\item gestire i prodotti \textbf{[UC12.1]};
 	\item gestire le categorie di prodotti \textbf{[UC12.2]};
 	\item visualizzare gli ordini ricevuti \textbf{[UC12.3]};
 	\item visualizzare i collegamenti agli strumenti per la gestione del sito \textbf{[UC12.4]}.
 \end{itemize}
-\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard\ped{G};
 \item \textbf{Postcondizione}: al merchant è permesso effettuare operazioni per gestire i propri prodotti, le categorie di prodotti e gli ordini. Sono anche presenti dei collegamenti agli strumenti di gestione del sito.
 \end{itemize}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/MerchantDashboard}
-\caption{Diagramma UML per UC12 - Gestione merchant dashboard}
+\caption{Diagramma UML\ped{G} per UC12 - Gestione merchant dashboard\ped{G}}
 \end{figure}
 
 \subsubsection{UC12.1 - Gestione prodotti}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: il venditore può gestire i prodotti dalla dashboard;
+\item \textbf{Descrizione}: il venditore può gestire i prodotti dalla dashboard\ped{G};
 \item \textbf{Scenario Principale}: il venditore può effettuare le seguenti operazioni sui prodotti:
 \begin{itemize}
 	\item inserimento \textbf{[UC12.1.1]};
@@ -36,20 +36,20 @@
 	\item modifica \textbf{[UC12.1.3]};
 	\item rimozione \textbf{[UC12.1.4]}.
 \end{itemize}
-\item \textbf{Precondizione}: il venditore si trova nella merchant dashboard;
-\item \textbf{Postcondizione}: al venditore è permesso effettuare operazioni per gestire i propri prodotti;
+\item \textbf{Precondizione}: il venditore si trova nella merchant dashboard\ped{G};
+\item \textbf{Postcondizione}: al venditore è permesso effettuare operazioni per gestire i propri prodotti.
 \end{itemize}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/GestioneProdotti}
-\caption{Diagramma UML per UC12.1 - Gestione prodotti}
+\caption{Diagramma UML\ped{G} per UC12.1 - Gestione prodotti\ped{G}}
 \end{figure}
 
 \subsubsection{UC12.1.1 - Inserimento prodotto}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: il venditore può inserire nel sistema nuovi prodotti da vendere.
+\item \textbf{Descrizione}: il venditore può inserire nel sistema nuovi prodotti da vendere;
 \item \textbf{Scenario Principale}: il venditore accede alla pagina di inserimento prodotti tramite l'apposito pulsante ed inserisce le seguenti informazioni:
 \begin{itemize}
 	\item nome \textbf{[UC12.1.1.1]};
@@ -58,15 +58,15 @@
 	\item immagine \textbf{[UC12.1.1.4]};
 	\item categoria \textbf{[UC12.1.1.5]}.
 \end{itemize}
-In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.1.6]}.
-\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.1.6]};
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard\ped{G};
 \item \textbf{Postcondizione}: il venditore ha inserito un nuovo prodotto nel sistema.
 \end{itemize}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/InserimentoProdotto}
-\caption{Diagramma UML per UC12.1.1 - Inserimento prodotto}
+\caption{Diagramma UML\ped{G} per UC12.1.1 - Inserimento prodotto}
 \end{figure}
 
 \subsubsection{UC12.1.1.1 - Inserimento nome}
@@ -148,7 +148,7 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.1.6]}.
 \item prezzo;
 \item immagine.
 \end{itemize}
-\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard\ped{G};
 \item \textbf{Postcondizione}: il venditore visualizza la lista dei prodotti presenti nel sistema, ognuno dei quali con le seguenti informazioni:
 \begin{itemize}
 \item nome;
@@ -172,14 +172,14 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.1.6]}.
 	\item categoria \textbf{[UC12.1.3.5]}.
 \end{itemize}
 In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.3.6]};
-\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard\ped{G};
 \item \textbf{Postcondizione}: il venditore ha modificato il prodotto selezionato.
 \end{itemize}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/ModificaProdotto}
-\caption{Diagramma UML per UC12.1.3 - Modifica prodotto}
+\caption{Diagramma UML\ped{G} per UC12.1.3 - Modifica prodotto}
 \end{figure}
 
 \subsubsection{UC12.1.3.1 - Modifica nome}
@@ -254,36 +254,36 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.3.6]};
 \item \textbf{Attori primari}: venditore;
 \item \textbf{Descrizione}: il venditore può rimuovere i prodotti presenti nel sistema;
 \item \textbf{Scenario Principale}: il venditore elimina il prodotto scelto tramite l'apposito pulsante collegato al prodotto da eliminare, visualizzato nella lista dei prodotti \textbf{[UC12.1.2]};
-\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard\ped{G};
 \item \textbf{Postcondizione}: il venditore ha eliminato il prodotto selezionato.
 \end{itemize}
 
 \subsubsection{UC12.2 - Gestione categorie di prodotti}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: il venditore può gestire le categorie di prodotti dalla dashboard;
+\item \textbf{Descrizione}: il venditore può gestire le categorie di prodotti dalla dashboard\ped{G};
 \item \textbf{Scenario Principale}: il venditore può effettuare le seguenti operazioni sulle categorie di prodotti:
 \begin{itemize}
 	\item visualizzazione \textbf{[UC12.2.1]};
 	\item inserimento \textbf{[UC12.2.2]};
 	\item rimozione \textbf{[UC12.2.3]}.
 \end{itemize}
-\item \textbf{Precondizione}: il venditore si trova nella merchant dashboard;
+\item \textbf{Precondizione}: il venditore si trova nella merchant dashboard\ped{G};
 \item \textbf{Postcondizione}: al venditore è permesso effettuare operazioni per gestire le categorie di prodotti;
 \end{itemize}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/GestioneCategorie}
-\caption{Diagramma UML per UC12.2 - Gestione categorie di prodotti}
+\caption{Diagramma UML\ped{G} per UC12.2 - Gestione categorie di prodotti}
 \end{figure}
 
 \subsubsection{UC12.2.1 - Visualizzazione lista categorie}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: il venditore visualizza nella merchant dashboard la lista delle categorie presenti nel sistema;
-\item \textbf{Scenario Principale}: il venditore accede alla merchant dashboard e, nell'apposita sezione, visualizza una lista dei nomi delle categorie presenti;
-\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Descrizione}: il venditore visualizza nella merchant dashboard\ped{G} la lista delle categorie presenti nel sistema;
+\item \textbf{Scenario Principale}: il venditore accede alla merchant dashboard\ped{G} e, nell'apposita sezione, visualizza una lista dei nomi delle categorie presenti;
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard\ped{G};
 \item \textbf{Postcondizione}: il venditore visualizza la lista dei nomi delle categorie presenti nel sistema.
 \end{itemize}
 
@@ -292,14 +292,14 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.3.6]};
 \item \textbf{Attori primari}: venditore;
 \item \textbf{Descrizione}: il venditore può inserire nel sistema nuove categorie di prodotti;
 \item \textbf{Scenario Principale}: il venditore accede alla pagina di inserimento categorie tramite l'apposito pulsante ed inserisce il nome della categoria \textbf{[UC12.2.2.1]} per poi premere il pulsante di conferma \textbf{[UC12.2.2.2]};
-\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard\ped{G};
 \item \textbf{Postcondizione}: il venditore ha inserito una nuova categoria nel sistema.
 \end{itemize}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/InserimentoCategoria}
-\caption{Diagramma UML per UC12.2.2 - Inserimento categoria}
+\caption{Diagramma UML\ped{G} per UC12.2.2 - Inserimento categoria}
 \end{figure}
 
 \subsubsection{UC12.2.2.1 - Inserimento nome}
@@ -318,7 +318,7 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.3.6]};
 \item \textbf{Scenario Principale}: il venditore preme il pulsante di conferma e inserisce la nuova categoria con il nome precedentemente inserito;
 \item \textbf{Estensioni}: 
 \begin{itemize}
-	\item se il nome della categoria non è stato inserito viene visualizzato un messaggio di errore \textbf{[UC12.2.2.3]};
+	\item se il nome della categoria non è stato inserito viene visualizzato un messaggio di errore \textbf{[UC12.2.2.3]}.
 \end{itemize} 
 \item \textbf{Precondizione}: il venditore si trova nella pagina dedicata all'inserimento di una nuova categoria e ha premuto il bottone di conferma;
 \item \textbf{Postcondizione}: il venditore ha inserito una nuova categoria nel sistema.
@@ -338,7 +338,7 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.3.6]};
 \item \textbf{Attori primari}: venditore;
 \item \textbf{Descrizione}: il venditore può rimuovere le categorie;
 \item \textbf{Scenario Principale}: il venditore elimina la categoria scelta tramite l'apposito pulsante collegato alla categoria da eliminare, visualizzato nella lista delle categorie \textbf{[UC12.2.1]};
-\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard\ped{G};
 \item \textbf{Postcondizione}: il venditore ha eliminato la categoria selezionata.
 \end{itemize}
 
@@ -346,16 +346,16 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.3.6]};
 \subsubsection{UC12.3 - Visualizzazione lista ordini ricevuti}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: il venditore visualizza nella merchant dashboard la lista degli ordini ricevuti;
-\item \textbf{Scenario Principale}: il venditore accede alla merchant dashboard e, nell'apposita sezione, visualizza una lista degli ordini ricevuti. Per ogni ordine viene visualizzato il numero dell'ordine, il costo totale e la data. Il venditore può accedere ad altre informazioni premendo il bottone 'Dettagli' collegato all'ordine interessato \textbf{[UC12.3.1]};
-\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Descrizione}: il venditore visualizza nella merchant dashboard\ped{G} la lista degli ordini ricevuti;
+\item \textbf{Scenario Principale}: il venditore accede alla merchant dashboard\ped{G} e, nell'apposita sezione, visualizza una lista degli ordini ricevuti. Per ogni ordine viene visualizzato il numero dell'ordine, il costo totale e la data. Il venditore può accedere ad altre informazioni premendo il bottone 'Dettagli' collegato all'ordine interessato \textbf{[UC12.3.1]};
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard\ped{G};
 \item \textbf{Postcondizione}: il venditore visualizza la lista degli ordini presenti nel sistema.
 \end{itemize}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/VisualizzazioneOrdiniMerchant}
-\caption{Diagramma UML per UC12.3 - Visualizzazione lista ordini ricevuti}
+\caption{Diagramma UML\ped{G} per UC12.3 - Visualizzazione lista ordini ricevuti}
 \end{figure}
 
 \subsubsection{UC12.3.1 - Visualizzazione informazioni ordine}
@@ -372,16 +372,16 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC12.1.3.6]};
 	\item tasse applicate;
 	\item data acquisto.
 \end{itemize}
-\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard\ped{G};
 \item \textbf{Postcondizione}: il venditore visualizza le informazioni relative all'ordine selezionato.
 \end{itemize}
 
 \subsubsection{UC12.4 - Visualizzazione collegamenti a sistemi di gestione}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: il venditore visualizza nella merchant dashboard i collegamenti agli strumenti di gestione esterni;
-\item \textbf{Scenario Principale}: il venditore accede alla merchant dashboard e, nell'apposita sezione, visualizza dei collegamenti alla piattaforma di monitoraggio dell'applicazione e agli strumenti di configurazione \textbf{[UC14]};
-\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard;
+\item \textbf{Descrizione}: il venditore visualizza nella merchant dashboard\ped{G} i collegamenti agli strumenti di gestione esterni;
+\item \textbf{Scenario Principale}: il venditore accede alla merchant dashboard\ped{G} e, nell'apposita sezione, visualizza dei collegamenti alla piattaforma di monitoraggio dell'applicazione e agli strumenti di configurazione \textbf{[UC14]};
+\item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard\ped{G};
 \item \textbf{Postcondizione}: il venditore visualizza la lista dei collegamenti ai sistemi di gestione del sito.
 \end{itemize}
 
