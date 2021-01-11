@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
 
 \input{../../Utilita/latexSetup/package}
 \usepackage{../../Utilita/latexSetup/styleTemplate}
@@ -15,14 +15,25 @@
 \newpage
 \tableofcontents
 \newpage
-
-\input{res/Descrizione/descrizione}
+\listoffigures
+\newpage
+\listoftables
+\newpage
 
 \input{res/Introduzione/introduzione}
 
+\input{res/Descrizione/descrizione}
+
+\newpage
+
+\input{res/UseCase/useCase}
+
+\newpage
+
 \input{res/Requisiti/requisiti}
+
+\newpage
 
 \input{res/Tracciamento/tracciamento}
 
-\input{res/UseCase/useCase}
 \end{document}
