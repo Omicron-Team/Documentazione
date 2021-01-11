@@ -35,9 +35,6 @@ jobs:
 
       - name: Compilazione Piano di Qualififca
         run: latexmk -pdf -cd DocumentazioneEsterna/PianoDiQualifica/PianoDiQualifica.tex
-      
-      - name: Compilazione VerbaleX
-        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VerbaleX/VerbaleX.tex
 
       - name: Compilazione Norme di Progetto
         run: latexmk -pdf -cd DocumentazioneInterna/NormeDiProgetto/NormeDiProgetto.tex
@@ -88,7 +85,6 @@ jobs:
           mv Glossario.pdf Documenti/DocumentazioneEsterna
           mv PianoDiProgetto.pdf Documenti/DocumentazioneEsterna
           mv PianoDiQualifica.pdf Documenti/DocumentazioneEsterna
-          mv VerbaleX.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
           mv StudioDiFattibilita.pdf Documenti/DocumentazioneInterna
           mv letteraRR.pdf Documenti/LetterePresentazioni
