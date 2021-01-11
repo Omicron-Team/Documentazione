@@ -1,0 +1,35 @@
+\section{Casi d'uso}
+\subsection{Attori dei casi d'uso}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/DiagrammaAttoriPrimari}
+\caption{Diagramma UML\ped{G} per la gerarchia degli attori primari}
+\end{figure}
+\subsubsection{Attori primari}
+\begin{itemize}
+\item \textbf{Utente generico:} corrisponde ad un utente generico che accede alla piattaforma attraverso l'applicazione Web\ped{G};
+\item \textbf{Utente autenticato:} corrisponde ad un utente che ha effettuato la procedura di login per autenticarsi. L'utente risulta quindi in possesso delle credenziali valide per accedere ad apposite funzionalità;
+\item \textbf{Utente non autenticato:} corrisponde ad un utente che non ha ancora effettuato la procedura di login alla piattaforma;
+\item \textbf{Cliente:} corrisponde ad un utente che ha la possibilità di acquistare i prodotti presenti nel catalogo digitale;
+\item \textbf{Venditore:} corrisponde all'utente che possiede la piattaforma, in quanto ha la possibilità vendere e gestire i propri prodotti presenti nell'applicativo;
+\item \textbf{Admin:} corrisponde all'utente necessario alla gestione della piattaforma.
+\end{itemize}
+\subsubsection{Attori secondari}
+\begin{itemize}
+\item \textbf{Stripe\ped{G}:} infrastruttura software che fornisce i servizi di pagamento necessari agli acquisti nella piattaforma;
+\item \textbf{Identity Manager:} servizio di gestione delle identità per custodire le credenziali degli utenti in un cloud\ped{G} esterno. Verrà effettuata una scelta tra le due alternative principali offerte dal proponente: Auth0\ped{G} e Amazon\ped{G} Cognito\ped{G};
+\end{itemize}
+\subsection{Elenco dei casi d'uso}
+In questa sezione vi sono elencati tutti i casi d'uso (UC) individuati. Ogni UC rappresenta uno scenario per uno o più attori e viene descritto tramite diagrammi dei casi d'uso. Ogni UC, infine, possiede una precondizione e una postcondizione. \\
+
+\input{res/UseCase/Registrazione/useCaseRegistrazione}
+\input{res/UseCase/Login/useCaseLogin}
+\input{res/UseCase/Logout/useCaseLogout}
+\input{res/UseCase/Carrello/useCaseCarrello}
+\input{res/UseCase/Checkout/useCaseCheckout}
+\input{res/UseCase/Profilo/useCaseProfilo}
+\input{res/UseCase/Homepage/useCaseHomepage}
+\input{res/UseCase/PLP/useCasePLP}
+\input{res/UseCase/PDP/useCasePDP}
+\input{res/UseCase/Merchant/useCaseMerchant}
+\input{res/UseCase/Admin/useCaseAdmin}
