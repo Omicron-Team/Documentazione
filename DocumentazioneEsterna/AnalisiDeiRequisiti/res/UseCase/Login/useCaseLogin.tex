@@ -37,13 +37,9 @@
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
 \item \textbf{Descrizione}: l'utente compila il form per il login;
-\item \textbf{Scenario Principale}: l'utente inserisce nel form apposito i dati necessari al login;
-\item \textbf{Specializzazioni}: a seconda del tipo di utente selezionato in \textbf{[UC3.1]}
-\begin{itemize}
-	\item inserimento dati login cliente \textbf{[UC3.2.3]}
-	\item inserimento dati login venditore \textbf{[UC3.2.4]}
-\end{itemize}
-\item \textbf{Precondizione}: il form di inserimento dati per il login è disponibile;
+\item \textbf{Scenario Principale}: l'utente inserisce nel form apposito i dati necessari al login.
+Se è stato selezionato l'utente venditore, il campo dati 'Email' non sarà disponibile;
+\item \textbf{Precondizione}: è stato selezionato il tipo di utente e il form di inserimento dati per il login è disponibile;
 \item \textbf{Postcondizione}: i dati necessari al login sono stati compilati.
 \end{itemize}
 
@@ -63,36 +59,6 @@
 \item \textbf{Scenario Principale}: l'utente inserisce il suo indirizzo email nell'apposito campo;
 \item \textbf{Precondizione}: il campo ``Email" risulta vuoto;
 \item \textbf{Postcondizione}: il campo ``Email" è stato compilato.
-\end{itemize}
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.6]{res/UseCase/Immagini/InserimentoDatiLoginCliente}
-\caption{Diagramma UML\ped{G} per UC3.2.3 - Inserimento dati login cliente}
-\end{figure}
-
-\subsubsection{UC3.2.3 - Inserimento dati login cliente}
-\begin{itemize}
-\item \textbf{Attori primari}: utente non autenticato;
-\item \textbf{Descrizione}: l'utente compila il form per il login;
-\item \textbf{Scenario Principale}: l'utente che ha selezionato il tipo utente `cliente' \textbf{[UC3.1]} inserisce nel form apposito la propria email \textbf{[UC3.2.2]} e la propria password \textbf{[UC3.2.1]};
-\item \textbf{Precondizione}: il form di inserimento dati per il login è disponibile;
-\item \textbf{Postcondizione}: i dati necessari al login sono stati compilati.
-\end{itemize}
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.6]{res/UseCase/Immagini/InserimentoDatiLoginVenditore}
-\caption{Diagramma UML\ped{G} per UC3.2.4 - Inserimento dati login venditore}
-\end{figure}
-
-\subsubsection{UC3.2.4 - Inserimento dati login venditore}
-\begin{itemize}
-\item \textbf{Attori primari}: utente non autenticato;
-\item \textbf{Descrizione}: l'utente compila il form per il login;
-\item \textbf{Scenario Principale}: l'utente che ha selezionato il tipo utente `venditore' \textbf{[UC3.1]} inserisce nel form apposito la propria password \textbf{[UC3.2.1]};
-\item \textbf{Precondizione}: il form di inserimento dati per il login è disponibile;
-\item \textbf{Postcondizione}: i dati necessari al login sono stati compilati.
 \end{itemize}
 
 \subsubsection{UC3.3 - Richiesta di login}
