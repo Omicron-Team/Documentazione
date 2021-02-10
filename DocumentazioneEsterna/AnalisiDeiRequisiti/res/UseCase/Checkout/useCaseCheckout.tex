@@ -11,7 +11,7 @@
 \item \textbf{Descrizione}: il cliente può acquistare i prodotti presenti nel suo carrello;
 \item \textbf{Scenario Principale}: 
 \begin{enumerate}
-	\item il cliente inizia il checkout dei prodotti nel carrello \textbf{[UC7.1]};
+	\item il cliente inizia la procedura di checkout per i prodotti presenti nel carrello \textbf{[UC7.1]};
 	\item il cliente verifica l'indirizzo email e inserisce i dati per il pagamento \textbf{[UC7.3]};
 	\item il cliente procede al pagamento \textbf{[UC7.4]};
 	\item il cliente visualizza un riepilogo dell'ordine effettuato \textbf{[UC7.7]};
@@ -26,16 +26,16 @@
 \caption{Diagramma UML\ped{G} per UC7 - Acquisto prodotti}
 \end{figure}
 
-\subsubsection{UC7.1 - Checkout}
+\subsubsection{UC7.1 - Accesso al checkout}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
-\item \textbf{Descrizione}: il cliente effettua il checkout per iniziare la procedura di acquisto prodotti;
-\item \textbf{Scenario Principale}: il cliente preme il bottone dedicato al checkout, nella pagina del carrello;
+\item \textbf{Descrizione}: il cliente inizia la procedura di checkout;
+\item \textbf{Scenario Principale}: il cliente preme il bottone apposito per iniziare il checkout, nella pagina del carrello;
 \item \textbf{Estensioni}:
 \begin{itemize}
 \item se non è presente alcun prodotto nel carrello viene visualizzato un messaggio di errore \textbf{[UC7.2]};
 \end{itemize}
-\item \textbf{Precondizione}: l'utente è autenticato come cliente, si trova nella pagina del carrello e ha premuto il bottone dedicato al checkout;
+\item \textbf{Precondizione}: l'utente è autenticato come cliente, si trova nella pagina del carrello e ha premuto il bottone per iniziare la procedura di acquisto;
 \item \textbf{Postcondizione}: il cliente viene reindirizzato alla pagina di verifica email e di pagamento, dove può continuare l'acquisto dei prodotti.
 \end{itemize}
 
@@ -43,8 +43,8 @@
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente visualizza un messaggio di errore che lo informa che per procedere al checkout è necessario avere almeno un prodotto nel carrello;
-\item \textbf{Scenario Principale}: il cliente prova ad effettuare il checkout senza aver precedentemente inserito prodotti nel suo carrello;
-\item \textbf{Precondizione}: il cliente si trova nella pagina del carrello e ha premuto il bottone dedicato al checkout;
+\item \textbf{Scenario Principale}: il cliente prova ad iniziare la procedura di checkout senza aver precedentemente inserito prodotti nel suo carrello;
+\item \textbf{Precondizione}: il cliente si trova nella pagina del carrello e ha premuto il bottone  per iniziare la procedura di acquisto;
 \item \textbf{Postcondizione}: viene visualizzato un messaggio che informa il cliente della necessità di avere almeno un prodotto nel carrello per iniziare il checkout.
 \end{itemize}
 
@@ -54,10 +54,10 @@
 \item \textbf{Descrizione}: il cliente compila i campi dati necessari all'acquisto dei prodotti selezionati;
 \item \textbf{Scenario Principale}: il cliente si trova nella pagina di pagamento e, per concludere l'acquisto, inserisce i seguenti dati:
 \begin{itemize}
-	\item il cliente verifica l'indirizzo email indicato in fase di registrazione \textbf{[UC7.3.1]} o può indicarne uno diverso per l'invio dell'email di conferma acquisto \textbf{[UC7.3.2]};
+	\item il cliente verifica l'indirizzo email indicato in fase di registrazione \textbf{[UC7.3.1]} o può indicarne uno diverso per l'invio dei prodotti acquistati \textbf{[UC7.3.2]};
 	\item il cliente inserisce i dati relativi al metodo di pagamento, come nome, cognome e numero di carta di credito \textbf{[UC7.3.3]};
 \end{itemize}
-\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Precondizione}: il cliente ha iniziato la procedura di acquisto e si trova nella pagina di pagamento;
 \item \textbf{Postcondizione}: il cliente può continuare il pagamento e l'acquisto.
 \end{itemize}
 
@@ -70,9 +70,9 @@
 \subsubsection{UC7.3.1 - Verifica indirizzo email di spedizione}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
-\item \textbf{Descrizione}: il cliente verifica l'indirizzo email inserito durante la fase di registrazione;
-\item \textbf{Scenario Principale}: il cliente visualizza l'indirizzo email precedentemente inserito, che verrà utilizzato per l'invio dell'email di conferma acquisto;
-\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Descrizione}: il cliente visualizza l'indirizzo email collegato all'account, che verrà utilizzato per l'invio dell'email di conferma acquisto;
+\item \textbf{Scenario Principale}: il cliente visualizza l'indirizzo email inserito in fase di registrazione e verifica se è corretto, confermando che i prodotti verranno spediti all'indirizzo visualizzato. Se l'indirizzo non è corretto, il cliente può modificarlo \textbf{[UC7.3.1]};
+\item \textbf{Precondizione}:  il cliente ha iniziato la procedura di acquisto e si trova nella pagina di pagamento;
 \item \textbf{Postcondizione}: il cliente visualizza e verifica il suo indirizzo email.
 \end{itemize}
 
@@ -80,8 +80,8 @@
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente modifica l'indirizzo email inserito durante la fase di registrazione;
-\item \textbf{Scenario Principale}: il cliente può modificare l'email per la conferma dell'acquisto, sovrascrivendo l'indirizzo visualizzato \textbf{[UC7.3.1]};
-\item \textbf{Precondizione}: il cliente ha superato il checkout, si trova nella pagina di pagamento e visualizza il campo dati dedicato alla verifica dell'indirizzo email \textbf{[UC7.3.1]};
+\item \textbf{Scenario Principale}: il cliente può modificare l'email per l'invio dei prodotti, sovrascrivendo l'indirizzo visualizzato \textbf{[UC7.3.1]};
+\item \textbf{Precondizione}:  il cliente ha iniziato la procedura di acquisto, si trova nella pagina di pagamento e visualizza il campo dati dedicato alla verifica dell'indirizzo email \textbf{[UC7.3.1]};
 \item \textbf{Postcondizione}: il cliente modifica il suo indirizzo email, sovrascrivendo quello visualizzato.
 \end{itemize}
 
@@ -103,7 +103,7 @@
 	\item mese e anno di scadenza della carta \textbf{[UC7.3.3.4]};
 	\item codice di sicurezza \textbf{[UC7.3.3.5]};
 \end{itemize}
-\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Precondizione}: il cliente ha iniziato la procedura di acquisto e si trova nella pagina di pagamento;
 \item \textbf{Postcondizione}: il cliente ha compilato i dati di pagamento.
 \end{itemize}
 
@@ -112,7 +112,7 @@
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il nome;
 \item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento il nome collegato al conto;
-\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Precondizione}: il cliente ha iniziato la procedura di acquisto e si trova nella pagina di pagamento;
 \item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al nome.
 \end{itemize}
 
@@ -121,7 +121,7 @@
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il cognome;
 \item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento il cognome collegato al conto;
-\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Precondizione}: il cliente ha iniziato la procedura di acquisto e si trova nella pagina di pagamento;
 \item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al cognome.
 \end{itemize}
 
@@ -130,7 +130,7 @@
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il numero di carta;
 \item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento il numero di carta di credito;
-\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Precondizione}: il cliente ha iniziato la procedura di acquisto e si trova nella pagina di pagamento;
 \item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al numero di carta di pagamento.
 \end{itemize}
 
@@ -139,7 +139,7 @@
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il mese e l'anno di scadenza della carta di credito;
 \item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento mese e l'anno di scadenza della carta;
-\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Precondizione}: il cliente ha iniziato la procedura di acquisto e si trova nella pagina di pagamento;
 \item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato alla data di scadenza.
 \end{itemize}
 
@@ -148,7 +148,7 @@
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente inserisce nelle informazioni richieste per il pagamento il codice di sicurezza;
 \item \textbf{Scenario Principale}: il cliente inserisce nel form relativo ai dati di pagamento il codice di sicurezza collegato alla carta di credito;
-\item \textbf{Precondizione}: il cliente ha superato il checkout e si trova nella pagina di pagamento;
+\item \textbf{Precondizione}: il cliente ha iniziato la procedura di acquisto e si trova nella pagina di pagamento;
 \item \textbf{Postcondizione}: il cliente ha compilato il campo dati dedicato al codice di sicurezza.
 \end{itemize}
 
