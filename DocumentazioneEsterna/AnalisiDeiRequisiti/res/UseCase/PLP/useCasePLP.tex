@@ -1,4 +1,25 @@
-\subsubsection{UC11.1 - Visualizzazione dei prodotti}
+\subsubsection{UCX - Interazione con una pagina della categoria}
+\begin{itemize}
+\item \textbf{Attori primari}: utente generico;
+\item \textbf{Descrizione}: l'utente può interagire con la pagina contenente i prodotti di una determinata categoria attraverso degli appositi strumenti.
+\item \textbf{Scenario Principale}: l'utente si trova nella pagina di una categoria ed ha a disposizione le seguenti funzionalità:
+\begin{itemize}
+\item visualizzazione dei prodotti compresi nella categoria [\textbf{UCX.1}];
+\item selezione dei prodotti desiderati [\textbf{UCX.2}];
+\item inserimento nel carrello dei prodotti selezionati [\textbf{UCX.3}];
+\item filtraggio dei prodotti per prezzo [\textbf{UCX.4}];
+\item visualizzazione dell'insieme dei prodotti compatibili con la ricerca effettuata dal filtraggio [\textbf{UCX.5}];
+\item accesso alla pagina di un prodotto listato [\textbf{UCX.6}].
+\end{itemize}
+\item \textbf{Precondizione}: l'utente si trova su una pagina della categoria ed è intenzionato ad interagire con almeno un prodotto presente nella lista;
+\item \textbf{Postcondizione}: l'utente ha a disposizione varie funzionalità per interagire con i prodotti contenuti nella categoria selezionata e può procedere la loro aggiunta al carrello.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/InterazionePaginaCategoria}
+\caption{Diagramma UML\ped{G} per UCX - Interazione con una pagina della categoria}
+\end{figure}
+\subsubsection{UCX.1 - Visualizzazione dei prodotti}
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
 \item \textbf{Descrizione}: l'utente può visualizzare un insieme di prodotti raggruppati per categoria accedendo alla relativa PLP\ped{G};
@@ -11,31 +32,31 @@
 \item \textbf{Precondizione}: l'utente ha cliccato sulla PLP\ped{G} dedicata alla categoria di prodotti scelta;
 \item \textbf{Postcondizione}: l'utente visualizza le informazioni relative ai prodotti listati, con le eventuali operazioni disponibili su ognuno di essi.
 \end{itemize}
-\subsubsection{UC11.2 - Selezione dei prodotti}
+\subsubsection{UCX.2 - Selezione dei prodotti}
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
 \item \textbf{Descrizione}: l'utente può selezionare prodotti multipli presenti sulla PLP\ped{G} in modo da poterli inserire successivamente nel carrello, con una quantità selezionata pari ad 1. Per selezionare un prodotto è sufficiente cliccare sulla relativa casella di selezione;
 \item \textbf{Scenario Principale}:
 \begin{enumerate}
-\item l'utente visualizza i prodotti presenti nella lista corrispondente ad una categoria [\textbf{UC11.1}];
+\item l'utente visualizza i prodotti presenti nella lista corrispondente ad una categoria [\textbf{UCX.1}];
 \item l'utente clicca sulle caselle relative ad uno o più prodotti per selezionarli.
 \end{enumerate}
 \item \textbf{Precondizione}: l'utente sta visualizzando la PLP\ped{G} contenente uno o più prodotti desiderati;
 \item \textbf{Postcondizione}: l'utente ha selezionato i prodotti desiderati.
 \end{itemize}
-\subsubsection{UC11.3 - Inserimento nel carrello dei prodotti selezionati}
+\subsubsection{UCX.3 - Inserimento nel carrello dei prodotti selezionati}
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
 \item \textbf{Descrizione}: l'utente può inserire un prodotto presente sulla PLP\ped{G} nel carrello, con una quantità selezionata pari ad 1. Per effettuare l'azione è sufficiente cliccare sull'apposito pulsante;
 \item \textbf{Scenario Principale}:
 \begin{enumerate}
-\item l'utente seleziona i prodotti desiderati [\textbf{UC11.2}];
+\item l'utente seleziona i prodotti desiderati [\textbf{UCX.2}];
 \item l'utente preme il pulsante per l'inserimento del prodotto desiderato nel carrello.
 \end{enumerate}
 \item \textbf{Precondizione}: l'utente sta visualizzando la PLP\ped{G} contenente prodotti;
 \item \textbf{Postcondizione}: l'utente ha inserito nel proprio carrello uno o più prodotti selezionati.
 \end{itemize}
-\subsubsection{UC11.4 - Filtraggio dei prodotti}
+\subsubsection{UCX.4 - Filtraggio dei prodotti}
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
 \item \textbf{Descrizione}: l'utente può raffinare la propria ricerca andando a filtrare i prodotti presenti nella PLP\ped{G}. Il parametro utilizzabile per eseguire questa operazione è il prezzo;
@@ -47,12 +68,12 @@
 \end{enumerate}
 \item \textbf{Estensioni}:
 \begin{itemize}
-\item se non viene trovato nessun risultato compatibile con il range di prezzo inserito dall'utente viene visualizzato un messaggio di errore [\textbf{UC11.5}].
+\item se non viene trovato nessun risultato compatibile con il range di prezzo inserito dall'utente viene visualizzato un messaggio di errore [\textbf{UCX.5}].
 \end{itemize}
 \item \textbf{Precondizione}: l'utente sta visualizzando i prodotti in vendita listati nella specifica PLP\ped{G};
 \item \textbf{Postcondizione}: l'utente ottiene una nuova pagina in cui può visualizzare solo i prodotti presenti nella PLP\ped{G} corrente e compresi nel range di prezzo specificato.
 \end{itemize}
-\subsubsection{UC11.5 - Visualizzazione errore nessun risultato filtraggio}
+\subsubsection{UCX.5 - Visualizzazione errore nessun risultato filtraggio}
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
 \item \textbf{Descrizione}: l'utente visualizza un messaggio di errore che lo informa che il filtraggio dei prodotti effettuato utilizzando i parametri da lui inseriti non ha prodotto nessun risultato;
@@ -60,16 +81,11 @@
 \item \textbf{Precondizione}: l'utente ha effettuato l'operazione di filtraggio nella corrente PLP\ped{G};
 \item \textbf{Postcondizione}: viene visualizzato un messaggio che informa l'utente di non aver trovato prodotti compatibili con quanto stabilito attraverso il range di prezzo.
 \end{itemize}
-\subsubsection{UC11.6 - Visualizzazione pagina del prodotto}
+\subsubsection{UCX.6 - Accesso ad una pagina del prodotto}
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
-\item \textbf{Descrizione}: l'utente può accedere ad una pagina per visualizzare tutte le caratteristiche di un prodotto listato. In questa pagina, chiamata anche PDP\ped{G}, è possibile eventualmente aggiungere il prodotto al carrello;
+\item \textbf{Descrizione}: l'utente può accedere ad una pagina per visualizzare tutte le caratteristiche di un prodotto listato. E' inoltre possibile interagire con questa pagina [\textbf{UCY}], chiamata anche PDP\ped{G}, attraverso apposite funzionalità;
 \item \textbf{Scenario Principale}: l'utente clicca sul prodotto da lui desiderato;
 \item \textbf{Precondizione}: l'utente si trova in una PLP\ped{G} contenente una lista di prodotti;
 \item \textbf{Postcondizione}: l'utente accede alla PDP\ped{G} corrispondente al prodotto desiderato.
 \end{itemize}
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.6]{res/UseCase/Immagini/VisualizzazionePaginaProdotto}
-\caption{Diagramma UML\ped{G} per UC11.6 - Visualizzazione pagina del prodotto}
-\end{figure}
