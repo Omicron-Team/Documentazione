@@ -14,11 +14,11 @@
 \item \textbf{Precondizione}: l'utente si trova su una pagina della categoria ed è intenzionato ad interagire con almeno un prodotto presente nella lista;
 \item \textbf{Postcondizione}: l'utente ha a disposizione varie funzionalità per interagire con i prodotti contenuti nella categoria selezionata e può procedere la loro aggiunta al carrello.
 \end{itemize}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[scale=0.6]{res/UseCase/Immagini/InterazionePaginaCategoria}
-%\caption{Diagramma UML\ped{G} per UCX - Interazione con una pagina della categoria}
-%\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/InterazionePaginaCategoria}
+\caption{Diagramma UML\ped{G} per UCX - Interazione con una pagina della categoria}
+\end{figure}
 \subsubsection{UCX.1 - Visualizzazione dei prodotti}
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
@@ -64,24 +64,17 @@
 \begin{enumerate}
 \item l'utente abilita il filtro attraverso l'apposita casella;
 \item l'utente digita il prezzo minimo e il prezzo massimo ai quali è interessato;
-\item l'utente applica il filtro cliccando l'apposito bottone.
+\item l'utente applica il filtro cliccando l'apposito bottone;
+\item l'utente visualizza il risultato del filtraggio, che può essere di due tipologie:
+\begin{itemize}
+\item una nuova pagina in cui sono presenti solo i prodotti della PLP\ped{G} corrente e compresi nel range di prezzo specificato;
+\item un messaggio che informa l'utente che il filtraggio dei prodotti effettuato utilizzando i parametri da lui inseriti non ha prodotto alcun risultato.
+\end{itemize}
 \end{enumerate}
-\item \textbf{Estensioni}:
-\begin{itemize}
-\item se non viene trovato nessun risultato compatibile con il range di prezzo inserito dall'utente viene visualizzato un messaggio di errore [\textbf{UCX.5}].
-\end{itemize}
 \item \textbf{Precondizione}: l'utente sta visualizzando i prodotti in vendita listati nella specifica PLP\ped{G};
-\item \textbf{Postcondizione}: l'utente ottiene una nuova pagina in cui può visualizzare solo i prodotti presenti nella PLP\ped{G} corrente e compresi nel range di prezzo specificato.
+\item \textbf{Postcondizione}: l'utente visualizza il risultato del filtraggio effettuato sulla PLP\ped{G} corrente selezionando un determinato range di prezzo.
 \end{itemize}
-\subsubsection{UCX.5 - Visualizzazione errore nessun risultato filtraggio}
-\begin{itemize}
-\item \textbf{Attori primari}: utente generico;
-\item \textbf{Descrizione}: l'utente visualizza un messaggio di errore che lo informa che il filtraggio dei prodotti effettuato utilizzando i parametri da lui inseriti non ha prodotto nessun risultato;
-\item \textbf{Scenario Principale}: l'utente effettua un filtraggio sul catalogo digitale selezionando un range di prezzo nel quale non è presente nessun prodotto;
-\item \textbf{Precondizione}: l'utente ha effettuato l'operazione di filtraggio nella corrente PLP\ped{G};
-\item \textbf{Postcondizione}: viene visualizzato un messaggio che informa l'utente di non aver trovato prodotti compatibili con quanto stabilito attraverso il range di prezzo.
-\end{itemize}
-\subsubsection{UCX.6 - Accesso ad una pagina del prodotto}
+\subsubsection{UCX.5 - Accesso ad una pagina del prodotto}
 \begin{itemize}
 \item \textbf{Attori primari}: utente generico;
 \item \textbf{Descrizione}: l'utente può accedere ad una pagina per visualizzare tutte le caratteristiche di un prodotto listato. E' inoltre possibile interagire con questa pagina [\textbf{UCY}], chiamata anche PDP\ped{G}, attraverso apposite funzionalità;
@@ -89,3 +82,8 @@
 \item \textbf{Precondizione}: l'utente si trova in una PLP\ped{G} contenente una lista di prodotti;
 \item \textbf{Postcondizione}: l'utente accede alla PDP\ped{G} corrispondente al prodotto desiderato.
 \end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/InterazionePaginaProdottoGenerale}
+\caption{Schema generale: modulo di interazione con una pagina di un prodotto}
+\end{figure}
