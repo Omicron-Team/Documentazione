@@ -1,0 +1,15 @@
+\section{Resoconto}
+Il gruppo ha presentato:
+\begin{itemize}
+\item i requisiti emersi in seguito alla stesura del documento \AdRv{1.0.0};
+\item i requisiti da soddisfare nel \textit{Proof of Concept}\ped{G}. 
+\end{itemize}
+Il gruppo ha poi chiesto consiglio in merito ad un dubbio tecnologico, ovvero come gestire l'hosting della parte di frontend e \Proponente{} ha proposto l'uso di:
+\begin{itemize}
+\item \textbf{AWS Lambda:} creare una lambda dove Next.js esegue e fornisce le pagine già renderizzate, ma questa soluzione è economicamente costosa;
+\item \textbf{AWS Elastic Beanstalk:} in questo caso non si userebbe più Serverless;
+\item \textbf{serverless-nextjs-plugin:} questo porta ad una diversa configurazione di AWS Lambda e all'unione della parte di frontend con quella di backend;
+\item \textbf{Vercel:} soluzione più semplice e già presa in considerazione dal gruppo.
+\end{itemize}
+
+
