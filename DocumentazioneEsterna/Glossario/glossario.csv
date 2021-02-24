@@ -122,3 +122,5 @@ Static generation,"Processo di rendering di pagine HTML e CSS a partire dal serv
 AWS Lambda,"Piattaforma serverless di cloud computing, orientata agli eventi. Il codice viene eseguito solo in risposta ad eventi, diminuendo il prezzo computazionale."
 Pull request,"La ``Pull Request'' è una richiesta, fatta all’autore originale di un software o di un documento, di includere le nostre personali modifiche al suo progetto."
 HTML,"L'HyperText Markup Language, comunemente noto con l'acronimo HTML, è un linguaggio di markup nato per la formattazione e impaginazione di documenti ipertestuali disponibili nel web."
+Vercel,"Servizio di hosting gratuito per siti web sviluppati con Next.js, utile per sfruttare tutte le feature fornite dal framework."
+Sentry,"Servizio di monitoraggio di applicazioni. Si specializza nella diagnosi diretta dal codice in esecuzione, come per esempio reporting di condizioni di errore. Tramite questo servizio è possibile quindi unire la reportistica proviente da piattaforme diverse e standardizzarla."
