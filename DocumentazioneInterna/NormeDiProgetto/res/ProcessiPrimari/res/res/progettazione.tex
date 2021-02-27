@@ -42,25 +42,25 @@ La \textbf{Technology baseline} include:
 \end{itemize}
 Questa baseline\ped{G} viene dimostrata attraverso lo sviluppo di un \textit{Proof of Concept}\ped{G} suddiviso nei seguenti stage:
 \begin{itemize}
-\item \textbf{back-end:}
+\item \textbf{back-end\ped{G}:}
 	\begin{itemize}
-	\item local: fase dove ognuno lavora in locale. Quando si effettua la \textit{push} in un qualsiasi branch\ped{G} avviene il deploy\ped{G} nello stage local di AWS;
-	\item test: fase in cui le funzionalità sono pronte per essere testate e vengono quindi spostate nello stage di AWS. Ci si sposta nel branch\ped{G} \textbf{develop} della repository\ped{G} di back-end;
-	\item staging: fase finale in cui le funzionalità sono terminate. Ci si sposta nel branch\ped{G} \textbf{master} della repository\ped{G} di back-end.
+	\item local: fase dove ognuno lavora in locale. Quando si effettua il \textit{push} in un qualsiasi branch\ped{G} avviene il deploy\ped{G} nello stage local di AWS\ped{G};
+	\item test: fase in cui le funzionalità sono pronte per essere testate e vengono quindi spostate nello stage test di AWS\ped{G}. Ci si sposta nel branch\ped{G} \textbf{develop} della repository\ped{G} di back-end;
+	\item staging: fase finale in cui lo sviluppo di funzionalità è terminato. Ci si sposta nel branch\ped{G} \textbf{master} della repository\ped{G} di back-end\ped{G}.
 	\end{itemize}
-\item \textbf{front-end:}
+\item \textbf{front-end\ped{G}:}
 	\begin{itemize}
-	\item local: fase dove ognuno lavora in locale. Questo stage si interfaccia con lo stage local di AWS;
-	\item preview: fase in cui le funzionalità sono pronte per essere testate. Questo stage fa il deploy\ped{G} del sito tramite Vercel\ped{G} quando ci si sposta nel branch\ped{G} \textbf{develop} della repository\ped{G} di front-end;
-	\item production: fase finale in cui il sito è terminato. Avviene il deploy\ped{G} del sito tramite Vercel\ped{G} nel branch\ped{G} \textbf{master} della repository\ped{G} di back-end.
+	\item local: fase dove ognuno lavora in locale;
+	\item preview: fase in cui le funzionalità sono pronte per essere testate. Questo stage fa il deploy\ped{G} del sito tramite Vercel\ped{G} quando ci si sposta nel branch\ped{G} \textbf{develop} della repository\ped{G} di front-end\ped{G};
+	\item production: fase finale dove sono presenti funzionalità complete e testate. Avviene il deploy\ped{G} del sito su Vercel\ped{G} del branch\ped{G} \textbf{master} della repository\ped{G} di front-end\ped{G}.
 	\end{itemize}
 \end{itemize} 
-Ogni stage del front-end utilizza le funzioni del back-end nel rispettivo stage:
+Ogni stage del front-end\ped{G} utilizza le funzioni del back-end\ped{G} nel rispettivo stage:
 \begin{itemize}
 	\item local - local;
 	\item preview - test;
 	\item production - staging.
-	\end{itemize}
+\end{itemize}
 
 \myparagraph{Product baseline}
 La \textbf{Product baseline} include:
