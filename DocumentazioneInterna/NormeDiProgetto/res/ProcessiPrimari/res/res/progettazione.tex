@@ -26,7 +26,7 @@ Le parti fondamentali del processo di progettazione sono due:
 \end{itemize} 
 
 \myparagraph{Technology baseline}
-Le \textbf{Technology baselines} includono:
+La \textbf{Technology baseline} include:
 \begin{itemize}
 \item \textbf{Diagrammi UML\ped{G}}:
 \begin{itemize}
@@ -40,9 +40,30 @@ Le \textbf{Technology baselines} includono:
 \item \textbf{Tracciamento delle componenti}: i requisiti vengono soddisfatti da alcune componenti, di cui vi è necessità di tener traccia;
 \item \textbf{Test di integrazione}: test il cui scopo è assicurarsi il corretto funzionamento del progetto una volta che sono state unite le sue componenti.
 \end{itemize}
+Questa baseline\ped{G} viene dimostrata attraverso lo sviluppo di un \textit{Proof of Concept}\ped{G} suddiviso nei seguenti stage:
+\begin{itemize}
+\item \textbf{back-end:}
+	\begin{itemize}
+	\item local: fase dove ognuno lavora in locale. Quando si effettua la \textit{push} in un qualsiasi branch\ped{G} avviene il deploy\ped{G} nello stage local di AWS;
+	\item test: fase in cui le funzionalità sono pronte per essere testate e vengono quindi spostate nello stage di AWS. Ci si sposta nel branch\ped{G} \textbf{develop} della repository\ped{G} di back-end;
+	\item staging: fase finale in cui le funzionalità sono terminate. Ci si sposta nel branch\ped{G} \textbf{master} della repository\ped{G} di back-end.
+	\end{itemize}
+\item \textbf{front-end:}
+	\begin{itemize}
+	\item local: fase dove ognuno lavora in locale. Questo stage si interfaccia con lo stage local di AWS;
+	\item preview: fase in cui le funzionalità sono pronte per essere testate. Questo stage fa il deploy\ped{G} del sito tramite Vercel\ped{G} quando ci si sposta nel branch\ped{G} \textbf{develop} della repository\ped{G} di front-end;
+	\item production: fase finale in cui il sito è terminato. Avviene il deploy\ped{G} del sito tramite Vercel\ped{G} nel branch\ped{G} \textbf{master} della repository\ped{G} di back-end.
+	\end{itemize}
+\end{itemize} 
+Ogni stage del front-end utilizza le funzioni del back-end nel rispettivo stage:
+\begin{itemize}
+	\item local - local;
+	\item preview - test;
+	\item production - staging.
+	\end{itemize}
 
 \myparagraph{Product baseline}
-Le \textbf{Product baselines} includono:
+La \textbf{Product baseline} include:
 \begin{itemize}
 \item \textbf{definizione delle classi}: di ogni classe è necessario che si possano comprendere in modo esaustivo lo scopo e le funzionalità, evitando ridondanze;
 \item \textbf{tracciamento delle classi}: ogni requisito deve avere una classe che lo soddisfi; 
