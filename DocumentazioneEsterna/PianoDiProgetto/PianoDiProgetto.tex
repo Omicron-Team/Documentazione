@@ -1,9 +1,15 @@
-\documentclass[12pt]{article}
+
+\documentclass[11pt]{article}
+
 
 \input{../../Utilita/latexSetup/package}
 \usepackage{../../Utilita/latexSetup/styleTemplate}
 \input{res/command}
 \input{../../Utilita/latexSetup/generalCommand}
+\usepackage[official]{eurosym}
+\usepackage{caption}
+\captionsetup[longtable]{position=bottom}
+
 
 
 
@@ -14,6 +20,26 @@
 \input{res/DiarioModifiche}
 \newpage
 \tableofcontents
+
+\clearpage
+\listoffigures
+\clearpage
+\listoftables
+\clearpage
+
+\input{res/Introduzione/introduzione.tex}
 \newpage
+\input{res/AnalisiDeiRischi/analisiDeiRischi.tex}
+\newpage
+\input{res/ModelloDiSviluppo/modelloDiSviluppo.tex}
+\newpage
+\input{res/Pianificazione/pianificazione.tex}
+\newpage
+\input{res/Preventivo/preventivo.tex}
+\newpage
+\input{res/Consuntivo/consuntivo.tex}
+\newpage
+\input{res/Organigramma/organigramma.tex}
+
 
 \end{document}

@@ -1,0 +1,179 @@
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/ProfiloGenerale}
+\caption{Diagramma UML\ped{G} per modulo del profilo}
+\end{figure}
+
+\subsubsection{UC8 - Gestione profilo}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: per gli utenti autenticati come clienti è disponibile una pagina del profilo in cui è possibile gestire i dati personali e visualizzare gli ordini effettuati;
+\item \textbf{Scenario Principale}: il cliente accede alla pagina del profilo personale ed ha a disposizione le seguenti funzionalità:
+\begin{itemize}
+\item visualizzazione dati del profilo (\textbf{UC8.1});
+\item modifica dati del profilo (\textbf{UC8.2});
+\item visualizzazione ordini effettuati dall'utente (\textbf{UC8.3});
+\item eliminazione profilo (\textbf{UC8.4}).
+\end{itemize}
+\item \textbf{Precondizione}: l'utente è autenticato come cliente nel sito e ha a disposizione la pagina del profilo;
+\item \textbf{Postcondizione}: l'utente visualizza la pagina del profilo ed ha accesso a varie funzionalità.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/GestioneProfilo}
+\caption{Diagramma UML\ped{G} per UC8 - Gestione profilo}
+\end{figure}
+
+\subsubsection{UC8.1 - Visualizzazione dati del profilo}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente visualizza i suoi dati personali presenti nel sistema;
+\item \textbf{Scenario Principale}: il cliente si trova nella pagina del profilo e visualizza i seguenti dati personali:
+\begin{itemize}
+\item nome;
+\item cognome;
+\item indirizzo di fatturazione;
+\item email.
+\end{itemize}
+\item \textbf{Precondizione}: il cliente si trova nella pagina del profilo;
+\item \textbf{Postcondizione}: vengono visualizzati i dati personali del cliente.
+\end{itemize}
+
+\subsubsection{UC8.2 - Modifica dati del profilo}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Attori secondari}: Identity Manager;
+\item \textbf{Descrizione}: il cliente può modificare i dati personali presenti nella sua pagina del profilo;
+\item \textbf{Scenario Principale}: il cliente si trova nella pagina del profilo e clicca un tasto dedicato per andare nella pagina di modifica. Da li può modificare le seguenti informazioni:
+\begin{itemize}
+\item nome [\textbf{UC8.2.1}];
+\item cognome [\textbf{UC8.2.2}];
+\item indirizzo di fatturazione [\textbf{UC8.2.3}];
+\item email [\textbf{UC8.2.4}];
+\item password [\textbf{UC8.2.5}].
+\end{itemize}
+Una volta che i campi hanno al suo interno i valori previsti dal cliente, il cliente può premere il pulsante per confermare la modifica dei dati [\textbf{UC8.2.6}];
+\item \textbf{Precondizione}: il cliente si trova nella pagina del profilo;
+\item \textbf{Postcondizione}: vengono modificati i dati personali del cliente presenti nel profilo in base alle sue intenzioni.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/ModificaProfilo}
+\caption{Diagramma UML\ped{G} per UC8.2 - Modifica dati del profilo}
+\end{figure}
+
+\subsubsection{UC8.2.1 - Modifica nome}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente può modificare il nome;
+\item \textbf{Scenario Principale}: il cliente visualizza nel campo relativo al nome il dato attualmente presente, che andrà a sovrascrivere con il nuovo nome aggiornato;
+\item \textbf{Precondizione}: il cliente si trova nella pagina dedicata alla modifica del profilo;
+\item \textbf{Postcondizione}: il cliente ha compilato il campo dedicato al nome, sovrascrivendo il precedente.
+\end{itemize}
+
+\subsubsection{UC8.2.2 - Modifica cognome}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente può modificare il cognome;
+\item \textbf{Scenario Principale}: il cliente visualizza nel campo relativo al cognome il dato attualmente presente, che andrà a sovrascrivere con il nuovo cognome aggiornato;
+\item \textbf{Precondizione}: il cliente si trova nella pagina dedicata alla modifica del profilo;
+\item \textbf{Postcondizione}: il cliente ha compilato il campo dedicato al cognome, sovrascrivendo il precedente.
+\end{itemize}
+
+\subsubsection{UC8.2.3 - Modifica indirizzo di fatturazione}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente può modificare l'indirizzo di fatturazione;
+\item \textbf{Scenario Principale}: il cliente visualizza nel campo relativo all'indirizzo di fatturazione il dato attualmente presente, che andrà a sovrascrivere con il nuovo indirizzo aggiornato;
+\item \textbf{Precondizione}: il cliente si trova nella pagina dedicata alla modifica del profilo;
+\item \textbf{Postcondizione}: il cliente ha compilato il campo dedicato all'indirizzo di fatturazione, sovrascrivendo il precedente.
+\end{itemize}
+
+\subsubsection{UC8.2.4 - Modifica email}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente può modificare l'email;
+\item \textbf{Scenario Principale}: il cliente visualizza nel campo relativo all'email il dato attualmente presente, che andrà a sovrascrivere con la nuova email aggiornata;
+\item \textbf{Precondizione}: il cliente si trova nella pagina dedicata alla modifica del profilo;
+\item \textbf{Postcondizione}: il cliente ha compilato il campo dedicato all'email, sovrascrivendo la precedente.
+\end{itemize}
+
+\subsubsection{UC8.2.5 - Modifica password}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente può modificare la password;
+\item \textbf{Scenario Principale}: il cliente visualizza un campo vuoto riguardante la password, che potrà compilare per modificarla;
+\item \textbf{Precondizione}: il cliente si trova nella pagina dedicata alla modifica del profilo;
+\item \textbf{Postcondizione}: il cliente ha compilato il campo dedicato alla password, sovrascrivendo la precedente.
+\end{itemize}
+
+\subsubsection{UC8.2.6 - Conferma modifica profilo}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente conferma i dati presenti nel form e il profilo viene modificato;
+\item \textbf{Scenario Principale}: il cliente preme il pulsante di conferma, la richiesta viene gestita dall'Identity Manager ed il profilo viene modificato con i valori precedentemente inseriti;
+\item \textbf{Estensioni}: 
+\begin{itemize}
+\item se i campi risultano non validi oppure l'email è già stata utilizzata nel sistema, viene mostrato un messaggio di errore [\textbf{UC8.2.7}].
+\end{itemize}
+\item \textbf{Precondizione}: il cliente si trova nella pagina dedicata alla modifica del profilo;
+\item \textbf{Postcondizione}: il cliente ha modificato il profilo con i dati inseriti.
+\end{itemize}
+
+\subsubsection{UC8.2.7 - Visualizzazione errori di modifica del profilo}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente visualizza un errore riguardante i campi di modifica profilo che ha inserito. Questi errori possono essere:
+\begin{itemize}
+\item \textbf{Campo non valido}: un campo risulta vuoto o con caratteri non validi;
+\item \textbf{Email già utilizzata}: l'email è già stata utilizzata da un altro cliente.
+\end{itemize}
+\item \textbf{Scenario Principale}: il sistema riconosce uno o più errori nei campi inseriti dal cliente e vengono visualizzati nella pagina di modifica profilo;
+\item \textbf{Precondizione}: il cliente ha inserito i campi ed ha provato ad effettuare la modifica del profilo;
+\item \textbf{Postcondizione}: viene visualizzato un messaggio di errore nella pagina di modifica del profilo e i dati non sono stati modificati.
+\end{itemize}
+
+\subsubsection{UC8.3 - Visualizzazione ordini effettuati dall'utente}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: il cliente può visualizzare una lista di ordini effettuati;
+\item \textbf{Scenario Principale}: il cliente si trova nella pagina del profilo e visualizza una lista di ordini effettuati. Per ogni ordine vengono visualizzati una serie di dati [\textbf{UC8.3.1}];
+\item \textbf{Precondizione}: il cliente si trova nella pagina del profilo e ha effettuato almeno un ordine nel sito;
+\item \textbf{Postcondizione}: viene visualizzata una lista di tutti gli ordini che il cliente ha effettuato.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/UseCase/Immagini/VisualizzazioneOrdini}
+\caption{Diagramma UML\ped{G} per UC8.3 - Visualizzazione ordini effettuati dall'utente}
+\end{figure}
+
+\subsubsection{UC8.3.1 - Visualizzazione dati singolo ordine}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Descrizione}: per ogni ordine nella lista degli ordini effettuati, vengono visualizzati una serie di dati;
+\item \textbf{Scenario Principale}: Il cliente si trova nella pagina del profilo e, cliccando un ordine effettuato, visualizza  una pagina di riepilogo con i seguenti dati:
+\begin{itemize}
+\item id ordine;
+\item prodotti acquistati;
+\item quantità prodotti acquistati;
+\item costo per prodotto;
+\item costo totale;
+\item tasse applicate;
+\item data d'acquisto.
+\end{itemize}
+\item \textbf{Precondizione}: il cliente, cliccando su un ordine nella sua pagina di profilo, si trova nella pagina di riepilogo di un ordine;
+\item \textbf{Postcondizione}: vengono visualizzati i dati dell'ordine scelto.
+\end{itemize}
+
+\subsubsection{UC8.4 - Eliminazione account}
+\begin{itemize}
+\item \textbf{Attori primari}: cliente;
+\item \textbf{Attori secondari}: Identity Manager;
+\item \textbf{Descrizione}: il cliente può eliminare il suo account dal sistema;
+\item \textbf{Scenario Principale}: il cliente si trova nella pagina del profilo e clicca il tasto dedicato per mandare la richiesta di eliminazione dell'account all'Identity Manager;
+\item \textbf{Precondizione}: il cliente si trova nella pagina del profilo;
+\item \textbf{Postcondizione}: l'account è stato eliminato dal sistema e il cliente diventa un utente non autenticato.
+\end{itemize}

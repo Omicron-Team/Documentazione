@@ -1,0 +1,72 @@
+\section{Standard ISO/IEC 9126}
+ISO/IEC 9126 è uno standard\ped{G} internazionale per la valutazione della qualità del software. Lo standard\ped{G} è stato sostituito dal ISO/IEC 25010:2011 ma essendo ancora una normativa cardine, il gruppo \Omicron{} ha deciso di adottarlo come standard\ped{G} di riferimento. \\
+Lo scopo generale di queste linee guida è il miglioramento dell'organizzazione e dei processi e quindi, come conseguenza concreta, della qualità del prodotto sviluppato.
+
+\subsection{Modello della qualità del software}
+Il modello di qualità stabilito nello standard\ped{G} è suddiviso in sei caratteristiche generali, ognuna delle quali a sua volta presenta delle sottocaratteristiche misurabili attraverso delle metriche. \\
+Il modello è articolato nel seguente modo:
+\begin{itemize}
+\item \textbf{Funzionalità}: capacità di un prodotto software di fornire funzioni che soddisfano esigenze stabilite, necessarie per operare sotto condizioni specifiche. Le sottocaratteristiche della \textit{funzionalità} sono:
+	\begin{itemize}
+	\item \textbf{Appropriatezza}: capacità del prodotto di fornire un insieme di funzioni per specifici compiti ed obiettivi prefissati dall'utente;
+	\item \textbf{Accuratezza}: capacità del prodotto di fornire i risultati concordati con la precisione richiesta;
+	\item \textbf{Interoperabilità}: capacità del prodotto di interagire ed operare con uno o più sistemi specificati;
+	\item \textbf{Conformità}: capacità di aderire a standard\ped{G}, convenzioni e regolamentazioni rilevanti al settore operativo a cui vengono applicate;
+	\item \textbf{Sicurezza}: capacità del prodotto di proteggere informazioni e dati negando in ogni modo che persone o sistemi non autorizzati possano accedervi o modificarli.
+	\end{itemize}
+\item \textbf{Affidabilità}: capacità del prodotto software di mantenere uno specificato livello di prestazioni quando usato in date condizioni per un dato periodo. Le sottocaratteristiche dell' \textit{affidabilità} sono:
+	\begin{itemize}
+	\item \textbf{Maturità}: capacità del prodotto di evitare errori, malfunzionamenti o risultati non corretti durante l'esecuzione;
+	\item \textbf{Tolleranza agli errori}: capacità di mantenere livelli prestabiliti di prestazioni anche in presenza di malfunzionamenti o usi scorretti;
+	\item \textbf{Recuperabilità}: capacità del prodotto di ripristinare il livello appropriato di prestazioni e di recupero delle informazioni rilevanti, in seguito a un malfunzionamento. L'arco di tempo in cui il software può risultare non accessibile è valutato proprio dalla recuperabilità;
+	\item \textbf{Aderenza}: capacità di aderire a standard\ped{G}, convenzioni e regolamentazioni inerenti all'affidabilità.
+	\end{itemize}
+\item \textbf{Efficienza}: la capacità di fornire appropriate prestazioni relativamente alla quantità di risorse usate. Le sottocaratteristiche dell'\textit{efficienza} sono:
+	\begin{itemize}
+	\item \textbf{Comportamento rispetto al tempo}: capacità di fornire adeguati tempi di risposta, elaborazione e quantità di lavoro eseguendo le funzionalità richieste in date condizioni di lavoro;
+	\item \textbf{Utilizzo delle risorse}: capacità di utilizzo di quantità e tipo di risorse in maniera adeguata;
+	\item \textbf{Conformità}: capacità di aderire a standard\ped{G} e specifiche sull'efficienza.
+	\end{itemize}
+\item \textbf{Usabilità}: capacità del prodotto software di essere capito, appreso e usato dall'utente sotto condizioni specifiche. Le sottocaratteristiche dell'\textit{usabilità} sono:
+	\begin{itemize}
+	\item \textbf{Comprensibilità}: facilità di comprensione dei concetti del prodotto, per permettere all'utente di comprendere se il software è appropriato;
+	\item \textbf{Apprendibilità}: capacità di ridurre l'impegno richiesto agli utenti di imparare ad usare l'applicazione;
+	\item \textbf{Operabilità}: capacità di mettere in condizione gli utenti di farne uso per i propri scopi e controllarne l'uso;
+	\item \textbf{Attrattiva}: capacità del prodotto di essere piacevole per l'utente che ne fa uso;
+	\item \textbf{Conformità}: capacità di aderire a standard\ped{G} e convenzioni relativi all'usabilità.
+	\end{itemize}
+\item \textbf{Manutenibilità}: capacità del prodotto di essere modificato, includendo correzioni, miglioramenti o adattamenti. Le sottocaratteristiche della \textit{manutenibilità} sono:
+	\begin{itemize}
+	\item \textbf{Analizzabilità}: facilità di analizzare il codice per localizzare un errore nello stesso;
+	\item \textbf{Modificabilità}: capacità di permettere l'implementazione di una specifica modifica;
+	\item \textbf{Stabilità}: capacità del prodotto di evitare effetti inaspettati derivanti da modifiche errate;
+	\item \textbf{Testabilità}: capacità di essere facilmente testato per validare le modifiche apportate al software.
+	\end{itemize}
+\item \textbf{Portabilità}: capacità del prodotto di essere trasportato da un ambiente di lavoro ad un altro. Le sottocaratteristiche della \textit{portabilità} sono:
+	\begin{itemize}
+	\item \textbf{Adattabilità}: capacità del software di essere adattato per differenti ambienti operativi senza dover richiedere modifiche diverse da quelle fornite per il prodotto considerato;
+	\item \textbf{Installabilità}: capacità del prodotto si essere installato in uno specifico ambiente;
+	\item \textbf{Coesistenza}: capacità del prodotto di coesistere con altre applicazioni indipendenti in ambienti comuni e di condividere le risorse;
+	\item \textbf{Sostituibilità}: capacità di sostituire un altro software specifico indipendente, per lo stesso scopo e nello stesso ambiente;
+	\item \textbf{Aderenza}: capacità di aderire a standard\ped{G} e convenzioni relativi alla portabilità.
+	\end{itemize}
+\end{itemize}
+
+\subsection{Metriche per la qualità esterna}
+Le metriche esterne, specificate nella norma ISO/IEC 9126-2, misurano i comportamenti del prodotto software sulla base di test, dall'operatività e dall'osservazione durante la sua esecuzione, in funzione degli obiettivi stabiliti.
+
+\subsection{Metriche per la qualità interna}
+Le metriche interne, specificate nella norma ISO/IEC 9126-3, si applicano al prodotto non eseguibile durante le fasi di progettazione e codifica. \\
+Le misure effettuate permettono di prevedere il livello di qualità esterna ed in uso del prodotto finale, poiché gli attributi interni influiscono su quelli esterni e quelli in uso. \\
+Le metriche interne permettono di individuare eventuali problemi che potrebbero influire sulla qualità finale del prodotto prima che sia realizzato il software eseguibile.
+
+\subsection{Metriche per la qualità in uso}
+La qualità in uso rappresenta il punto di vista dell'utente sulla qualità. Il livello di qualità in uso è raggiunto quando viene raggiunto sia il livello di qualità esterna sia quello di qualità interno. \\
+Le norme ISO/IEC 9126-4 forniscono esempi di metriche da utilizzare per la misurazione della qualità rispetto ai diversi punti di vista (interno, esterno, in uso). \\
+La qualità in uso, quindi, permette di abilitare specifici utenti ad ottenere specifici obiettivi con efficacia, produttività, sicurezza e soddisfazione.
+\begin{itemize}
+\item \textbf{Efficacia}: capacità del prodotto di permettere all'utente di raggiungere obiettivi specifici con accuratezza e completezza in uno specifico contesto di utilizzo;
+\item \textbf{Produttività}: capacità di permettere all'utente di impegnare un numero definito di risorse, in relazione all'efficienza raggiunta in uno specifico contesto di utilizzo;
+\item \textbf{Sicurezza}: capacità di raggiungere un livello accettabile di rischio per i dati, le persone, le apparecchiature tecniche e l'ambiente d'uso;
+\item \textbf{Soddisfazione}: capacità di soddisfare gli utenti in uno specifico contesto di utilizzo.
+\end{itemize}

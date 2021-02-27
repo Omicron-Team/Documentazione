@@ -1,0 +1,38 @@
+\section{Resoconto}
+\subsection{Richiesta di chiarimento e discussione riguardo i requisiti del capitolato}
+Il gruppo ha preparato per l'incontro le seguenti domande:
+\begin{itemize}
+\item Nel sito di \textit{EmporioLambda} è previsto un solo utente Merchant?
+\item Nel \href{https://www.math.unipd.it/~tullio/IS-1/2020/Progetto/C2.pdf}{documento descrittivo del capitolato C2}, al punto § 4.1.1.6 si parla di invio dei prodotti tramite email. In \textit{EmporioLambda} verranno venduti solo prodotti digitali?
+\item É richiesto che gli utenti della piattaforma di E-commerce\ped{G} abbiano un profilo pubblico, raggiungibile dalle recensioni sui prodotti?
+\item Agli utenti sarà permesso modificare informazioni personali come nome, cognome e password?
+\item Ci è richiesto sviluppare un sistema per la gestione del reso degli ordini?
+\item La parte front-end\ped{G} di \textit{EmporioLambda} dovrà essere accessibile a persone affette da disabilità che ne impediscono il normale uso?
+\item Nei dati utente è necessario differenziare tra indirizzo di spedizione e indirizzo di fatturazione?
+\item Nella pagina di un prodotto è desiderabile mostrare altri prodotti consigliati di categoria simile?
+\item Nel \href{https://www.math.unipd.it/~tullio/IS-1/2020/Progetto/C2.pdf}{documento descrittivo del capitolato C2}, al punto § 4.1.1.2 si parla di selezione multipla di prodotti. Ci sono preferenze riguardo il metodo di implementazione front-end\ped{G}?
+\item Nella admin dashboard\ped{G} potrebbe essere utile creare dei collegamenti per collegarsi direttamente agli strumenti di gestione della piattaforma?
+\end{itemize}
+Seguono le risposte offerte dal proponente:
+\begin{itemize}
+\item \textbf{Presenza di un solo utente Merchant:} Si;
+\item \textbf{Vendita prodotti fisici o solo digitali:} \\
+Il processo di vendita si conclude con l'invio di un email di conferma, dopo che il pagamento è stato effettuato. Non ci è richiesto implementare sistemi per la gestione del magazzino o della spedizione, quindi non vi è differenza tra prodotti fisici o digitali;
+\item \textbf{Presenza di un profilo pubblico e recensioni:} \\
+Non è richiesto ne il profilo pubblico per ogni utente ne le recensioni per i prodotti; 
+\item \textbf{Modifica informazioni personali nel profilo utente:} \\
+L'utente può modificare tutti i suoi dati;
+\item \textbf{Presenza di un sistema per la gestione dei resi:} No;
+\item \textbf{Accessibilità del sito:} \\
+Non è necessario che il front-end\ped{G} del sito sia accessibile ad utenti con disabilità che ne impediscono il normale utilizzo;
+\item \textbf{Differenziazione tra indirizzo di spedizione e di fatturazione:} \\
+É sufficiente il solo indirizzo di spedizione, che corrisponde anche all'indirizzo di fatturazione;
+\item \textbf{Presenza di prodotti consigliati:} \\
+É una funzionalità desiderabile ma non necessaria, implementabile anche con una lista statica di prodotti consigliati per ogni item venduto;
+\item \textbf{Implementazione della selezione multipla dei prodotti:} \\
+Il requisito presente nel capitolato si riferisce all'implementazione back-end\ped{G} tramite API\ped{G}. Per il front-end\ped{G} è possibile scegliere se permettere l'aggiunta al carrello di più prodotti con molteplicità singola oppure di più prodotti ognuno con una quantità specifica;
+\item \textbf{Presenza di collegamenti per la gestione del sito nella admin dashboard\ped{G}:} \\
+Non è necessaria la presenza di una dashboard\ped{G} dedicata all'utente admin, ma l'aggiunta di questi collegamenti alla merchant dashboard\ped{G} è una funzionalità desiderabile.
+
+\end{itemize}
+
