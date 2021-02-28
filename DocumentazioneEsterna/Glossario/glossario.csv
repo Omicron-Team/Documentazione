@@ -126,4 +126,5 @@ HTML,"L'HyperText Markup Language, comunemente noto con l'acronimo HTML, è un l
 Vercel,"Servizio di hosting gratuito per siti web sviluppati con Next.js, utile per sfruttare tutte le feature fornite dal framework."
 Sentry,"Servizio di monitoraggio di applicazioni. Si specializza nella diagnosi diretta dal codice in esecuzione, come per esempio reporting di condizioni di errore. Tramite questo servizio è possibile quindi unire la reportistica proviente da piattaforme diverse e standardizzarla."
 DynamoDB,"DynamoDB è un servizio di database NoSQL che supporta strutture di dati di documenti e valori-chiave ed è offerto da Amazon.com come parte del portafoglio Amazon Web Services"
-ApiGateway,"strumento di gestione delle API che si situa tra un client e una raccolta di servizi back end, in questo caso sempre facente parte dei servizi di Amazon Web Services"
+ApiGateway,"Strumento di gestione delle API che si situa tra un client e una raccolta di servizi back end, in questo caso sempre facente parte dei servizi di Amazon Web Services"
+Trial and error,"Metodo di problem solving che consiste nell'effettuare ripetuti tentativi finché una soluzione desiderata non è stata trovata"
