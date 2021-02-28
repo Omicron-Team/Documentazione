@@ -7,12 +7,12 @@
 \subsubsection{UC3 - Login}
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
-\item \textbf{Attori secondari}: identity manager;
+\item \textbf{Attori secondari}: Identity Manager;
 \item \textbf{Descrizione}: l'utente, inserendo le proprie credenziali, viene autenticato alla piattaforma;
 \item \textbf{Scenario Principale}: l'utente non ancora autenticato inizia la procedura di login tramite l'apposito pulsante, inserisce le proprie credenziali \textbf{[UC3.1]} e richiede il login \textbf{[UC3.2]};
 \item \textbf{Estensioni}:
 \begin{itemize}
-	\item \textbf{UC4}: se le credenziali inserite non vengono riconosciute dall'identity manager, viene visualizzato un messaggio che informa l'utente dell'errore;
+	\item \textbf{UC4}: se le credenziali inserite non vengono riconosciute dall'Identity Manager, viene visualizzato un messaggio che informa l'utente dell'errore.
 \end{itemize}
 \item \textbf{Precondizione}: l'utente prova ad autenticarsi alla piattaforma;
 \item \textbf{Postcondizione}: l'utente viene autenticato come cliente o come venditore.
@@ -28,7 +28,7 @@
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
 \item \textbf{Descrizione}: l'utente compila il form per il login;
-\item \textbf{Scenario Principale}: l'utente inserisce nel form apposito i dati necessari al login.
+\item \textbf{Scenario Principale}: l'utente inserisce nel form apposito i dati necessari al login;
 \item \textbf{Precondizione}: il form di inserimento dati per il login è disponibile;
 \item \textbf{Postcondizione}: i dati necessari al login sono stati compilati.
 \end{itemize}
@@ -69,8 +69,8 @@
 \subsubsection{UC4 - Visualizzazione errore dati login errati}
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
-\item \textbf{Attori secondari}: identity manager;
-\item \textbf{Descrizione}: l'utente visualizza un messaggio di errore che lo informa che i dati da lui inseriti durante il login non sono riconosciuti dall'identity manager;
+\item \textbf{Attori secondari}: Identity Manager;
+\item \textbf{Descrizione}: l'utente visualizza un messaggio di errore che lo informa che i dati da lui inseriti durante il login non sono riconosciuti dall'Identity Manager;
 \item \textbf{Scenario Principale}: l'utente tenta di effettuare il login usando credenziali non presenti nel sistema;
 \item \textbf{Precondizione}: l'utente prova ad autenticarsi alla piattaforma;
 \item \textbf{Postcondizione}: viene visualizzato un messaggio che informa l'utente dell'errore di riconoscimento delle credenziali.
