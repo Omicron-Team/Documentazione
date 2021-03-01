@@ -128,3 +128,4 @@ Sentry,"Servizio di monitoraggio di applicazioni. Si specializza nella diagnosi 
 DynamoDB,"DynamoDB è un servizio di database NoSQL che supporta strutture di dati di tipo chiave-valore e anche documenti. È offerto da Amazon come parte del portafoglio Amazon Web Services"
 ApiGateway,"Strumento di gestione delle API che si situa tra un client e una raccolta di servizi back end, in questo caso sempre facente parte dei servizi di Amazon Web Services"
 Trial and error,"Metodo di problem solving che consiste nell'effettuare ripetuti tentativi finché una soluzione desiderata non è stata trovata"
+Prettier,"Tool per la formattazione automatica del codice scritto dai programmatori specificando delle regole da noi decise"
