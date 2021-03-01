@@ -270,7 +270,7 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC15.3.6]};
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
 \item \textbf{Descrizione}: il venditore visualizza nella merchant dashboard\ped{G} la lista delle categorie presenti nel sistema;
-\item \textbf{Scenario Principale}: il venditore accede alla merchant dashboard\ped{G} e, nell'apposita sezione, visualizza una lista dei nomi delle categorie presenti;
+\item \textbf{Scenario Principale}: il venditore accede alla merchant dashboard\ped{G} e, nell'apposita sezione, visualizza la lista dei nomi delle categorie presenti;
 \item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard\ped{G};
 \item \textbf{Postcondizione}: il venditore visualizza la lista dei nomi delle categorie presenti nel sistema.
 \end{itemize}
@@ -306,19 +306,19 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC15.3.6]};
 \item \textbf{Scenario Principale}: il venditore preme il pulsante di conferma e inserisce la nuova categoria con il nome precedentemente inserito;
 \item \textbf{Estensioni}: 
 \begin{itemize}
-	\item se il nome della categoria non è stato inserito viene visualizzato un messaggio di errore \textbf{[UC16.2.3]}.
+	\item se il nome della categoria non è stato inserito o la categoria è già presente viene visualizzato un messaggio di errore \textbf{[UC16.2.3]}.
 \end{itemize} 
 \item \textbf{Precondizione}: il venditore si trova nella pagina dedicata all'inserimento di una nuova categoria e ha premuto il bottone di conferma;
 \item \textbf{Postcondizione}: il venditore ha inserito una nuova categoria nel sistema.
 \end{itemize}
 
-\subsubsection{UC16.2.3 - Visualizzazione errore campi mancanti inserimento categoria}
+\subsubsection{UC16.2.3 - Visualizzazione errore categoria inserita non valida}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: il venditore visualizza un messaggio di errore che lo informa che per procedere all'inserimento è necessario aver inserito il nome della categoria;
-\item \textbf{Scenario Principale}: il venditore prova ad inserire una nuova categoria senza aver compilato il campo dati del nome;
+\item \textbf{Descrizione}: il venditore visualizza un messaggio di errore che lo informa che per procedere all'inserimento è necessario aver inserito il nome di una categoria valida;
+\item \textbf{Scenario Principale}: il venditore prova ad inserire una nuova categoria senza aver compilato il campo dati del nome o inserendo una categoria già esistente;
 \item \textbf{Precondizione}: il venditore si trova nella pagina dedicata all'inserimento di una nuova categoria e ha premuto il bottone di conferma;
-\item \textbf{Postcondizione}: viene visualizzato un messaggio che informa il venditore della necessità di compilare il campo del nome per inserire una nuova categoria.
+\item \textbf{Postcondizione}: viene visualizzato un messaggio che informa il venditore della necessità di compilare il campo del nome per inserire una nuova categoria o di inserire un nome non già esistente.
 \end{itemize}
 
 \subsubsection{UC16.3 - Rimozione categoria}
