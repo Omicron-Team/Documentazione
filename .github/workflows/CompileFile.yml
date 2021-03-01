@@ -72,6 +72,9 @@ jobs:
       - name: Compilazione Verbale interno 2020-11-16
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-16/VI_2020-11-16.tex
 
+      - name: Compilazione VE_2021-03-01
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VE_2021-03-01/VE_2021-03-01.tex
+
 
 
      
@@ -97,6 +100,7 @@ jobs:
           mv VI_2020-11-23.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VI_2020-12-02.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VI_2020-11-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+          mv VE_2021-03-01.pdf Documenti/DocumentazioneInterna/VerbaliInterni
 
 
 
