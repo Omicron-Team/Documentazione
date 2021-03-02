@@ -106,18 +106,7 @@ jobs:
           mv PianoDiProgetto.pdf Documenti/DocumentazioneEsterna
           mv PianoDiQualifica.pdf Documenti/DocumentazioneEsterna
           mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
-      #  mv StudioDiFattibilita.pdf Documenti/DocumentazioneInterna
-      #  mv letteraRR.pdf Documenti/LetterePresentazioni
           mv letteraRP.pdf Documenti/LetterePresentazioni
-      #  mv VI_2020-12-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-      #  mv VE_2021-01-05.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
-      #  mv VE_2020-12-22.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
-      #  mv VI_2020-12-23.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-      #  mv VE_2020-12-11.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
-      #  mv VI_2020-12-09.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-      #  mv VI_2020-11-23.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-      #  mv VI_2020-12-02.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-      #  mv VI_2020-11-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VI_2021-02-09.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VI_2021-02-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VI_2021-02-22.pdf Documenti/DocumentazioneInterna/VerbaliInterni
