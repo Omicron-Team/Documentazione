@@ -45,6 +45,9 @@ jobs:
       - name: Compilazione Lettera di presentazione RR
         run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRR/letteraRR.tex
 
+      - name: Compilazione Lettera di presentazione RP
+        run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRP/letteraRP.tex
+
       - name: Compilazione Verbale Interno 2020-12-16
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-16/VI_2020-12-16.tex
 
@@ -71,6 +74,9 @@ jobs:
 
       - name: Compilazione Verbale interno 2020-11-16
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-16/VI_2020-11-16.tex
+        
+      - name: Compilazione VI_2021-02-22
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-22/VI_2021-02-22.tex
       
       - name: Compilazione VE_2021-02-04
         run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-02-04/VE_2021-02-04.tex
@@ -100,6 +106,7 @@ jobs:
           mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
           mv StudioDiFattibilita.pdf Documenti/DocumentazioneInterna
           mv letteraRR.pdf Documenti/LetterePresentazioni
+          mv letteraRP.pdf Documenti/LetterePresentazioni
           mv VI_2020-12-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VE_2021-01-05.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv VE_2020-12-22.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
@@ -110,6 +117,7 @@ jobs:
           mv VI_2020-12-02.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VI_2020-11-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VI_2021-02-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+          mv VI_2021-02-22.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VE_2021-03-01.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv VE_2021-02-04.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv VE_2021-02-17.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
