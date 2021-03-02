@@ -45,6 +45,9 @@ jobs:
       - name: Compilazione Lettera di presentazione RR
         run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRR/letteraRR.tex
 
+      - name: Compilazione Lettera di presentazione RP
+        run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRP/letteraRP.tex
+
       - name: Compilazione Verbale Interno 2020-12-16
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-16/VI_2020-12-16.tex
 
@@ -88,6 +91,7 @@ jobs:
           mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
           mv StudioDiFattibilita.pdf Documenti/DocumentazioneInterna
           mv letteraRR.pdf Documenti/LetterePresentazioni
+          mv letteraRP.pdf Documenti/LetterePresentazioni
           mv VI_2020-12-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VE_2021-01-05.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv VE_2020-12-22.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
