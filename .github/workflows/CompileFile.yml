@@ -75,6 +75,9 @@ jobs:
       - name: Compilazione VE_2021-02-04
         run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-02-04/VE_2021-02-04.tex
 
+      - name: Compilazione VE_2021-02-17
+        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-02-17/VE_2021-02-17.tex
+
 
 
      
@@ -101,6 +104,7 @@ jobs:
           mv VI_2020-12-02.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VI_2020-11-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VE_2021-02-04.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+          mv VE_2021-02-17.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
 
 
 

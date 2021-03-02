@@ -1,24 +1,47 @@
 \subsection{Processi organizzativi}
 \subsubsection{Pianificazione}
-\myparagraph{Metrica - Budget at Completion}
+\myparagraph{Metrica - Estimate at Completion}
 \vspace{-1cm}
 \begin{itemize}
 	\item \textbf{Codice}: MPC6;
-	\item \textbf{Descrizione}: Budget totale assegnato per il progetto;
-	\item \textbf{Processo di riferimento}: Gestione;
-	\item \textbf{Sigla}: BAC;
+	\item \textbf{Descrizione}: preventivo totale ricalcolato alla fine di un periodo;
+	\item \textbf{Processo di riferimento}: gestione;
+	\item \textbf{Sigla}: EAC;
+	\item \textbf{Indicatori utili}: 
+		\begin{itemize}
+		\item[$\ast$] \textbf{BAC - Budget at Completion}: budget preventivato per periodo;
+		\end{itemize}
 	\item \textbf{Range di valori che può assumere}: 
 		\begin{itemize}
-			\item \textbf{Ottimale} : $BAC = budget \ preventivato$;
-			\item \textbf{Accettabile} : $preventivo - 5 \% \leq BAC \leq preventivo + 5 \%$.
+			\item \textbf{Ottimale} : $EAC \leq BAC$;
+			\item \textbf{Accettabile} : $BAC - 5 \% \leq EAC \leq BAC + 5 \%$.
+		\end{itemize}
+\end{itemize}
+\myparagraph{Metrica - Variance at Completion}
+\vspace{-1cm}
+\begin{itemize}
+	\item \textbf{Codice}: MPC7;
+	\item \textbf{Descrizione}: spesa effettivamente sostenuta in percentuale;
+	\item \textbf{Processo di riferimento}: gestione;
+	\item \textbf{Sigla}: VAC;
+	\item \textbf{Indicatori utili}: 
+		\begin{itemize}
+		\item[$\ast$] \textbf{BAC - Budget at Completion}: budget preventivato precedentemente;
+		\item[$\ast$] \textbf{EAC - Estimate at Completion}: vedere la sezione §2.3.1.1.
+		\end{itemize}
+	\item \textbf{Formula}: \[ VAC = \frac{BAC - EAC}{100};\]
+	\item \textbf{Range di valori che può assumere}: 
+		\begin{itemize}
+			\item \textbf{Ottimale} : $ VAC \geq 0 $;
+			\item \textbf{Accettabile} : $ VAC \geq 0 $.
 		\end{itemize}
 \end{itemize}
 \myparagraph{Metrica - Actual Cost}
 \vspace{-1cm}
 \begin{itemize}
-	\item \textbf{Codice}: MPC7;
-	\item \textbf{Descrizione}: Denaro speso fino al momento del calcolo;
-	\item \textbf{Processo di riferimento}: Gestione;
+	\item \textbf{Codice}: MPC8;
+	\item \textbf{Descrizione}: denaro speso fino al momento del calcolo;
+	\item \textbf{Processo di riferimento}: gestione;
 	\item \textbf{Sigla}: AC;
 	\item \textbf{Indicatori utili}: 
 		\begin{itemize}
@@ -33,9 +56,9 @@
 \myparagraph{Metrica - Schedule Variance}
 \vspace{-1cm}
 \begin{itemize}
-	\item \textbf{Codice}: MPC8;
-	\item \textbf{Descrizione}: Indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate nella baseline\ped{G};
-	\item \textbf{Processo di riferimento}: Gestione;
+	\item \textbf{Codice}: MPC9;
+	\item \textbf{Descrizione}: indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate nella baseline\ped{G};
+	\item \textbf{Processo di riferimento}: gestione;
 	\item \textbf{Sigla}: SV;
 	\item \textbf{Indicatori utili}: 
 		\begin{itemize}
@@ -52,9 +75,9 @@
 \myparagraph{Metrica - Budget Variance}
 \vspace{-1cm}
 \begin{itemize}
-	\item \textbf{Codice}: MPC9;
-	\item \textbf{Descrizione}: Indica se alla data corrente si è speso di più o di meno rispetto a quanto previsto a budget alla data corrente;
-	\item \textbf{Processo di riferimento}: Gestione;
+	\item \textbf{Codice}: MPC10;
+	\item \textbf{Descrizione}: indica se alla data corrente si è speso di più o di meno rispetto a quanto previsto a budget alla data corrente;
+	\item \textbf{Processo di riferimento}: gestione;
 	\item \textbf{Sigla}: BV;
 	\item \textbf{Indicatori utili}: 
 		\begin{itemize}
@@ -73,9 +96,9 @@
 \myparagraph{Metrica - Percentuale di metriche soddisfatte}
 \vspace{-1cm}
 \begin{itemize}
-	\item \textbf{Codice}: MPC10;
-	\item \textbf{Descrizione}: La percentuale di metriche\ped{G} soddisfatte valuta quante metriche\ped{G} raggiungono soglie accettabili sul numero totale delle metriche\ped{G} calcolate;
-	\item \textbf{Processo di riferimento}: Gestione;
+	\item \textbf{Codice}: MPC11;
+	\item \textbf{Descrizione}: la percentuale di metriche\ped{G} soddisfatte valuta quante metriche\ped{G} raggiungono soglie accettabili sul numero totale delle metriche\ped{G} calcolate;
+	\item \textbf{Processo di riferimento}: gestione;
 	\item \textbf{Sigla}: PMS;
 	\item \textbf{Formula}: \[ PMS = \frac{metriche \ soddisfatte}{metriche \ totali} \ast 100;\]
 	\item \textbf{Range di valori che può assumere}: 
