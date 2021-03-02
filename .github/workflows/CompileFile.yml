@@ -39,44 +39,45 @@ jobs:
       - name: Compilazione Norme di Progetto
         run: latexmk -pdf -cd DocumentazioneInterna/NormeDiProgetto/NormeDiProgetto.tex
 
-      - name: Compilazione Studio di Fattibilità
-        run: latexmk -pdf -cd DocumentazioneInterna/StudioDiFattibilita/StudioDiFattibilita.tex
+      #- name: Compilazione Studio di Fattibilità
+      #  run: latexmk -pdf -cd DocumentazioneInterna/StudioDiFattibilita/StudioDiFattibilita.tex
 
-      - name: Compilazione Lettera di presentazione RR
-        run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRR/letteraRR.tex
+      #- name: Compilazione Lettera di presentazione RR
+      #  run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRR/letteraRR.tex
 
       - name: Compilazione Lettera di presentazione RP
         run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRP/letteraRP.tex
 
-      - name: Compilazione Verbale Interno 2020-12-16
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-16/VI_2020-12-16.tex
+      #- name: Compilazione Verbale Interno 2020-12-16
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-16/VI_2020-12-16.tex
 
-      - name: Compilazione Verbale Esterno 2021-01-05
-        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-01-05/VE_2021-01-05.tex
+      #- name: Compilazione Verbale Esterno 2021-01-05
+      #  run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-01-05/VE_2021-01-05.tex
 
-      - name: Compilazione VE_2020-12-22
-        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2020-12-22/VE_2020-12-22.tex
+      #- name: Compilazione VE_2020-12-22
+      #  run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2020-12-22/VE_2020-12-22.tex
       
-      - name: Compilazione VI_2020-12-23
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-23/VI_2020-12-23.tex  
+      #- name: Compilazione VI_2020-12-23
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-23/VI_2020-12-23.tex  
 
-      - name: Compilazione VE_2020-12-11
-        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2020-12-11/VE_2020-12-11.tex
+      #- name: Compilazione VE_2020-12-11
+      #  run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2020-12-11/VE_2020-12-11.tex
 
-      - name: Compilazione VI_2020-12-09
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-09/VI_2020-12-09.tex  
+      #- name: Compilazione VI_2020-12-09
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-09/VI_2020-12-09.tex  
 
-      - name: Compilazione VI_2020-11-23
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-23/VI_2020-11-23.tex
+      #- name: Compilazione VI_2020-11-23
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-23/VI_2020-11-23.tex
 
-      - name: Compilazione VI_2020-12-02
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-02/VI_2020-12-02.tex
+      #- name: Compilazione VI_2020-12-02
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-02/VI_2020-12-02.tex
 
-      - name: Compilazione Verbale interno 2020-11-16
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-16/VI_2020-11-16.tex
+      #- name: Compilazione Verbale interno 2020-11-16
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-16/VI_2020-11-16.tex
        
       - name: Compilazione VI_2021-02-09
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-09/VI_2021-02-09.tex
+      
       - name: Compilazione VI_2021-02-22
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-22/VI_2021-02-22.tex
       
@@ -89,7 +90,7 @@ jobs:
       - name: Compilazione VE_2021-03-01
         run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-03-01/VE_2021-03-01.tex
 
-      - name: Compilazione Verbale interno 2021-02-16
+      - name: Compilazione VI_2021-02-16
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-16/VI_2021-02-16.tex
 
 
@@ -105,18 +106,18 @@ jobs:
           mv PianoDiProgetto.pdf Documenti/DocumentazioneEsterna
           mv PianoDiQualifica.pdf Documenti/DocumentazioneEsterna
           mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
-          mv StudioDiFattibilita.pdf Documenti/DocumentazioneInterna
-          mv letteraRR.pdf Documenti/LetterePresentazioni
+        #  mv StudioDiFattibilita.pdf Documenti/DocumentazioneInterna
+        #  mv letteraRR.pdf Documenti/LetterePresentazioni
           mv letteraRP.pdf Documenti/LetterePresentazioni
-          mv VI_2020-12-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-          mv VE_2021-01-05.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
-          mv VE_2020-12-22.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
-          mv VI_2020-12-23.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-          mv VE_2020-12-11.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
-          mv VI_2020-12-09.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-          mv VI_2020-11-23.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-          mv VI_2020-12-02.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-          mv VI_2020-11-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+        #  mv VI_2020-12-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+        #  mv VE_2021-01-05.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+        #  mv VE_2020-12-22.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+        #  mv VI_2020-12-23.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+        #  mv VE_2020-12-11.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+        #  mv VI_2020-12-09.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+        #  mv VI_2020-11-23.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+        #  mv VI_2020-12-02.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+        #  mv VI_2020-11-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VI_2021-02-09.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VI_2021-02-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VI_2021-02-22.pdf Documenti/DocumentazioneInterna/VerbaliInterni
