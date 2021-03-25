@@ -12,7 +12,7 @@
 \item \textbf{Scenario Principale}: 
 \begin{enumerate}
 	\item il cliente inizia la procedura di checkout per i prodotti presenti nel carrello \textbf{[UC8.1]};
-	\item il cliente verifica l'indirizzo email e inserisce i dati per il pagamento \textbf{[UC8.3]};
+	\item il cliente conferma l'indirizzo email e inserisce i dati per il pagamento \textbf{[UC8.3]};
 	\item il cliente procede al pagamento \textbf{[UC8.4]};
 	\item il cliente visualizza un riepilogo dell'ordine effettuato \textbf{[UC8.7]}.
 \end{enumerate}
@@ -54,7 +54,7 @@
 \item \textbf{Descrizione}: il cliente compila i campi dati necessari all'acquisto dei prodotti selezionati;
 \item \textbf{Scenario Principale}: il cliente si trova nella pagina di pagamento e, per concludere l'acquisto:
 \begin{itemize}
-	\item verifica l'indirizzo email indicato in fase di registrazione \textbf{[UC8.3.1]} o può indicarne uno diverso per l'invio dei prodotti acquistati \textbf{[UC8.3.2]};
+	\item conferma l'indirizzo email indicato in fase di registrazione \textbf{[UC8.3.1]} o può indicarne uno diverso per l'invio dei prodotti acquistati \textbf{[UC8.3.2]};
 	\item inserisce i dati relativi al metodo di pagamento, come nome, cognome e numero di carta di credito \textbf{[UC8.3.3]}.
 \end{itemize}
 \item \textbf{Precondizione}: il cliente ha iniziato la procedura di acquisto e si trova nella pagina di pagamento;
@@ -67,16 +67,16 @@
 \caption{Diagramma UML\ped{G} per UC8.3 - Inserimento dati necessari all'acquisto}
 \end{figure}
 
-\subsubsection{UC8.3.1 - Verifica indirizzo email di spedizione}
+\subsubsection{UC8.3.1 - Conferma indirizzo email}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
-\item \textbf{Descrizione}: il cliente visualizza l'indirizzo email collegato all'account, che verrà utilizzato per l'invio dell'email di conferma acquisto;
-\item \textbf{Scenario Principale}: il cliente visualizza l'indirizzo email inserito in fase di registrazione e verifica se è corretto, confermando che i prodotti verranno spediti all'indirizzo visualizzato. Se l'indirizzo non è corretto, il cliente può modificarlo \textbf{[UC8.3.2]};
+\item \textbf{Descrizione}: il cliente visualizza l'indirizzo email collegato all'account.
+\item \textbf{Scenario Principale}: il cliente visualizza l'indirizzo email inserito in fase di registrazione e verifica se è effettivamente l'indirizzo sul quale vuole ricevere i prodotti acquistati. Se necessario, il cliente può modificarlo specificando un indirizzo email diverso \textbf{[UC8.3.2]};
 \item \textbf{Precondizione}:  il cliente ha iniziato la procedura di acquisto e si trova nella pagina di pagamento;
-\item \textbf{Postcondizione}: il cliente visualizza e verifica il suo indirizzo email.
+\item \textbf{Postcondizione}: il cliente visualizza e conferma il suo indirizzo email.
 \end{itemize}
 
-\subsubsection{UC8.3.2 - Modifica indirizzo email di spedizione}
+\subsubsection{UC8.3.2 - Modifica indirizzo email}
 \begin{itemize}
 \item \textbf{Attori primari}: cliente;
 \item \textbf{Descrizione}: il cliente modifica l'indirizzo email inserito durante la fase di registrazione;
