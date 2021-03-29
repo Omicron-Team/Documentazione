@@ -1,9 +1,3 @@
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.6]{res/UseCase/Immagini/MerchantDashboard}
-\caption{Schema generale: modulo di gestione della merchant dashboard\ped{G}}
-\end{figure}
-
 \subsubsection{UC14 - Accesso alla merchant dashboard}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
@@ -12,27 +6,6 @@
 \item \textbf{Precondizione}: il venditore ha effettuato l'autenticazione ed è stato riconosciuto come venditore;
 \item \textbf{Postcondizione}: il venditore si trova nella merchant dashboard\ped{G};
 \end{itemize}
-
-\subsubsection{UC15 - Gestione prodotti in vendita}
-\begin{itemize}
-\item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: il venditore può gestire i prodotti dalla dashboard\ped{G};
-\item \textbf{Scenario Principale}: il venditore può effettuare le seguenti operazioni sui prodotti:
-\begin{itemize}
-	\item inserimento \textbf{[UC15.1]};
-	\item visualizzazione \textbf{[UC15.2]};
-	\item modifica \textbf{[UC15.3]};
-	\item rimozione \textbf{[UC15.4]}.
-\end{itemize}
-\item \textbf{Precondizione}: il venditore si trova nella merchant dashboard\ped{G};
-\item \textbf{Postcondizione}: al venditore è permesso effettuare operazioni per gestire i propri prodotti.
-\end{itemize}
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.6]{res/UseCase/Immagini/GestioneProdotti}
-\caption{Diagramma UML\ped{G} per UC15 - Gestione prodotti in vendita}
-\end{figure}
 
 \subsubsection{UC15.1 - Inserimento prodotto}
 \begin{itemize}
@@ -246,26 +219,6 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC15.3.6]};
 \item \textbf{Postcondizione}: il venditore ha eliminato il prodotto selezionato.
 \end{itemize}
 
-\subsubsection{UC16 - Gestione categorie di prodotti}
-\begin{itemize}
-\item \textbf{Attori primari}: venditore;
-\item \textbf{Descrizione}: il venditore può gestire le categorie di prodotti dalla dashboard\ped{G};
-\item \textbf{Scenario Principale}: il venditore può effettuare le seguenti operazioni sulle categorie di prodotti:
-\begin{itemize}
-	\item visualizzazione \textbf{[UC16.1]};
-	\item inserimento \textbf{[UC16.2]};
-	\item rimozione \textbf{[UC16.3]}.
-\end{itemize}
-\item \textbf{Precondizione}: il venditore si trova nella merchant dashboard\ped{G};
-\item \textbf{Postcondizione}: al venditore è permesso effettuare operazioni per gestire le categorie di prodotti.
-\end{itemize}
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.6]{res/UseCase/Immagini/GestioneCategorie}
-\caption{Diagramma UML\ped{G} per UC16 - Gestione categorie di prodotti}
-\end{figure}
-
 \subsubsection{UC16.1 - Visualizzazione lista categorie}
 \begin{itemize}
 \item \textbf{Attori primari}: venditore;
@@ -372,4 +325,3 @@ In seguito verrà premuto il pulsante di conferma \textbf{[UC15.3.6]};
 \item \textbf{Precondizione}: l'utente ha eseguito il login, è riconosciuto come venditore e si trova nella merchant dashboard\ped{G};
 \item \textbf{Postcondizione}: il venditore visualizza la lista dei collegamenti ai sistemi di gestione del sito.
 \end{itemize}
-
