@@ -37,7 +37,7 @@ If, after waiting a few minutes, you still haven't received your confirmation co
 \end{figure}
 
 \subsubsection{Sign up error}
-If any error happen during the registration procedure, you will be redirected to the previous section with an error message describing what the problem is. If the message isn't self explanatory, please refer to section 7-Bug reporting.
+If any error happens during the registration procedure, you will be redirected to the previous section with an error message describing what the problem is. If the message isn't self explanatory, please refer to section 7-Bug reporting.
 
 \begin{figure}[H]
 \centering
@@ -84,19 +84,81 @@ Once the form is filled, click on the 'Change Password' button to reset your pas
 \end{figure}
 
 \subsubsection{Sign in error}
-If any error happen during the login procedure, you will be redirected to the previous section with an error message describing what the problem is. If the message isn't self explanatory, please refer to section 7-Bug reporting.
+If any error happens during the login procedure, you will be redirected to the previous section with an error message describing what the problem is. If the message isn't self explanatory, please refer to section 7-Bug reporting.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/Immagini/SigninError}
-\caption{Sign in error example: the email or password entered was invalid}
+\caption{Example of a sign in error: the email or password were invalid}
 \end{figure}
 
-\subsection{Signing out}
-In order to sign out of \textit{EmporioLambda}, you must first be logged in. You will then see, in any page of the website, a 'Sign out' button. Press this button to be logged off the website.
+\subsection{Browsing by category}
+To browse the products by category, access the homepage of the website by clicking on the 'Home' link in the header of the website. You will then see a list of all the product categories in the system.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.6]{res/Immagini/SignoutButton}
-\caption{Sign out button}
+\includegraphics[scale=0.6]{res/Immagini/CategoryList}
+\caption{Example of a homepage with a list of categories}
 \end{figure}
+
+To view the products in a category, click on the 'View Products' button. You will then be presented with a list of the products contained in the desired category.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/Immagini/CategoryPage}
+\caption{Example of a category page with a list of products}
+\end{figure}
+
+\subsection{Accessing a product page}
+To access a product page, browse to a category page and click on the 'View Product' button. This will lead you to a section of the website that contains all of the details regarding a specific product. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/Immagini/ProductPage}
+\caption{Example of a product page}
+\end{figure}
+
+\subsection{Adding products to the cart}
+In order to add a product to your cart, you must first browse to a category or a product page.
+
+In a category page, to add the listed products individually, click on the 'Add to Cart' button. To add multiple products at the same time, click on the checkbox under all the products you intend to add to the cart and then click the 'Add Selected to Cart' button.
+
+In a product page, select the number of items you want to add to your cart and click the 'Add to cart' button.
+
+\subsection{Searching and filtering products}
+In \textit{EmporioLambda} you can search for products by name and filter them by price and category. To do so, access the homepage, a category or a product page.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/Immagini/SearchFilterBar}
+\caption{Search and filter bar}
+\end{figure}
+
+You will see a horizontal bar with various options for querying products.
+
+\begin{itemize}
+\item To filter by the product's category, click on the first element in the search bar. It will open a dropdown menu with a list of all the available categories.
+\item To search for the product's name, enter your search query in the textbox that says 'Search for your product'.
+\item To filter by a price range, enter the maximum price, the minimum price or both in the related fields.
+\end{itemize}
+
+To send the search or filter query and retrieve the products that match it, click on the rightmost button in the searchbar. The text 'No product found' will be shown if no products match your request.
+
+\subsection{Managing the cart}
+To access and manage your cart, click on the 'Cart' link in the header section of the website. If you never added any products, you will see the text 'Your cart is empty'. Otherwise, you will see a list of the items you previously added to the cart.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{res/Immagini/CartPage}
+\caption{Example of a cart page}
+\end{figure}
+
+For each item you will see an image, the name, a description, the price and the quantity of items you intend to purchase.
+
+To edit the quantity, either overwrite the number in the textbox or use the two arrows at the right of it. 
+
+To remove an item, click on the 'Remove' button next to it. 
+
+To remove all the items in the cart, click the 'Remove All' button.
+
+At the bottom of the screen, you will see the product cost with and without the tax applied.
