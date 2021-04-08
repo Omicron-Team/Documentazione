@@ -74,7 +74,8 @@ jobs:
 
       #- name: Compilazione Verbale interno 2020-11-16
       #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-16/VI_2020-11-16.tex
-       
+      
+      #da togliere questi
       - name: Compilazione VI_2021-02-09
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-09/VI_2021-02-09.tex
       
@@ -93,6 +94,11 @@ jobs:
       - name: Compilazione VI_2021-02-16
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-16/VI_2021-02-16.tex
 
+      #fino a qua
+
+      - name: Compilazione Allegato tecnico
+        run: latexmk -pdf -cd DocumentazioneEsterna/AllegatoTecnico/AllegatoTecnico.tex
+
 
      
       - name: Creazione delle cartelle
@@ -105,6 +111,7 @@ jobs:
           mv Glossario.pdf Documenti/DocumentazioneEsterna
           mv PianoDiProgetto.pdf Documenti/DocumentazioneEsterna
           mv PianoDiQualifica.pdf Documenti/DocumentazioneEsterna
+          mv AllegatoTecnico.pdf Documenti/DocumentazioneEsterna
           mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
           mv letteraRP.pdf Documenti/LetterePresentazioni
           mv VI_2021-02-09.pdf Documenti/DocumentazioneInterna/VerbaliInterni
