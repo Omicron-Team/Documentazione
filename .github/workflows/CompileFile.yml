@@ -74,7 +74,8 @@ jobs:
 
       #- name: Compilazione Verbale interno 2020-11-16
       #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-16/VI_2020-11-16.tex
-       
+      
+      #da rimuovere
       - name: Compilazione VI_2021-02-09
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-09/VI_2021-02-09.tex
       
@@ -92,6 +93,12 @@ jobs:
 
       - name: Compilazione VI_2021-02-16
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-16/VI_2021-02-16.tex
+
+      #fino a qui
+
+      - name: Compilazione VE_2021-03-31
+        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-03-31/VE_2021-03-31.tex
+
 
 
      
@@ -113,6 +120,7 @@ jobs:
           mv VE_2021-03-01.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv VE_2021-02-04.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv VE_2021-02-17.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+          mv VE_2021-03-31.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
 
       
       - name: Upload Documenti
