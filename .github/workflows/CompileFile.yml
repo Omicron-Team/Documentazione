@@ -23,7 +23,7 @@ jobs:
           python-version: 3.9.1
 
       - name: Compilazione Analisi dei Requisiti
-        run: latexmk -pdf -cd DocumentazioneEsterna/AnalisiDeiRequisiti/AnalisiDeiRequisiti.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/AnalisiDeiRequisiti/AnalisiDeiRequisiti.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       - name: Compilazione Glossario
         run: |
