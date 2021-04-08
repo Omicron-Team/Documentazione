@@ -105,6 +105,7 @@ jobs:
       - name: Creazione delle cartelle
         if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main' || github.event.pull_request.base.ref == 'develop' || github.event.pull_request.base.ref == 'main'
         run: |
+          ls
           mkdir -p Documenti/DocumentazioneInterna/VerbaliInterni
           mkdir -p Documenti/DocumentazioneEsterna/VerbaliEsterni
           mkdir -p Documenti/LetterePresentazioni
