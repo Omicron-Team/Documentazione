@@ -1,7 +1,11 @@
 \subsubsection{Design pattern utilizzati}
-All'interno del modulo Front-end\ped{G}, come detto precedentemente, vengono utilizzati tre pattern:
+All'interno del modulo Front-end\ped{G}, come detto precedentemente, vengono utilizzati due design pattern:
 \begin{itemize}
-	\item \textbf{Presentational and container component pattern}: ;
-	\item \textbf{Data Pre-fetching pattern}: ;
-	\item \textbf{Observer pattern}: ;
+	\item \textbf{Presentational and container components pattern}:\\ 
+	Consiste nel dividere i component di una singola pagina in due tipi: \textit{presentational} e \textit{container}.\\
+	 I primi sono coloro che non presentano alcun stato o funzioni al loro interno, e si occupano solamente di mostrare dati e/o richiamare funzioni provenienti da component superiori. Ogni \textit{presentational} component può solamente avere altri component dello stesso tipo come figli. \\
+	 I \textit{container} components invece possono avere al loro interno variabili di stato e/o funzioni per gestire queste stesse variabili. Inoltre, non hanno restrizioni su che tipo i figli devono essere.\\
+	 Tramite questo pattern è possibile quindi comporre una pagina in vari components, ognuno con le sue responsabilità ben definite. Ci permette inoltre di dividere in modo chiaro la vista e la logica del programma.\\
+	 L'esempio della dashboard (\S{2.2.3}) mostra correttamente come esso possa essere implementato correttamente.
+	\item \textbf{Observer pattern}: \\L'observer pattern non viene implementato manualmente, ma è nativo nei React\ped{G} components. Nell'esempio dell'inserimento di un prodotto (\S{2.2.4}), una volta che lo stato in \textit{ListingSection} cambia, viene provocato un re-rendering del component e di tutti i suoi component figli (senza costruirli nuovamente).\\ Quindi in generale, lo stato del component è il nostro \textit{observable}, il component osserva quando questo viene aggiornato, renderizza se stesso prendendo i valori nuovi e notifica i component figli di renderizzarsi, aggiornando automaticamente i props passati.
 \end{itemize} 
