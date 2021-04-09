@@ -1,1 +1,19 @@
 \subsubsection{Descrizione}
+
+In questo modulo, chiamato \textbf{Front-end\ped{G}}, viene gestita la parte visibile del sito \nameproject{} e come essa interagisce con l'utente ed il modulo Back-end\ped{G}. L'architettura generale del modulo è basata su pattern offerti da Next.js\ped{G} e React\ped{G}. In particolare vengono utilizzati:
+\begin{itemize}
+	\item \textbf{Presentational and container component pattern}: suddivisione dei component in viste e logica di esse;
+	\item \textbf{Data Pre-fetching pattern}: caricamento dati del database e passaggio ai component inferiori;
+	\item \textbf{Observer pattern}: aggiornamento della view in base al cambiamento di component superiori;
+\end{itemize} 
+Questi saranno spiegati in modo più approfondito nella sezione \S{2.2.5}.\\
+Il modulo \textbf{Front-end\ped{G}} interagisce con il modulo \textbf{Back-end\ped{G}} attraverso delle API\ped{G} esposte dal servizio Amazon API Gateway e chiamate dal nostro package Services, che è composto di funzioni che gestiscono l'interazione e la risposta di esse. \\
+Di seguito viene mostrata un'architettura generale di come il modulo opera ad alto livello.
+
+\vspace{1cm}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.50]{res/Architettura/Frontend/img/general_frontend}\\
+\caption{Schema generale del modulo Front-end\ped{G}}
+\end{figure}
