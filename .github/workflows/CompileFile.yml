@@ -97,7 +97,7 @@ jobs:
       #fino a qua
 
       - name: Compilazione Allegato tecnico
-        run: latexmk -pdf -cd DocumentazioneEsterna/AllegatoTecnico/AllegatoTecnico.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/AllegatoTecnico/AllegatoTecnico.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
 
      
