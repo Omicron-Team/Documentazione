@@ -2,13 +2,13 @@
 
 \subsection{Descrizione generale}
 
-Il prodotto viene diviso in due moduli distinti:
+Il gruppo \Omicron{} ha deciso di modellare l'architettura del prodotto in due moduli distinti:
 \begin{itemize}
-\item \textbf{Front-end};
-\item \textbf{Back-end}.
+\item \textbf{Front-end}: modulo che gestisce l'interfaccia grafica e l'interazione diretta con gli utenti;
+\item \textbf{Back-end}: modulo che gestisce la parte relativa al processo dei dati, dove questi vengono persistiti e come essi vengono trattati.
 \end{itemize}
 
-Successivamente vengono spiegati in dettaglio e come essi interagiscono tra di loro.
+La scelta di suddividere il progetto in questi due moduli garantisce un maggiore disaccopiamento fra la parte di \textbf{business logic} e quella di \textbf{presentation logic}. I due moduli interagiscono fra di loro univocamente tramite chiamate API\ped{G}. Tale interazione viene descritta in dettaglio nelle sezioni \S{2.2} e \S{2.3}.
 
 \input{res/Architettura/Frontend/index}
 
