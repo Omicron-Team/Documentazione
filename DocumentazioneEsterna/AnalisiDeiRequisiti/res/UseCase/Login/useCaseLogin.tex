@@ -1,12 +1,11 @@
 \subsubsection{UC3 - Login}
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
-\item \textbf{Attori secondari}: AWS Cognito\ped{G};
 \item \textbf{Descrizione}: l'utente, inserendo le proprie credenziali, viene autenticato alla piattaforma;
 \item \textbf{Scenario Principale}: l'utente non ancora autenticato inizia la procedura di login tramite l'apposito pulsante, inserisce le proprie credenziali \textbf{[UC3.1]} e richiede il login \textbf{[UC3.2]};
 \item \textbf{Estensioni}:
 \begin{itemize}
-	\item \textbf{UC4}: se le credenziali inserite non vengono riconosciute dall'Identity Managern, viene visualizzato un messaggio che informa l'utente dell'errore.
+	\item \textbf{UC4}: se le credenziali inserite non vengono riconosciute dall'Identity Manager, viene visualizzato un messaggio che informa l'utente dell'errore.
 \end{itemize}
 \item \textbf{Precondizione}: l'utente prova ad autenticarsi alla piattaforma;
 \item \textbf{Postcondizione}: l'utente viene autenticato come cliente o come venditore.
@@ -63,7 +62,6 @@
 \subsubsection{UC4 - Visualizzazione errore dati login errati}
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
-\item \textbf{Attori secondari}:  AWS Cognito\ped{G};
 \item \textbf{Descrizione}: l'utente visualizza un messaggio di errore che lo informa che i dati da lui inseriti durante il login non sono riconosciuti dall'Identity Manager;
 \item \textbf{Scenario Principale}: l'utente tenta di effettuare il login usando credenziali non presenti nel sistema;
 \item \textbf{Precondizione}: l'utente prova ad autenticarsi alla piattaforma;
