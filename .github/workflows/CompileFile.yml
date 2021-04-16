@@ -46,7 +46,7 @@ jobs:
       #  run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRR/letteraRR.tex
 
       - name: Compilazione Lettera di presentazione RP
-        run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRP/letteraRP.tex
+        run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRP/letteraRP.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       #- name: Compilazione Verbale Interno 2020-12-16
       #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-16/VI_2020-12-16.tex
