@@ -94,7 +94,7 @@ jobs:
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-16/VI_2021-02-16.tex
 
       - name: Compilazione UserManual
-        run: latexmk -pdf -cd DocumentazioneEsterna/UserManual/UserManual.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/UserManual/UserManual.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
 
      
