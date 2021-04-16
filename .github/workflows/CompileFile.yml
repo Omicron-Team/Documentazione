@@ -18,25 +18,25 @@ jobs:
           sudo apt-get install -y texlive-lang-italian
 
       - name: Compilazione Analisi dei Requisiti
-        run: latexmk -pdf -cd DocumentazioneEsterna/AnalisiDeiRequisiti/AnalisiDeiRequisiti.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/AnalisiDeiRequisiti/AnalisiDeiRequisiti.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       - name: Compilazione Glossario
-        run: latexmk -pdf -cd DocumentazioneEsterna/Glossario/Glossario.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/Glossario/Glossario.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
       
       - name: Compilazione Piani di Progetto
-        run: latexmk -pdf -cd DocumentazioneEsterna/PianiDiProgetto/PianiDiProgetto.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/PianiDiProgetto/PianiDiProgetto.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       - name: Compilazione Piani di Qualififca
-        run: latexmk -pdf -cd DocumentazioneEsterna/PianiDiQualifica/PianiDiQualifica.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/PianiDiQualifica/PianiDiQualifica.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
       
       - name: Compilazione VerbaleX
-        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VerbaleX/VerbaleX.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VerbaleX/VerbaleX.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       - name: Compilazione Norme di Progetto
-        run: latexmk -pdf -cd DocumentazioneInterna/NormeDiProgetto/NormeDiProgetto.tex
+        run: latexmk -pdf -cd DocumentazioneInterna/NormeDiProgetto/NormeDiProgetto.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
-      - name: Compilazione Studio di Fattibilità
-        run: latexmk -pdf -cd DocumentazioneInterna/StudioDiFattibilita/StudioDiFattibilita.tex
+      #- name: Compilazione Studio di Fattibilità
+      #  run: latexmk -pdf -cd DocumentazioneInterna/StudioDiFattibilita/StudioDiFattibilita.tex
      
       - name: Creazione delle cartelle
         if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main' || github.event.pull_request.base.ref == 'develop' || github.event.pull_request.base.ref == 'main'
