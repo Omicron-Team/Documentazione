@@ -1,18 +1,18 @@
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/RegistrazioneGenerale}
-\caption{Diagramma UML\ped{G} per modulo di registrazione}
+\caption{Schema generale: modulo di registrazione cliente}
 \end{figure}
 
-\subsubsection{UC1 - Registrazione}
+\subsubsection{UC1 - Registrazione cliente}
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
 \item \textbf{Attori secondari}: Identity Manager;
-\item \textbf{Descrizione}: viene effettuata la registrazione nel sistema, inserendo i propri dati personali nella pagina dedicata;
-\item \textbf{Scenario Principale}: l'utente non autenticato accede alla pagina di registrazione, il sistema rende disponibili i campi da compilare, l'utente compila i campi [\textbf{UC1.1}], conferma la registrazione [\textbf{UC1.2}] e l'Identity Manager si occupa della registrazione nel sistema;
+\item \textbf{Descrizione}: viene effettuata la registrazione di un cliente nel sistema, inserendo i propri dati personali nella pagina dedicata;
+\item \textbf{Scenario Principale}: l'utente non autenticato accede alla pagina di registrazione, il sistema rende disponibili i campi da compilare, l'utente compila i campi [\textbf{UC1.1}], conferma la registrazione [\textbf{UC1.2}] e l'Identity Manager si occupa della registrazione dell'utente nel sistema;
 \item \textbf{Estensioni}:
 \begin{itemize}
-\item \textbf{UC2}: se i campi non sono validi o l'email è già stata utilizzata nel sistema, viene mostrato un errore di registrazione all'utente non autenticato e l'utente potrà provare nuovamente ad eseguire la registrazione.
+\item \textbf{UC2}: se i campi non sono validi o l'email è già stata utilizzata nel sistema, viene mostrato un errore di registrazione all'utente non autenticato che potrà provare nuovamente ad eseguire la registrazione.
 \end{itemize}
 \item \textbf{Precondizione}: l'utente non autenticato intende registrarsi nel sistema come cliente;
 \item \textbf{Postcondizione}: l'utente risulta registrato nel sistema come cliente.
@@ -21,7 +21,7 @@
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{res/UseCase/Immagini/Registrazione}
-\caption{Diagramma UML\ped{G} per UC1 - Registrazione}
+\caption{Diagramma UML\ped{G} per UC1 - Registrazione cliente}
 \end{figure}
 
 \subsubsection{UC1.1 - Inserimento dati}
