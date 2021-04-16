@@ -76,22 +76,22 @@ jobs:
       #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-16/VI_2020-11-16.tex
        
       - name: Compilazione VI_2021-02-09
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-09/VI_2021-02-09.tex
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-09/VI_2021-02-09.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
       
-      - name: Compilazione VI_2021-02-22
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-22/VI_2021-02-22.tex
+      #- name: Compilazione VI_2021-02-22
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-22/VI_2021-02-22.tex
       
-      - name: Compilazione VE_2021-02-04
-        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-02-04/VE_2021-02-04.tex
+      #- name: Compilazione VE_2021-02-04
+      #  run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-02-04/VE_2021-02-04.tex
 
-      - name: Compilazione VE_2021-02-17
-        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-02-17/VE_2021-02-17.tex
+      #- name: Compilazione VE_2021-02-17
+      #  run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-02-17/VE_2021-02-17.tex
 
-      - name: Compilazione VE_2021-03-01
-        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-03-01/VE_2021-03-01.tex
+      #- name: Compilazione VE_2021-03-01
+      #  run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-03-01/VE_2021-03-01.tex
 
-      - name: Compilazione VI_2021-02-16
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-16/VI_2021-02-16.tex
+      #- name: Compilazione VI_2021-02-16
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-16/VI_2021-02-16.tex
 
      
      
@@ -108,11 +108,6 @@ jobs:
           mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
           mv letteraRP.pdf Documenti/LetterePresentazioni
           mv VI_2021-02-09.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-          mv VI_2021-02-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-          mv VI_2021-02-22.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-          mv VE_2021-03-01.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
-          mv VE_2021-02-04.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
-          mv VE_2021-02-17.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
 
       
       - name: Upload Documenti
