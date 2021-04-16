@@ -93,6 +93,8 @@ jobs:
       - name: Compilazione VI_2021-02-16
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-16/VI_2021-02-16.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
+       - name: Compilazione VI_2021-03-10
+       run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-03-10/VI_2021-03-10.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
      
       - name: Creazione delle cartelle
@@ -110,9 +112,11 @@ jobs:
           mv VI_2021-02-09.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VI_2021-02-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VI_2021-02-22.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+          mv VI_2021-03-10.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VE_2021-03-01.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv VE_2021-02-04.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv VE_2021-02-17.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+          
 
       
       - name: Upload Documenti
