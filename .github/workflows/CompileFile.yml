@@ -23,21 +23,21 @@ jobs:
           python-version: 3.9.1
 
       - name: Compilazione Analisi dei Requisiti
-        run: latexmk -pdf -cd DocumentazioneEsterna/AnalisiDeiRequisiti/AnalisiDeiRequisiti.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/AnalisiDeiRequisiti/AnalisiDeiRequisiti.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       - name: Compilazione Glossario
         run: |
           python DocumentazioneEsterna/Glossario/buildGlossarioForActions.py
-          latexmk -pdf -cd DocumentazioneEsterna/Glossario/Glossario.tex
+          latexmk -pdf -cd DocumentazioneEsterna/Glossario/Glossario.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
       
       - name: Compilazione Piano di Progetto
-        run: latexmk -pdf -cd DocumentazioneEsterna/PianoDiProgetto/PianoDiProgetto.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/PianoDiProgetto/PianoDiProgetto.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       - name: Compilazione Piano di Qualififca
-        run: latexmk -pdf -cd DocumentazioneEsterna/PianoDiQualifica/PianoDiQualifica.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/PianoDiQualifica/PianoDiQualifica.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       - name: Compilazione Norme di Progetto
-        run: latexmk -pdf -cd DocumentazioneInterna/NormeDiProgetto/NormeDiProgetto.tex
+        run: latexmk -pdf -cd DocumentazioneInterna/NormeDiProgetto/NormeDiProgetto.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       #- name: Compilazione Studio di Fattibilità
       #  run: latexmk -pdf -cd DocumentazioneInterna/StudioDiFattibilita/StudioDiFattibilita.tex
@@ -46,7 +46,7 @@ jobs:
       #  run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRR/letteraRR.tex
 
       - name: Compilazione Lettera di presentazione RP
-        run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRP/letteraRP.tex
+        run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRP/letteraRP.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       #- name: Compilazione Verbale Interno 2020-12-16
       #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-16/VI_2020-12-16.tex
@@ -76,22 +76,22 @@ jobs:
       #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-16/VI_2020-11-16.tex
        
       - name: Compilazione VI_2021-02-09
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-09/VI_2021-02-09.tex
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-09/VI_2021-02-09.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
       
       - name: Compilazione VI_2021-02-22
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-22/VI_2021-02-22.tex
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-22/VI_2021-02-22.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
       
       - name: Compilazione VE_2021-02-04
-        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-02-04/VE_2021-02-04.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-02-04/VE_2021-02-04.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       - name: Compilazione VE_2021-02-17
-        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-02-17/VE_2021-02-17.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-02-17/VE_2021-02-17.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       - name: Compilazione VE_2021-03-01
-        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-03-01/VE_2021-03-01.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-03-01/VE_2021-03-01.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       - name: Compilazione VI_2021-02-16
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-16/VI_2021-02-16.tex
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-16/VI_2021-02-16.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
 
      
