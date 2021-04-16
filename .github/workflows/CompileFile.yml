@@ -93,8 +93,8 @@ jobs:
       - name: Compilazione VI_2021-02-16
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-16/VI_2021-02-16.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
-       - name: Compilazione VI_2021-03-10
-       run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-03-10/VI_2021-03-10.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
+      - name: Compilazione VI_2021-03-10
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-03-10/VI_2021-03-10.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
      
       - name: Creazione delle cartelle
