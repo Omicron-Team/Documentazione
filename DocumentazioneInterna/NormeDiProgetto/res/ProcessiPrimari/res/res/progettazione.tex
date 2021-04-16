@@ -15,27 +15,19 @@ Le parti fondamentali del processo di progettazione sono due:
 \begin{itemize}
 \item \textbf{Technology baseline}: è redatta dal progettista e contiene:
 \begin{itemize}
-\item specifiche della progettazione ad alto livello del prodotto e delle sue componenti;
-\item elenco dei diagrammi UML\ped{G} che saranno utilizzati per la realizzazione dell'architettura e dei test di verifica.
+\item elenco delle tecnologie, dei framework e delle librerie che saranno utilizzate per la realizzazione del prodotto;
+\item \textit{Proof of Concept}\ped{G}.
 \end{itemize}
 \item \textbf{Product baseline}: è redatta dal progettista e ha il compito di:
 \begin{itemize}
-\item integrare ciò che è riportato nella Technology baseline;
-\item definire i test di verifica.
+\item illustrare la baseline architetturale del prodotto, coerentemente con la Technology baseline;
+\item produrre diagrammi UML\ped{G} che descrivano l'architettura.
 \end{itemize}
 \end{itemize} 
 
 \myparagraph{Technology baseline}
 La \textbf{Technology baseline} include:
 \begin{itemize}
-\item \textbf{Diagrammi UML\ped{G}}:
-\begin{itemize}
-\item \textbf{diagrammi delle classi}: descrivono il tipo degli oggetti che compongono il sistema e le relazioni statiche esistenti tra loro;
-\item \textbf{diagrammi dei package}: documentano le dipendenze fra le classi;
-\item \textbf{diagrammi di attività}: descrivono le azioni di un processo;
-\item \textbf{diagrammi di sequenza}: descrive uno scenario, ovvero una serie di azioni in cui tutte le scelte sono già effettuate.
-\end{itemize}
-\item \textbf{Design Pattern\ped{G}}: soluzioni progettuali generali ad un problema ricorrente. Devono essere descritti e rappresentati con un diagramma che ne espone significato e struttura;
 \item \textbf{Tecnologie utilizzate}: descrizione delle tecnologie usate. Ne devono essere descritti l'utilizzo, i vantaggi e gli svantaggi;
 \item \textbf{Tracciamento delle componenti}: i requisiti vengono soddisfatti da alcune componenti, di cui vi è necessità di tener traccia;
 \item \textbf{Test di integrazione}: test il cui scopo è assicurarsi il corretto funzionamento del progetto una volta che sono state unite le sue componenti.
@@ -65,6 +57,13 @@ Ogni stage del front-end\ped{G} utilizza le funzioni del back-end\ped{G} nel ris
 \myparagraph{Product baseline}
 La \textbf{Product baseline} include:
 \begin{itemize}
+\item \textbf{Diagrammi UML\ped{G}}:
+\begin{itemize}
+\item \textbf{diagrammi delle classi}: descrivono il tipo degli oggetti che compongono il sistema e le relazioni statiche esistenti tra loro;
+\item \textbf{diagrammi dei package}: documentano le dipendenze fra le classi;
+\item \textbf{diagrammi di sequenza}: descrive uno scenario, ovvero una serie di azioni in cui tutte le scelte sono già effettuate.
+\end{itemize}
+\item \textbf{Design Pattern\ped{G}}: soluzioni progettuali generali ad un problema ricorrente. Devono essere descritti e rappresentati con un diagramma che ne espone significato e struttura;
 \item \textbf{definizione delle classi}: di ogni classe è necessario che si possano comprendere in modo esaustivo lo scopo e le funzionalità, evitando ridondanze;
 \item \textbf{tracciamento delle classi}: ogni requisito deve avere una classe che lo soddisfi; 
 \item \textbf{test di unità}: test il quale scopo è assicurarsi il corretto funzionamento delle singole componenti del progetto.
