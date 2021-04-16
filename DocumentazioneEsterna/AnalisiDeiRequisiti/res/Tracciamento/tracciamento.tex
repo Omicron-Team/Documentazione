@@ -1,0 +1,354 @@
+\section{Tracciamento}
+\subsection{Fonte - requisiti}
+
+{
+
+\rowcolors{2}{azzurro2}{azzurro3}
+
+\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{longtable}{C{4cm} C{11.5cm}}
+\caption{Tabella di tracciamento fonte-requisiti}\\
+\rowcolor{azzurro1}
+\textbf{Fonte} &
+\textbf{Requisiti}\\
+\endfirsthead
+\rowcolor{white}
+\caption*{Tabella di tracciamento fonte-requisiti (continuazione)}\\
+\rowcolor{azzurro1}
+\textbf{Fonte} &
+\textbf{Requisiti}\\
+\endhead
+
+
+Capitolato & 
+
+\begin{tabular}{ l l l l l }
+  R1F1 & R1F2 & R1F4 & R1F4.1 & R1F4.4 \\ 
+  R1F4.5 & R1F5 & R1F5.3 & R1F5.4 & R1F5.5 \\
+  R1F5.6 & R1F5.7 & R1F6 & R1F6.3 & R1F6.4 \\ 
+  R1F7 & R1F7.1 & R1F7.1.1 & R1F7.2 & R1F7.3 \\
+  R1F7.3.1 & R1F7.4 & R1F7.5 & R1F8 & R1F9 \\
+  R1F9.1 & R1F9.2 & R1F9.2.1 & R1F10 & R1F10.1 \\
+  R1F10.2 & R1F11 & R1F12 & R1Q2 & R1Q3 \\
+  R1Q4 & R1Q5 & R1Q6 & R1V1 & R1V1.1 \\
+  R1V1.2 & R1V1.3 & R1V2 & R1V2.1 & R1V2.2 \\
+  R1V2.3 & R1V3 & R1V3.1 & R1V3.2 & R1V4 \\
+  R1V4.1 & R1V5 & R3V6 & R1V7 & R1V8 \\
+  R1V8.1 & R1V9 & R1V10 & R1V11 & R1V11.1 \\
+  R1V11.2 & R1V11.2.1 & R1V11.3 & R1V11.3.1 & R3V11.4 \\
+  R1V11.5 & R1V11.6 & R3V11.7 & & \\
+\end{tabular} \\ 
+
+Interno & 
+
+\begin{tabular}{ l l l l l }
+  R1F1.1 & R1F1.3 & R2F1.4 & R1F2.1 & R1F2.2 \\
+  R2F2.3 & R1F3 & R1F4.1.1 & R1F4.2 & R1F4.3 \\
+  R1F4.4.1 & R1F5.1 & R1F6.1 & R2F6.2.1 & R1F6.3.1 \\
+  R1F7.1.2 & R1F7.2.1 & R2F7.3.2 & R1F7.5.1 & R1F7.7.3 \\
+  R1F9.1.1 & R2F9.3 & R1F10.2.1 & R1Q1 &  \\
+\end{tabular} \\ 
+
+VE\_2020-12-22 &
+
+\begin{tabular}{ l l l l }
+  R1F1.2 & R1F5.6 & R1F6.2 & R2F7.6  \\
+\end{tabular} \\
+
+VE\_2021-01-05 &
+
+\begin{tabular}{ l l l l l }
+  R1F5.2 & R2F5.2.1 & R1F7.1.3 & R1F7.7 & R1F7.7.1\\
+  R1F7.7.2 & R1Q2.1 & R3Q2.2 & R1Q3.1 & R3Q3.2\\
+  R1V12 & R1V13 &  &  & \\
+\end{tabular} \\
+
+UC1 & R1F1 \\
+UC1.1 & R1F1.1 \\
+UC1.1.1 & R1F1.1 \\
+UC1.1.2 & R1F1.1 \\
+UC1.1.3 & R1F1.1 \\
+UC1.1.4 & R1F1.2 \\
+UC1.1.5 & R1F1.3 \\
+UC1.2 & R1F1 \\
+
+UC2 & R2F1.4 \\
+
+UC3 & R1F2 \\
+UC3.1 & R1F2.1 \\
+UC3.1.1 & R1F2.1 \\
+UC3.1.2 & R1F2.1 \\
+UC3.2 & R1F2 \\
+
+UC4 & R2F2.2 \\
+
+UC5 & R1F3 \\
+
+UC6 & R1F4 \\
+UC6.1 & R1F4.1 \quad R1F4.4.1\\
+UC6.2 & R1F4.2 \\
+UC6.3 & R1F4.3 \\
+
+UC7 & R1F4.4 \quad R1F4.5 \\
+
+UC8 & R1F5 \\
+UC8.1 & R1F5 \\
+UC8.2 & R1F5.1 \\
+UC8.3 & R2F5.2.1 \quad R1F5.3\\
+UC8.3.1 & R1F5.2 \\
+UC8.3.2 & R2F5.2.1 \\
+UC8.3.3 & R1F5.3 \\
+UC8.3.3.1 & R1F5 \\
+UC8.3.3.2 & R1F5 \\
+UC8.3.3.3 & R1F5 \\
+UC8.3.3.4 & R1F5 \\
+UC8.3.3.5 & R1F5 \\
+UC8.4 & R1F5.3 \\
+UC8.5 & R1F5.7 \\
+UC8.6 & R1F5.7 \\
+UC8.7 & R1F5.5 \\
+
+UC9 & R1F6 \\
+UC9.1 & R1F6.1 \\
+UC9.2 & R1F6.2 \\
+UC9.2.1 & R1F6.2 \\
+UC9.2.2 & R1F6.2 \\
+UC9.2.3 & R1F6.2 \\
+UC9.2.4 & R1F6.2 \\
+UC9.2.5 & R1F6.2 \\
+UC9.2.6 & R1F6.2 \\
+UC9.2.7 & R2F6.2.1 \\
+UC9.3 & R1F6.3 \\
+UC9.3.1 & R1F6.3.1 \\
+UC9.4 & R1F6.4 \\
+
+UC10 & R1F8 \\
+
+UC11 & R1F9 \\
+
+UC12.1 & R1F9.1 \quad R1F9.1.1 \\
+UC12.2 & R1F9.2 \\
+UC12.3 & R1F9.2.1 \\
+UC12.4 & R2F9.3 \\
+UC12.5 & R1F10 \\
+
+UC13.1 & R1F10.1 \\
+UC13.2 & R1F10.2.1 \\
+UC13.3 & R1F10.2 \\
+
+UC14 & R1F7 \\
+
+UC15 & R1F7.1 \\
+UC15.1 & R1F7.1 \\
+UC15.1.1 & R1F7.1.1 \\
+UC15.1.2 & R1F7.1.1 \\
+UC15.1.3 & R1F7.1.2 \\
+UC15.1.4 & R1F7.1.1 \\
+UC15.1.5 & R1F7.1.3 \\
+UC15.1.6 & R1F7.1 \\
+UC15.1.7 & R1F7.1 \\
+UC15.2 & R1F7.2 \quad R1F7.2.1 \\
+UC15.3 & R1F7.3 \\
+UC15.3.1 & R2F7.3.2 \\
+UC15.3.2 & R1F7.3.1 \\
+UC15.3.3 & R2F7.3.2 \\
+UC15.3.4 & R2F7.3.2 \\
+UC15.3.5 & R2F7.3.2 \\
+UC15.3.6 & R1F7.3 \\
+UC15.3.7 & R1F7.3 \\
+UC15.4 & R1F7.4 \\
+UC16 & R1F7.7 \\
+UC16.1 & R1F7.7.1 \\
+UC16.2 & R1F7.7.2 \\
+UC16.2.1 & R1F7.7.2 \\
+UC16.2.2 & R1F7.7.2 \\
+UC16.2.3 & R1F7.7.2 \\
+UC16.3 & R1F7.7.3 \\
+UC17 & R1F7.5 \quad R1F7.5.1\\
+UC18 & R2F7.6 \\
+
+
+\end{longtable}
+
+}
+
+\subsection{Requisito - fonti}
+
+
+{
+
+\rowcolors{2}{azzurro2}{azzurro3}
+
+\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{longtable}{C{3cm} C{12.5cm}}
+\caption{Tabella di tracciamento requisito-fonti}\\
+\rowcolor{azzurro1}
+\textbf{Requisito} &
+\textbf{Fonti}\\
+\endfirsthead
+\rowcolor{white}
+\caption*{Tabella di tracciamento requisito-fonti (continuazione)}\\
+\rowcolor{azzurro1}
+\textbf{Requisito} &
+\textbf{Fonti}\\
+\endhead
+
+%REGISTRAZIONE
+
+R1F1 & Capitolato\quad UC1\quad UC1.2 \\
+R1F1.1 & Interno\quad UC1.1\quad UC1.1.1\quad UC1.1.2\quad UC1.1.3 \\
+R1F1.2 & VE\_2020-12-22 \quad UC1.1.4 \\
+R1F1.3 & Interno\quad UC1.1.5 \\
+R2F1.4 & Interno \quad UC2 \\
+
+%LOGIN
+
+R1F2 & Capitolato\quad UC3 \\
+R1F2.1 & Interno \quad UC3.1.1\quad UC3.1.2 \\
+R1F2.2 & Interno \quad UC4 \\
+
+%LOGOUT
+
+R1F3 & Interno \quad UC5 \\
+
+%CARRELLO
+
+R1F4 & Capitolato \quad UC6 \\
+R1F4.1 & Capitolato \quad UC6.1 \\
+R1F4.1.1 & Interno \quad UC6.1 \\
+R1F4.2 & Interno \quad UC6.2 \\
+R1F4.3 & Interno \quad UC6.3\\
+R1F4.4 & Capitolato \quad UC7\\
+R1F4.4.1 & Interno \quad UC6.1\\
+R1F4.5 & Capitolato \quad UC7\\
+
+%CHECKOUT
+
+R1F5 & Capitolato \quad UC8\quad UC8.1\\
+R1F5.1 & Interno \quad UC8.2\\
+R1F5.2 & VE\_2021-01-05 \quad UC8.3.1 \\
+R2F5.2.1 & VE\_2021-01-05 \quad UC8.3\quad UC8.3.2 \\
+R1F5.3 & Capitolato \quad UC8.3\quad UC8.3.3\quad UC8.3.3.1\quad UC8.3.3.2\quad UC8.3.3.3\quad UC8.3.3.4\quad UC8.3.3.5\\
+R1F5.4 & Capitolato \quad UC8.4\\
+R1F5.5 & Capitolato \quad UC8.7\\
+R1F5.6 & Capitolato e VE\_2020-12-22 \\
+R1F5.7 & Capitolato \quad UC8.5\quad UC8.6\\
+
+%PROFILO
+
+R1F6 & Capitolato \quad UC9 \\
+R1F6.1 & Interno \quad UC9.1\\
+R1F6.2 & VE\_2020-12-22 \quad UC9.2\quad UC9.2.1\quad UC9.2.2\quad UC9.2.3\quad UC9.2.4\quad UC9.2.5\quad UC9.2.6 \\
+R2F6.2.1 & Interno UC9.2.7\\
+R1F6.3 & Capitolato \quad UC9.3\\
+R1F6.3.1 & Interno \quad UC9.3.1\\
+R1F6.4 & Capitolato \quad UC9.4\\
+
+%MERCHANT DASHBOARD
+
+R1F7 & Capitolato \quad UC14\\
+R1F7.1 & Capitolato \quad UC15\quad UC15.1\quad UC15.1.6\quad UC15.1.7\\
+R1F7.1.1 & Capitolato \quad UC15.1.1\quad UC15.1.2\quad UC15.1.4\\
+R1F7.1.2 & Interno \quad UC15.1.3\\ 
+R1F7.1.3 & VE\_2021-01-05 \quad UC15.1.5\\ 
+R1F7.2 & Capitolato \quad UC15.2 \\
+R1F7.2.1 & Interno \quad UC15.2\\
+R1F7.3 & Capitolato \quad UC15.3\quad UC15.3.6\quad UC15.3.7 \\
+R1F7.3.1 & Capitolato \quad UC15.3.2\\
+R2F7.3.2 & Interno \quad UC15.3.1\quad UC15.3.3\quad UC15.3.4\quad UC15.3.5\\
+R1F7.4 & Capitolato \quad UC15.4 \\
+R1F7.5 & Capitolato \quad UC17\\
+R1F7.5.1 & Interno \quad UC17\\
+R2F7.6 & VE\_2020-12-22 \quad UC18\\
+R1F7.7 & VE\_2021-01-05 \quad UC16\\
+R1F7.7.1 & VE\_2021-01-05 \quad UC16.1\\
+R1F7.7.2 & VE\_2021-01-05 \quad UC16.2\quad UC16.2.1\quad UC16.2.2\quad UC16.2.3\\
+R1F7.7.3 & Interno \quad UC16.3\\
+
+%RESTO
+
+R1F8 & Capitolato \quad UC10 \\
+
+%PLP
+
+R1F9 & Capitolato \quad UC11 \\
+R1F9.1 & Capitolato \quad UC12.1\\
+R1F9.1.1 & Interno \quad UC12.1\\
+R1F9.2 & Capitolato \quad UC12.2\\
+R1F9.2.1 & Capitolato \quad UC12.3\\
+R2F9.3 & Interno \quad UC12.4 \\
+
+%PDP
+
+R1F10 & Capitolato \quad UC12.5\\
+R1F10.1 & Capitolato \quad UC13.1\\
+R1F10.2 & Capitolato \quad UC13.3\\
+R1F10.2.1 & Interno \quad UC13.2 \\
+
+%QUALITA
+
+R1Q1 & Interno \\
+R1Q2 & Capitolato \\
+R1Q2.1 & VE\_2021-01-05 \\
+R3Q2.2 & VE\_2021-01-05 \\
+R1Q3 & Capitolato \\
+R1Q3.1 & VE\_2021-01-05 \\
+R3Q3.2 & VE\_2021-01-05 \\
+R1Q4 & Capitolato \\
+R1Q5 & Capitolato \\
+R1Q6 & Capitolato \\
+
+%VINCOLO
+
+R1V1 & Capitolato \\
+R1V1.1 & Capitolato \\
+R1V1.2 & Capitolato \\
+R1V1.3 & Capitolato \\
+
+
+R1V2 & Capitolato \\
+R1V2.1 & Capitolato \\
+R1V2.2 & Capitolato \\
+R1V2.3 & Capitolato \\
+
+
+R1V3 & Capitolato \\
+R1V3.1 & Capitolato \\
+R1V3.2 & Capitolato \\
+
+R1V4 & Capitolato \\
+R1V4.1 & Capitolato \\
+
+R1V5 & Capitolato \\
+
+R3V6 & Capitolato \\
+
+R1V7 & Capitolato \\
+
+R1V8 & Capitolato \\
+R1V8.1 & Capitolato \\
+
+R1V9 & Capitolato \\
+
+R1V10 & Capitolato \\
+
+R1V11 & Capitolato \\
+R1V11.1 & Capitolato \\
+R1V11.2 & Capitolato \\
+R1V11.2.1 & Capitolato \\
+R1V11.3 & Capitolato \\
+R1V11.3.1 & Capitolato \\
+R3V11.4 & Capitolato \\
+
+R1V11.5 & Capitolato \\
+R1V11.6 & Capitolato \\
+R3V11.7 & Capitolato \\
+
+R1V12 & VE\_2021-01-05 \\
+R3V13 & VE\_2021-01-05 \\
+
+\end{longtable}
+
+}

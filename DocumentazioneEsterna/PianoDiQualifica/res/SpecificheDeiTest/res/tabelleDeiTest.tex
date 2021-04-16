@@ -1,0 +1,214 @@
+\subsection{Tabelle riassuntive dei test}
+
+\subsubsection{Test di unità}
+La tabella verrà redatta con l'avanzare del progetto.
+
+\subsubsection{Test di integrazione}
+La tabella verrà redatta con l'avanzare del progetto.
+
+\subsubsection{Test di sistema}
+{
+\rowcolors{2}{azzurro2}{azzurro3}
+
+\centering
+\renewcommand{\arraystretch}{2}
+\begin{longtable}{C{3cm} C{10.2cm} C{1.5cm}}
+\caption{Tabella riassuntiva test di sistema}\\
+\rowcolor{azzurro1}
+\textbf{Codice} &
+\textbf{Descrizione}&
+\textbf{Stato}\\
+\endhead
+
+
+TS1F1 & Un utente deve aver la possibilità di registrasi con:
+\begin{itemize}
+	\item nome;
+	\item cognome;
+	\item indirizzo di fatturazione;
+	\item email;
+	\item password.
+\end{itemize} & NI\\
+TS2F1 & Il sistema deve mostrare un errore se
+i campi inseriti durante la fase di registrazione non sono validi & NI\\
+TS1F2 & Un utente può effettuare il login inserendo:
+\begin{itemize}
+	\item email;
+	\item password.
+\end{itemize} &  NI\\
+TS2F2 & Il sistema deve mostrare un errore se le credenziali del login sono errate & NI\\
+TS1F3 & Un utente autenticato deve poter effettuare il
+logout & NI\\
+TS1F4 & Un utente generico deve accedere alla pagina del carrello dalla Homepage, dalla PLP\ped{G} e dal PDP\ped{G} & NI\\
+TS1F5 & Un utente generico, dal carrello, può:
+\begin{itemize}
+	\item visualizzare i prodotti precedentemente aggiunti;
+	\item visualizzare nome, immagine e quantità del prodotto;
+	\item rimuovere i singoli prodotti dal carrello;
+	\item modificare la quantità dei prodotti;
+	\item visualizzare il costo delle voci del carrello;
+	\item visualizzare il prezzo totale dei prodotti nel carrello;
+	\item visualizzare le tasse applicate al prezzo totale dei prodotti nel carrello.
+\end{itemize}
+& NI\\
+
+TS1F6 & Un cliente può effettuare il checkout se:
+\begin{itemize}
+	\item ha almeno un prodotto nel carrello;
+	\item si è registrato.
+\end{itemize}
+& NI\\
+
+TS1F7 & Durante la fase di checkout:
+\begin{itemize}
+	\item viene visualizzata l'email a cui verranno mandati i prodotti;
+	\item il cliente deve inserire i dati di pagamento tramite Stripe\ped{G};
+	\item dopo aver inserito i dati di pagamento, il cliente continua il pagamento effettivo tramite Stripe\ped{G}.
+\end{itemize}
+& NI\\
+
+TS2F7 & Durante la fase di checkout il cliente deve poter modificare l'email a cui verranno mandati i prodotti
+& NI\\
+
+TS1F8 & A pagamento riuscito:
+\begin{itemize}
+	\item il cliente visualizza un riepilogo dell'ordine effettuato;
+	\item il cliente riceve i prodotti acquistati tramite l'email usata per l'acquisto.
+\end{itemize}
+& NI\\
+
+TS1F9 & A pagamento fallito:
+\begin{itemize}
+	\item il cliente visualizza un messaggio d'errore;
+	\item il cliente può riprovare il pagamento verificando i dati inseriti.
+\end{itemize}
+& NI\\
+
+
+TS1F10 & Un cliente può visualizzare il suo profilo, contenente:
+\begin{itemize}
+	\item nome;
+	\item cognome;
+	\item indirizzo di fatturazione;
+	\item email;
+	\item lista degli ordini effettuati.
+\end{itemize}
+& NI\\
+
+TS1F11 & Un cliente può aggiornare, nel suo profilo, le seguenti informazioni:
+\begin{itemize}
+	\item nome;
+	\item cognome;
+	\item password;
+	\item indirizzo di fatturazione;
+	\item email.
+\end{itemize}
+& NI\\
+
+TS2F11 & Se la modifica delle informazioni nel profilo non va a buon fine, viene visualizzato un errore & NI\\
+
+TS1F12 & Per ogni ordine effettuato vengono visualizzati:
+\begin{itemize}
+	\item id ordine;
+	\item prodotti acquistati;
+	\item quantità dei prodotti acquistati;
+	\item costo singolo prodotto;
+	\item costo totale;
+	\item tasse applicate;
+	\item data di acquisto.
+\end{itemize}
+& NI\\
+
+TS1F13 & Un cliente può eliminare il suo account & NI\\
+
+TS1F14 & Il venditore ha a disposizione una dashboard\ped{G} dove può inserire nuovi prodotti e gestire il proprio catalogo digitale & NI\\
+
+TS2F14 & Il venditore, dalla dashboard\ped{G}, può accedere agli strumenti esterni riservati per gli admin & NI\\
+
+TS1F15 & Durante l'inserimento di un nuovo prodotto, il venditore, deve assegnare i seguenti dati:
+\begin{itemize}
+	\item nome;
+	\item descrizione;
+	\item immagine;
+	\item prezzo;
+	\item categoria.
+\end{itemize} & NI\\
+
+TS1F16 & Il venditore può:
+\begin{itemize}
+	\item visualizzare i prodotti da lui venduti;
+	\item modificare la descrizione dei prodotti da lui venduti;
+	\item eliminare i prodotti da lui venduti;
+	\item visualizzare i dettagli di tutti gli ordini effettuati dai clienti.
+\end{itemize} & NI\\
+
+TS2F16 & Il venditore può modificare il nome, il prezzo, l'immagine e la categoria dei prodotti da lui venduti & NI\\
+
+TS1F17 & Il venditore, durante la visualizzazione di un prodotto, visualizza:
+\begin{itemize}
+	\item nome;
+	\item descrizione;
+	\item categoria;
+	\item prezzo;
+	\item immagine.
+\end{itemize} & NI\\
+
+TS1F18 & Il venditore, per ogni ordine effettuato, può visualizzare:
+\begin{itemize}
+	\item numero ordine;
+	\item prodotti acquistati;
+	\item quantità dei prodotti acquistati;
+	\item costo singolo prodotto;
+	\item costo totale;
+	\item tasse applicate;
+	\item data di acquisto.
+\end{itemize}
+& NI\\
+
+TS1F19 & Il venditore può gestire le categorie dei prodotti, ovvero:
+\begin{itemize}
+	\item visualizzare una lista di categorie di prodotti;
+	\item inserire nuove categorie di prodotti;
+	\item eliminare categorie esistenti di prodotti.
+\end{itemize}
+& NI\\
+
+
+
+
+
+TS1F20 & Un utente generico può effettuare una ricerca tra i prodotti in vendita & NI\\
+
+TS1F21 & L'utente generico può accedere alla PLP\ped{G} corrispondente ad una categoria di prodotti. Nella PLP\ped{G} viene visualizzata la lista di prodotti corrispondente & NI\\
+
+TS1F22 & Per ogni prodotto listato nella PLP\ped{G} viene visualizzato:
+\begin{itemize}
+	\item nome;
+	\item immagine;
+	\item prezzo.
+\end{itemize} & NI\\
+
+TS1F23 & Nella PLP\ped{G} un utente generico può:
+\begin{itemize}
+	\item selezionare alcuni prodotti;
+	\item aggiungere i prodotti al carrello.
+\end{itemize} & NI\\
+
+TS2F23 & Nella PLP\ped{G} un utente generico può filtrare l'insieme dei prodotti visualizzati in base al prezzo & NI\\
+
+TS1F24 & Un utente generico può accedere alla PDP\ped{G} cliccando su un prodotto nella PLP\ped{G} & NI\\
+
+TS1F25 & Un utente generico, nella PDP\ped{G} può:
+\begin{itemize}
+	\item visualizzare nome, immagine, descrizione, prezzo e tasse applicate del prodotto;
+	\item aggiungere il prodotto al carrello scegliendone la quantità.
+\end{itemize} & NI\\
+
+
+
+\end{longtable}
+
+
+}
+\subsubsection{Test di accettazione o test di collaudo}
+La tabella verrà redatta con l'avanzare del progetto.

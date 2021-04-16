@@ -1,0 +1,47 @@
+\section{Modello di sviluppo}
+Come modello di sviluppo si è deciso di adottare il \textbf{modello incrementale}, al fine di garantire qualità e conformità del prodotto.
+
+\subsection{Modello incrementale}
+Nel modello di sviluppo incrementale si suddivide lo sviluppo del prodotto in incrementi. Ogni incremento porta a nuove funzionalità rispetto al precedente riducendo, inoltre, il rischio di fallimento. Questo ciclo viene ripetuto finché non si ha un numero di requisiti soddisfatti sufficiente.\\
+Eventuali modifiche, aggiunte o rimozioni dei requisiti non sono concesse durante la fase di sviluppo dell'incremento corrente e devono essere consentite dal proponente.\\
+Le motivazioni che ci hanno spinto ad adottare il modello incrementale sono i suoi seguenti vantaggi:
+\begin{itemize}
+\item alla fine di ogni incremento viene effettuata una fase di verifica. Così facendo eventuali errori sono vincolati nell'incremento corrente;
+\item eventuali modifiche sono limitate al singolo incremento, rendendole più economiche dal punto di vista del tempo di codifica;
+\item alla fine di ogni incremento vi è la possibilità di avere un riscontro con il proponente, il quale può valutare le funzionalità aggiunte e le modifiche effettuate;
+\item si dà priorità allo sviluppo delle funzionalità primarie, cosicché il proponente possa subito valutarle;
+\item risulta un ottimo modello da utilizzare nel nostro progetto, in quanto fin dall'inizio abbiamo i requisiti che devono venire soddisfatti.
+\end{itemize}
+
+\subsection{Incrementi}
+Per attuare il modello incrementale in modo corretto, è necessario individuare degli incrementi che suddivideranno il progetto in aree distinte. Essi vengono collegati ai requisiti individuati nel documento \AdRv{2.0.0}, in modo da sapere che funzionalità ogni incremento prevede di implementare. Per ogni requisito riportato nella seguente tabella, si prevede di implementare anche i corrispondenti requisiti figli. \\
+Per quanto riguarda la fase di analisi, gli unici incrementi previsti sono i documenti da realizzare. In realtà, data l'inesperienza, si riveleranno probabilmente imprecisi inizialmente ed essi verranno eventualmente corretti nelle fasi successive.
+Per il resto della realizzazione del progetto, sono stati individuati quattro incrementi:
+
+{
+
+\rowcolors{2}{azzurro2}{azzurro3}
+
+\centering
+\renewcommand{\arraystretch}{1.8}
+\begin{longtable}{C{3cm} C{8cm} C{3cm} }
+
+\rowcolor{azzurro1}
+\textbf{Nome} &
+\textbf{Descrizione}&
+\textbf{Requisiti}\\
+\endhead
+
+\textbf{Incremento 1} & Ci si occuperà dell'autenticazione nel sito, compresa di registrazione, login, logout e visualizzazione del profilo. & R1F1 \newline R1F2 \newline R1F3 \newline R1F6 \\
+\textbf{Incremento 2} & Ci si occuperà della visualizzazione dei prodotti nel sito e della dashboard del venditore, per gestire i prodotti. & R1F7 \newline R1F8 \newline R1F9 \newline R1F10 \\
+\textbf{Incremento 3} & Ci si occuperà dell'acquisto dei prodotti nel sito, compreso di gestione del carrello e del checkout degli ordini. & R1F4 \newline R1F5 \\
+\textbf{Incremento 4} & Ci si occuperà delle funzionalità riservate agli admin e alla realizzazione di eventuali requisiti mancanti dagli incrementi precedenti. & R1V4 \\
+
+\rowcolor{white}
+\caption{Lista di incrementi individuati}
+
+\end{longtable}
+}
+
+Per ognuno di questi verranno inoltre incrementati i documenti coinvolti. In particolare l'Allegato tecnico\ped{G}, il \MU{} ed il \MM{}, senza però escludere i documenti precedentemente realizzati nella fase di analisi.\\
+Viene inoltre realizzato un incremento iniziale per ogni fase (diversa da quella di analisi) riservato ai documenti, per l'aggiornamento di essi.
