@@ -1,0 +1,44 @@
+\subsubsection{Installing the Back-end module}
+In order to correctly install the \textit{EmporioLambda} back-end module you need to follow these steps:
+\begin{enumerate}
+\item install serverless using npm by running the following command in your CLI:\begin{center}
+npm install -g serverless;
+\end{center}
+\item now you can clone the source code from EmporioLambda Back-end GitHub repository by using the following command:
+\begin{center}
+git clone https://github.com/OmicronSwe/EmporioLambda-BE.git;
+\end{center}
+\item in your CLI go into the directory you just cloned and run the commands:
+\begin{center}
+npm install
+\end{center}
+and
+\begin{center}
+sls dynamodb install
+\end{center}
+these will install the dependencies needed. These dependencies can be found in the package.json file.\\Here is a list of the dependencies that will be installed:
+\begin{itemize}
+\item stripe (version 8.137.0+);
+\item uuid (version 3.1.0+).
+\end{itemize}
+and the following dependencies needed for development:
+\begin{itemize}
+\item serverless/eslint-config (version 3.0.0+);
+\item types/mocha (version 8.2.0+);
+\item types/uuid (version 8.3.0+);
+\item aws-lambda (version 1.0.6+);
+\item codecov (version 3.8.1+);
+\item eslint (version 7.19.0+);
+\item eslint-plugin-import (version 2.22.1+);
+\item git-list-updated (version 1.2.1+);
+\item nyc (version 15.1.0+);
+\item prettier (version 2.2.1+);
+\item save-dev (version 0.0.1-security+);
+\item serverless-dynamodb-local (version 0.2.39+);
+\item serverless-mocha-plugin (version 1.12.0+);
+\item serverless-offline (version 6.8.0+);
+\item serverless-plugin-typescript (version 1.1.9+);
+\item ts-node (version 9.1.1+);
+\item typescript (version 4.1.4+).
+\end{itemize}
+\end{enumerate}

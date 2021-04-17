@@ -1,0 +1,10 @@
+\subsubsection{Configuration of the Back-end}
+By following the next steps you will correctly configure your back-end:
+\begin{enumerate}
+\item \textbf{NOTE}: serverless may have asked you to insert your credentials after his installation in the section "Installing the Back-end module"(1st step of the list). If you already login at that point you can skip this step.\\ 
+In order to configure serverless you need to run the command:
+\begin{center}
+serverless config credentials -o --provider aws --key \$key --secret \$secret
+\end{center}
+where \$key is your AWS Access Key Id and \$secret is your AWS Secret Access Key;
+\end{enumerate}

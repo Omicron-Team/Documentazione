@@ -1,6 +1,6 @@
 \subsubsection{Installing Front-end module}
 In order to correctly download and configure the Front-end module you need to follow the following steps:
-\begin{itemize}
+\begin{enumerate}
 \item get the source code by using this git command:\begin{center}git clone https://github.com/OmicronSwe/EmporioLambda-FE.git;\end{center}
 \item run the command:\begin{center}npm install\end{center}this will install all the necessary dependencies. These dependencies can be found in the package.json file.\newline{} Here's the list of the dependencies:
 \begin{itemize}
@@ -43,13 +43,5 @@ Other than that will also be installed the following dependencies needed for dev
 \item start-server-and-test (version 1.12.0+);
 \item typescript (version 4.1.3+).
 \end{itemize}
-\item install vercel using the command:\begin{center}npm i -g vercel\end{center}It will be used to get the enviroment variable needed;
-\item login into vercel website and create the enviroment variables needed (da migliorare);
-\item in your CLI use the command:\begin{center}vercel env pull\end{center}It will ask for your credentials.
-\item run the command:\begin{center}vercel link\end{center}It will ask:
-\begin{itemize}
-\item Which scope do you want to deploy to.
-\item What’s the name of your existing project? 
-\end{itemize}
-\item in your CLI use again the command vercel env pull. This will download and setup your enviroment variables.
-\end{itemize}
+\item install vercel using the command:\begin{center}npm i -g vercel\end{center}It will be used to get the enviroment variable needed.
+\end{enumerate}
