@@ -1,0 +1,15 @@
+\subsubsection{Components}
+To manage the components EmporioLambda uses React, a Javascript and Typescript library. This allows the building of user-interfaces or UI components.
+There are 2 main types of components:
+\begin{itemize}
+\item Presentational Components: they don't use any state or function. Their only assignment is to show data or call functions from higher level components. Every presentational component can only have child of the same type.
+\item Container Components: they can use state variables and functions for their management. They also don't have any restriction about which type their childs must have.  
+\end{itemize}
+The use of this 2 different components introduces to the first design pattern used by EmporioLambda which is the presentational and container components pattern. This allows to create a page by using single components, everyone with their own responsibility. This also allows to simply divide the \textit{presentational logic} and the \textit{business logic} of the software.\\
+Other than that React container components can accept 2 variables on his creation:
+\begin{itemize}
+\item props: variables or objects that can be passed upon component creation by other components.
+\item state: variables which change cause the component to re-rendering. It's value must be initialized from the component constructor and it is read-only.
+\end{itemize}
+Presentational components only accept the props variable.\\
+The use of the state variables introduces to the second design pattern used by EmporioLambda, which is the observer pattern. This pattern isn't implemented manually but it's a React native pattern. In our case the state of the component is our \textit{observable}; in fact the components checks when the state has been changed and cause a re-render of the page.\\ More informations about the observer pattern can be found in this page: \url{https://en.wikipedia.org/wiki/Observer_pattern}.\\
