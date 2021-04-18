@@ -1,0 +1,27 @@
+\myparagraph{Casi d'uso}
+Rappresenta una situazione nella quale il sistema viene utilizzato per soddisfare uno o più bisogni dell'utente.\\
+La loro struttura è la seguente:
+\begin{itemize}
+\item \textbf{Identificatore}: codice che identifica il caso d'uso. Il suo formato è il seguente:
+\begin{center}
+\textbf{UC[CodicePadre].\{CodiceFiglio\}}\\
+\end{center}
+dove:
+\begin{itemize}
+\item \textbf{UC}: rappresenta un acronimo di "Use Case", ovvero "Caso d'uso";
+\item \textbf{CodicePadre}: rappresenta il codice di un caso d'uso generico;
+\item \textbf{CodiceFiglio} (opzionale): rappresenta il codice di un sotto caso di un caso d'uso;
+\end{itemize}
+\item \textbf{Nome}: Titolo del caso d'uso;
+\item \textbf{Diagramma UML}\ped{G}: rappresentazione grafica del caso d'uso utilizzando il linguaggio UML\ped{G} 2.0; 
+\item \textbf{Descrizione}: descrizione breve del caso d'uso;
+\item \textbf{Scenario principale}: sequenza di azioni che porta al risultato atteso dal caso d'uso;
+\item \textbf{Scenari alternativi}(opzionale): sequenza di azioni che porta ad un risultato inatteso (un errore o un'eccezione) dal caso d'uso;
+\item \textbf{Precondizioni}: condizioni necessarie per il corretto avvio del caso d'uso;
+\item \textbf{Post-condizioni}: condizioni che devono essere vere dopo che il caso d'uso è andato a buon fine;
+\item \textbf{Attori primari}: utente che inizia un'interazione con il sistema per raggiungere un obiettivo;
+\item \textbf{Attori secondari}(opzionale): entità che aiuta l'attore primario a raggiungere il suo obiettivo;
+\item \textbf{Estensioni}(opzionale): aumenta le funzionalità di uno use case. Ogni istanza di un caso d'uso 'A' esegue un evento 'B' in modo condizionato. L'esecuzione di 'B' interrompe 'A';
+\item \textbf{Inclusioni}(opzionale): include un'istanza di un use case 'B' in un altro use case 'A';
+\item \textbf{Specializzazioni}(opzionale): casi d'uso che aggiungono o modificano le caratteristiche base di un caso d'uso di partenza.
+\end{itemize}

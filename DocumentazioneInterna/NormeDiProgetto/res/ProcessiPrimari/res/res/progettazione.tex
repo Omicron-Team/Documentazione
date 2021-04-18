@@ -1,0 +1,71 @@
+\subsubsection{Progettazione}
+\myparagraph{Scopo}
+L'attività di progettazione precede la codifica e ha il compito di individuare i requisiti software richiesti (analizzando l' \AdRv{2.0.0}) per far si che il prodotto finale soddisfi tutti gli stakeholder\ped{G}. Per far ciò lo sviluppo del prodotto deve essere:
+\begin{itemize}
+\item \textbf{Efficiente}: prodotto in economia, minimizzando le risorse utilizzate;
+\item \textbf{Efficace}: deve garantire la qualità del prodotto perseguendo la correttezza per costruzione;
+\item \textbf{Organizzato}: i compiti devono essere suddivisi tra i vari membri del gruppo in modo da ridurre la complessità del problema.
+\end{itemize}
+
+\myparagraph{Aspettative}
+Il gruppo \Omicron{} intende, tramite l'attività di progettazione, fissare l'architettura del prodotto prima di passare alla sua realizzazione. 
+
+\myparagraph{Descrizione}
+Le parti fondamentali del processo di progettazione sono due:
+\begin{itemize}
+\item \textbf{Technology baseline}: è redatta dal progettista e contiene:
+\begin{itemize}
+\item specifiche della progettazione ad alto livello del prodotto e delle sue componenti;
+\item elenco dei diagrammi UML\ped{G} che saranno utilizzati per la realizzazione dell'architettura e dei test di verifica.
+\end{itemize}
+\item \textbf{Product baseline}: è redatta dal progettista e ha il compito di:
+\begin{itemize}
+\item integrare ciò che è riportato nella Technology baseline;
+\item definire i test di verifica.
+\end{itemize}
+\end{itemize} 
+
+\myparagraph{Technology baseline}
+La \textbf{Technology baseline} include:
+\begin{itemize}
+\item \textbf{Diagrammi UML\ped{G}}:
+\begin{itemize}
+\item \textbf{diagrammi delle classi}: descrivono il tipo degli oggetti che compongono il sistema e le relazioni statiche esistenti tra loro;
+\item \textbf{diagrammi dei package}: documentano le dipendenze fra le classi;
+\item \textbf{diagrammi di attività}: descrivono le azioni di un processo;
+\item \textbf{diagrammi di sequenza}: descrive uno scenario, ovvero una serie di azioni in cui tutte le scelte sono già effettuate.
+\end{itemize}
+\item \textbf{Design Pattern\ped{G}}: soluzioni progettuali generali ad un problema ricorrente. Devono essere descritti e rappresentati con un diagramma che ne espone significato e struttura;
+\item \textbf{Tecnologie utilizzate}: descrizione delle tecnologie usate. Ne devono essere descritti l'utilizzo, i vantaggi e gli svantaggi;
+\item \textbf{Tracciamento delle componenti}: i requisiti vengono soddisfatti da alcune componenti, di cui vi è necessità di tener traccia;
+\item \textbf{Test di integrazione}: test il cui scopo è assicurarsi il corretto funzionamento del progetto una volta che sono state unite le sue componenti.
+\end{itemize}
+Questa baseline\ped{G} viene dimostrata attraverso lo sviluppo di un \textit{Proof of Concept}\ped{G} suddiviso nei seguenti stage:
+\begin{itemize}
+\item \textbf{back-end\ped{G}:}
+	\begin{itemize}
+	\item local: fase dove ognuno lavora in locale. Quando si effettua il \textit{push} in un qualsiasi branch\ped{G} avviene il deploy\ped{G} nello stage local di AWS\ped{G};
+	\item test: fase in cui le funzionalità sono pronte per essere testate e vengono quindi spostate nello stage test di AWS\ped{G}. Ci si sposta nel branch\ped{G} \textbf{develop} della repository\ped{G} di back-end;
+	\item staging: fase finale in cui lo sviluppo di funzionalità è terminato. Ci si sposta nel branch\ped{G} \textbf{master} della repository\ped{G} di back-end\ped{G}.
+	\end{itemize}
+\item \textbf{front-end\ped{G}:}
+	\begin{itemize}
+	\item local: fase dove ognuno lavora in locale;
+	\item preview: fase in cui le funzionalità sono pronte per essere testate. Questo stage fa il deploy\ped{G} del sito tramite Vercel\ped{G} quando ci si sposta nel branch\ped{G} \textbf{develop} della repository\ped{G} di front-end\ped{G};
+	\item production: fase finale dove sono presenti funzionalità complete e testate. Avviene il deploy\ped{G} del sito su Vercel\ped{G} del branch\ped{G} \textbf{master} della repository\ped{G} di front-end\ped{G}.
+	\end{itemize}
+\end{itemize} 
+Ogni stage del front-end\ped{G} utilizza le funzioni del back-end\ped{G} nel rispettivo stage:
+\begin{itemize}
+	\item local - local;
+	\item preview - test;
+	\item production - staging.
+\end{itemize}
+
+\myparagraph{Product baseline}
+La \textbf{Product baseline} include:
+\begin{itemize}
+\item \textbf{definizione delle classi}: di ogni classe è necessario che si possano comprendere in modo esaustivo lo scopo e le funzionalità, evitando ridondanze;
+\item \textbf{tracciamento delle classi}: ogni requisito deve avere una classe che lo soddisfi; 
+\item \textbf{test di unità}: test il quale scopo è assicurarsi il corretto funzionamento delle singole componenti del progetto.
+\end{itemize}

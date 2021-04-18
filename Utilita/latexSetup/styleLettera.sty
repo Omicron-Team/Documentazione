@@ -1,0 +1,23 @@
+\ProvidesPackage{styleLettera}	%il nostro pacchetto per swe
+
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=blue
+}
+
+
+%%Separare i vari componenti della tabella
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+
+%%COLORI TABELLE
+%\definecolor{grigio}{RGB}{91,91,91}
+\definecolor{azzurro1}{RGB}{159,182,195}
+\definecolor{azzurro2}{RGB}{206,218,224}
+\definecolor{azzurro3}{RGB}{237,242,244}
