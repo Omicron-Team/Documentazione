@@ -1,11 +1,11 @@
-\subsection{Develop on the Back-End Module}
-In order to create a new function on the Back-End module you can run the following command on your CLI: 
+\subsection{Development on the Back-End Module}
+To create a new function on the Back-End module you can run the following command on your CLI: 
 \begin{center}
 sls create function -f \$functionName --handler functions/\$functionName/handler.\$functionName
 \end{center}
-this will create a folder named \$functionName inside the functions folder. This new folder will contain a file handler.js called which extension must be changed to .ts (since we want to use Typescript and not Javascript). 
-The command will also create into the test folder a file named \$functionName.js (change the extension to .ts) to execute the unit test on that specific function.
-Into this file you will also find a function called describe. You need to insert the following code into that function:
+this will create a folder named \$functionName inside the functions folder, which will contain a handler.js file whose extension must be changed to .ts (since we want to use Typescript instead of Javascript). 
+The command will also create a file named \$functionName.js into the test folder(change the extension to .ts here aswell), which sets up an empty unit test for the new function.
+In this file you will find a function called describe, into which you need to insert the following code:
 \begin{lstlisting}
 const mochaPlugin = require('serverless-mocha-plugin');
 const expect = mochaPlugin.chai.expect;
@@ -15,11 +15,11 @@ const wrapped = mochaPlugin.getWrapper(
 '$functionName'
 );
 \end{lstlisting}
-Now you have to open the serverless.yml file (since the command automatically creates the row for the AWS Lambda function, but not for the API Gateway) and add this code after the handler section of the function you just created:
+You now have to open the serverless.yml file (the command automatically creates the row for the AWS Lambda function, but not for the API Gateway) and add this code after the handler section of the function you just created:
 \begin{lstlisting}
 events:
    - http:
        path: $functionName
        method: GET #(or POST)
 \end{lstlisting}.
-You can also create manually all the files needed, without the unit test ones.
+You can also manually create all of the needed files, even without the unit test ones.

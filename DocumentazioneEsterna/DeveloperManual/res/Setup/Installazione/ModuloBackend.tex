@@ -1,10 +1,10 @@
 \subsubsection{Installing the Back-end module}
-In order to correctly install the \textit{EmporioLambda} back-end module you need to follow these steps:
+To correctly install the \textit{EmporioLambda} back-end module you need to follow these steps:
 \begin{enumerate}
 \item install serverless using npm by running the following command in your CLI:\begin{center}
 npm install -g serverless;
 \end{center}
-\item now you can clone the source code from EmporioLambda Back-end GitHub repository by using the following command:
+\item you can now clone the source code from the EmporioLambda Back-end GitHub repository by using the following command:
 \begin{center}
 git clone https://github.com/OmicronSwe/EmporioLambda-BE.git;
 \end{center}
@@ -16,12 +16,12 @@ and
 \begin{center}
 sls dynamodb install
 \end{center}
-these will install the dependencies needed. These dependencies can be found in the package.json file.\\Here is a list of the dependencies that will be installed:
+these will install the needed dependencies. These dependencies can be found in the package.json file.\\Here is a list of the dependencies that will be installed:
 \begin{itemize}
 \item stripe (version 8.137.0+);
 \item uuid (version 3.1.0+).
 \end{itemize}
-and the following dependencies needed for development:
+the following development dependencies will also be installed:
 \begin{itemize}
 \item serverless/eslint-config (version 3.0.0+);
 \item types/mocha (version 8.2.0+);

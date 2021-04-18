@@ -1,5 +1,5 @@
 \subsection{Testing}
-In this section is shown how to run the testing process to check your code work and its syntax.\\ 
+This section shows how to run the testing process to check whether your code is working correctly and whether it follows the correct syntax. \\ 
 To test the EmporioLambda code the following tools will be used:
 \begin{itemize}
 \item \textbf{Cypress}: for unit testing;
@@ -7,32 +7,32 @@ To test the EmporioLambda code the following tools will be used:
 \end{itemize}
 
 \subsubsection{Unit testing}
-To run every unit test you can use this command on your CLI:
+To run all of the unit tests, use the following command on your CLI:
 \begin{center}
 npm run test
 \end{center}
-In case you want to test a single function in the Back-End module you can run the previous command and add a the name of the function as parameter.\\
+If you want to test a single function in the Back-End module you can run the previous command while specifying the name of the function as a parameter.\\
 Example:
 \begin{center}
 npm run test -f \$functionName
 \end{center}
-For the Back-End module you can also check the code coverage by running the command:
+You can also check the code coverage for the Back-End module by running the command:
 \begin{center}
 npm run coverage
 \end{center}
 
 \subsubsection{Static code analysis}
-Informations on the rules used to run the static code analysis can be found in the files:
+Information on the rules used to run the static code analysis can be found in the files:
 \begin{itemize}
 \item .eslintrc.js
 \item .prettierrc.js
 \end{itemize}
-The static code analysis can be done by running the following commands in your CLI:
+Static code analysis can be executed by running the following commands in your CLI:
 \begin{center}
 npm run lint
 \end{center}
 this will check the code style with lint and prettier and try to fix the errors where it is possible.\\ 
-If you just want to check the code without automatic error fix you can run this command:
+If you just want to check the code without automatic error fixing you can run this command:
 \begin{center}
 npm run checkWithLint
 \end{center}

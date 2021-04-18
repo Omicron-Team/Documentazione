@@ -1,14 +1,14 @@
 \subsection{Services}
-This part of the architecture let EmporioLambda Front-end module retrieve or send data to the EmporioLambda Back-end module. Services can be found inside the \textit{pages/api/Services} of the Front-end module.\\
-Each service has this composition:
+This part of the architecture lets the \textit{EmporioLambda} Front-end module retrieve or send data to the \textit{EmporioLambda} Back-end module. Services can be found inside the \textit{pages/api/Services} of the Front-end module.\\
+Each service has the following composition:
 \begin{itemize}
-\item a class Fetcher which contains an URL generated with the enviroment variables pulled. The constructor requires the name of the function needed to call from the Back-end;
-\item a function getJSONResponse which tries to make an API call to the Back-end and return the response. The return type is a Promise, since this is an asyncronous operation;
-\item a function getLambdaResponse which accepts the following parameters:\begin{itemize}
+\item a Fetcher class which contains an URL generated with the pulled enviroment variables. The constructor requires the name of the function to will be called in the Back-end;
+\item a getJSONResponse function which tries to make an API call to the Back-end and return the response. The return type is a Promise, as this is an asyncronous operation;
+\item a getLambdaResponse function which accepts the following parameters:\begin{itemize}
 \item a string which indicates the function name you want to call in your Back-end; 
 \item a string which indicates the type of the call you want to do (GET, POST, PUT...);
 \item a string containing the token of the current session; 
-\item a string containing parameters if needed for the API call. 
+\item a string containing the parameters needed for the API call. 
 \end{itemize} 
 This function creates a new Fetcher object and execute the getJSONResponse method. This is the function you must call in your services.
 \end{itemize}
