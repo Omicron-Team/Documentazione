@@ -1,0 +1,56 @@
+\section{Standard ISO/IEC 15504 - SPICE}
+ISO/IEC 15504, conosciuto anche come \textit{Software Process Improvement and Capability Determination (SPICE)}, è un insieme di standard\ped{G} tecnici relativi ai processi di sviluppo del software e relative funzioni di business e, in particolare, alla loro valutazione. \\
+La norma deriva dai processi dello standard\ped{G} ISO/IEC 12207, SPY e dai modelli di maturità come CMM ed è poi confluito in un nuovo standard\ped{G}, l'ISO/IEC 330xx: 2015.
+
+\subsection{Modello di riferimento}
+ISO/IEC 15504 contiene un modello di riferimento che definisce una dimensione del processo e una dimensione della capacità.
+
+\subsubsection{Dimensione di processo}
+Lo standard\ped{G} comprende i seguenti processi:
+\begin{itemize}
+\item cliente/fornitore;
+\item ingegneristico;
+\item di supporto;
+\item gestionali;
+\item organizzativi.
+\end{itemize}
+
+\subsubsection{Livelli di capacità}
+Nell'acronimo SPICE, il termine \textit{capability} indica la capacità di adeguatezza (efficienza ed efficacia) di un singolo processo per gli scopi ad esso assegnati. Un processo con un'alta \textit{capability} è attuato
+da tutto il team di sviluppo in modo disciplinato e sistematico; la bassa \textit{capability} di un
+processo indica una sua istanziazione poco professionale da parte del team.\\
+La \textit{capability} viene misurata su una scala di sei livelli, a cui sono assegnati degli attributi di valutazione della qualità del processo. I livelli considerati sono i seguenti:
+\begin{itemize}
+\item \textbf{livello 0 \textit{incomplete}}: il processo di livello 0 non è implementato e non è in grado di raggiungere i propri obiettivi; non viene prodotto nessun output significativo. Non ci sono attributi associati a questo livello;
+\item \textbf{livello 1 \textit{performed}}: il processo di livello 1 è implementato e raggiunge gli obiettivi prestabiliti. Non è sottoposto a controlli costanti per la correzione e il miglioramento; gli output che produce sono identificabili. L'attributo associato è:
+	\begin{itemize}
+	\item \textbf{performance di processo}: numero di obiettivi raggiunti.
+	\end{itemize}
+\item \textbf{livello 2 \textit{managed}}: il processo di livello 2 è gestito tramite pianificazione, controllo e correzione; l'output risultante, tracciato e controllato, raggiunge gli obiettivi richiesti. Gli attributi associati sono:
+	\begin{itemize}
+	\item \textbf{gestione della performance}: grado di organizzazione degli obiettivi fissati;
+	\item \textbf{gestione del prodotto di lavoro}: gradi di organizzazione dei prodotti rilasciati.
+	\end{itemize}
+\item \textbf{livello 3 \textit{established}}: il processo di livello 3 è definito a partire da uno standard\ped{G} e quindi regolamentato da principi dell'Ingegneria del Software. L'output impiega una quantità di risorse limitata. Gli attributi associati sono:
+	\begin{itemize}
+	\item \textbf{definizione di processo}: grado di adesione del processo agli standard\ped{G};
+	\item \textbf{rilascio di processo}: riporta in che misura il processo può essere rilasciato con garanzia di ripetibilità\ped{G}.
+	\end{itemize}
+\item \textbf{livello 4 \textit{predictable}}: il processo di livello 4 è istanziato in modo coerente entro limiti definiti. Gli attributi associati sono:
+	\begin{itemize}
+	\item \textbf{misurazioni di processo}: quanta efficacia\ped{G} le metriche\ped{G} possono essere applicate al processo;
+	\item \textbf{controllo di processo}: gradi di predicibilità dei risultati delle valutazioni.
+	\end{itemize}
+\item \textbf{livello 5 \textit{optimizing}}: il processo di livello 5 è correttamente definito e tracciato, soggetto a continui analisi e miglioramento. Gli attributi associati sono:
+	\begin{itemize}
+	\item \textbf{innovazione di processo}: quanto i cambiamenti realizzati nel processo risultano innovativi e positivi, tramite una fase di analisi;
+	\item \textbf{ottimizzazione di processo}: quanto la curva di miglioramento del processo sia lineare, a rappresentazione di una corretta gestione del rapporto tra risorse impiegate e risultati ottenuti.
+	\end{itemize}
+\end{itemize}
+Ciascun attributo del processo è valutato secondo una scala a quattro valori percentuali che esprimono numericamente il grado di soddisfacimento dell'attributo:
+\begin{itemize}
+\item \textbf{N \textit{not achieved}} $(0\% - 15\%)$: il processo non ha implementato l'attributo o presenta gravi lacune in merito;
+\item \textbf{P \textit{partially achieved}} $(>15\% - 50\%)$: il processo ha implementato l'attributo in modo sistematico, ma risulta ancora migliorabile e poco predicibile;
+\item \textbf{L \textit{largely achieved}} $(>50\% - 85\%)$: il processo ha ampiamente implementato l'attributo in modo sistematico, ma il suo valore risulta poco uniforme all'interno delle varie parti del processo;
+\item \textbf{F \textit{fully achieved}} $(>85\% - 100\%)$: il processo ha implementato completamente l'attributo in modo sistematico e uniforme in ogni sua parte.
+\end{itemize}

@@ -1,0 +1,47 @@
+\subsection{Processi di supporto}
+\subsubsection{Documentazione}
+\myparagraph{Metrica - Indice Gulpease}
+\vspace{-1cm}
+\begin{itemize}
+	\item \textbf{Codice}: MPC3;
+	\item \textbf{Descrizione}: indice della leggibilità del testo. Utilizza la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico;
+	\item \textbf{Processo di riferimento}: documentazione;
+	\item \textbf{Sigla}: IG;
+	\item \textbf{Formula}: \[ IG = 89 + \frac{300 \ast (numero \ frasi) - 10 \ast (numero \ lettere)}{(numero \ parole)}; \]
+	\item \textbf{Range di valori che può assumere}:
+		\begin{itemize}
+			\item \textbf{Ottimale}: $80 < IG < 100$;
+			\item \textbf{Accettabile}: $40 < IG < 100$.
+		\end{itemize}
+\end{itemize}
+\myparagraph{Metrica - Correttezza ortografica}
+\vspace{-1cm}
+\begin{itemize}
+	\item \textbf{Codice}: MPC4;
+	\item \textbf{Descrizione}: nessun documento deve contenere errori grammaticali o errori ortografici;
+	\item \textbf{Processo di riferimento}: documentazione;
+	\item \textbf{Sigla}: CO;
+	\item \textbf{Range di valori che può assumere}:
+		\begin{itemize}
+			\item \textbf{Ottimale} : $CO = 0$;
+			\item \textbf{Accettabile} : $CO = 0$.
+		\end{itemize}
+\end{itemize}
+
+\subsubsection{Verifica}
+\myparagraph{Metrica - Code Coverage}
+\vspace{-1cm}
+\begin{itemize}
+	\item \textbf{Codice}: MPC5;
+	\item \textbf{Descrizione}: indica il numero di righe di codice percorse dai test durante la loro
+esecuzione. Per linee di codice totali si intende tutte quelle appartenenti all'unità in fase di test;
+	\item \textbf{Processo di riferimento}: verifica;
+	\item \textbf{Sigla}: CC;
+	\item \textbf{Formula}: \[ CC = \frac{linee \ di \ codice \ percorse \ dai \ test}{linee \ di \ codice \ totali} \ast 100;\]
+	\item \textbf{Range di valori che può assumere}: 
+		\begin{itemize}
+			\item \textbf{Ottimale} : $CC = 100 \%$;
+			\item \textbf{Accettabile} : $CC = 80 \%$.
+		\end{itemize}
+\end{itemize}
+
