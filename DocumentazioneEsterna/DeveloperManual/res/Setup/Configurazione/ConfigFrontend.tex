@@ -57,7 +57,7 @@ Secret & NEXT\_PUBLIC\_API\_ID & Production & @next-public-api-id-staging\\
 Plaintext & NEXT\_PUBLIC\_API\_ID & Preview & \\
 Plaintext & NEXT\_PUBLIC\_API\_ID & Development & \\
 Plaintext & NEXT\_PUBLIC\_REGION\_API & Production, Preview, Development & Insert here the location of your AWS account (example: eu-central-1). \\
-Plaintext & JWT\_SIGNING\_PRIVATE\_KEY & Development & run the commands:
+Plaintext & JWT\_SIGNING\_PRIVATE\_KEY & Production, Preview, Development & run the commands:
 \begin{enumerate}
 \item npm i -g node-jose-tools;
 \item jose newkey -s 512 -t oct -a HS512;

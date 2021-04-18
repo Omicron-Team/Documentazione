@@ -9,7 +9,7 @@ The use of these 2 different components introduces us to the first design patter
 React container components can accept 2 variables on their creation:
 \begin{itemize}
 \item props: variables or objects that can be passed upon component creation by other components.
-\item state: variables whose change cause the component to re-render. Its value must be initialized from the component constructor and it is read-only.
+\item state: variables whose change cause the component to re-render. Its value must be initialized from the component constructor and is read-only.
 \end{itemize}
 Presentational components can only accept the props variable.\\
-The use of the state variables introduces the second design pattern used by EmporioLambda: the observer pattern. This pattern isn't manually implemented by us, as it is a native React pattern. In our case the state of the component is our \textit{observable}: the components checks when the state has been changed and cause a re-render of the page.\\ More informations about the observer pattern can be found in this page: \url{https://en.wikipedia.org/wiki/Observer_pattern}.\\
+The use of the state variables introduces the second design pattern used by EmporioLambda: the observer pattern. This pattern isn't manually implemented by us, as it is a native React pattern. In our case the state of the component is our \textit{observable}: the components check whether the state has been changed, and if it has they re-render the page.\\ More information about the observer pattern can be found in this page: \url{https://en.wikipedia.org/wiki/Observer_pattern}.\\
