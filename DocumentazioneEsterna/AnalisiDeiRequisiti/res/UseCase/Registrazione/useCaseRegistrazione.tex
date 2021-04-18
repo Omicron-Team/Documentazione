@@ -1,15 +1,8 @@
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.6]{res/UseCase/Immagini/RegistrazioneGenerale}
-\caption{Schema generale: modulo di registrazione cliente}
-\end{figure}
-
 \subsubsection{UC1 - Registrazione cliente}
 \begin{itemize}
 \item \textbf{Attori primari}: utente non autenticato;
-\item \textbf{Attori secondari}: Identity Manager;
 \item \textbf{Descrizione}: viene effettuata la registrazione di un cliente nel sistema, inserendo i propri dati personali nella pagina dedicata;
-\item \textbf{Scenario Principale}: l'utente non autenticato accede alla pagina di registrazione, il sistema rende disponibili i campi da compilare, l'utente compila i campi [\textbf{UC1.1}], conferma la registrazione [\textbf{UC1.2}] e l'Identity Manager si occupa della registrazione dell'utente nel sistema;
+\item \textbf{Scenario Principale}: l'utente non autenticato accede alla pagina di registrazione, il sistema rende disponibili i campi da compilare, l'utente compila i campi [\textbf{UC1.1}], conferma la registrazione [\textbf{UC1.2}] e AWS Cognito\ped{G} si occupa della registrazione dell'utente nel sistema;
 \item \textbf{Estensioni}:
 \begin{itemize}
 \item \textbf{UC2}: se i campi non sono validi o l'email è già stata utilizzata nel sistema, viene mostrato un errore di registrazione all'utente non autenticato che potrà provare nuovamente ad eseguire la registrazione.
@@ -37,7 +30,7 @@
 \item password [\textbf{UC1.1.5}].
 \end{itemize}
 \item \textbf{Precondizione}: l'utente non autenticato è all'interno della pagina di registrazione;
-\item \textbf{Postcondizione}: l'utente ha compilato tutti campi e può procedere alla registrazione.
+\item \textbf{Postcondizione}: l'utente ha compilato tutti i campi e può procedere alla registrazione.
 \end{itemize}
 
 \begin{figure}[H]
