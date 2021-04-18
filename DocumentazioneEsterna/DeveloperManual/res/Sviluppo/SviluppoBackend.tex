@@ -1,7 +1,7 @@
 \subsection{Developing the Back-End Module}
 To create a new function on the Back-End module you can run the following command on your CLI: 
 \begin{center}
-sls create function -f \$functionName --handler functions/\$functionName/handler.\$functionName
+\texttt{sls create function -f \$functionName --handler functions/\$functionName/handler.\$functionName}
 \end{center}
 this will create a folder named \$functionName inside the functions folder, which will contain a handler.js file whose extension must be changed to .ts (since we want to use Typescript instead of Javascript). 
 The command will also create a file named \$functionName.js into the test folder(change the extension to .ts here aswell), which sets up an empty unit test for the new function.
@@ -21,5 +21,5 @@ events:
    - http:
        path: $functionName
        method: GET #(or POST)
-\end{lstlisting}.
+\end{lstlisting}
 You can also manually create all of the needed files, even without the unit test ones.

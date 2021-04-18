@@ -1,6 +1,6 @@
 \begin{enumerate}
-\item in your CLI move to the EmporioLambda Front-End folder and use the command:\begin{center}vercel env pull\end{center}It will ask for your credentials.
-\item run the command:\begin{center}vercel link\end{center} If you still haven't created your project on vercel it will ask you:
+\item in your CLI move to the EmporioLambda Front-End folder and use the command:\begin{center}\texttt{vercel env pull}\end{center}It will ask for your credentials.
+\item run the command:\begin{center}\texttt{vercel link}\end{center} If you still haven't created your project on vercel it will ask you:
 \begin{itemize}
 \item Which scope do you want to deploy to? Choose your scope;
 \item Link to existing project? Answer N;
@@ -13,7 +13,7 @@ If you already created one it will ask you:
 \item Link to existing project? Answer y;
 \item What’s the name of your existing project? Choose the correct project.
 \end{itemize}
-other information can be found here: \url{https://vercel.com/docs/cli\#commands/overview/project-linking};
+Other information can be found here: \url{https://vercel.com/docs/cli\#commands/overview/project-linking};
 \item login into vercel website, click on the project you created and go to "Settings". Now go on "Environment Variables". Here you can set the environment variables needed for the project.\\
 \begin{figure}[H]
 \centering
@@ -59,12 +59,12 @@ Plaintext & NEXT\_PUBLIC\_API\_ID & Development & \\
 Plaintext & NEXT\_PUBLIC\_REGION\_API & Production, Preview, Development & Insert here the location of your AWS account (example: eu-central-1). \\
 Plaintext & JWT\_SIGNING\_PRIVATE\_KEY & Production, Preview, Development & run the commands:
 \begin{enumerate}
-\item npm i -g node-jose-tools;
-\item jose newkey -s 512 -t oct -a HS512;
+\item \texttt{npm i -g node-jose-tools;}
+\item \texttt{jose newkey -s 512 -t oct -a HS512;}
 \item the output is the value you need.
 \end{enumerate}\\
 \end{longtable}
 }
 
-\item in your CLI use again the command\begin{center}vercel env pull.\end{center} This will download and setup your environment variables.
+\item in your CLI use again the command\begin{center}\texttt{vercel env pull}\end{center} This will download and setup your environment variables.
 \end{enumerate}
