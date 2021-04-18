@@ -1,10 +1,13 @@
 \subsection{Developing the Back-End Module}
-To create a new function on the Back-End module you can run the following command on your CLI: 
+To create a new endpoint function(a function that can be called from the Front-end module) on the Back-End module you can run the following command on your CLI: 
 \begin{center}
-\texttt{sls create function -f \$functionName --handler functions/\$functionName/handler.\$functionName}
+sls create function -f \$functionName --handler src/endpoints/\$functionName/handler.\$functionName
 \end{center}
-this will create a folder named \$functionName inside the functions folder, which will contain a handler.js file whose extension must be changed to .ts (since we want to use Typescript instead of Javascript). 
-The command will also create a file named \$functionName.js into the test folder(change the extension to .ts here aswell), which sets up an empty unit test for the new function.
+but there are more downsides than the upsides in doing so.\\
+Here's a list of the downsides or additional things to do to make it work:
+\begin{itemize}
+\item the command will create a folder named \$functionName inside the src/endpoints folder, which will contain a handler.js file (with the name of the function) whose extension must be changed to .ts (since we want to use Typescript instead of Javascript). You will also need to change the code inside the file created, since it will be written in Javascript.
+\item a file named \$functionName.js will also be created into the test folder(change the extension to .ts here aswell), which sets up an empty unit test for the new function. A problem about this is that it will create a single unit test file for each function. This is not how unit testing is written in EmporioLambda, in fact each test file (named with a specific state or actions of a component for example cartPopulatedTable or cartPopulateTable) can contain multiple function tests.
 In this file you will find a function called describe, into which you need to insert the following code:
 \begin{lstlisting}
 const mochaPlugin = require('serverless-mocha-plugin');
@@ -15,11 +18,40 @@ const wrapped = mochaPlugin.getWrapper(
 '$functionName'
 );
 \end{lstlisting}
-You now have to open the serverless.yml file (the command automatically creates the row for the AWS Lambda function, but not for the API Gateway) and add this code after the handler section of the function you just created:
+\item the command will also add the function row inside the serverless.yml file, but not the API Gateway so you will need to add this code after the handler section of the function you just created:
 \begin{lstlisting}
 events:
    - http:
        path: $functionName
-       method: GET #(or POST)
+       method: get #(or post, put...)
 \end{lstlisting}
-You can also manually create all of the needed files, even without the unit test ones.
+\end{itemize}
+It is better to manually create all of the needed files.\\
+Here's indicated how:
+\begin{enumerate}
+\item create a Typescript file which will contain your function inside the right folder.\\The folders are the following:
+\begin{itemize}
+\item src/endpoints: contains all the endpoints functions;
+\item src/model: contains all the classes and interfaces used by the Back-end module;
+\item src/services: contains all the functions related to the external services used by the EmporioLambda Back-end module;
+\item src/lib: contains all the utilities functions used by the Back-end module.
+\end{itemize}
+Each folder also contains other folders, related to the component the functions inside work on (for example the endpoints folder contains these folders: cart, category, checkout, order...). 
+\item if you want to create a test for the new function go into the test folder and add it on the file which name indicates the component your function work on.
+\item now you need to add the function to the serverless.yml file. So open the file and insert these informations about your function under the appropriate component:
+\begin{lstlisting}
+#function name
+getUser:
+   #The handler of the function (locationOfYourFunction.index)
+   handler: src/endpoints/user/getUser.index
+   #enviroment variables needed
+   environment:
+     USER_POOL_ID: !Ref CognitoUserPool
+   #the API gateway data if it's an endpoint function
+   events:
+     - http:
+         path: user/{username}/
+         method: get
+         cors: true
+\end{lstlisting}
+\end{enumerate}
