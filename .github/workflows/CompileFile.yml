@@ -36,6 +36,9 @@ jobs:
       - name: Compilazione Piano di Qualififca
         run: latexmk -pdf -cd DocumentazioneEsterna/PianoDiQualifica/PianoDiQualifica.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
+      - name: Compilazione VerbaleX
+        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VerbaleX/VerbaleX.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
+
       - name: Compilazione Norme di Progetto
         run: latexmk -pdf -cd DocumentazioneInterna/NormeDiProgetto/NormeDiProgetto.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
