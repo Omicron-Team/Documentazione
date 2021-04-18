@@ -45,76 +45,76 @@ R1F3 & Obbligatorio & Un utente autenticato può effettuare il logout & Interno 
 %CARRELLO
 
 R1F4 & Obbligatorio & Un utente generico può accedere alla pagina del carrello dalla Homepage, dalla PLP\ped{G} e dalla PDP\ped{G} & Capitolato \newline UC6 \\
-R1F4.1 & Obbligatorio & Un utente generico nel carrello può visualizzare tutti i prodotti che ha precedentemente aggiunto al carrello & Capitolato \newline UC6.1 \\
-R1F4.1.1 & Obbligatorio & Un utente generico può visualizzare per ogni prodotto del carrello il nome, l'immagine e la quantità & Interno \newline UC6.1 \\
-R1F4.2 & Obbligatorio & Un utente generico può rimuovere i singoli prodotti dal carrello & Interno \newline UC6.2 \\
-R1F4.3 & Obbligatorio & Un utente generico può modificare le quantità di ogni prodotto nel carrello & Interno \newline UC6.3\\
-R1F4.4 & Obbligatorio & Un utente generico può visualizzare il costo totale dei prodotti nel carrello & Capitolato \newline UC7\\
-R1F4.4.1 & Obbligatorio & Un utente generico può visualizzare il costo di ogni voce del carrello & Interno \newline UC6.1\\
-R1F4.5 & Obbligatorio & Un utente generico può visualizzare le tasse applicate al costo totale dei prodotti nel carrello & Capitolato \newline UC7\\
+R1F4.1 & Obbligatorio & Un utente generico nel carrello può visualizzare tutti i prodotti che ha precedentemente aggiunto al carrello & Capitolato \newline UC6 \\
+R1F4.1.1 & Obbligatorio & Un utente generico può visualizzare per ogni prodotto del carrello il nome, l'immagine, la quantità e il costo & Interno \newline UC6 \\
+R1F4.2 & Obbligatorio & Un utente generico può rimuovere i singoli prodotti dal carrello & Interno \newline UC7 \\
+R1F4.3 & Obbligatorio & Un utente generico può modificare le quantità di ogni prodotto nel carrello & Interno \newline UC8\\
+R1F4.4 & Obbligatorio & Un utente generico può visualizzare il costo totale dei prodotti nel carrello & Capitolato \newline UC9\\
+R1F4.4.1 & Obbligatorio & Un utente generico può visualizzare il costo di ogni voce del carrello & Interno \newline UC6\\
+R1F4.5 & Obbligatorio & Un utente generico può visualizzare le tasse applicate al costo totale dei prodotti nel carrello & Capitolato \newline UC9\\
 
 %CHECKOUT
 
-R1F5 & Obbligatorio & Un cliente registrato può procedere al checkout dei prodotti presenti nel carrello & Capitolato \newline UC8, UC8.1\\
-R1F5.1 & Obbligatorio & Per iniziare il processo di checkout il cliente deve avere almeno un prodotto nel carrello & Interno \newline UC8.2\\
-R1F5.2 & Obbligatorio & Nel processo di checkout il cliente deve poter visualizzare l'email a cui verranno mandati i prodotti & VE\_2021-01-05 \newline UC8.3.1 \\
-R2F5.2.1 & Desiderabile & Nel processo di checkout il cliente deve poter modificare l'email a cui verranno mandati i prodotti & VE\_2021-01-05 \newline UC8.3, UC8.3.2 \\
-R1F5.3 & Obbligatorio & Un cliente che ha iniziato il processo di checkout deve inserire i dati del pagamento tramite Stripe\ped{G} & Capitolato \newline UC8.3, UC8.3.3, UC8.3.3.1, UC8.3.3.2, UC8.3.3.3, UC8.3.3.4, UC8.3.3.5\\
-R1F5.4 & Obbligatorio & Un cliente, dopo aver inserito i dati del pagamento, può continuare al pagamento effettivo tramite Stripe\ped{G} & Capitolato \newline UC8.4\\
-R1F5.5 & Obbligatorio & A pagamento riuscito il cliente può visualizzare un riepilogo dell'ordine effettuato & Capitolato \newline UC8.7\\
+R1F5 & Obbligatorio & Un cliente registrato può procedere al checkout dei prodotti presenti nel carrello & Capitolato \newline UC10, UC10.1\\
+R1F5.1 & Obbligatorio & Per iniziare il processo di checkout il cliente deve avere almeno un prodotto nel carrello & Interno \newline UC10.2\\
+R1F5.2 & Obbligatorio & Nel processo di checkout il cliente deve poter visualizzare l'email a cui verranno mandati i prodotti & VE\_2021-01-05 \newline UC10.3.1 \\
+R2F5.2.1 & Desiderabile & Nel processo di checkout il cliente deve poter modificare l'email a cui verranno mandati i prodotti & VE\_2021-01-05 \newline UC10.3, UC10.3.2 \\
+R1F5.3 & Obbligatorio & Un cliente che ha iniziato il processo di checkout deve inserire i dati del pagamento tramite Stripe\ped{G} & Capitolato \newline UC10.3, UC10.3.3, UC10.3.3.1, UC10.3.3.2, UC10.3.3.3, UC10.3.3.4, UC10.3.3.5\\
+R1F5.4 & Obbligatorio & Un cliente, dopo aver inserito i dati del pagamento, può continuare al pagamento effettivo tramite Stripe\ped{G} & Capitolato \newline UC10.4\\
+R1F5.5 & Obbligatorio & A pagamento riuscito il cliente può visualizzare un riepilogo dell'ordine effettuato & Capitolato \newline UC11\\
 R1F5.6 & Obbligatorio & A pagamento riuscito il cliente riceve i prodotti acquistati tramite l'email usata per l'acquisto & Capitolato e VE\_2020-12-22 \\
-R1F5.7 & Obbligatorio & A pagamento fallito il cliente visualizza un messaggio di errore, e può riprovare il pagamento verificando i dati inseriti & Capitolato \newline UC8.5, UC8.6\\
+R1F5.7 & Obbligatorio & A pagamento fallito il cliente visualizza un messaggio di errore, e può riprovare il pagamento verificando i dati inseriti & Capitolato \newline UC10.5, UC10.6\\
 
 %PROFILO
 
-R1F6 & Obbligatorio & Un cliente può visualizzare il suo profilo & Capitolato \newline UC9 \\
-R1F6.1 & Obbligatorio & Un cliente può visualizzare le seguenti informazioni nel suo profilo: nome, cognome, indirizzo di fatturazione e indirizzo email & Interno \newline UC9.1\\
-R1F6.2 & Obbligatorio & Un cliente può aggiornare le seguenti informazioni nel suo profilo: nome, cognome, password, indirizzo di fatturazione e indirizzo email & VE\_2020-12-22 \newline UC9.2, UC9.2.1, UC9.2.2, UC9.2.3, UC9.2.4, UC9.2.5, UC9.2.6 \\
-R2F6.2.1 & Desiderabile & Se la modifica non va a buon fine, viene mostrato un errore & Interno UC9.2.7\\
-R1F6.3 & Obbligatorio & Un cliente può visualizzare nel suo profilo la lista degli ordini che ha effettuato & Capitolato \newline UC9.3\\
-R1F6.3.1 & Obbligatorio & Per ogni ordine effettuato si deve visualizzare i seguenti dati: id ordine, prodotti acquistati, quantità prodotti acquistati, costo per singola voce, costo totale, tasse applicate, data acquisto & Interno \newline UC9.3.1\\
-R1F6.4 & Obbligatorio & Un cliente può eliminare il suo account & Capitolato \newline UC9.4\\
+R1F6 & Obbligatorio & Un cliente può visualizzare il suo profilo & Capitolato \newline UC12 \\
+R1F6.1 & Obbligatorio & Un cliente può visualizzare le seguenti informazioni nel suo profilo: nome, cognome, indirizzo di fatturazione e indirizzo email & Interno \newline UC12\\
+R1F6.2 & Obbligatorio & Un cliente può aggiornare le seguenti informazioni nel suo profilo: nome, cognome, password, indirizzo di fatturazione e indirizzo email & VE\_2020-12-22 \newline UC13, UC13.1, UC13.2, UC13.3, UC13.4, UC13.5, UC13.6 \\
+R2F6.2.1 & Desiderabile & Se la modifica non va a buon fine, viene mostrato un errore & Interno UC13.7\\
+R1F6.3 & Obbligatorio & Un cliente può visualizzare nel suo profilo la lista degli ordini che ha effettuato & Capitolato \newline UC14\\
+R1F6.3.1 & Obbligatorio & Per ogni ordine effettuato si deve visualizzare i seguenti dati: id ordine, prodotti acquistati, quantità prodotti acquistati, costo per singola voce, costo totale, tasse applicate, data acquisto & Interno \newline UC14.1\\
+R1F6.4 & Obbligatorio & Un cliente può eliminare il suo account & Capitolato \newline UC15\\
 
 %MERCHANT DASHBOARD
 
-R1F7 & Obbligatorio & Il venditore può accedere ad una dashboard\ped{G} per gestire il proprio catalogo digitale & Capitolato \newline UC14\\
-R1F7.1 & Obbligatorio & Il venditore può inserire nuovi prodotti nella dashboard\ped{G} & Capitolato \newline UC15, UC15.1, UC15.1.6, UC15.1.7\\
-R1F7.1.1 & Obbligatorio & Il venditore, nell'inserimento di nuovi prodotti, deve assegnare al prodotto i seguenti dati: nome, descrizione e immagine & Capitolato \newline UC15.1.1, UC15.1.2, UC15.1.4\\
-R1F7.1.2 & Obbligatorio & Il venditore, nell'inserimento di nuovi prodotti, deve assegnare al prodotto un prezzo & Interno \newline UC15.1.3\\ 
-R1F7.1.3 & Obbligatorio & Il venditore, nell'inserimento di nuovi prodotti, deve assegnare al prodotto una categoria & VE\_2021-01-05 \newline UC15.1.5\\ 
-R1F7.2 & Obbligatorio & Il venditore può vedere tutti i prodotti da lui venduti & Capitolato \newline UC15.2 \\
-R1F7.2.1 & Obbligatorio & Il venditore può vedere nome, immagine, descrizione, prezzo e categoria di tutti i prodotti da lui venduti & Interno \newline UC15.2\\
-R1F7.3 & Obbligatorio & Il venditore può modificare alcuni dati di tutti i prodotti da lui venduti & Capitolato \newline UC15.3, UC15.3.6, UC15.3.7 \\
-R1F7.3.1 & Obbligatorio & Il venditore può modificare la descrizione di tutti i prodotti da lui venduti & Capitolato \newline UC15.3.2\\
-R2F7.3.2 & Desiderabile & Il venditore può modificare il prezzo, il nome, l'immagine e la categoria di tutti i prodotti da lui venduti & Interno \newline UC15.3.1, UC15.3.3, UC15.3.4, UC15.3.5\\
-R1F7.4 & Obbligatorio & Il venditore può eliminare i prodotti da lui venduti & Capitolato \newline UC15.4 \\
-R1F7.5 & Obbligatorio & Il venditore può visualizzare i dettagli di tutti gli ordini effettuati dai clienti & Capitolato \newline UC17\\
-R1F7.5.1 & Obbligatorio & Il venditore può visualizzare per ogni ordine effettuato i seguenti dati: numero ordine, prodotti acquistati, quantità prodotti acquistati, costo per singola voce, costo totale, tasse applicate, data acquisto & Interno \newline UC17.1\\
-R2F7.6 & Desiderabile & Il venditore dalla dashboard\ped{G} può accedere agli strumenti esterni riservati per gli admin & VE\_2020-12-22 \newline UC18\\
-R1F7.7 & Obbligatorio & Il venditore può gestire le categorie dei prodotti & VE\_2021-01-05 \newline UC16\\
-R1F7.7.1 & Obbligatorio & Il venditore può visualizzare una lista di categorie di prodotti & VE\_2021-01-05 \newline UC16.1\\
-R1F7.7.2 & Obbligatorio & Il venditore può inserire nuove categorie di prodotti & VE\_2021-01-05 \newline UC16.2, UC16.2.1, UC16.2.2, UC16.2.3\\
-R1F7.7.3 & Obbligatorio & Il venditore può eliminare categorie esistenti di prodotti & Interno \newline UC16.3\\
+R1F7 & Obbligatorio & Il venditore può accedere ad una dashboard\ped{G} per gestire il proprio catalogo digitale & Capitolato \newline UC26\\
+R1F7.1 & Obbligatorio & Il venditore può inserire nuovi prodotti nella dashboard\ped{G} & Capitolato \newline UC27, UC27.6, UC27.7\\
+R1F7.1.1 & Obbligatorio & Il venditore, nell'inserimento di nuovi prodotti, deve assegnare al prodotto i seguenti dati: nome, descrizione e immagine & Capitolato \newline UC27.1, UC27.2, UC27.4\\
+R1F7.1.2 & Obbligatorio & Il venditore, nell'inserimento di nuovi prodotti, deve assegnare al prodotto un prezzo & Interno \newline UC27.3\\ 
+R1F7.1.3 & Obbligatorio & Il venditore, nell'inserimento di nuovi prodotti, deve assegnare al prodotto una categoria & VE\_2021-01-05 \newline UC27.5\\ 
+R1F7.2 & Obbligatorio & Il venditore può vedere tutti i prodotti da lui venduti & Capitolato \newline UC28 \\
+R1F7.2.1 & Obbligatorio & Il venditore può vedere nome, immagine, descrizione, prezzo e categoria di tutti i prodotti da lui venduti & Interno \newline UC28\\
+R1F7.3 & Obbligatorio & Il venditore può modificare alcuni dati di tutti i prodotti da lui venduti & Capitolato \newline UC29, UC29.6, UC29.7 \\
+R1F7.3.1 & Obbligatorio & Il venditore può modificare la descrizione di tutti i prodotti da lui venduti & Capitolato \newline UC29.2\\
+R2F7.3.2 & Desiderabile & Il venditore può modificare il prezzo, il nome, l'immagine e la categoria di tutti i prodotti da lui venduti & Interno \newline UC29.1, UC29.3, UC29.4, UC29.5\\
+R1F7.4 & Obbligatorio & Il venditore può eliminare i prodotti da lui venduti & Capitolato \newline UC30 \\
+R1F7.5 & Obbligatorio & Il venditore può visualizzare i dettagli di tutti gli ordini effettuati dai clienti & Capitolato \newline UC34\\
+R1F7.5.1 & Obbligatorio & Il venditore può visualizzare per ogni ordine effettuato i seguenti dati: numero ordine, prodotti acquistati, quantità prodotti acquistati, costo per singola voce, costo totale, tasse applicate, data acquisto & Interno \newline UC34.1\\
+R2F7.6 & Desiderabile & Il venditore dalla dashboard\ped{G} può accedere agli strumenti esterni riservati per gli admin & VE\_2020-12-22 \newline UC35\\
+R1F7.7 & Obbligatorio & Il venditore può gestire le categorie dei prodotti & VE\_2021-01-05 \newline UC31\\
+R1F7.7.1 & Obbligatorio & Il venditore può visualizzare una lista di categorie di prodotti & VE\_2021-01-05 \newline UC31\\
+R1F7.7.2 & Obbligatorio & Il venditore può inserire nuove categorie di prodotti & VE\_2021-01-05 \newline UC32, UC32.1, UC32.2, UC32.3\\
+R1F7.7.3 & Obbligatorio & Il venditore può eliminare categorie esistenti di prodotti & Interno \newline UC33\\
 
 %RESTO
 
-R1F8 & Obbligatorio & Un utente generico può effettuare una ricerca tra i prodotti in vendita & Capitolato \newline UC10\\
+R1F8 & Obbligatorio & Un utente generico può effettuare una ricerca tra i prodotti in vendita & Capitolato \newline UC16\\
 
 %PLP
 
-R1F9 & Obbligatorio & Un utente generico può accedere alla PLP\ped{G} corrispondente ad una categoria di prodotti & Capitolato \newline UC11 \\
-R1F9.1 & Obbligatorio & Un utente generico nella PLP\ped{G} può visualizzare un insieme di prodotti listati & Capitolato \newline UC12.1\\
-R1F9.1.1 & Obbligatorio & Per ogni prodotto listato nella PLP\ped{G} deve venir mostrato un nome, una immagine e un prezzo & Interno \newline UC12.1\\
-R1F9.2 & Obbligatorio & Un utente generico può selezionare alcuni prodotti listati & Capitolato \newline UC12.2\\
-R1F9.2.1 & Obbligatorio & Un utente generico può aggiungere al carrello i prodotti selezionati & Capitolato \newline UC12.3\\
-R2F9.3 & Desiderabile & Un utente generico può filtrare, tramite il range di prezzo, l'insieme dei prodotti & Interno \newline UC12.4\\
+R1F9 & Obbligatorio & Un utente generico può accedere alla PLP\ped{G} corrispondente ad una categoria di prodotti & Capitolato \newline UC17 \\
+R1F9.1 & Obbligatorio & Un utente generico nella PLP\ped{G} può visualizzare un insieme di prodotti listati & Capitolato \newline UC18\\
+R1F9.1.1 & Obbligatorio & Per ogni prodotto listato nella PLP\ped{G} deve venir mostrato un nome, una immagine e un prezzo & Interno \newline UC18\\
+R1F9.2 & Obbligatorio & Un utente generico può selezionare alcuni prodotti listati & Capitolato \newline UC19\\
+R1F9.2.1 & Obbligatorio & Un utente generico può aggiungere al carrello i prodotti selezionati & Capitolato \newline UC20\\
+R2F9.3 & Desiderabile & Un utente generico può filtrare, tramite il range di prezzo, l'insieme dei prodotti & Interno \newline UC21\\
 
 %PDP
 
-R1F10 & Obbligatorio & Un utente generico può accedere alla PDP\ped{G} cliccando un prodotto nella PLP\ped{G} & Capitolato \newline UC12.5\\
-R1F10.1 & Obbligatorio & Un utente generico può visualizzare le seguenti informazioni relative al prodotto: nome, immagine, descrizione, prezzo e tasse applicate & Capitolato \newline UC13.1\\
-R1F10.2 & Obbligatorio & Un utente generico può aggiungere il prodotto al carrello & Capitolato \newline UC13.3\\
-R1F10.2.1 & Obbligatorio & Un utente generico può aggiungere il prodotto al carrello, scegliendo la quantità & Interno \newline UC13.2 \\
+R1F10 & Obbligatorio & Un utente generico può accedere alla PDP\ped{G} cliccando un prodotto nella PLP\ped{G} & Capitolato \newline UC22\\
+R1F10.1 & Obbligatorio & Un utente generico può visualizzare le seguenti informazioni relative al prodotto: nome, immagine, descrizione, prezzo e quantità di prodotto selezionata & Capitolato \newline UC23\\
+R1F10.2 & Obbligatorio & Un utente generico può aggiungere il prodotto al carrello & Capitolato \newline UC25\\
+R1F10.2.1 & Obbligatorio & Un utente generico può aggiungere il prodotto al carrello, scegliendo la quantità & Interno \newline UC24 \\
 
 \end{longtable}
 
