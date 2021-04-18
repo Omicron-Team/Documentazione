@@ -1,0 +1,96 @@
+\subsubsection{Struttura dei documenti}
+Il file principale, che verrà rinominato con il nome del documento, raccoglie nel suo corpo le sezioni di cui è composto tramite comandi di input. Il preambolo contiene invece:
+\begin{itemize}
+	\item il package\ped{G} \texttt{styleTemplate.sty}, creato dal team, contiene le caratteristiche personalizzate del template\ped{G} come, ad esempio, i colori delle tabelle, la posizione degli oggetti nell'intestazione e nel piè di pagina;
+	\item \texttt{package.tex}, un file contenente tutti i package\ped{G} forniti da \LaTeX{} che il team ha ritenuto necessari;
+	\item \texttt{generalCommand.tex}, un file con i comandi generali creati dal team come, ad esempio, i nomi dei componenti, i vari documenti, i ruoli e possibili nuovi comandi utili a tutti i documenti;
+	\item \texttt{command.tex} contiene tutti i nuovi comandi creati per la stesura del frontespizio di ogni singolo documento.
+\end{itemize}
+
+	\myparagraph{Prima pagina}
+		La struttura della prima pagina, il frontespizio, è la seguente:
+		\begin{itemize}
+			\item \textbf{Logo del gruppo}: logo di \Omicron{} visibile come primo elemento centrato orizzontalmente in alto;
+			\item \textbf{Recapito}: indirizzo di posta elettronica del gruppo, posizionato centralmente sotto al logo;
+			\item \textbf{Titolo}: nome del documento posizionato centralmente in grassetto;
+			\item \textbf{Tabella}: sotto al titolo del documento, centrale, è presente la tabella che contiene le seguenti informazioni:
+			\begin{itemize}
+				\item \textbf{Progetto}: nome del progetto;
+				\item \textbf{Versione}: versione del documento;
+				\item \textbf{Data documento}: ultima data di modifica/verifica/approvazione;
+				\item \textbf{Redattori}: nome e cognome dei membri del gruppo incaricati della redazione del documento;
+				\item \textbf{Verificatori}: nome e cognome dei membri del gruppo incaricati della verifica del documento;
+				\item \textbf{Approvazione}: nome e cognome dei membri del gruppo incaricati dell'approvazione del documento;
+				\item \textbf{Uso}: tipo d'uso che può essere "interno" o "esterno";
+				\item \textbf{Lista distribuzione}: i destinatari del documento.
+			\end{itemize}
+			\item \textbf{Sommario}: descrizione sintetica relativa al documento, centrale, posta sotto la tabella descrittiva.
+		\end{itemize}
+		
+	\myparagraph{Registro delle modifiche}
+	A seguito della prima pagina è sempre presente una tabella riassuntiva della cronologia delle versioni del documento. \\
+	Nella tabella ogni riga corrisponde ad una modifica apportata, mentre le colonne indicano:
+	\begin{itemize}
+		\item \textbf{Versione}: indica il numero di versione secondo le norme descritte nella sezione §3.2.4.1;
+		\item \textbf{Data}: data della modifica nel formato descritto nella sezione §3.1.7.4;
+		\item \textbf{Autore}: nominativo di chi ha apportato modifiche, verificato o approvato il documento;
+		\item \textbf{Ruolo}: ruolo dell'autore al momento della modifica;
+		\item \textbf{Descrizione}: breve descrizione delle modifiche apportate.
+	\end{itemize}
+	
+	\myparagraph{Indice}
+	Tutti i documenti devono contenere l'indice che ha lo scopo di dare una visione macroscopica del contenuto del documento. La struttura è gerarchica e rispetta la numerazione delle sezioni e sottosezioni del documento. \\
+	Possono essere presenti fino ad un massimo di tre indici differenti: per le sezioni del documento, per le immagini e per le tabelle se presenti, ad esclusione della tabella raffigurante il \textit{Registro delle modifiche}.
+	
+	\myparagraph{Contenuto principale}
+	La struttura e presentazione del contenuto è comune a tutti i documenti. In particolare, sono presenti un'intestazione ed un piè di pagina così composti:
+	\begin{itemize}
+		\item \textbf{Intestazione}:
+		\begin{itemize}
+			\item logo del gruppo a sinistra;
+			\item nome del documento e nome del gruppo a destra.
+		\end{itemize}
+		\item \textbf{Piè di pagina}:
+		\begin{itemize}
+			\item pagina corrente e numero totale delle pagine centrali.
+		\end{itemize}
+	\end{itemize}
+	
+	
+	\myparagraph{Verbali}
+	I verbali vengono redatti dal/i soggetto/i incaricato/i alla loro stesura in occasione di incontri tra i componenti del gruppo con o senza la presenza di esterni.  Questi documenti prevedono un'unica stesura in quanto una possibile modifica significherebbe un cambio di decisioni prese. \\
+	I verbali seguono la struttura principale degli altri documenti ma il loro contenuto principale è così suddiviso:
+	\begin{enumerate}
+		\item \textbf{Informazioni generali} contenenti:
+		\begin{itemize}
+			\item \textbf{Luogo}: luogo dove si è svolto l'incontro;
+			\item \textbf{Data}: data dell'incontro, in formato come descritto nella sezione §3.1.7.5;
+			\item \textbf{Ora inizio}: l'ora di inizio dell'incontro;
+			\item \textbf{Ora fine}: l'ora di fine dell'incontro;
+			\item \textbf{Segretario}: nome e cognome del componente incaricato di prendere appunti durante l'incontro e di redigere il verbale alla fine di esso;
+			\item \textbf{Partecipanti}: l'elenco dei membri del gruppo presente all'incontro e, se presenti, i nominativi delle persone esterne al team che hanno partecipato.
+		\end{itemize}
+		\item \textbf{Ordine del giorno}: un elenco puntato sintetico con la descrizione degli argomenti principali trattati durante l'incontro;
+		\item \textbf{Resoconto}: ogni voce dell'elenco dell'\textit{Ordine del giorno} viene qui descritto in modo più approfondito;
+		\item \textbf{Riepilogo delle decisioni}: un riepilogo dei tracciamenti in forma tabellare che elenca le decisioni prese durante l'incontro. Ognuna di esse è caratterizzata da un codice e da una descrizione.
+	\end{enumerate}
+	Ogni verbale dovrà essere denominato nel seguente formato:
+	\begin{center}
+	\textbf{VTipologia\_YYYY-MM-DD}
+	\end{center}
+	dove per \textbf{Tipologia} si intende il tipo di verbale:
+	\begin{itemize}
+		\item \textbf{I}: in caso di verbale interno, quindi un documento concentrato sul riassunto dell'incontro avvenuto tra i soli membri del gruppo;
+		\item \textbf{E}: se si tratta di verbale esterno, quindi un documento concentrato sulla trattazione di argomenti con partecipanti esterni al team, in particolare domande e risposte riguardanti il progetto.
+	\end{itemize}		
+	Il formalismo utilizzato per il \textit{Riepilogo delle decisioni} è invece il seguente: 
+	\begin{center}
+	\textbf{VTipologia\_YYYY-MM-DD.X}
+	\end{center}
+	dove:
+	\begin{itemize}
+		\item per \textbf{Tipologia} si intende il tipo di verbale, come sopra;
+		\item \textbf{X}, invece, si intende il numero della decisione presa dal gruppo, partendo da 1 in modo incrementale.
+	\end{itemize}
+	\myparagraph{Note a piè di pagina}
+	In caso di presenza di note da rendere esplicite, esse vanno indicate nella pagina corrente, in basso a sinistra ed ognuna deve riportare un numero e una descrizione.
