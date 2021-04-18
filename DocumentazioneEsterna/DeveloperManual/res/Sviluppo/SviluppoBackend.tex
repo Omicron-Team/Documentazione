@@ -1,12 +1,12 @@
 \subsection{Developing the Back-End Module}
-To create a new endpoint function(a function that can be called from the Front-end module) on the Back-End module you can run the following command on your CLI: 
+To create a new endpoint function(a function that can be called from the Front-end\textsubscript{G} module) on the Back-End\textsubscript{G} module you can run the following command on your CLI: 
 \begin{center}
 sls create function -f \$functionName --handler src/endpoints/\$functionName/handler.\$functionName
 \end{center}
 but there are more downsides than upsides in doing so.\\
 Here's a list of the downsides and additional things you have to do to make it work:
 \begin{itemize}
-\item the command will create a folder named \$functionName inside the src/endpoints folder, which will contain a handler.js file (with the name of the function) whose extension must be changed to .ts (since we want to use Typescript instead of Javascript). You will also need to change the code inside the created file, since it would also be written in Javascript.
+\item the command will create a folder named \$functionName inside the src/endpoints folder, which will contain a handler.js file (with the name of the function) whose extension must be changed to .ts (since we want to use Typescript\textsubscript{G} instead of Javascript\textsubscript{G}). You will also need to change the code inside the created file, since it would also be written in Javascript\textsubscript{G}.
 \item a file named \$functionName.js will also be created in the test folder(change the extension to .ts here aswell), which sets up an empty unit test for the new function. This is problematic because it would create a single unit test file for each function. This is not how unit tests are written in EmporioLambda, in fact each test file (named with a specific state or actions of a component for example cartPopulatedTable or cartPopulateTable) can contain multiple function tests.
 In the automatically generated empty unit test file you will find a function called describe, into which you need to insert the following code:
 \begin{lstlisting}
@@ -18,7 +18,7 @@ const wrapped = mochaPlugin.getWrapper(
 '$functionName'
 );
 \end{lstlisting}
-\item the command will also add the function row inside the serverless.yml file, but not the API Gateway one, so you will need to add this code after the handler section of the function you just created:
+\item the command will also add the function row inside the serverless.yml file, but not the API\textsubscript{G} Gateway one, so you will need to add this code after the handler section of the function you just created:
 \begin{lstlisting}
 events:
    - http:
@@ -29,12 +29,12 @@ events:
 It is better to manually create all of the needed files.\\
 Here's how:
 \begin{enumerate}
-\item create a Typescript file which will contain your function inside the correct folder.\\The folders are the following:
+\item create a Typescript\textsubscript{G} file which will contain your function inside the correct folder.\\The folders are the following:
 \begin{itemize}
 \item src/endpoints: contains all the endpoints functions;
-\item src/model: contains all the classes and interfaces used by the Back-end module;
-\item src/services: contains all the functions related to the external services used by the \textit{EmporioLambda} Back-end module;
-\item src/lib: contains all the utilities functions used by the Back-end module.
+\item src/model: contains all the classes and interfaces used by the Back-end\textsubscript{G} module;
+\item src/services: contains all the functions related to the external services used by the \textit{EmporioLambda} Back-end\textsubscript{G} module;
+\item src/lib: contains all the utilities functions used by the Back-end\textsubscript{G} module.
 \end{itemize}
 These folder also contains other folders, each one corresponding to a specific component of \textit{EmporioLambda} (for example the endpoints folder contains the following folders: cart, category, checkout, order...). 
 \item if you want to create a test for the new function go into the test folder and add it in the file whose name indicates the component your function work on.
