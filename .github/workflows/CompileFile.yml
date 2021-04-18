@@ -36,9 +36,6 @@ jobs:
       - name: Compilazione Piano di Qualififca
         run: latexmk -pdf -cd DocumentazioneEsterna/PianoDiQualifica/PianoDiQualifica.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
-      - name: Compilazione VerbaleX
-        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VerbaleX/VerbaleX.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
-
       - name: Compilazione Norme di Progetto
         run: latexmk -pdf -cd DocumentazioneInterna/NormeDiProgetto/NormeDiProgetto.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
@@ -76,12 +73,9 @@ jobs:
       #- name: Compilazione VI_2020-12-02
       #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-02/VI_2020-12-02.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
-      #- name: Compilazione Verbale interno 2020-11-16
-      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-16/VI_2020-11-16.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
-
       - name: Compilazione VI_2021-04-12
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-04-12/VI_2021-04-12.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
-        
+
       - name: Compilazione VI_2021-02-09
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-09/VI_2021-02-09.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
       
@@ -99,6 +93,9 @@ jobs:
 
       - name: Compilazione VI_2021-02-16
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-16/VI_2021-02-16.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
+
+      - name: Compilazione VE_2021-03-31
+        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-03-31/VE_2021-03-31.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       - name: Compilazione VI_2021-03-10
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-03-10/VI_2021-03-10.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
@@ -123,6 +120,7 @@ jobs:
           mv VE_2021-03-01.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv VE_2021-02-04.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv VE_2021-02-17.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+          mv VE_2021-03-31.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
 
       
       - name: Upload Documenti
