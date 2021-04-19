@@ -1,5 +1,5 @@
 \subsection{Back-end module architecture}
-This section shows how the Back-end\textsubscript{G} module of \textit{EmporioLambda} works. \\The Back-end\textsubscript{G} is based on the microservices/serverless pattern, where every function that manages an API request can be individually deployed and managed. Practically, the module is managed by the developers as a monolith, that can be divided in 3 layers:
+This section shows how the Back-end\textsubscript{G} module of \textit{EmporioLambda} works. \\The Back-end\textsubscript{G} is based on the microservices/serverless pattern, where every function that manages an API request can be individually deployed and managed. Practically, the module is managed by the developers with a layer structure:
 \begin{itemize}
 \item \textbf{Handler:} manages the API requests;
 \item \textbf{Model:} manages the objects used by the module;
