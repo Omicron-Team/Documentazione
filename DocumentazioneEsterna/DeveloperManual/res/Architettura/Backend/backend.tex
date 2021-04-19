@@ -1,14 +1,14 @@
 \subsection{Back-end module architecture}
-This section shows how the Back-end\textsubscript{G} module of EmporioLambda works. \\The Back-end\textsubscript{G} is based on the microservices/serverless pattern, where every function that manages an API request can be individually deployed and managed. Practically, the module is managed by the developers as a monolith, that can be divided in 3 layers:
+This section shows how the Back-end\textsubscript{G} module of \textit{EmporioLambda} works. \\The Back-end\textsubscript{G} is based on the microservices/serverless pattern, where every function that manages an API request can be individually deployed and managed. Practically, the module is managed by the developers as a monolith, that can be divided in 3 layers:
 \begin{itemize}
 \item \textbf{Handler:} manages the API requests;
 \item \textbf{Model:} manages the objects used by the module;
 \item \textbf{Services:} manages the external services, like AWS and Stripe;
 \end{itemize} 
 
-The Front-end\textsubscript{G} module interacts with the Back-end one through API calls, exposed by AWS\textsubscript{G} API Gateway. This service sorts those requests to the \textbf{Handler} layer of the architecture, that consists on AWS\textsubscript{G} Lambda functions, divided by domains.\\
-The function that is in charge of managing the request will call the \textbf{Services} layer, to offer an interface to the main external services used.\\
-If necessary, the function in question will use the \textbf{Model} layer, to manage the objects used by it, like products or users.\\
+The Front-end\textsubscript{G} module interacts with the Back-end one through API calls, exposed by AWS\textsubscript{G} API Gateway. This service sorts those requests to the \textbf{Handler} layer of the architecture, that consists of AWS\textsubscript{G} Lambda functions, divided by domains.\\
+The function in charge of managing the request will call the \textbf{Services} layer to receive an interface to the main external services used.\\
+If necessary, the function in question will use the \textbf{Model} layer to manage the objects it uses, like products or users.\\
 
 The module can be summarized in the following scheme: 
 
@@ -30,10 +30,10 @@ The module can be also represented by the following package diagram:
 \item \textbf{endpoint}: it's the \textbf{Handler} layer described previously;
 \item \textbf{services}: it's the \textbf{Services} layer described previously;
 \item \textbf{model}: it's the \textbf{Model} layer described previously;
-\item \textbf{lib}: contains support functions used by the endpoint package. One example is the managing of the API response.
+\item \textbf{lib}: contains support functions used by the endpoint package. One example is the management of the API response.
 \end{itemize}
 
-All of these packages can be found on the \textit{src} folder, divided by folders, named by their package name.
+All of these packages can be found on the \textit{src} folder, divided in folders named by their package name.
 
 \input{res/Architettura/Backend/model}
 \input{res/Architettura/Backend/services}
