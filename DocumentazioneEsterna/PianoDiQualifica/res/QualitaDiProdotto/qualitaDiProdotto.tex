@@ -134,11 +134,17 @@ Capacità del prodotto di essere modificato, mediante miglioramenti o correzioni
 	\item \textbf{Codice}: MPD7;
 	\item \textbf{Descrizione}: una classe viene considerata semplice quando ha pochi metodi;
 	\item \textbf{Processo di riferimento}: sviluppo;
-	\item \textbf{Misurazione:} numero metodi per classe;
+	\item \textbf{Sigla}: \textit{SC};
+	\item \textbf{Indicatori utili}: 
+		\begin{itemize}
+		\item[$\ast$] \textbf{N:} numero di classi;
+		\item[$\ast$] \textbf{m:} numero di metodi.
+		\end{itemize}
+	\item \textbf{Misurazione:} \[SC=\frac{\sum_{i=1}^{N} m_i}{N};\]
 	\item \textbf{Range di valori che può assumere}: 
 		\begin{itemize}
-			\item \textbf{Ottimale} : $Metodi \leq 10$;
-			\item \textbf{Accettabile} : $Metodi \leq 15$.
+			\item \textbf{Ottimale} : $SC \leq 10$;
+			\item \textbf{Accettabile} : $SC \leq 15$.
 		\end{itemize}
 \end{itemize}
 \myparagraph{Semplicità funzioni}
@@ -147,10 +153,16 @@ Capacità del prodotto di essere modificato, mediante miglioramenti o correzioni
 	\item \textbf{Codice}: MPD8;
 	\item \textbf{Descrizione}: una funzione viene considerata semplice quando ha pochi parametri;
 	\item \textbf{Processo di riferimento}: sviluppo;
-	\item \textbf{Misurazione:} numero di parametri in un metodo;
+	\item \textbf{Sigla}: \textit{SF};
+	\item \textbf{Indicatori utili}: 
+		\begin{itemize}
+		\item[$\ast$] \textbf{N:} numero di funzioni;
+		\item[$\ast$] \textbf{p:} numero di parametri.
+		\end{itemize}
+	\item \textbf{Misurazione:} \[SF=\frac{\sum_{i=1}^{N} p_i}{N};\]
 	\item \textbf{Range di valori che può assumere}: 
 		\begin{itemize}
-			\item \textbf{Ottimale} : $Parametri \leq 3$;
-			\item \textbf{Accettabile} : $Parametri \leq 6$.
+			\item \textbf{Ottimale} : $SF \leq 3$;
+			\item \textbf{Accettabile} : $SF \leq 6$.
 		\end{itemize}
 \end{itemize}

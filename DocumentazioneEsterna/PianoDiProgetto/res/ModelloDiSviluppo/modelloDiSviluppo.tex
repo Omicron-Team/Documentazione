@@ -14,9 +14,9 @@ Le motivazioni che ci hanno spinto ad adottare il modello incrementale sono i su
 \end{itemize}
 
 \subsection{Incrementi}
-Per attuare il modello incrementale in modo corretto, è necessario individuare degli incrementi che suddivideranno il progetto in aree distinte. Essi vengono collegati ai requisiti individuati nel documento \AdRv{2.0.0}, in modo da sapere che funzionalità ogni incremento prevede di implementare. Per ogni requisito riportato nella seguente tabella, si prevede di implementare anche i corrispondenti requisiti figli. \\
+Per attuare il modello incrementale in modo corretto, è necessario individuare degli incrementi che suddivideranno il progetto in aree distinte. Essi vengono collegati ai requisiti individuati nel documento \AdRv{3.0.0}, in modo da sapere che funzionalità ogni incremento prevede di implementare. Per ogni requisito riportato nella seguente tabella, si prevede di implementare anche i corrispondenti requisiti figli. \\
 Per quanto riguarda la fase di analisi, gli unici incrementi previsti sono i documenti da realizzare. In realtà, data l'inesperienza, si riveleranno probabilmente imprecisi inizialmente ed essi verranno eventualmente corretti nelle fasi successive.
-Per il resto della realizzazione del progetto, sono stati individuati quattro incrementi:
+Per il resto della realizzazione del progetto, sono stati individuati i seguenti incrementi:
 
 {
 
@@ -28,20 +28,36 @@ Per il resto della realizzazione del progetto, sono stati individuati quattro in
 
 \rowcolor{azzurro1}
 \textbf{Nome} &
-\textbf{Descrizione}&
+\textbf{Obiettivi}&
 \textbf{Requisiti}\\
 \endhead
 
-\textbf{Incremento 1} & Ci si occuperà dell'autenticazione nel sito, compresa di registrazione, login, logout e visualizzazione del profilo. & R1F1 \newline R1F2 \newline R1F3 \newline R1F6 \\
-\textbf{Incremento 2} & Ci si occuperà della visualizzazione dei prodotti nel sito e della dashboard del venditore, per gestire i prodotti. & R1F7 \newline R1F8 \newline R1F9 \newline R1F10 \\
-\textbf{Incremento 3} & Ci si occuperà dell'acquisto dei prodotti nel sito, compreso di gestione del carrello e del checkout degli ordini. & R1F4 \newline R1F5 \\
-\textbf{Incremento 4} & Ci si occuperà delle funzionalità riservate agli admin e alla realizzazione di eventuali requisiti mancanti dagli incrementi precedenti. & R1V4 \\
+\rowcolor{azzurro1}
+\multicolumn{3}{c}{\textbf{Fase di progettazione architetturale}}\\
+\textbf{Incremento 1} & Implementazione funzionalità base per l'autenticazione e per la visualizzazione della pagina del profilo per Proof of Concept\ped{G}, incremento della documentazione & R1F1 \newline R1F2 \newline R1F3 \newline R1F6 \\
+\textbf{Incremento 2} & Implementazione funzionalità base per la visualizzazione dei prodotti e dashboard venditore per Proof of Concept\ped{G}, incremento della documentazione & R1F7 \newline R1F9 \\
+\textbf{Incremento 3} & Implementazione funzionalità base per l'acquisto dei prodotti, compreso di gestione carrello e checkout per Proof of Concept\ped{G}, incremento della documentazione & R1F4 \newline R1F5 \\
+\textbf{Incremento 4} & Implementazione funzionalità riservate agli admin, incremento della documentazione & R1V4 \\
+
+\rowcolor{azzurro1}
+\multicolumn{3}{c}{\textbf{Fase di progettazione di dettaglio e codifica}}\\
+\textbf{Incremento 5} & Incremento della documentazione, preparazione attività di progettazione e codifica, approfondimento personale per requisiti non visti dal Proof of Concept\ped{G} & Nessun requisito da implementare \\
+\textbf{Incremento 6} & Implementazione autenticazione del sito e pagina del profilo, incremento della documentazione (con correzione in base a segnalazioni dei committenti), inizio stesura manuali e allegato tecnico & R1F1 \newline R1F2 \newline R1F3 \newline R1F6 \\
+\textbf{Incremento 7} & Implementazione della visualizzazione prodotti (pagine di listino) e dashboard venditore, incremento della documentazione, correzione dei documenti in base a segnalazioni dei committenti & R1F7 \newline R1F8 \newline R1F9 \newline R1F10 \\
+\textbf{Incremento 8} & Implementazione dell'acquisto dei prodotti, compreso di gestione carrello e checkout, incremento della documentazione & R1F4 \newline R1F5\\
+\textbf{Incremento 9} & Incremento della documentazione, preparazione alla presentazione della Product baseline\ped{G} & Nessun requisito da implementare \\
+\textbf{Incremento 10} & Incremento del codice con correzioni ricevute dalla Product baseline\ped{G} e dal proponente, incremento della documentazione, preparazione alla Revisione di Qualifica & Nessun requisito da implementare \\
+
+\rowcolor{azzurro1}
+\multicolumn{3}{c}{\textbf{Fase di validazione e collaudo}}\\
+\textbf{Incremento 11} & Implementazione di feedback all'utente e visualizzazione di errori, implementazione requisiti obbligatori mancanti, incremento della documentazione & R2F6.2.1 \newline R1F6.4 \\
+\textbf{Incremento 12} & Implementazione di test mancanti, eventuale correzione dei documenti in base a segnalazioni dei committenti, incremento della documentazione & Nessun requisito da implementare \\
+\textbf{Incremento 13} & Preparazione all'esposizione della Revisione di Accettazione, collaudo finale con il proponente, incremento della documentazione & Nessun requisito da implementare \\
+
+
 
 \rowcolor{white}
 \caption{Lista di incrementi individuati}
 
 \end{longtable}
 }
-
-Per ognuno di questi verranno inoltre incrementati i documenti coinvolti. In particolare l'Allegato tecnico\ped{G}, il \MU{} ed il \MM{}, senza però escludere i documenti precedentemente realizzati nella fase di analisi.\\
-Viene inoltre realizzato un incremento iniziale per ogni fase (diversa da quella di analisi) riservato ai documenti, per l'aggiornamento di essi.
