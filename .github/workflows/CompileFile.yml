@@ -23,76 +23,100 @@ jobs:
           python-version: 3.9.1
 
       - name: Compilazione Analisi dei Requisiti
-        run: latexmk -pdf -cd DocumentazioneEsterna/AnalisiDeiRequisiti/AnalisiDeiRequisiti.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/AnalisiDeiRequisiti/AnalisiDeiRequisiti.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       - name: Compilazione Glossario
         run: |
           python DocumentazioneEsterna/Glossario/buildGlossarioForActions.py
-          latexmk -pdf -cd DocumentazioneEsterna/Glossario/Glossario.tex
+          latexmk -pdf -cd DocumentazioneEsterna/Glossario/Glossario.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
       
       - name: Compilazione Piano di Progetto
-        run: latexmk -pdf -cd DocumentazioneEsterna/PianoDiProgetto/PianoDiProgetto.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/PianoDiProgetto/PianoDiProgetto.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       - name: Compilazione Piano di Qualififca
-        run: latexmk -pdf -cd DocumentazioneEsterna/PianoDiQualifica/PianoDiQualifica.tex
+        run: latexmk -pdf -cd DocumentazioneEsterna/PianoDiQualifica/PianoDiQualifica.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       - name: Compilazione Norme di Progetto
-        run: latexmk -pdf -cd DocumentazioneInterna/NormeDiProgetto/NormeDiProgetto.tex
+        run: latexmk -pdf -cd DocumentazioneInterna/NormeDiProgetto/NormeDiProgetto.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       #- name: Compilazione Studio di Fattibilità
-      #  run: latexmk -pdf -cd DocumentazioneInterna/StudioDiFattibilita/StudioDiFattibilita.tex
+      #  run: latexmk -pdf -cd DocumentazioneInterna/StudioDiFattibilita/StudioDiFattibilita.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       #- name: Compilazione Lettera di presentazione RR
-      #  run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRR/letteraRR.tex
+      #  run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRR/letteraRR.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
-      - name: Compilazione Lettera di presentazione RP
-        run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRP/letteraRP.tex
+      #- name: Compilazione Lettera di presentazione RP
+      #  run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRP/letteraRP.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
+      
+      - name: Compilazione Lettera di presentazione RQ
+        run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRQ/letteraRQ.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       #- name: Compilazione Verbale Interno 2020-12-16
-      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-16/VI_2020-12-16.tex
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-16/VI_2020-12-16.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       #- name: Compilazione Verbale Esterno 2021-01-05
-      #  run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-01-05/VE_2021-01-05.tex
+      #  run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-01-05/VE_2021-01-05.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       #- name: Compilazione VE_2020-12-22
-      #  run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2020-12-22/VE_2020-12-22.tex
+      #  run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2020-12-22/VE_2020-12-22.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
       
       #- name: Compilazione VI_2020-12-23
-      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-23/VI_2020-12-23.tex  
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-23/VI_2020-12-23.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       #- name: Compilazione VE_2020-12-11
-      #  run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2020-12-11/VE_2020-12-11.tex
+      #  run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2020-12-11/VE_2020-12-11.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       #- name: Compilazione VI_2020-12-09
-      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-09/VI_2020-12-09.tex  
+      
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-09/VI_2020-12-09.tex -output-directory="/home/runner/work/Documentazione/Documentazione" 
 
       #- name: Compilazione VI_2020-11-23
-      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-23/VI_2020-11-23.tex
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-23/VI_2020-11-23.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       #- name: Compilazione VI_2020-12-02
-      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-02/VI_2020-12-02.tex
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-02/VI_2020-12-02.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
-      #- name: Compilazione Verbale interno 2020-11-16
-      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-11-16/VI_2020-11-16.tex
-       
-      - name: Compilazione VI_2021-02-09
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-09/VI_2021-02-09.tex
+      #- name: Compilazione VI_2021-02-09
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-09/VI_2021-02-09.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
+
+      #- name: Compilazione VI_2021-02-22
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-22/VI_2021-02-22.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
       
-      - name: Compilazione VI_2021-02-22
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-22/VI_2021-02-22.tex
-      
-      - name: Compilazione VE_2021-02-04
-        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-02-04/VE_2021-02-04.tex
+      #- name: Compilazione VE_2021-02-04
+      #  run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-02-04/VE_2021-02-04.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
-      - name: Compilazione VE_2021-02-17
-        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-02-17/VE_2021-02-17.tex
+      #- name: Compilazione VE_2021-02-17
+      #  run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-02-17/VE_2021-02-17.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
-      - name: Compilazione VE_2021-03-01
-        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-03-01/VE_2021-03-01.tex
+      #- name: Compilazione VE_2021-03-01
+      #  run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-03-01/VE_2021-03-01.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
-      - name: Compilazione VI_2021-02-16
-        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-16/VI_2021-02-16.tex
+      #- name: Compilazione VI_2021-02-16
+      #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-16/VI_2021-02-16.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
+      - name: Compilazione VE_2021-03-16
+        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-03-16/VE_2021-03-16.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
+
+      - name: Compilazione VE_2021-03-31
+        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-03-31/VE_2021-03-31.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
+
+      - name: Compilazione VI_2021-03-10
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-03-10/VI_2021-03-10.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
+     
+      - name: Compilazione VI_2021-04-12
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-04-12/VI_2021-04-12.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
+
+      - name: Compilazione VI_2021-03-17
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-03-17/VI_2021-03-17.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
+
+      - name: Compilazione VI_2021-03-20
+        run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-03-20/VI_2021-03-20.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
+
+      - name: Compilazione DeveloperManual
+        run: latexmk -pdf -cd DocumentazioneEsterna/DeveloperManual/DeveloperManual.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
+        
+      - name: Compilazione UserManual
+        run: latexmk -pdf -cd DocumentazioneEsterna/UserManual/UserManual.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
      
       - name: Creazione delle cartelle
@@ -106,13 +130,15 @@ jobs:
           mv PianoDiProgetto.pdf Documenti/DocumentazioneEsterna
           mv PianoDiQualifica.pdf Documenti/DocumentazioneEsterna
           mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
-          mv letteraRP.pdf Documenti/LetterePresentazioni
-          mv VI_2021-02-09.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-          mv VI_2021-02-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-          mv VI_2021-02-22.pdf Documenti/DocumentazioneInterna/VerbaliInterni
-          mv VE_2021-03-01.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
-          mv VE_2021-02-04.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
-          mv VE_2021-02-17.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+          mv letteraRQ.pdf Documenti/LetterePresentazioni
+          mv VI_2021-03-10.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+          mv VI_2021-03-17.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+          mv VI_2021-03-20.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+          mv VI_2021-04-12.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+          mv VE_2021-03-16.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+          mv VE_2021-03-31.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+          mv DeveloperManual.pdf Documenti/DocumentazioneEsterna
+          mv UserManual.pdf Documenti/DocumentazioneEsterna
 
       
       - name: Upload Documenti
