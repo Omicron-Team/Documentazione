@@ -3,7 +3,7 @@ This section shows how the Back-end\textsubscript{G} module of \textit{EmporioLa
 \begin{itemize}
 \item \textbf{Handler:} manages the API requests;
 \item \textbf{Model:} manages the objects used by the module;
-\item \textbf{Services:} manages the external services, like AWS and Stripe;
+\item \textbf{Services:} manages the external services, like AWS and Stripe.
 \end{itemize} 
 
 The Front-end\textsubscript{G} module interacts with the Back-end one through API calls, exposed by AWS\textsubscript{G} API Gateway. This service sorts those requests to the \textbf{Handler} layer of the architecture, that consists of AWS\textsubscript{G} Lambda functions, divided by domains.\\

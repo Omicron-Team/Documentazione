@@ -3,7 +3,7 @@ This part of the architecture lets the \textit{EmporioLambda} Front-end\textsubs
 
 The services are divided into domains, and each of them consists of a series of public asynchronous functions. Each function calls the API present in the backend (through the lib package), gets the response data, manages it, and returns the correct response to the component that called it.
 
-In the following diagram class, every service is represented as a UML class, even if each of them consists only of public functions. Since every function is asynchronous, the return types should be Promises. We will show the true type inside the Promise type.
+In the following diagram class, every service is represented as an UML class, even if each of them consists only of public functions. Since every function is asynchronous, the return types should be Promises. We will show the true type inside the Promise type.
 
 \begin{figure}[H]
 \centering
