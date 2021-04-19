@@ -1,0 +1,39 @@
+\subsection{Testing}
+This section shows how to run the testing process to check whether your code is working correctly and whether it follows the correct syntax. \\ 
+To test the EmporioLambda code the following tools will be used:
+\begin{itemize}
+\item \textbf{Cypress}: for front-end testing;
+\item \textbf{Mocha}: for back-end testing;
+\item \textbf{ESLint\textsubscript{G}} and \textbf{Prettier} for the syntax check of the code.
+\end{itemize}
+
+\subsubsection{Unit testing}
+To run all of the unit tests, use the following command in your CLI:
+\begin{center}
+\texttt{npm run test}
+\end{center}
+If you want to test a single function in the Back-End\textsubscript{G} module you can run the previous command while specifying the name of the function as a parameter.\\
+Example:
+\begin{center}
+\texttt{npm run test -f \$functionName}
+\end{center}
+You can also check the code coverage for the Back-End\textsubscript{G} module by running the command:
+\begin{center}
+\texttt{npm run coverage}
+\end{center}
+
+\subsubsection{Static code analysis}
+Information on the rules used to run the static code analysis can be found in the files:
+\begin{itemize}
+\item .eslintrc.js
+\item .prettierrc.js
+\end{itemize}
+Static code analysis can be executed by running the following command in your CLI:
+\begin{center}
+\texttt{npm run lint}
+\end{center}
+this will check the code style with lint and prettier and try to fix the errors where possible.\\ 
+If you just want to check the code without the automatic error fixing you can run this command:
+\begin{center}
+\texttt{npm run checkWithLint}
+\end{center}
