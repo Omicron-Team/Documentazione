@@ -1,14 +1,35 @@
-\subsection{Services}
+\subsubsection{Services}
 This part of the architecture lets the \textit{EmporioLambda} Front-end\textsubscript{G} module retrieve or send data to the \textit{EmporioLambda} Back-end\textsubscript{G} module. Services can be found inside the \textit{pages/api/Services} of the Front-end\textsubscript{G} module.\\
-Each service has the following composition:
+
+The services are divided in domains, and each of them consist in a series of public asynchronous functions. Each function calls the API present in the backend (through the lib package), gets the response data, manages it, and return the correct response to the component that called it.
+
+In the following diagram class, every service is represented as an UML class, even if each of them consist only in public functions. Since every function is asynchronous, the return types should be Promises. We will show the true type inside the Promise type.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.50]{res/Architettura/Frontend/img/services_frontend_class}\\
+\caption{Front-end\textsubscript{G} Services layer class diagram}
+\end{figure}
+
+
+Each service calls the APIs with the \textit{getJSONResponse} function, present in the lib package. The parameters requested are the following:
+
 \begin{itemize}
-\item a Fetcher class which contains an URL generated with the pulled enviroment variables. The constructor requires the name of the function that will be called in the Back-end\textsubscript{G};
-\item a getJSONResponse function which tries to make an API\textsubscript{G} call to the Back-end\textsubscript{G} and return the response. The return type is a Promise\textsubscript{G}, as this is an asyncronous\textsubscript{G} operation;
-\item a getLambdaResponse function which accepts the following parameters:\begin{itemize}
 \item a string which indicates the name of the function you want to call in your Back-end\textsubscript{G}; 
 \item a string which indicates the type of the call you want to do (GET, POST, PUT...);
 \item a string containing the access token of the current session; 
 \item a string containing the parameters needed for the API\textsubscript{G} call. 
 \end{itemize} 
-This function creates a new Fetcher object and executes the getJSONResponse method. This is the function you must call in your services.
-\end{itemize}
+
+
+%\begin{itemize}
+%\item a Fetcher class which contains an URL generated with the pulled enviroment variables. The constructor requires the name of the function that will be called in the Back-end\textsubscript{G};
+%\item a getJSONResponse function which tries to make an API\textsubscript{G} call to the Back-end\textsubscript{G} and return the response. The return type is a Promise\textsubscript{G}, as this is an asyncronous\textsubscript{G} operation;
+%\item a getLambdaResponse function which accepts the following parameters:\begin{itemize}
+%\item a string which indicates the name of the function you want to call in your Back-end\textsubscript{G}; 
+%\item a string which indicates the type of the call you want to do (GET, POST, PUT...);
+%\item a string containing the access token of the current session; 
+%\item a string containing the parameters needed for the API\textsubscript{G} call. 
+%\end{itemize} 
+%This function creates a new Fetcher object and executes the getJSONResponse method. This is the function you must call in your services.
+%\end{itemize}

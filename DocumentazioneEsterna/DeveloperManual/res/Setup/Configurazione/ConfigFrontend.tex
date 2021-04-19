@@ -53,9 +53,9 @@ Plaintext & NEXT\_PUBLIC\_SITE & Development & http://localhost:3000\\
 Plaintext & NEXT\_PUBLIC\_STAGE & Production & staging\\
 Plaintext & NEXT\_PUBLIC\_STAGE & Preview & test\\
 Plaintext & NEXT\_PUBLIC\_STAGE & Development & local\\
-Secret & NEXT\_PUBLIC\_API\_ID & Production & @next-public-api-id-staging\\
-Plaintext & NEXT\_PUBLIC\_API\_ID & Preview & \\
-Plaintext & NEXT\_PUBLIC\_API\_ID & Development & \\
+Secret & NEXT\_PUBLIC\_API\_ID & Production & API endpoint provided by AWS when the backend is deployed to the staging environment (or the domain, if used)\\
+Plaintext & NEXT\_PUBLIC\_API\_ID & Preview & API endpoint provided by AWS when the backend is deployed to the test environment (or the domain, if used)\\
+Plaintext & NEXT\_PUBLIC\_API\_ID & Development & API endpoint provided by AWS when he backend is deployed to the local environment (or the domain, if used)\\
 Plaintext & NEXT\_PUBLIC\_REGION\_API & Production, Preview, Development & Insert here the location of your AWS account (example: eu-central-1). \\
 Plaintext & JWT\_SIGNING\_PRIVATE\_KEY & Production, Preview, Development & run the commands:
 \begin{enumerate}
