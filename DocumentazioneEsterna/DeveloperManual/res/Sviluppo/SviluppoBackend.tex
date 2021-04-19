@@ -36,7 +36,7 @@ Here's how:
 \item src/services: contains all the functions related to the external services used by the \textit{EmporioLambda} Back-end\textsubscript{G} module;
 \item src/lib: contains all the utilities functions used by the Back-end\textsubscript{G} module.
 \end{itemize}
-These folder also contains other folders, each one corresponding to a specific component of \textit{EmporioLambda} (for example the endpoints folder contains the following folders: cart, category, checkout, order...). 
+This folder also contains other folders, each one corresponding to a specific component of \textit{EmporioLambda} (for example the endpoints folder contains the following folders: cart, category, checkout, order...). 
 \item if you want to create a test for the new function go into the test folder and add it in the file whose name indicates the component your function work on.
 \item now you need to add the function to the serverless.yml file. So open the file and insert this information about your function under the appropriate component:
 \begin{lstlisting}
