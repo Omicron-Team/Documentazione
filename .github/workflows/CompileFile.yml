@@ -94,6 +94,9 @@ jobs:
       - name: Compilazione VI_2021-02-16
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-02-16/VI_2021-02-16.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
+      - name: Compilazione UserManual
+        run: latexmk -pdf -cd DocumentazioneEsterna/UserManual/UserManual.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
+
       - name: Compilazione VE_2021-03-16
         run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-03-16/VE_2021-03-16.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
@@ -114,6 +117,14 @@ jobs:
           mv PianoDiProgetto.pdf Documenti/DocumentazioneEsterna
           mv PianoDiQualifica.pdf Documenti/DocumentazioneEsterna
           mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
+          mv letteraRP.pdf Documenti/LetterePresentazioni
+          mv VI_2021-02-09.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+          mv VI_2021-02-16.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+          mv VI_2021-02-22.pdf Documenti/DocumentazioneInterna/VerbaliInterni
+          mv VE_2021-03-01.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+          mv VE_2021-02-04.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+          mv VE_2021-02-17.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+          mv UserManual.pdf Documenti/DocumentazioneEsterna
       
       - name: Upload Documenti
         if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main' || github.event.pull_request.base.ref == 'develop' || github.event.pull_request.base.ref == 'main'
