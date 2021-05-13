@@ -212,7 +212,49 @@ TU93 & Viene verificata la correttezza del messaggio d'errore relativo alla modi
 
 TU94 & Viene verificata la correttezza del messaggio d'errore durante la modifica della password di un utente & I & S\\
 
-TU79 & Viene verificata la corretta visualizzazione dei dati di un specifico ordine di uno specifico utente  & I & S\\ 
+TU95 & Viene verificata il corretto invio dell'email contenente un ordine effettuato   & I & S\\
+
+TU96 & Viene verificata la correttezza del messaggio d'errore durante l'invio dell'email contenente un ordine effettuato   & I & S\\ 
+
+TU97 & Viene verificata la correttezza del messaggio d'errore relativo alla creazione di una categoria con una richiesta senza \textit{Body} & I & S\\ 
+
+TU98 & Viene verificata la correttezza del messaggio d'errore relativo alla creazione di una categoria con una richiesta senza nome della categoria & I & S\\ 
+
+TU99 & Viene verificata la correttezza della creazione di una categoria & I & S\\ 
+
+TU100 & Viene verificata la correttezza della cancellazione di una categoria & I & S\\ 
+
+TU101 & Viene verificata la correttezza del messaggio d'errore relativo alla cancellazione di una categoria con una richiesta senza \textit{PathParameters} & I & S\\
+
+TU102 & Viene verificata la correttezza del messaggio d'errore relativo alla cancellazione di una categoria dove non si riesce a controllare le categorie esistenti & I & S\\
+
+TU103 & Viene verificata la correttezza del messaggio d'errore relativo alla cancellazione di una categoria in uso da almeno un prodotto & I & S\\
+
+TU104 & Viene verificata la correttezza del messaggio d'errore relativo alla creazione di una categoria già presente & I & S\\
+
+TU105 & Viene verificata la correttezza della visualizzazione della lista di categorie & I & S\\
+
+TU106 & Viene verificata la correttezza del messaggio d'errore della visualizzazione della lista di categorie, dove tale lista è vuota & I & S\\
+
+TU107 & Viene verificata la correttezza del messaggio d'errore durante l'autenticazione di un API\ped{G} con un token scaduto & I & S\\
+
+TU108 & Viene verificata la correttezza del messaggio d'errore durante l'autenticazione di un API\ped{G} con un Kid non conforme alle attese & I & S\\
+
+TU109 & Viene verificata la correttezza del messaggio d'errore durante l'autenticazione di un API\ped{G} con un tipo di token non conforme alle attese & I & S\\
+
+TU110 & Viene verificata la correttezza del messaggio d'errore durante l'autenticazione di un API\ped{G} con un Iss non conforme alle attese & I & S\\
+
+TU111 & Viene verificata la correttezza del messaggio d'errore durante l'autenticazione di un API\ped{G} con un Jwt non conforme alle attese & I & S\\
+
+TU112 & Viene verificata la correttezza del messaggio d'errore durante l'autenticazione di un API\ped{G} con una richiesta senza nessun token & I & S\\
+
+TU113 & Viene verificata la correttezza dell'autenticazione di un API\ped{G} con una richiesta da parte di un utente di tipo \textit{admin} & I & S\\
+
+TU114 & Viene verificata la correttezza dell'autenticazione di un API\ped{G} con una richiesta da parte di un utente di tipo \textit{utente autenticato} & I & S\\
+
+TU115 & Viene verificata la correttezza dell'autenticazione di un API\ped{G} con una richiesta da parte di un utente di tipo \textit{utente non autenticato} & I & S\\
+
+TU116 & Viene verificata la correttezza del messaggio d'errore durante l'autenticazione di un API\ped{G} con un errore rilevate durante la connessione al server dove sono presenti le chiavi pubbliche & I & S\\
 
 TU79 & Viene verificata la corretta presenza del bottone \textit{sign in}& I & S\\
 
@@ -247,7 +289,7 @@ Di seguito viene riportato il tracciamento fra i test di unità ed i rispettivi 
 
 TU1 \newline TU2 \newline TU3 \newline TU4 \newline TU5 \newline TU6 \newline TU7 \newline TU8 \newline TU9 & EmporioLambda-BE/src/endpoints/product/create.ts:index(event)\\
 
-TU10 \newline TU11 \newline TU12 \newline TU13 & EmporioLambda-BE/src/endpoints/product/update.ts:index(event)\\
+TU10 \newline TU11 \newline TU12 \newline TU13 \newline TU83 & EmporioLambda-BE/src/endpoints/product/update.ts:index(event)\\
 
 TU14 \newline TU15 \newline TU16 & EmporioLambda-BE/src/endpoints/product/delete.ts:index(event)\\
 
@@ -265,7 +307,7 @@ TU40 \newline TU41 \newline TU42 \newline TU43 & EmporioLambda-BE/src/endpoints/
 
 TU44 \newline TU45 \newline TU46 \newline TU47 & EmporioLambda-BE/src/endpoints/checkout/createSessionStripe.ts:index(event)\\
 
-TU48 & EmporioLambda-BE/src/endpoints/user/delete.ts:index(event)\\
+TU48 \newline TU86 & EmporioLambda-BE/src/endpoints/user/delete.ts:index(event)\\
 
 TU49 \newline TU50 \newline TU51 \newline TU52 & EmporioLambda-BE/src/endpoints/cart/create.ts:index(event)\\
 
@@ -277,7 +319,31 @@ TU63 \newline TU66 \newline TU67 \newline TU68 & EmporioLambda-BE/src/endpoints/
 
 TU69 \newline TU70 \newline TU71 & EmporioLambda-BE/src/endpoints/cart/toEmpty.ts:index(event)\\
 
+
+TU79 \newline TU80 \newline TU81 \newline TU82 & EmporioLambda-BE/src/endpoints/order/getByUsernameAndId.ts:index(event)\\
+
+TU84 \newline TU85 & EmporioLambda-BE/src/endpoints/order/list.ts:index()\\
+
+TU87 \newline TU88 & EmporioLambda-BE/src/endpoints/user/getUser.ts:index(event)\\
+
+TU89 \newline TU90 \newline TU91 & EmporioLambda-BE/src/endpoints/user/update.ts:index(event)\\
+
+TU92 \newline TU93 \newline TU94 & EmporioLambda-BE/src/endpoints/user/updatePassword.ts:index(event)\\
+
+TU95 \newline TU96 & EmporioLambda-BE/src/services/nodemailer/nodemailer.ts\\
+
+TU97 \newline TU98 \newline TU99 \newline TU104 & EmporioLambda-BE/src/endpoints/category/create.ts:index(event)\\
+
+TU100 \newline TU101 \newline TU102 \newline TU103 & EmporioLambda-BE/src/endpoints/category/delete.ts:index(event)\\
+
+TU105 \newline TU106 & EmporioLambda-BE/src/endpoints/category/list.ts:index()\\
+
+TU107 \newline TU108 \newline TU109 \newline TU110 \newline TU111 \newline TU112 \newline TU113 \newline TU114 \newline TU115 \newline TU116 & EmporioLambda-BE/src/lib/auth.ts:handler(event,context)\\
+
+
+
 TU79 \newline TU80 \newline TU81 \newline TU82 \newline TU83 & EmporioLambda-FE/components/layout.tsx:layout
+
 
 
 
