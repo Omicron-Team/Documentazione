@@ -347,6 +347,35 @@ TU160 & Viene verificato che sia presente la \textit{search bar} all'interno del
 
 TU161 & Viene verificato che la \textit{search bar} reindirizza correttamente alla pagina di ricerca & I & S\\
 
+TU162 & Viene verificata la correttezza del messaggio d'errore relativo alla visualizzazione di una tassa, dato il nome, con una richiesta senza \textit{PathParameters}& I & S\\
+
+TU163 & Viene verificata la correttezza del messaggio d'errore relativo alla visualizzazione di una tassa, dato il nome, non presente & I & S\\
+
+TU164 & Viene verificata la correttezza del messaggio d'errore relativo alla visualizzazione di una tassa & I & S\\
+
+TU165 & Viene verificata la correttezza della visualizzazione della percentuale di una tassa, dato il suo nome & I & S\\
+
+TU166 & Viene verificata la correttezza del messaggio d'errore relativo alla modifica della percentuale di una tassa, dato il nome, con una richiesta senza \textit{PathParameters}& I & S\\
+
+TU167 & Viene verificata la correttezza del messaggio d'errore relativo alla modifica della percentuale di una tassa, dato il nome, con una richiesta senza \textit{Body}& I & S\\
+
+TU168 & Viene verificata la correttezza del messaggio d'errore relativo alla modifica della percentuale di una tassa, dato il nome, non presente & I & S\\
+
+TU169 & Viene verificata la correttezza del messaggio d'errore relativo alla modifica della percentuale di una tassa, dato il nome, nel caso in cui non si riesca a controllare l'esistenza della tassa & I & S\\
+
+TU170 & Viene verificata la correttezza della modifica della percentuale di una tassa, dato il nome & I & S\\
+
+TU171 & Viene verificata la correttezza del messaggio d'errore relativo alla creazione di una sessione Stripe\ped{G} con un carrello non presente all'interno del database & I & S\\
+
+TU172 & Viene verificata la correttezza del messaggio d'errore relativo alla creazione di una sessione Stripe\ped{G} dove fallisce il reperimento dell'email a cui inviare i prodotti & I & S\\
+
+TU173 & Viene verificata la correttezza del messaggio d'errore relativo alla creazione di un ordine con una richiesta senza \textit{Body} & I & S\\
+
+TU174 & Viene verificata la correttezza del messaggio d'errore relativo alla visualizzazione di un ordine, dato l'username dell'utente e l'id dell'ordine, con una richiesta senza \textit{PathParameters} & I & S\\
+
+TU175 & Viene verificata la correttezza del messaggio d'errore relativo alla cancellazione di un utente dove non si riesce ad eliminare il carrello dell'utente relativo & I & S\\
+
+
 
 \end{longtable}
 
@@ -380,15 +409,15 @@ TU18 \newline TU19 \newline TU20 \newline TU21 \newline TU22 \newline TU23 \newl
 
 TU24 \newline TU29 \newline TU30 \newline TU31 & EmporioLambda-BE/src/endpoints/product/getById.ts:index(event)\\
 
-TU32 \newline TU33 \newline TU34 \newline TU35 \newline TU36 & EmporioLambda-BE/src/endpoints/order/create.ts:index(event)\\
+TU32 \newline TU33 \newline TU34 \newline TU35 \newline TU36 \newline TU173 & EmporioLambda-BE/src/endpoints/order/create.ts:index(event)\\
 
-TU37 \newline TU38 \newline TU39 & EmporioLambda-BE/src/endpoints/order/getByUsername.ts:index(event)\\
+TU37 \newline TU38 \newline TU39 \newline TU174 & EmporioLambda-BE/src/endpoints/order/getByUsername.ts:index(event)\\
 
 TU40 \newline TU41 \newline TU42 \newline TU43 & EmporioLambda-BE/src/endpoints/order/getById.ts:index(event)\\
 
-TU44 \newline TU45 \newline TU46 \newline TU47 & EmporioLambda-BE/src/endpoints/checkout/createSessionStripe.ts:index(event)\\
+TU44 \newline TU45 \newline TU46 \newline TU47 \newline TU171 \newline TU172 & EmporioLambda-BE/src/endpoints/checkout/createSessionStripe.ts:index(event)\\
 
-TU48 \newline TU86 & EmporioLambda-BE/src/endpoints/user/delete.ts:index(event)\\
+TU48 \newline TU86 \newline TU175 & EmporioLambda-BE/src/endpoints/user/delete.ts:index(event)\\
 
 TU49 \newline TU50 \newline TU51 \newline TU52 & EmporioLambda-BE/src/endpoints/cart/create.ts:index(event)\\
 
@@ -440,6 +469,10 @@ TU157 \newline TU158 \newline TU159 & EmporioLambda-FE/components/layout.tsx\\
 TU160 & EmporioLambda-FE/pages/index.tsx\\
 
 TU161 & EmporioLambda-FE/pages/search/index.tsx\\
+
+TU162 \newline TU163 \newline TU164 \newline TU165 & EmporioLambda-FE/src/endpoints/tax/getByName.ts:index(event)\\
+
+TU166 \newline TU167 \newline TU168 \newline TU169 \newline TU170 & EmporioLambda-FE/src/endpoints/tax/update.ts:index(event)\\
 
 
 
