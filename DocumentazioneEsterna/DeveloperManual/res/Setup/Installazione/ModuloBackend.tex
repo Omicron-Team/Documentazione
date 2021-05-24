@@ -8,7 +8,7 @@ To correctly install the \textit{EmporioLambda} back-end\textsubscript{G} module
 \begin{center}
 \texttt{git clone https://github.com/OmicronSwe/EmporioLambda-BE.git;}
 \end{center}
-\item in your CLI go into the directory you just cloned and run the following 2 commands:
+\item in your CLI go into the directory you just cloned using:\begin{center}\texttt{cd EmporioLambda-BE}\end{center} and run the following 2 commands:
 \begin{center}
 \texttt{npm install}
 \end{center}
@@ -17,20 +17,36 @@ To correctly install the \textit{EmporioLambda} back-end\textsubscript{G} module
 \end{center}
 these will install the needed dependencies. These dependencies can be found in the package.json file.\\Here is a list of the dependencies that will be installed:
 \begin{itemize}
-\item stripe (version 8.137.0+);
+\item aws-lambda (version 1.0.6+);
+\item aws-sdk (version 2.874.0+);
+\item file-type (version 16.3.0+);
+\item jsonwebtoken (version 8.5.1+);
+\item jwk-to-pem (version 2.0.4+);
+\item jwks-rsa (version 2.0.3+);
+\item nodemailer (version 2.7.2+);
+\item stripe (version 8.139.0+);
 \item uuid (version 3.1.0+).
+
 \end{itemize}
 the following development dependencies will also be installed:
 \begin{itemize}
 \item serverless/eslint-config (version 3.0.0+);
+\item types/jsonwebtoken (version 8.5.1+);
+\item types/jwk-to-pem (version 2.0.0+);
 \item types/mocha (version 8.2.0+);
+\item types/request (version 2.48.5+);
+\item types/stripe-v3 (version 3.1.23+);
 \item types/uuid (version 8.3.0+);
-\item aws-lambda (version 1.0.6+);
+\item typescript-eslint/eslint-plugin (version 4.15.0+);
+\item chai-as-promised (version 7.1.1+);
 \item codecov (version 3.8.1+);
 \item eslint (version 7.19.0+);
 \item eslint-plugin-import (version 2.22.1+);
 \item git-list-updated (version 1.2.1+);
 \item nyc (version 15.1.0+);
+\item mockery (version 2.1.0+);
+\item nock (version 13.0.11+);
+\item nodemailer-mock (version 1.5.8+);
 \item prettier (version 2.2.1+);
 \item save-dev (version 0.0.1-security+);
 \item serverless-dynamodb-local (version 0.2.39+);

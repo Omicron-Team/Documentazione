@@ -24,6 +24,8 @@ events:
    - http:
        path: $functionName
        method: get #(or post, put...)
+       authorizer:
+            name: auth
 \end{lstlisting}
 \end{itemize}
 It is better to manually create all of the needed files.\\
@@ -53,5 +55,11 @@ getUser:
          path: user/{username}/
          method: get
          cors: true
+         authorizer:
+            name: auth
 \end{lstlisting}
 \end{enumerate}
+
+Most endpoints use a lamba authorizer for security purposes. If you create a new endpoint you have to define which users have access to it by adding the endpoint name in the /src/lib/auth.ts file in the 'API Visibility' section. By default the admin user has access to all endpoints.
+
+To deploy your back-end module, follow the serverless documentation on this website: \url{https://www.serverless.com/framework/docs/providers/aws/cli-reference/deploy/}

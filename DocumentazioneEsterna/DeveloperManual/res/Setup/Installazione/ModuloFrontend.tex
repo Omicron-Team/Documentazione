@@ -2,12 +2,14 @@
 To correctly download and configure the Front-end\textsubscript{G} module, follow the steps below:
 \begin{enumerate}
 \item get the source code by using this Git\textsubscript{G} command:\begin{center}\texttt{git clone https://github.com/OmicronSwe/EmporioLambda-FE.git;}\end{center}
+\item enter the directory with the following command:\begin{center}\texttt{cd EmporioLambda-FE}\end{center}
 \item run the command:\begin{center}\texttt{npm install}\end{center}which will install all the necessary dependencies. These dependencies can be found in the package.json file.\newline{} Here's the list of the dependencies:
 \begin{itemize}
 \item cypress/code-coverage (version 3.9.2+);
 \item bootstrap (version 4.6.0+);
 \item cookie-cutter (version 0.2.0+);
 \item cookies (version 0.8.0+);
+\item jose (version 1.27.2);
 \item jsonwebtoken (version 8.5.1+);
 \item next (version 10.0.0+);
 \item next-auth (version 3.4.1+);
@@ -29,8 +31,9 @@ Along with these, the following dependencies are needed for development and will
 \item typescript-eslint/eslint-plugin (version 4.15.0+);
 \item babel-plugin-istanbul (version 6.0.0+);
 \item codecov (version 3.8.1+);
-\item cross-env (version 7.0.3+);
-\item cypress (version 6.6.0+);
+\item cypress (version 6.9.1+);
+\item cypress-file-upload (version 5.0.7+);
+\item env-cmd (version 10.1.0+);
 \item eslint (version 7.19.0+);
 \item eslint-config-airbnb-typescript (version 12.3.1+);
 \item eslint-config-prettier (version 7.2.0+);
@@ -39,6 +42,7 @@ Along with these, the following dependencies are needed for development and will
 \item eslint-plugin-prettier (version 3.3.1);
 \item eslint-plugin-react (version 7.22.0+);
 \item eslint-plugin-react-hooks (version 4.2.0+);
+\item json-server (version 0.16.3+);
 \item prettier (version 2.2.1+);
 \item start-server-and-test (version 1.12.0+);
 \item typescript (version 4.1.3+).
