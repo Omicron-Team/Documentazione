@@ -15,7 +15,7 @@ Instructions on how to generate these keys can be found on this page: \url{https
 \end{center}
 where "\$stage" is the stage you want to deploy to (in this document we will use 'local', 'test' and 'staging') and "\$region" is the AWS region of the server you will be deploying to.
 
-If the serverless deploy fails, you may have to edit the 'BUCKET_IMAGE' field, replacing 'omicronswe' with another string of your choice in the serverless.yml file.
+If the serverless deploy fails, you may have to edit the 'BUCKET\_IMAGE' field, replacing 'omicronswe' with another string of your choice in the serverless.yml file. You will then have to run sls remove -s \$stage and then redeploy again.
 
 After these initial deploys you can proceed to the configuration of the environment variables.
 \end{enumerate}
