@@ -73,3 +73,15 @@ Plaintext & JWT\_SIGNING\_PRIVATE\_KEY & Production, Preview, Development & run 
 
 \item in your CLI use the command\begin{center}\texttt{vercel env pull}\end{center} This will download and setup your environment variables.
 \end{enumerate}
+
+\paragraph{Github environment variables}
+If you're using github as a git repository you can also use the provided Github actions workflows to automatically deploy you back-end and front-end on each push. To do so you need to set up a few github secrets:
+\begin{itemize}
+\item Front-end module:	the required secrets can be found on this page \url{https://github.com/marketplace/actions/vercel-action};
+\item Back-end module: the two required secrets are:
+\begin{itemize}
+\item AWS\_ACCESS\_KEY\_ID
+\item AWS\_SECRET\_ACCESS\_KEY
+\end{itemize}
+which are the same keys used for the serverless setup, described in section §2.3.2.
+\end{itemize}
