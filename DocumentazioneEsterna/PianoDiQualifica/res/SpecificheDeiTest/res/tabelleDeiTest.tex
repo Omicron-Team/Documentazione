@@ -405,6 +405,13 @@ TU189 & Viene verificato che si possa modificare la quantità di un prodotto all
 
 TU190 & Dopo che un utente è stato autenticato, viene verificato che siano presenti i prodotti (all'interno del carrello) inseriti precedentemente l'autenticazione & I & S\\
 
+TU191 & Viene verificato il corretto caricamento della pagina di un prodotto non esistente & I & S\\
+
+TU192 & Viene verificato il corretto caricamento della pagina dei prodotti relativa ad una categoria non esistente & I & S\\
+
+TU193 & Viene verificato il corretto caricamento della pagina 404 durante la visita di una pagina non presente & I & S\\
+
+TU194 & Viene verificato il corretto caricamento degli elementi della pagina 404 durante la visita di una pagina non presente & I & S\\
 
 \end{longtable}
 
@@ -479,7 +486,7 @@ TU105 \newline TU106 & EmporioLambda-BE/src/endpoints/category/list.ts:index()\\
 
 TU107 \newline TU108 \newline TU109 \newline TU110 \newline TU111 \newline TU112 \newline TU113 \newline TU114 \newline TU115 \newline TU116 & EmporioLambda-BE/src/lib/auth.ts:handler(event,context)\\
 
-TU117 \newline TU118 \newline TU119 & EmporioLambda-FE/pages/pdp/[id].tsx\\
+TU117 \newline TU118 \newline TU119 \newline TU191 & EmporioLambda-FE/pages/pdp/[id].tsx\\
 
 TU120 \newline TU121 \newline TU122 \newline TU135 \newline TU136 \newline TU138 & EmporioLambda-FE/pages/profile/index.tsx\\
 
@@ -503,10 +510,12 @@ TU162 \newline TU163 \newline TU164 \newline TU165 & EmporioLambda-BE/src/endpoi
 
 TU166 \newline TU167 \newline TU168 \newline TU169 \newline TU170 & EmporioLambda-BE/src/endpoints/tax/update.ts:index(event)\\
 
-TU176 \newline TU177 \newline TU178 \newline TU179 \newline TU180 \newline TU181 \newline TU182 \newline TU183 \newline TU184 & EmporioLambda-FE/pages/plp/[category].tsx\\
+TU176 \newline TU177 \newline TU178 \newline TU179 \newline TU180 \newline TU181 \newline TU182 \newline TU183 \newline TU184 \newline TU192 & EmporioLambda-FE/pages/plp/[category].tsx\\
 
 
 TU186 \newline TU187 \newline TU188 \newline TU189 \newline TU190 & EmporioLambda-FE/pages/cart/index.tsx\\
+
+TU193 \newline TU194 & EmporioLambda-FE/pages/404.tsx\\
 
 
 
