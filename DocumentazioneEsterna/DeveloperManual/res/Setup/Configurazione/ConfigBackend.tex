@@ -20,6 +20,14 @@ If the serverless deploy fails, you may have to edit the 'BUCKET\_IMAGE' field, 
 After these initial deploys you can proceed to the configuration of the environment variables.
 \end{enumerate}
 
+\paragraph{Tax configuration}\mbox{}\\
+After the first deploy in a different \textit{stage}, you need to configure the first value of the tax.\\
+You can do this on this page \url{https://eu-central-1.console.aws.amazon.com/dynamodb/home?region=eu-central-1#tables:}.
+\begin{itemize}
+	\item First, select the tax table in the current stage;
+	\item Next, go in the \textit{Items} tab and click on \textit{Create item}. In this section you need to add the tax \textit{name} and next the \textit{rate} attribute of tax (in the \textit{Number} format).
+\end{itemize}
+
 \paragraph{Cognito configuration}\mbox{}\\
 Each cognito userpool generated in the last step must be further configured. You can do so on this page \url{https://eu-central-1.console.aws.amazon.com/cognito/users/?region=eu-central-1}.
 \begin{itemize}
