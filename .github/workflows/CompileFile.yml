@@ -100,6 +100,9 @@ jobs:
       - name: Compilazione VE_2021-03-31
         run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-03-31/VE_2021-03-31.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
+      - name: Compilazione VE_2021-05-19
+        run: latexmk -pdf -cd DocumentazioneEsterna/VerbaliEsterni/VE_2021-05-19/VE_2021-05-19.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
+
       - name: Compilazione VI_2021-03-10
         run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2021-03-10/VI_2021-03-10.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
      
@@ -137,6 +140,7 @@ jobs:
           mv VI_2021-04-12.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VE_2021-03-16.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv VE_2021-03-31.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
+          mv VE_2021-05-19.pdf Documenti/DocumentazioneEsterna/VerbaliEsterni
           mv DeveloperManual.pdf Documenti/DocumentazioneEsterna
           mv UserManual.pdf Documenti/DocumentazioneEsterna
 
