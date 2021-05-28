@@ -48,8 +48,8 @@ jobs:
       #- name: Compilazione Lettera di presentazione RP
       #  run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRP/letteraRP.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
       
-      - name: Compilazione Lettera di presentazione RQ
-        run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRQ/letteraRQ.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
+      - name: Compilazione Lettera di presentazione RA
+        run: latexmk -pdf -cd LetterePresentazioni/LetteraPresentazioneRA/letteraRA.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
 
       #- name: Compilazione Verbale Interno 2020-12-16
       #  run: latexmk -pdf -cd DocumentazioneInterna/VerbaliInterni/VI_2020-12-16/VI_2020-12-16.tex -output-directory="/home/runner/work/Documentazione/Documentazione"
@@ -130,7 +130,7 @@ jobs:
           mv PianoDiProgetto.pdf Documenti/DocumentazioneEsterna
           mv PianoDiQualifica.pdf Documenti/DocumentazioneEsterna
           mv NormeDiProgetto.pdf Documenti/DocumentazioneInterna
-          mv letteraRQ.pdf Documenti/LetterePresentazioni
+          mv letteraRA.pdf Documenti/LetterePresentazioni
           mv VI_2021-03-10.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VI_2021-03-17.pdf Documenti/DocumentazioneInterna/VerbaliInterni
           mv VI_2021-03-20.pdf Documenti/DocumentazioneInterna/VerbaliInterni
