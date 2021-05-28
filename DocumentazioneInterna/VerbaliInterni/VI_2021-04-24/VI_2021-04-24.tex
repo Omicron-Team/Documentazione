@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+
+\input{../../../Utilita/latexSetup/package}
+\usepackage{../../../Utilita/latexSetup/styleTemplate}
+\input{res/command}
+\input{../../../Utilita/latexSetup/generalCommand}
+
+
+
+\begin{document}
+
+	\input{../../../Utilita/latexSetup/PrimaPagina}
+
+	\input{res/DiarioModifiche}
+
+	\newpage
+	\tableofcontents
+	\newpage
+
+	\input{res/InformazioniGenerali.tex}
+	\input{res/OrdineDelGiorno/ordineDelGiorno.tex}
+	\newpage
+	\input{res/Resoconto/resoconto.tex}
+	\input{res/Riepilogo}
+
+\end{document}

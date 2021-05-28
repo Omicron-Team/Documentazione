@@ -180,16 +180,238 @@ TU77 & Viene verificata la correttezza del messaggio d'errore della visualizzazi
 
 TU78 & Viene verificata la correttezza del messaggio d'errore della visualizzazione di un carrello di uno specifico utente non presente & I & S\\
 
-TU79 & Viene verificata la corretta presenza del bottone \textit{sign in}& I & S\\
+TU79 & Viene verificata la corretta visualizzazione dei dati di un specifico ordine (dato il suo ID), per uno specifico utente (dato il suo username) & I & S\\
 
-TU80 & Viene verificata la corretta presenza del bottone \textit{sign out} & I & S\\
+TU80 & Viene verificata la correttezza del messaggio d'errore della visualizzazione dei dati di un specifico ordine (dato il suo ID), per uno specifico utente (dato il suo username), dove l'ID non è presente & I & S\\
 
-TU81 & Viene verificata la corretta presenza del bottone \textit{merchantDashboard} & I & S\\
+TU81 & Viene verificata la correttezza del messaggio d'errore della visualizzazione dei dati di un specifico ordine (dato il suo ID), per uno specifico utente (dato il suo username), dove l'username non è presente & I & S\\
 
-TU82 & Viene verificato il corretto funzionamento del bottone \textit{sign in} & I & S\\
+TU82 & Viene verificata la correttezza del messaggio d'errore generale riguardante la visualizzazione dei dati di un specifico ordine (dato il suo ID), per uno specifico utente (dato il suo username) & I & S\\
 
-TU83 & Viene verificato il corretto funzionamento del bottone \textit{sign out} & I & S\\
+TU83 & Viene verificata la correttezza del messaggio d'errore relativo ad un prezzo passato non come numero durate la modifica di un prodotto & I & S\\
 
+TU84 & Viene verificata la correttezza del messaggio di risposta relativo alla visualizzazione della lista degli ordini effettuati & I & S\\
+
+TU85 & Viene verificata la correttezza del messaggio d'errore relativo alla visualizzazione della lista degli ordini vuota & I & S\\
+
+TU86 & Viene verificata la correttezza del messaggio d'errore relativo alla cancellazione di un utente con una richiesta senza \textit{PathParameters} & I & S\\
+
+TU87 & Viene verificata la correttezza del messaggio d'errore relativo alla visualizzazione dei dati di un utente con una richiesta senza \textit{PathParameters} & I & S\\
+
+TU88 & Viene verificata la correttezza del messaggio d'errore durante la visualizzazione dei dati di un utente & I & S\\
+
+TU89 & Viene verificata la correttezza del messaggio d'errore relativo alla modifica dei dati di un utente con una richiesta senza \textit{PathParameters} & I & S\\
+
+TU90 & Viene verificata la correttezza del messaggio d'errore relativo alla modifica dei dati di un utente con una richiesta senza \textit{Body} & I & S\\
+
+TU91 & Viene verificata la correttezza del messaggio d'errore durante la modifica dei dati di un utente & I & S\\
+
+TU92 & Viene verificata la correttezza del messaggio d'errore relativo alla modifica della password di un utente con una richiesta senza \textit{PathParameters} & I & S\\
+
+TU93 & Viene verificata la correttezza del messaggio d'errore relativo alla modifica della password di un utente con una richiesta senza \textit{Body} & I & S\\
+
+TU94 & Viene verificata la correttezza del messaggio d'errore durante la modifica della password di un utente & I & S\\
+
+TU95 & Viene verificata il corretto invio dell'email contenente un ordine effettuato   & I & S\\
+
+TU96 & Viene verificata la correttezza del messaggio d'errore durante l'invio dell'email contenente un ordine effettuato   & I & S\\ 
+
+TU97 & Viene verificata la correttezza del messaggio d'errore relativo alla creazione di una categoria con una richiesta senza \textit{Body} & I & S\\ 
+
+TU98 & Viene verificata la correttezza del messaggio d'errore relativo alla creazione di una categoria con una richiesta senza nome della categoria & I & S\\ 
+
+TU99 & Viene verificata la correttezza della creazione di una categoria & I & S\\ 
+
+TU100 & Viene verificata la correttezza della cancellazione di una categoria & I & S\\ 
+
+TU101 & Viene verificata la correttezza del messaggio d'errore relativo alla cancellazione di una categoria con una richiesta senza \textit{PathParameters} & I & S\\
+
+TU102 & Viene verificata la correttezza del messaggio d'errore relativo alla cancellazione di una categoria dove non si riesce a controllare le categorie esistenti & I & S\\
+
+TU103 & Viene verificata la correttezza del messaggio d'errore relativo alla cancellazione di una categoria in uso da almeno un prodotto & I & S\\
+
+TU104 & Viene verificata la correttezza del messaggio d'errore relativo alla creazione di una categoria già presente & I & S\\
+
+TU105 & Viene verificata la correttezza della visualizzazione della lista di categorie & I & S\\
+
+TU106 & Viene verificata la correttezza del messaggio d'errore della visualizzazione della lista di categorie, dove tale lista è vuota & I & S\\
+
+TU107 & Viene verificata la correttezza del messaggio d'errore durante l'autenticazione di un API\ped{G} con un token scaduto & I & S\\
+
+TU108 & Viene verificata la correttezza del messaggio d'errore durante l'autenticazione di un API\ped{G} con un Kid non conforme alle attese & I & S\\
+
+TU109 & Viene verificata la correttezza del messaggio d'errore durante l'autenticazione di un API\ped{G} con un tipo di token non conforme alle attese & I & S\\
+
+TU110 & Viene verificata la correttezza del messaggio d'errore durante l'autenticazione di un API\ped{G} con un Iss non conforme alle attese & I & S\\
+
+TU111 & Viene verificata la correttezza del messaggio d'errore durante l'autenticazione di un API\ped{G} con un Jwt non conforme alle attese & I & S\\
+
+TU112 & Viene verificata la correttezza del messaggio d'errore durante l'autenticazione di un API\ped{G} con una richiesta senza nessun token & I & S\\
+
+TU113 & Viene verificata la correttezza dell'autenticazione di un API\ped{G} con una richiesta da parte di un utente di tipo \textit{admin} & I & S\\
+
+TU114 & Viene verificata la correttezza dell'autenticazione di un API\ped{G} con una richiesta da parte di un utente di tipo \textit{utente autenticato} & I & S\\
+
+TU115 & Viene verificata la correttezza dell'autenticazione di un API\ped{G} con una richiesta da parte di un utente di tipo \textit{utente non autenticato} & I & S\\
+
+TU116 & Viene verificata la correttezza del messaggio d'errore durante l'autenticazione di un API\ped{G} con un errore rilevate durante la connessione al server dove sono presenti le chiavi pubbliche & I & S\\
+
+TU117 & Viene verificato il corretto caricamento della pagina relativa al dettaglio di un prodotto & I & S\\
+
+TU118 & Viene verificata la correttezza dei dati relativi al dettaglio di un prodotto & I & S\\
+
+TU119 & Viene verificato il corretto funzionamento del bottone che aggiunge un prodotto al carrello & I & S\\
+
+TU120 & Viene verificato il corretto caricamento della pagina relativa al profilo di un utente & I & S\\
+
+TU121 & Viene verificata la correttezza dei dati relativi ad un utente all'interno del proprio profilo & I & S\\
+
+TU122 & Viene verificato che siano presenti i bottoni \textit{editPassword, editProfilo, delete} & I & S\\
+
+TU123 & Viene verificato che siano presenti i bottoni \textit{submit, cancel} e la form per la modifica del profilo & I & S\\
+
+TU124 & Viene verificato che il bottone \textit{cancel} reindirizza alla pagina \textit{profile} & I & S\\
+
+TU125 & Viene verificato che non avvenga la modifica del profilo con la form vuota & I & S\\
+
+TU126 & Viene verificato che non avvenga la modifica del profilo con una form contente dati in forma errata & I & S\\
+
+TU127 & Viene verificato che venga modificato un profilo utente & I & S\\
+
+TU128 & Viene verificato che fallisca la modifica della password con un dato vuoto & I & S\\
+
+TU129 & Viene verificato che fallisca la modifica della password con un dato con una lunghezza inferiore ad 8 & I & S\\
+
+TU130 & Viene verificato che fallisca la modifica della password con un dato non contenente almeno un carattere maiuscolo & I & S\\
+
+
+TU131 & Viene verificato che fallisca la modifica della password con un dato non contenente almeno un carattere minuscolo & I & S\\
+
+TU132 & Viene verificato che fallisca la modifica della password con un dato non contenente almeno un numero & I & S\\
+
+TU133 & Viene verificato che fallisca la modifica della password con un dato non contenente almeno un carattere speciale & I & S\\
+
+TU134 & Viene verificato che venga modificata la password di un utente & I & S\\
+
+TU135 & Viene verificato il corretto caricamento della sezione degli ordini relativo ad un utente, dove non è presente nessun ordine & I & S\\
+
+TU136 & Viene verificato il corretto caricamento della sezione degli ordini relativo ad un utente, dove sono presenti degli ordini & I & S\\
+
+TU137 & Viene verificato il corretto funzionamento del bottone relativo al dettaglio dell'ordine & I & S\\
+
+TU138 & Viene verificata la corretta eliminazione di un utente & I & S\\
+
+TU139 & Viene verificato il corretto caricamento della pagina \textit{dashboard} & I & S\\
+
+TU140 & Viene verificato se è presente il bottone per l'inserimento di un nuovo prodotto & I & S\\
+
+TU141 & Viene verificato se è presente la form per l'inserimento di un nuovo prodotto & I & S\\
+
+TU142 & Viene verificata la corretta visualizzazione della lista dei prodotti, dove questa non è vuota & I & S\\
+
+TU143 & Viene verificata la correttezza dell'errore durante la creazione di un prodotto con un input errato & I & S\\
+
+TU144 & Viene verificata la correttezza della creazione di un prodotto & I & S\\
+
+TU145 & Viene verificato il corretto caricamento della pagina di modifica di un prodotto & I & S\\
+
+TU146 & Viene verificato che il bottone \textit{cancel}, nella pagina di modifica di un prodotto, reindirizza alla pagina \textit{dashboard} & I & S\\
+
+TU147 & Viene verificata la correttezza della modifica di un prodotto & I & S\\
+
+TU148 & Viene verificata la correttezza dell'errore nella modifica di un prodotto senza input da parte dell'utente & I & S\\
+
+TU149 & Viene verificata la correttezza dell'errore nella modifica di un prodotto con input errati da parte dell'utente & I & S\\
+
+TU150 & Viene verificata la correttezza dell'eliminazione di un prodotto & I & S\\
+
+TU151 & Viene verificata la correttezza dell'errore durante l'eliminazione di un prodotto & I & S\\
+
+TU152 & Viene verificata la presenza del bottone \textit{Add new category} nella pagina \textit{dashboard} & I & S\\
+
+TU153 & Viene verificata la corretta visualizzazione dell'alert dopo la creazione di una nuova categoria, e la relativa chiusura & I & S\\
+
+TU154 & Viene verificata la corretta visualizzazione dell'alert dopo l'eliminazione di una categoria & I & S\\
+
+TU155 & Viene verificata la corretta visualizzazione della lista degli ordini all'interno della pagina \textit{dashboard} & I & S\\
+
+TU156 & Viene verificato il corretto re-indirizzamento alla pagina degli ordini tramite il bottone \textit{details} nella pagina \textit{dashboard} & I & S\\
+
+TU157 & Viene verificata la corretta presenza del bottone \textit{merchantDashboard} & I & S\\
+
+TU158 & Viene verificato il corretto funzionamento del bottone \textit{sign in} & I & S\\
+
+TU159 & Viene verificato il corretto funzionamento del bottone \textit{sign out} & I & S\\
+
+TU160 & Viene verificato che sia presente la \textit{search bar} all'interno della \textit{Home} & I & S\\
+
+TU161 & Viene verificato che la \textit{search bar} reindirizza correttamente alla pagina di ricerca & I & S\\
+
+TU162 & Viene verificata la correttezza del messaggio d'errore relativo alla visualizzazione di una tassa, dato il nome, con una richiesta senza \textit{PathParameters}& I & S\\
+
+TU163 & Viene verificata la correttezza del messaggio d'errore relativo alla visualizzazione di una tassa, dato il nome, non presente & I & S\\
+
+TU164 & Viene verificata la correttezza del messaggio d'errore relativo alla visualizzazione di una tassa & I & S\\
+
+TU165 & Viene verificata la correttezza della visualizzazione della percentuale di una tassa, dato il suo nome & I & S\\
+
+TU166 & Viene verificata la correttezza del messaggio d'errore relativo alla modifica della percentuale di una tassa, dato il nome, con una richiesta senza \textit{PathParameters}& I & S\\
+
+TU167 & Viene verificata la correttezza del messaggio d'errore relativo alla modifica della percentuale di una tassa, dato il nome, con una richiesta senza \textit{Body}& I & S\\
+
+TU168 & Viene verificata la correttezza del messaggio d'errore relativo alla modifica della percentuale di una tassa, dato il nome, non presente & I & S\\
+
+TU169 & Viene verificata la correttezza del messaggio d'errore relativo alla modifica della percentuale di una tassa, dato il nome, nel caso in cui non si riesca a controllare l'esistenza della tassa & I & S\\
+
+TU170 & Viene verificata la correttezza della modifica della percentuale di una tassa, dato il nome & I & S\\
+
+TU171 & Viene verificata la correttezza del messaggio d'errore relativo alla creazione di una sessione Stripe\ped{G} con un carrello non presente all'interno del database & I & S\\
+
+TU172 & Viene verificata la correttezza del messaggio d'errore relativo alla creazione di una sessione Stripe\ped{G} dove fallisce il reperimento dell'email a cui inviare i prodotti & I & S\\
+
+TU173 & Viene verificata la correttezza del messaggio d'errore relativo alla creazione di un ordine con una richiesta senza \textit{Body} & I & S\\
+
+TU174 & Viene verificata la correttezza del messaggio d'errore relativo alla visualizzazione di un ordine, dato l'username dell'utente e l'id dell'ordine, con una richiesta senza \textit{PathParameters} & I & S\\
+
+TU175 & Viene verificata la correttezza del messaggio d'errore relativo alla cancellazione di un utente dove non si riesce ad eliminare il carrello dell'utente relativo & I & S\\
+
+TU176 & Viene verificato il corretto caricamento della pagina dei prodotti relativa ad una categoria & I & S\\
+
+TU177 & Viene verificata la corretta visualizzazione della pagina dei prodotti relativa ad una categoria senza nessun prodotto & I & S\\
+
+TU178 & Viene verificata la corretta visualizzazione della pagina dei prodotti relativa ad una categoria con almeno un prodotto & I & S\\
+
+TU179 & Viene verificato che sia presente il bottone \textit{View Product} nella pagina dei prodotti relativa ad una categoria & I & S\\
+
+TU180 & Viene verificato che sia presente il bottone \textit{Add Selected to Cart} dopo aver selezionato dei prodotti nella pagina dei prodotti relativa ad una categoria & I & S\\
+
+TU181 & Viene verificato che sia presente la barra di ricerca nella pagina dei prodotti relativa ad una categoria & I & S\\
+
+TU182 & Viene verificato che, all'interno della pagina dei prodotti relativa ad una categoria, il bottone \textit{View Product} indirizza alla pagina relativa del prodotto & I & S\\
+
+TU183 & Viene verificato che, all'interno della pagina dei prodotti relativa ad una categoria, il bottone \textit{Add to Cart} funzioni correttamente (inserisce il prodotto nel carrello) & I & S\\
+
+TU184 & Viene verificato che, all'interno della pagina dei prodotti relativa ad una categoria, il bottone \textit{Add Selected to Cart} funzioni correttamente (inserisce i prodotti nel carrello) & I & S\\
+
+TU185 & Viene verificato che la \textit{Home} sia caricata correttamente & I & S\\
+
+TU186 & Viene verificato che il carrello sia vuoto quando non è presente nessun utente autenticato & I & S\\
+
+TU187 & Viene verificato che sia presente il bottone di rimozione di un prodotto dal carrello quando l'utente non è ancora autenticato ed è stato inserito almeno un prodotto & I & S\\
+
+TU188 & Viene verificato che sia presente il bottone di rimozione di tutti i prodotti dal carrello quando l'utente non è ancora autenticato ed è stato inserito almeno un prodotto & I & S\\
+
+TU189 & Viene verificato che si possa modificare la quantità di un prodotto all'interno del carrello quando un utente non è ancora autenticato & I & S\\
+
+TU190 & Dopo che un utente è stato autenticato, viene verificato che siano presenti i prodotti (all'interno del carrello) inseriti precedentemente l'autenticazione & I & S\\
+
+TU191 & Viene verificato il corretto caricamento della pagina di un prodotto non esistente & I & S\\
+
+TU192 & Viene verificato il corretto caricamento della pagina dei prodotti relativa ad una categoria non esistente & I & S\\
+
+TU193 & Viene verificato il corretto caricamento della pagina 404 durante la visita di una pagina non presente & I & S\\
+
+TU194 & Viene verificato il corretto caricamento degli elementi della pagina 404 durante la visita di una pagina non presente & I & S\\
 
 \end{longtable}
 
@@ -213,7 +435,7 @@ Di seguito viene riportato il tracciamento fra i test di unità ed i rispettivi 
 
 TU1 \newline TU2 \newline TU3 \newline TU4 \newline TU5 \newline TU6 \newline TU7 \newline TU8 \newline TU9 & EmporioLambda-BE/src/endpoints/product/create.ts:index(event)\\
 
-TU10 \newline TU11 \newline TU12 \newline TU13 & EmporioLambda-BE/src/endpoints/product/update.ts:index(event)\\
+TU10 \newline TU11 \newline TU12 \newline TU13 \newline TU83 & EmporioLambda-BE/src/endpoints/product/update.ts:index(event)\\
 
 TU14 \newline TU15 \newline TU16 & EmporioLambda-BE/src/endpoints/product/delete.ts:index(event)\\
 
@@ -223,15 +445,15 @@ TU18 \newline TU19 \newline TU20 \newline TU21 \newline TU22 \newline TU23 \newl
 
 TU24 \newline TU29 \newline TU30 \newline TU31 & EmporioLambda-BE/src/endpoints/product/getById.ts:index(event)\\
 
-TU32 \newline TU33 \newline TU34 \newline TU35 \newline TU36 & EmporioLambda-BE/src/endpoints/order/create.ts:index(event)\\
+TU32 \newline TU33 \newline TU34 \newline TU35 \newline TU36 \newline TU173 & EmporioLambda-BE/src/endpoints/order/create.ts:index(event)\\
 
-TU37 \newline TU38 \newline TU39 & EmporioLambda-BE/src/endpoints/order/getByUsername.ts:index(event)\\
+TU37 \newline TU38 \newline TU39 \newline TU174 & EmporioLambda-BE/src/endpoints/order/getByUsername.ts:index(event)\\
 
 TU40 \newline TU41 \newline TU42 \newline TU43 & EmporioLambda-BE/src/endpoints/order/getById.ts:index(event)\\
 
-TU44 \newline TU45 \newline TU46 \newline TU47 & EmporioLambda-BE/src/endpoints/checkout/createSessionStripe.ts:index(event)\\
+TU44 \newline TU45 \newline TU46 \newline TU47 \newline TU171 \newline TU172 & EmporioLambda-BE/src/endpoints/checkout/createSessionStripe.ts:index(event)\\
 
-TU48 & EmporioLambda-BE/src/endpoints/user/delete.ts:index(event)\\
+TU48 \newline TU86 \newline TU175 & EmporioLambda-BE/src/endpoints/user/delete.ts:index(event)\\
 
 TU49 \newline TU50 \newline TU51 \newline TU52 & EmporioLambda-BE/src/endpoints/cart/create.ts:index(event)\\
 
@@ -243,7 +465,58 @@ TU63 \newline TU66 \newline TU67 \newline TU68 & EmporioLambda-BE/src/endpoints/
 
 TU69 \newline TU70 \newline TU71 & EmporioLambda-BE/src/endpoints/cart/toEmpty.ts:index(event)\\
 
-TU79 \newline TU80 \newline TU81 \newline TU82 \newline TU83 & EmporioLambda-FE/components/layout.tsx:layout
+
+TU79 \newline TU80 \newline TU81 \newline TU82 & EmporioLambda-BE/src/endpoints/order/getByUsernameAndId.ts:index(event)\\
+
+TU84 \newline TU85 & EmporioLambda-BE/src/endpoints/order/list.ts:index()\\
+
+TU87 \newline TU88 & EmporioLambda-BE/src/endpoints/user/getUser.ts:index(event)\\
+
+TU89 \newline TU90 \newline TU91 & EmporioLambda-BE/src/endpoints/user/update.ts:index(event)\\
+
+TU92 \newline TU93 \newline TU94 & EmporioLambda-BE/src/endpoints/user/updatePassword.ts:index(event)\\
+
+TU95 \newline TU96 & EmporioLambda-BE/src/services/nodemailer/nodemailer.ts\\
+
+TU97 \newline TU98 \newline TU99 \newline TU104 & EmporioLambda-BE/src/endpoints/category/create.ts:index(event)\\
+
+TU100 \newline TU101 \newline TU102 \newline TU103 & EmporioLambda-BE/src/endpoints/category/delete.ts:index(event)\\
+
+TU105 \newline TU106 & EmporioLambda-BE/src/endpoints/category/list.ts:index()\\
+
+TU107 \newline TU108 \newline TU109 \newline TU110 \newline TU111 \newline TU112 \newline TU113 \newline TU114 \newline TU115 \newline TU116 & EmporioLambda-BE/src/lib/auth.ts:handler(event,context)\\
+
+TU117 \newline TU118 \newline TU119 \newline TU191 & EmporioLambda-FE/pages/pdp/[id].tsx\\
+
+TU120 \newline TU121 \newline TU122 \newline TU135 \newline TU136 \newline TU138 & EmporioLambda-FE/pages/profile/index.tsx\\
+
+TU123 \newline TU124 \newline TU125 \newline TU126 \newline TU127 \newline TU128 \newline TU129 \newline TU130 \newline TU131 \newline TU132 \newline TU133 \newline TU134  & EmporioLambda-FE/pages/profile/edit/[username].tsx\\
+
+TU137 & EmporioLambda-FE/pages/profile/order/[id].tsx\\
+
+TU139 \newline TU140 \newline TU141 \newline TU142 \newline TU143 \newline TU144 \newline TU150 \newline TU151 \newline TU152 \newline TU153 \newline TU154 \newline TU155 \newline TU156 & EmporioLambda-FE/pages/dashboard/index.tsx\\
+
+TU145 \newline TU146 \newline TU147 \newline TU148 \newline TU149 & EmporioLambda-FE/pages/dashboard/modify/[id].tsx\\
+
+
+
+TU157 \newline TU158 \newline TU159 & EmporioLambda-FE/components/layout.tsx\\
+
+TU160 \newline TU185 & EmporioLambda-FE/pages/index.tsx\\
+
+TU161 & EmporioLambda-FE/pages/search/index.tsx\\
+
+TU162 \newline TU163 \newline TU164 \newline TU165 & EmporioLambda-BE/src/endpoints/tax/getByName.ts:index(event)\\
+
+TU166 \newline TU167 \newline TU168 \newline TU169 \newline TU170 & EmporioLambda-BE/src/endpoints/tax/update.ts:index(event)\\
+
+TU176 \newline TU177 \newline TU178 \newline TU179 \newline TU180 \newline TU181 \newline TU182 \newline TU183 \newline TU184 \newline TU192 & EmporioLambda-FE/pages/plp/[category].tsx\\
+
+
+TU186 \newline TU187 \newline TU188 \newline TU189 \newline TU190 & EmporioLambda-FE/pages/cart/index.tsx\\
+
+TU193 \newline TU194 & EmporioLambda-FE/pages/404.tsx\\
+
 
 
 
@@ -283,6 +556,8 @@ TI5 & Viene verificato che l'integrazione fra modulo Front-end\ped{G} e Cognito\
 TI6 & Viene verificato che l'integrazione fra modulo Front-end\ped{G} e Stripe\ped{G} funzioni correttamente & I & S\\
 
 TI7 & Viene verificato che l'integrazione fra modulo Front-end\ped{G} e modulo Back-end\ped{G} funzioni correttamente & I & S\\
+
+TI8 & Viene verificato il corretto refresh del token di Cognito\ped{G} per l'autenticazione agli endpoint & I & S\\
 
 
 
@@ -357,17 +632,17 @@ TS2F7 & Durante la fase di checkout il cliente deve poter modificare l'email a c
 
 TS1F8 & A pagamento riuscito:
 \begin{itemize}
-	\item il cliente visualizza un riepilogo dell'ordine effettuato;
+	\item il cliente viene indirizzato al suo profilo dove sono presenti gli ordini effettuati;
 	\item il cliente riceve i prodotti acquistati tramite l'email usata per l'acquisto.
 \end{itemize}
-& NI & NS\\
+& I & S\\
 
 TS1F9 & A pagamento fallito:
 \begin{itemize}
 	\item il cliente visualizza un messaggio d'errore;
 	\item il cliente può riprovare il pagamento verificando i dati inseriti.
 \end{itemize}
-& NI & NS\\
+& I & S\\
 
 
 TS1F10 & Un cliente può visualizzare il suo profilo, contenente:
@@ -390,7 +665,7 @@ TS1F11 & Un cliente può aggiornare, nel suo profilo, le seguenti informazioni:
 \end{itemize}
 & I & S\\
 
-TS2F11 & Se la modifica delle informazioni nel profilo non va a buon fine, viene visualizzato un errore & NI & NS\\
+TS2F11 & Se la modifica delle informazioni nel profilo non va a buon fine, viene visualizzato un errore & I & S\\
 
 TS1F12 & Per ogni ordine effettuato vengono visualizzati:
 \begin{itemize}
@@ -479,7 +754,7 @@ TS1F23 & Nella PLP\ped{G} un utente generico può:
 	\item aggiungere i prodotti al carrello.
 \end{itemize} & I & S\\
 
-TS2F23 & Nella PLP\ped{G} un utente generico può filtrare l'insieme dei prodotti visualizzati in base al prezzo & NI & NS\\
+TS2F23 & Nella PLP\ped{G} un utente generico può filtrare l'insieme dei prodotti visualizzati in base al prezzo & I & S\\
 
 TS1F24 & Un utente generico può accedere alla PDP\ped{G} cliccando su un prodotto nella PLP\ped{G} & I & S\\
 
@@ -501,12 +776,13 @@ TS1F25 & Un utente generico, nella PDP\ped{G} può:
 
 \centering
 \renewcommand{\arraystretch}{2}
-\begin{longtable}{C{3cm} C{10.2cm} C{1.5cm}}
+\begin{longtable}{C{2cm} C{9.6cm} C{1.5cm} C{1cm}}
 \caption{Tabella riassuntiva test di accettazione o di collaudo}\\
 \rowcolor{azzurro1}
 \textbf{Codice} &
 \textbf{Descrizione}&
-\textbf{Stato}\\
+\textbf{Stato}&
+\textbf{Esito}\\
 \endhead
 
 
@@ -517,18 +793,18 @@ TA1F1 & Un utente deve aver la possibilità di registrasi con:
 	\item indirizzo di fatturazione;
 	\item email;
 	\item password.
-\end{itemize} & NI\\
+\end{itemize} & I & NS\\
 TA2F1 & Il sistema deve mostrare un errore se
-i campi inseriti durante la fase di registrazione non sono validi & NI\\
+i campi inseriti durante la fase di registrazione non sono validi & I & NS\\
 TA1F2 & Un utente può effettuare il login inserendo:
 \begin{itemize}
 	\item email;
 	\item password.
-\end{itemize} &  NI\\
-TA2F2 & Il sistema deve mostrare un errore se le credenziali del login sono errate & NI\\
+\end{itemize} & I & NS\\
+TA2F2 & Il sistema deve mostrare un errore se le credenziali del login sono errate & I & NS\\
 TA1F3 & Un utente autenticato deve poter effettuare il
-logout & NI\\
-TA1F4 & Un utente generico deve accedere alla pagina del carrello dalla Homepage, dalla PLP\ped{G} e dal PDP\ped{G} & NI\\
+logout & I & NS\\
+TA1F4 & Un utente generico deve accedere alla pagina del carrello dalla Homepage, dalla PLP\ped{G} e dal PDP\ped{G} & I & NS\\
 TA1F5 & Un utente generico, dal carrello, può:
 \begin{itemize}
 	\item visualizzare i prodotti precedentemente aggiunti;
@@ -539,14 +815,14 @@ TA1F5 & Un utente generico, dal carrello, può:
 	\item visualizzare il prezzo totale dei prodotti nel carrello;
 	\item visualizzare le tasse applicate al prezzo totale dei prodotti nel carrello.
 \end{itemize}
-& NI\\
+& I & NS\\
 
 TA1F6 & Un cliente può effettuare il checkout se:
 \begin{itemize}
 	\item ha almeno un prodotto nel carrello;
 	\item si è registrato.
 \end{itemize}
-& NI\\
+& I & NS\\
 
 TA1F7 & Durante la fase di checkout:
 \begin{itemize}
@@ -554,24 +830,24 @@ TA1F7 & Durante la fase di checkout:
 	\item il cliente deve inserire i dati di pagamento tramite Stripe\ped{G};
 	\item dopo aver inserito i dati di pagamento, il cliente continua il pagamento effettivo tramite Stripe\ped{G}.
 \end{itemize}
-& NI\\
+& I & NS\\
 
 TA2F7 & Durante la fase di checkout il cliente deve poter modificare l'email a cui verranno mandati i prodotti
-& NI\\
+& I & NS\\
 
 TA1F8 & A pagamento riuscito:
 \begin{itemize}
-	\item il cliente visualizza un riepilogo dell'ordine effettuato;
+	\item il cliente viene indirizzato al suo profilo dove sono presenti gli ordini effettuati;
 	\item il cliente riceve i prodotti acquistati tramite l'email usata per l'acquisto.
 \end{itemize}
-& NI\\
+& I & NS\\
 
 TA1F9 & A pagamento fallito:
 \begin{itemize}
 	\item il cliente visualizza un messaggio d'errore;
 	\item il cliente può riprovare il pagamento verificando i dati inseriti.
 \end{itemize}
-& NI\\
+& I & NS\\
 
 
 TA1F10 & Un cliente può visualizzare il suo profilo, contenente:
@@ -582,7 +858,7 @@ TA1F10 & Un cliente può visualizzare il suo profilo, contenente:
 	\item email;
 	\item lista degli ordini effettuati.
 \end{itemize}
-& NI\\
+& I & NS\\
 
 TA1F11 & Un cliente può aggiornare, nel suo profilo, le seguenti informazioni:
 \begin{itemize}
@@ -592,9 +868,9 @@ TA1F11 & Un cliente può aggiornare, nel suo profilo, le seguenti informazioni:
 	\item indirizzo di fatturazione;
 	\item email.
 \end{itemize}
-& NI\\
+& I & NS\\
 
-TA2F11 & Se la modifica delle informazioni nel profilo non va a buon fine, viene visualizzato un errore & NI\\
+TA2F11 & Se la modifica delle informazioni nel profilo non va a buon fine, viene visualizzato un errore & I & NS\\
 
 TA1F12 & Per ogni ordine effettuato vengono visualizzati:
 \begin{itemize}
@@ -606,13 +882,13 @@ TA1F12 & Per ogni ordine effettuato vengono visualizzati:
 	\item tasse applicate;
 	\item data di acquisto.
 \end{itemize}
-& NI\\
+& I & NS\\
 
-TA1F13 & Un cliente può eliminare il suo account & NI\\
+TA1F13 & Un cliente può eliminare il suo account & I & NS\\
 
-TA1F14 & Il venditore ha a disposizione una dashboard\ped{G} dove può inserire nuovi prodotti e gestire il proprio catalogo digitale & NI\\
+TA1F14 & Il venditore ha a disposizione una dashboard\ped{G} dove può inserire nuovi prodotti e gestire il proprio catalogo digitale & I & NS\\
 
-TA2F14 & Il venditore, dalla dashboard\ped{G}, può accedere agli strumenti esterni riservati per gli admin & NI\\
+TA2F14 & Il venditore, dalla dashboard\ped{G}, può accedere agli strumenti esterni riservati per gli admin & I & NS\\
 
 TA1F15 & Durante l'inserimento di un nuovo prodotto, il venditore, deve assegnare i seguenti dati:
 \begin{itemize}
@@ -621,7 +897,7 @@ TA1F15 & Durante l'inserimento di un nuovo prodotto, il venditore, deve assegnar
 	\item immagine;
 	\item prezzo;
 	\item categoria.
-\end{itemize} & NI\\
+\end{itemize} & I & NS\\
 
 TA1F16 & Il venditore può:
 \begin{itemize}
@@ -629,9 +905,9 @@ TA1F16 & Il venditore può:
 	\item modificare la descrizione dei prodotti da lui venduti;
 	\item eliminare i prodotti da lui venduti;
 	\item visualizzare i dettagli di tutti gli ordini effettuati dai clienti.
-\end{itemize} & NI\\
+\end{itemize} & I & NS\\
 
-TA2F16 & Il venditore può modificare il nome, il prezzo, l'immagine e la categoria dei prodotti da lui venduti & NI\\
+TA2F16 & Il venditore può modificare il nome, il prezzo, l'immagine e la categoria dei prodotti da lui venduti & I & NS\\
 
 TA1F17 & Il venditore, durante la visualizzazione di un prodotto, visualizza:
 \begin{itemize}
@@ -640,7 +916,7 @@ TA1F17 & Il venditore, durante la visualizzazione di un prodotto, visualizza:
 	\item categoria;
 	\item prezzo;
 	\item immagine.
-\end{itemize} & NI\\
+\end{itemize} & I & NS\\
 
 TA1F18 & Il venditore, per ogni ordine effettuato, può visualizzare:
 \begin{itemize}
@@ -652,7 +928,7 @@ TA1F18 & Il venditore, per ogni ordine effettuato, può visualizzare:
 	\item tasse applicate;
 	\item data di acquisto.
 \end{itemize}
-& NI\\
+& I & NS\\
 
 TA1F19 & Il venditore può gestire le categorie dei prodotti, ovvero:
 \begin{itemize}
@@ -660,38 +936,38 @@ TA1F19 & Il venditore può gestire le categorie dei prodotti, ovvero:
 	\item inserire nuove categorie di prodotti;
 	\item eliminare categorie esistenti di prodotti.
 \end{itemize}
-& NI\\
+& I & NS\\
 
 
 
 
 
-TA1F20 & Un utente generico può effettuare una ricerca tra i prodotti in vendita & NI\\
+TA1F20 & Un utente generico può effettuare una ricerca tra i prodotti in vendita & I & NS\\
 
-TA1F21 & L'utente generico può accedere alla PLP\ped{G} corrispondente ad una categoria di prodotti. Nella PLP\ped{G} viene visualizzata la lista di prodotti corrispondente & NI\\
+TA1F21 & L'utente generico può accedere alla PLP\ped{G} corrispondente ad una categoria di prodotti. Nella PLP\ped{G} viene visualizzata la lista di prodotti corrispondente & I & NS\\
 
 TA1F22 & Per ogni prodotto listato nella PLP\ped{G} viene visualizzato:
 \begin{itemize}
 	\item nome;
 	\item immagine;
 	\item prezzo.
-\end{itemize} & NI\\
+\end{itemize} & I & NS\\
 
 TA1F23 & Nella PLP\ped{G} un utente generico può:
 \begin{itemize}
 	\item selezionare alcuni prodotti;
 	\item aggiungere i prodotti al carrello.
-\end{itemize} & NI\\
+\end{itemize} & I & NS\\
 
-TA2F23 & Nella PLP\ped{G} un utente generico può filtrare l'insieme dei prodotti visualizzati in base al prezzo & NI\\
+TA2F23 & Nella PLP\ped{G} un utente generico può filtrare l'insieme dei prodotti visualizzati in base al prezzo & I & NS\\
 
-TA1F24 & Un utente generico può accedere alla PDP\ped{G} cliccando su un prodotto nella PLP\ped{G} & NI\\
+TA1F24 & Un utente generico può accedere alla PDP\ped{G} cliccando su un prodotto nella PLP\ped{G} & I & NS\\
 
 TA1F25 & Un utente generico, nella PDP\ped{G} può:
 \begin{itemize}
 	\item visualizzare nome, immagine, descrizione e prezzo del prodotto;
 	\item aggiungere il prodotto al carrello scegliendone la quantità.
-\end{itemize} & NI\\
+\end{itemize} & I & NS\\
 
 
 
