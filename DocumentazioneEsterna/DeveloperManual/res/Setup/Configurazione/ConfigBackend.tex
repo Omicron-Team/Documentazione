@@ -7,4 +7,65 @@ To configure serverless\textsubscript{G} you need to run the following command:
 \texttt{serverless config credentials -o --provider aws --key \$key --secret \$secret}
 \end{center}
 where "\$key" is your AWS Access Key Id and "\$secret" is your AWS Secret Access Key.
+Instructions on how to generate these keys can be found on this page: \url{https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html}
+
+\item To setup the backend, make an initial deploy on AWS on every stage by running the following command for each stage:
+\begin{center}
+\texttt{serverless deploy --stage \$stage --region \$region}
+\end{center}
+where "\$stage" is the stage you want to deploy to (in this document we will use 'local', 'test' and 'staging') and "\$region" is the AWS region of the server you will be deploying to.
+
+If the serverless deploy fails, you may have to edit the 'BUCKET\_IMAGE' field, replacing 'omicronswe' with another string of your choice in the serverless.yml file. You will then have to run sls remove -s \$stage and then redeploy again.
+
+After these initial deploys you can proceed to the configuration of the environment variables.
 \end{enumerate}
+
+\paragraph{Tax configuration}\mbox{}\\
+After the first deploy in a different \textit{stage}, you need to configure the first value of the tax.\\
+You can do this on this page \url{https://eu-central-1.console.aws.amazon.com/dynamodb/home?region=eu-central-1#tables:}.
+\begin{itemize}
+	\item First, select the tax table in the current stage;
+	\item Next, go in the \textit{Items} tab and click on \textit{Create item}. In this section you need to add the tax \textit{name} and next the \textit{rate} attribute of tax (in the \textit{Number} format).
+\end{itemize}
+
+\paragraph{Cognito configuration}\mbox{}\\
+Each cognito userpool generated in the last step must be further configured. You can do so on this page \url{https://eu-central-1.console.aws.amazon.com/cognito/users/?region=eu-central-1}.
+\begin{itemize}
+
+\item For each userpool, click on 'Users and groups' and 'Create user'. Here you can enter the user information for the admin user. Remember to uncheck 'Send an invitation to this new user' and use an email as the username;
+
+\item After creating the admin user, it will appear in the users list. Click on the user id and then click on 'Add to group'. A menu will open where you will have to select  the 'VenditoreAdmin' user group;
+
+\item You will then have to setup the cognito hosted UI domain. You can do so by clicking on 'Domain name' in the 'App integrations' menu. In this page you will have to enter the name of a subdomain use your own domain. For more information on how to use your own domain, refer to the AWS documentation on this page:\url{https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-add-custom-domain.html};
+
+\item Lastly, you have to update the callback urls in the 'App client settings' page. For each stage except for the local one, retrieve your vercel domain. You can find it in the Vercel project settings on the 'Domain' page. Update the 'Sign in url' and 'Sign out url' as follows:
+\begin{itemize}
+\item Sign in url:
+\begin{center}
+\texttt{https://\$VERCELDOMAIN/api/auth/callback/cognito}
+\end{center}
+\item Sign out url:
+\begin{center}
+\texttt{https://\$VERCELDOMAIN}
+\end{center}
+\end{itemize}
+where \$VERCELDOMAIN is the vercel domain described previously.
+\end{itemize}
+
+\paragraph{Stripe webhook configuration}\mbox{}\\
+To link Stripe with your back-end you need to make one account for each stage. You can find more information on how to do so here: \url{https://stripe.com/docs/multiple-accounts}.
+
+Once your accounts are ready, you will have to create one webhook in each account, for each stage. Firstly, click on 'Developers' in your Stripe dashboard: a dropdown menu will open and you shall click the 'Webhooks' button.
+
+From the webhooks page, click on 'Add endpoint', and insert the following data:
+\begin{itemize}
+\item Endpoint URL
+\begin{center}
+\texttt{https://\$APIID.execute-api.\$APIREGION.amazonaws.com/\$STAGE/order}
+\end{center}
+\item Events to send
+\begin{center}
+\texttt{checkout.session.completed}
+\end{center}
+\end{itemize}
+where \$APIID is the api endpoint id provided by AWS when the backend is deployed to an environment, \$APIREGION is the region you deployed the back-end to and \$STAGE is the back-end stage you're currently trying to link to Stripe.
