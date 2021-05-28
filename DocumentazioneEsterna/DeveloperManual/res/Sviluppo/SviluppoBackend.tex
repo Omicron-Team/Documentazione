@@ -24,6 +24,8 @@ events:
    - http:
        path: $functionName
        method: get #(or post, put...)
+       authorizer:
+            name: auth
 \end{lstlisting}
 \end{itemize}
 It is better to manually create all of the needed files.\\
@@ -35,6 +37,8 @@ Here's how:
 \item \textbf{src/model:} contains all the classes and interfaces used by the Back-end\textsubscript{G} module;
 \item \textbf{src/services:} contains all the functions related to the external services used by the \textit{EmporioLambda} Back-end\textsubscript{G} module;
 \item \textbf{src/lib:} contains all the utilities functions used by the Back-end\textsubscript{G} module.
+\item \textbf{test:} contains the test files.
+\item \textbf{bashScript:} contains script that support the creation of a local database.
 \end{itemize}
 This folder also contains other folders, each one corresponding to a specific domain of \textit{EmporioLambda} (for example the endpoints folder contains the following folders: cart, category, checkout, order...). 
 \item if you want to create a test for the new function go into the test folder and add it in the file whose name indicates the component your function work on.
@@ -53,5 +57,11 @@ getUser:
          path: user/{username}/
          method: get
          cors: true
+         authorizer:
+            name: auth
 \end{lstlisting}
 \end{enumerate}
+
+Most endpoints use a lamba authorizer for security purposes. If you create a new endpoint you have to define which users have access to it by adding the endpoint name in the /src/lib/auth.ts file in the 'API Visibility' section. By default the admin user has access to all endpoints.
+
+To deploy your back-end module, follow the serverless documentation on this website: \url{https://www.serverless.com/framework/docs/providers/aws/cli-reference/deploy/}
